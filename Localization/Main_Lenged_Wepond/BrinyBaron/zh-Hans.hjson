@@ -1,0 +1,240 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				NewLegendBrinyBaron: {
+					DisplayName: 潮汐之子-海爵剑
+					Tooltip: "[GFB]"
+					BB_Left_1:
+						'''
+						[c/66CCFF:左键：进行一系列的挥动并射出海沫与海灵。]
+						[c/66CCFF:海沫可以高速穿行，并在结束时爆成水花。]
+						[c/66CCFF:海灵可以追踪敌人，并施加激流。]
+						'''
+					BB_Left_2:
+						'''
+						[c/66CCFF:左键：进行三段挥动并射出海沫、海灵与光波。]
+						[c/66CCFF:海沫可以散射出更大的水刃，并穿透更多敌人。]
+						[c/66CCFF:海灵可以更快追踪敌人，并施加激流。]
+						[c/66CCFF:光波可以向前推进，形成宽大的潮汐斩击。]
+						'''
+					BB_Left_3:
+						'''
+						[c/66CCFF:左键：进行四段挥动并射出海沫、海灵、手里剑与光波。]
+						[c/66CCFF:海沫可以并排齐射，穿透敌人并在结束时爆成水花。]
+						[c/66CCFF:海灵可以成群追踪敌人，并施加激流。]
+						[c/66CCFF:手里剑可以扇形飞出，切割敌人，并在命中时释放海沫。]
+						[c/66CCFF:光波可以向前推进，终段释放更巨大的潮汐斩击。]
+						'''
+					BB_Left_4:
+						'''
+						[c/66CCFF:左键：进行完整挥动并射出海沫、海灵、手里剑与光波。]
+						[c/66CCFF:海沫可以并排齐射，穿透敌人并在结束时爆成水花。]
+						[c/66CCFF:海灵可以成群追踪敌人，并施加激流。]
+						[c/66CCFF:手里剑可以扇形飞出，切割敌人，并在命中时释放海沫。]
+						[c/66CCFF:光波可以向前推进，终段释放更巨大的潮汐斩击。]
+						[c/66CCFF:近战剑刃命中会追加海灵弹幕。]
+						'''
+					BB_Right_DefaultShuriken:
+						'''
+						[c/FFB347:右键：化作潮汐短冲刺。]
+						[c/FFB347:冲刺与回弹期间免疫伤害；撞击第一个敌人后会反向弹开一次。]
+						[c/FFB347:肉后命中会在敌人身下释放蓝色【爵士台风】。]
+						'''
+					BB_Right_Spin_Locked: "[c/DDA0FF:按住左键再按住右键：回旋斩需二阶段解锁。]"
+					BB_Right_Spin_Unlocked:
+						'''
+						[c/DDA0FF:摁住双键可以将大剑持续挥舞，挥舞过程逐渐加速。]
+						[c/DDA0FF:到达最高速度时，造成最高伤害，并以较低频率释放手里剑。]
+						'''
+					BB_Tide: "[c/4FAEFF:当前潮汐值：]"
+					BB_Tide_Desc_NoAccessory: "[c/4FAEFF:当前潮汐值的作用：【提升伤害】【提升移动速度】【满潮时额外提升伤害】]"
+					BB_Tide_Desc_HasAccessory: "[c/4FAEFF:当前潮汐值的作用：【提升伤害】【提升移动速度】【满潮时额外提升伤害】【配件会追加右键或满潮效果】]"
+					Dash1_Unlock: "[c/66FFAA:已解锁：基础突进]"
+					Dash1_Lock: "[c/7F8FA6:暂未解锁，需击败克苏鲁之眼]"
+					Dash2_Unlock: "[c/66FFAA:已解锁：回旋切割]"
+					Dash2_Lock: "[c/DDA0FF:暂未解锁，需击败血肉之墙]"
+					Dash3_Unlock: "[c/66FFAA:已解锁：快刀斩]"
+					Dash3_Lock: "[c/99CCFF:暂未解锁，需击败血肉之墙]"
+					BB_Passive:
+						'''
+						[c/9AEF9E:被动【快刀斩】突进强化读取当前盾牌设备。状态：]{0}[c/9AEF9E:；背包右键切换。]
+						{1}
+						'''
+					PassiveStateOn: "[c/7BFFB7:开启]"
+					PassiveStateOff: "[c/F0D070:关闭]"
+					PassiveDevice_None: "[c/7F8FA6:当前未检测到冲刺能力。]"
+					PassiveDevice_Any: "[c/99CCFF:已检测到冲刺能力；冲刺触发快刀连斩，冲刺期间每 7 帧会沿速度左右两侧各释放一枚潮刃。]"
+					Dash4_Unlock: "[c/66FFAA:已解锁：终结技【激流送葬】]"
+					Dash4_Lock: "[c/FFB347:终结技【激流送葬】当前未解锁。]"
+					BB_Final: "[c/9FD8A2:终结技【激流送葬】满潮且大招就绪时，按传奇技能键标记猎物；最后一击留下刻印，随后降下潮汐巨斩。]"
+					UltimateOutOfRange: 超出范围
+					LegendaryHint: "[c/6C8EFF:按住Shift键以读取记录]"
+					LegendaryText:
+						'''
+						[c/66CCFF:最初的海爵剑只保留了最直接的战斗方式：挥刀、卷起龙卷，再投出一枚追踪手里剑。]
+						[c/66CCFF:这种设计足够干净，却很难承载一把传奇武器应有的潮汐节奏。]
+						[c/99CCFF:重构后，斩击不再只等待命中，而是逐步积蓄潮汐，并在连段中展开海沫、海灵、手里剑与光波。]
+						[c/FFB347:右键也不再固定为投掷，它会随着不同装置改写为突进、反弹、传送或更激进的追猎方式。]
+						[c/DDA0FF:当潮汐被推至极限，所有路径、锁定与残留印记都会被收束进最后一次处刑。]
+						'''
+				}
+			}
+
+			BottledRaft: {
+				DisplayName: 瓶中筏
+				Tooltip:
+					'''
+					用于合成后续的瓶中系列饰品
+					[c/7F8FA6:自身不提供战斗属性]
+					'''
+			}
+
+			BottledBoat: {
+				DisplayName: 瓶中船
+				Tooltip:
+					'''
+					战士伤害 +12%
+					海爵潮汐上限提升至 8
+					每层潮汐额外提供近战伤害 +1%，近战攻速 +1%
+					'''
+			}
+
+			BottledBlackPearl: {
+				DisplayName: 瓶中黑珍珠号
+				Tooltip:
+					'''
+					战士伤害 +15%
+					海爵潮汐上限提升至 10
+					每层潮汐额外提供近战伤害 +1%，近战攻速 +1%；每 12 秒自动获得 1 层潮汐
+					满潮时防御 +10，伤害减免 +10%
+					'''
+			}
+
+			BottledAircraftCarrier: {
+				DisplayName: 瓶中航空母舰
+				Tooltip:
+					'''
+					战士伤害 +15%
+					海爵潮汐上限提升至 10
+					每层潮汐额外提供近战伤害 +1%，近战攻速 +1%
+					每 6 秒自动获得 2 层潮汐
+					满潮时防御 +10，减伤 +10%，近战暴击率 +30%
+					'''
+			}
+
+			OceanHormone: {
+				DisplayName: 海洋激素
+				Tooltip:
+					'''
+					通用暴击 -10%，近战攻速 +20%
+					获得【鸦片酊】效果：部分减益不再产生负面作用，并转化为增益
+					肾上腺素激活时，海爵剑使用时间与动画 -12 帧
+					'''
+			}
+
+			TideWiseHat: {
+				DisplayName: 潮汐智者
+				Tooltip:
+					'''
+					魔力上限 +50，近战伤害 +15%
+					每层潮汐提供近战暴击率 +1%
+					非 Boss 时潮汐衰减间隔翻倍（10 秒）
+					强化剑气每次命中获得 1 层潮汐
+					终结技消耗全部魔力强化所有斩击
+					'''
+			}
+
+			AbyssalBastion: {
+				DisplayName: 渊洋壁垒
+				Tooltip:
+					'''
+					防御 +6，减伤 +6%，免疫击退
+					海爵右键冲刺速度 ×1.25，冷却缩短至 2 秒
+					右键命中后获得 100 点泡泡盾
+					护盾存在时额外获得防御 +25，减伤 +25%
+					'''
+			}
+
+			TideRadar: {
+				DisplayName: 潮汐雷达
+				Tooltip:
+					'''
+					背包中持有海爵剑时，获得【快刀斩】被动
+					无需手持海爵剑；被动效果与手持时完全一致
+					'''
+			}
+
+			DrinkingFountain: {
+				DisplayName: 饮水机
+				Tooltip:
+					'''
+					海爵剑命中敌人时生成一枚水泡弹
+					满生命时追踪敌人造成近战伤害；受伤时返回治疗玩家
+					'''
+			}
+
+			BaronHelix: {
+				DisplayName: 爵士螺旋
+				Tooltip:
+					'''
+					近战伤害 +10%，近战攻速 +10%
+					海爵右键命中后，改为释放 3 个更小的【爵士台风】
+					它们先围绕目标作三圈椭圆轨迹，随后缓慢追踪敌人
+					每个爵士台风的伤害为右键冲刺伤害的 30%
+					'''
+			}
+
+			VortexEye: {
+				DisplayName: 漩涡之眼
+				Tooltip:
+					'''
+					近战伤害 +10%，近战攻速 +10%，移速 +15%
+					将海爵右键改为漩涡传送
+					右键传送至鼠标位置，并发动两次海潮斩击
+					冷却期间再次右键，会折返至上一个传送点
+					每次折返都会在路径上留下快速切割的蓝色光弹
+					冷却时间为 6 秒
+					'''
+			}
+		}
+
+		Projectiles: {
+			BBSD_VirtualPROJ.DisplayName: 海王虚幻弹幕
+			BrinyBaron_VortexEyePortalPreview.DisplayName: 漩涡之眼传送预览
+			BrinyBaron_VortexEyeDash.DisplayName: 漩涡之眼冲刺
+			BrinyBaron_VortexEyePhaseResidue.DisplayName: 漩涡之眼相位残影
+			BrinyBaron_VortexEyePathCutter.DisplayName: 漩涡之眼路径切割
+			BrinyBaron_DashOceanSwirl.DisplayName: 海澜涡流
+
+			BrinyBaron: {
+				BBSwing_Wave.DisplayName: 潮锋波斩
+				BrinyBaron_HomingLightOrb.DisplayName: 潮汐追踪光球
+				BBDrinkingFountainOrb.DisplayName: 饮水机水泡弹
+				BBSwing_INV.DisplayName: 巨刃判定
+				BBSwing_Slash.DisplayName: 潮锋斩痕
+				BrinyBaron_LeftClick_Swing.DisplayName: 海爵连斩
+				BrinyBaron_RightClick_Shuriken.DisplayName: 海爵手里剑
+				BrinyBaron_TornadoBolt.DisplayName: 海爵龙卷弹
+				BrinyBaron_TornadoWaterExplosion.DisplayName: 海爵水爆炸
+				BrinyBaron_DashWaterPillar.DisplayName: 海爵突进水柱
+				BrinyBaron_JazzTyphoon.DisplayName: 爵士台风
+				BrinyBaron_SkillDashTornado_BladeDash.DisplayName: 刃岚突进
+				BrinyBaron_SkillSlashDash_SlashDash.DisplayName: 盾潮连斩
+				Z_BrinyBaron_SkillSuperCharge_SuperDash.DisplayName: 激流送葬
+				BrinyBaron_UltimateAzureRiftBeam.DisplayName: 激流天穹裂隙
+				BBSD_Star.DisplayName: 终潮星刃
+				BBSD_Final_INV.DisplayName: 终潮刻印
+				BrinyBaron_WaterStream.DisplayName: 海爵水流
+				BrinyBaron_SeafoamBlade.DisplayName: 海爵海沫刃
+				BrinyBaron_SeafoamExplosion.DisplayName: 海爵海沫爆炸
+				BrinyBaron_SeaSpirit.DisplayName: 海灵
+			}
+		}
+
+		Cooldowns: {
+			BrinyBaron_Tide: 潮汐
+			BrinyBaron_SuperDash: 激流送葬
+		}
+	}
+}

@@ -1,0 +1,22 @@
+bin/
+obj/
+.vs/
+.codex-tools/
+*.zip
+
+# Archived source and assets retained only as reference.
+Weapons/YharimsCrystal/Abandoned/*
+Weapons/A_Olds/MarkedMagnum/*
+
+# Local development metadata and caches are never part of a mod package.
+.agents/
+.claude/
+.codex-docx-qa/
+.codex-tools/
+.codex_tmp/
+.git/
+.vs/
+bin/
+obj/
+memory/
+

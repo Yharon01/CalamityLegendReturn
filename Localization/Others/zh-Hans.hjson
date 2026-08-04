@@ -1,0 +1,246 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				Tetris: {
+					DisplayName: 俄罗斯方块
+					Tooltip:
+						'''
+						手持该物品即可展开像素俄罗斯方块面板。
+						多人模式下右键邀请最近的、同样手持俄罗斯方块的玩家联机。
+						A/D 或左右方向键控制方块左右移动。S 或下方向键快速下落。空格键硬降到底。
+						W、上方向键或 X 顺时针旋转。Z 逆时针旋转。C 暂存当前方块。
+						游戏结束后按 R 重新开始。
+						'''
+				}
+
+				Game2048: {
+					DisplayName: "2048"
+					Tooltip:
+						'''
+						手持该物品即可展开 4×4 像素 2048 面板。
+						使用 W/A/S/D 或方向键滑动全部方块，相同数字每次滑动只会合并一次。
+						每次有效滑动都会生成新的 2 或 4。游戏结束后按 R 重新开始。
+						'''
+				}
+
+				Snake: {
+					DisplayName: 贪吃蛇
+					Tooltip:
+						'''
+						手持该物品即可展开像素贪吃蛇面板。
+						单次点击 W/A/S/D 控制蛇转向。
+						游戏结束后按 R 重新开始。
+						'''
+				}
+
+				Minesweeper: {
+					DisplayName: 扫雷
+					Tooltip:
+						'''
+						手持该物品即可展开像素扫雷面板。
+						左键踩雷，右键标记雷，可以反复取消标记
+						数字表示周围的地雷数量，不小心踩到雷，会导致游戏直接结束
+						标记所有地雷即可获胜，游戏结束后左键点击重新开始。
+						[c/6FDFFF:“不是怎么老被炸呀”]
+						'''
+				}
+
+				STG: {
+					Tooltip:
+						'''
+						手持该物品即可展开纵屏弹幕射击面板。
+						A/D 控制左右，W/S 控制前后，飞机会自动开火。
+						击落随机来袭的敌机获得分数。命中敌机、敌弹或被敌机撞到都会损失生命。
+						敌机偶尔掉落 P 强化，提升子弹数量与散射。三条命耗尽后游戏结束，按 R 重新开始。
+						'''
+					DisplayName: STG
+				}
+
+				LegendaryCodex: {
+					DisplayName: 传奇图鉴
+					Tooltip:
+						'''
+						[c/55DFFF:欢迎游玩《灾厄传奇》 欢迎加入群聊进行讨论：876728711]
+						[c/FF5555:如果遇到显示传奇武器时屏幕变黑的情况]
+						[c/FF5555:请前往 模组配置 > 灾厄 > 客户端配置 > 第2个：额外文本特效，将其关闭。]
+						[c/70E0A0:本模组还包含许多QOL相关内容 详情请看配置选项：]
+						[c/70E0A0:大量材料的制作以及许多额外的改善体验的配方]
+						[c/70E0A0:动物学家会在合适的时候出售Boss召唤物]
+						[c/70E0A0:自定义Boss血条 以及显示物品内部名]
+						[c/70E0A0:可以快速加速破译和充能的时间]
+						[c/70E0A0:敌方弹幕包边等等更多功能]
+						[c/FFFFFF:点击左键查看传奇图鉴]
+						'''
+				}
+
+				CTRLBoss: {
+					DisplayName: Boss进度修改器
+					Tooltip: 左键打开或关闭 Boss 进度调试面板。
+				}
+
+				SoundproofEarmuffs: {
+					DisplayName: 隔音耳罩
+					Tooltip:
+						'''
+						在背包中右键切换隔音。
+						开启后音效降低90%，音乐不受影响。
+						当前状态：[STATE]
+						'''
+					EnabledState: 开启
+					DisabledState: 关闭
+				}
+			}
+
+			Consumables: {
+				LegendarySupplyBox: {
+					DisplayName: 传奇补给包
+					Tooltip: 右键打开传奇武器展柜，从全部主线传奇武器中任选一把。
+					Title: 传奇武器展柜
+					DirectSelectHint: 直接点击你想领取的传奇武器。
+					DirectSelectFooter: 点击武器即可领取。点击面板外取消。
+					BrowseHint: 点击任意武器，锁定后开始开箱展示。
+					SpinningHint: 正在展示你选择的传奇武器……
+					ClaimHint: 目标已锁定，确认后领取武器。
+					Footer: 点击武器选择 // 左右箭头浏览 // 点击面板外取消
+					SpinFooter: 展柜正在运行，请稍候。
+					ClaimButton: 确认领取
+				}
+
+				RetroGameConsoleSupplyBox: {
+					DisplayName: 复古游戏机补给包
+					Tooltip: 右键打开，领取目前已经准备好的复古游戏机。
+				}
+
+				Destroyer2041Summoner: {
+					DisplayName: 可疑的不得了的机械蠕虫
+					Tooltip: 召唤2041版本的毁灭者
+				}
+
+				Prime2041Summoner: {
+					DisplayName: 可疑的不得了的机械骷髅头
+					Tooltip: 召唤2041版本的机械骷髅王
+				}
+
+				Twins2041Summoner: {
+					DisplayName: 可疑的不得了的机械晶状体
+					Tooltip: 召唤2041版本的双子魔眼
+				}
+
+				QuickStartBox: {
+					DisplayName: 快速启动包
+					// Tooltip: ""
+				}
+			}
+
+			LegendaryEmblem: {
+				DisplayName: 黄金饰章
+				Tooltip: 使用后永久解锁此角色手持所有传奇武器的大招
+				AlreadyConsumed: 这个角色已经获得了黄金饰章的永久强化。
+			}
+
+			LegendaryUltimateTester: {
+				DisplayName: 传奇大招测试器
+				Tooltip: 仅限测试用：SHPC大招会在1秒内充能完成
+			}
+		}
+
+		Projectiles: {
+			A_Dev: {
+				TetrisPanel.DisplayName: 俄罗斯方块面板
+				Game2048Panel.DisplayName: 2048 面板
+				SnakePanel.DisplayName: 贪吃蛇面板
+				MinesweeperPanel.DisplayName: 扫雷面板
+				STGPanel.DisplayName: STG 弹幕射击面板
+				CTRLBossPanel.DisplayName: Boss进度面板
+			}
+
+			TeachingProjectileA_LineTrailLaser.DisplayName: 教学弹幕A线状拖尾激光
+			TeachingProjectileB_FlashSparklePoint.DisplayName: 教学弹幕B闪光星点
+			TeachingProjectileC_BloomGlowCore.DisplayName: 教学弹幕C绽放辉光核心
+			TeachingProjectileD_PulseRingField.DisplayName: 教学弹幕D脉冲环场
+			TeachingProjectileE_ExplosionImpact.DisplayName: 教学弹幕E爆炸冲击
+			TeachingProjectileF_SmokeMistDust.DisplayName: 教学弹幕F烟雾粉尘
+			TeachingProjectileG_FireAshBurn.DisplayName: 教学弹幕G火灰燃烧
+			TeachingProjectileH_WaterFoamOcean.DisplayName: 教学弹幕H水沫海洋
+			TeachingProjectileI_BloodFleshBiology.DisplayName: 教学弹幕I血肉生物
+			TeachingProjectileJ_DebrisMechanicalParts.DisplayName: 教学弹幕J机械碎片
+			TeachingProjectileK_MagicStatusUI.DisplayName: 教学弹幕K魔法状态界面
+			TeachingProjectileL_SlashSmearAfterimage.DisplayName: 教学弹幕L斩击残影拖痕
+			TeachingProjectileM_TechHoloSquare.DisplayName: 教学弹幕M科技全息方块
+			TeachingProjectileN_ParticleSetsControllers.DisplayName: 教学弹幕N粒子组控制器
+			// TeachingProjectile.DisplayName: Teaching Projectile
+
+			GhostSniperRifle: {
+				GhostSniperRound.DisplayName: 幽灵狙击弹
+				GhostSniperSpectreOrb.DisplayName: 幽灵狙击幽魂球
+			}
+
+			// Z_BrinyBaron_SkillSuperCharge_SuperDash.DisplayName: Z_ Briny Baron_ Skill Super Charge_ Super Dash
+			// BrinyBaron_SkillSlashDash_SlashDash.DisplayName: Briny Baron_ Skill Slash Dash_ Slash Dash
+			// BrinyBaron_LeftClick_Swing.DisplayName: Briny Baron_ Left Click_ Swing
+			// FuckYou.DisplayName: Fuck You
+			// BFArrow_EPlagueGas.DisplayName: B F Arrow_ E Plague Gas
+			// BFArrow_EPlague.DisplayName: B F Arrow_ E Plague
+			// BFArrow_DBomb.DisplayName: B F Arrow_ D Bomb
+			// BFArrow_CDetecReticle.DisplayName: B F Arrow_ C Detec Reticle
+			// BFArrow_CDetec.DisplayName: B F Arrow_ C Detec
+			// BFArrow_BRecovTransfer.DisplayName: B F Arrow_ B Recov Transfer
+			// BFArrow_BRecov.DisplayName: B F Arrow_ B Recov
+			// BFArrow_ABreak.DisplayName: B F Arrow_ A Break
+			// BFLeftPlagueFlame.DisplayName: B F Left Plague Flame
+		}
+
+		TheSpecialText: {
+			TetrisLevel: 等级 {0}
+			TetrisMultiplayerLevel: 联机等级 {0}
+			TetrisGameOver: 游戏结束
+			TetrisRestart: 按 R 重新开始
+			TetrisNoInviteTarget: 附近没有手持俄罗斯方块的玩家。
+			TetrisInviteSent: 已向 {0} 发起俄罗斯方块联机邀请。
+			TetrisInviteIncoming: "{0} 邀请你联机俄罗斯方块。按 Y 或 Enter 接受，按 N 或 Esc 拒绝。"
+			TetrisInviteRejected: 俄罗斯方块联机邀请被拒绝。
+			TetrisInviteAccepted: 俄罗斯方块联机已连接。
+			TetrisMultiplayerGuest: 等待主机同步棋盘
+			Game2048Score: 分数 {0}
+			Game2048Best: 最大 {0}
+			Game2048Slide: 滑动方块，合并相同数字
+			Game2048Won: 已合成 2048
+			Game2048GameOver: 无路可走
+			Game2048Restart: 按 R 重新开始
+			SnakeSpeed: 速度 {0}
+			SnakeGameOver: 游戏结束
+			SnakeRestart: 按 R 重新开始
+			MinesweeperMines: 剩余 {0} 雷
+			MinesweeperGameOver: 游戏结束
+			MinesweeperWin: You Win
+			MinesweeperRestart: 左键点击重新开始
+			STGGameOver: 游戏结束
+			STGRestart: 按 R 重新开始
+			CTRLBossDefeated: 已击杀
+			CTRLBossUndefeated: 未击杀
+			CTRLBossStatusSet: "{0} 已被调整为{1}。"
+			CTRLBossBulkPreHardmode: 一键开关困难模式前的所有 Boss
+			CTRLBossBulkHardmode: 一键开关困难模式的所有 Boss
+			CTRLBossBulkPostMoonLord: 一键开关月球领主后的所有 Boss
+			CTRLBossBulkAll: 一键开关所有 Boss
+			CTRLBossBulkInvert: 一键反向调整所有 Boss
+			CTRLBossBulkChanged: "{0}：已调整 {1} 个 Boss 进度。"
+			WelcomeMessage:
+				'''
+				欢迎游玩《灾厄传奇》
+				本模组刚刚起步，正在持续发展
+				后续会重做每一把传奇武器，并加入更多新内容的，敬请期待
+				反馈与建议，欢迎加入群聊进行讨论：876728711
+				'''
+		}
+
+		Keybinds: {
+			LegendarySkill.DisplayName: 传奇技能
+			LegendaryWeaponFormSwitch.DisplayName: 传奇武器形态切换
+			SHPCLoadingUI.DisplayName: SHPC界面
+			LeonidConstellationChart.DisplayName: 呼出狮源流星星图
+			// WeaponLoadingUI.DisplayName: Weapon Loading U I
+		}
+	}
+}

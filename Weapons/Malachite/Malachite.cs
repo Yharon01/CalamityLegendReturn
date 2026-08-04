@@ -1,0 +1,381 @@
+using CalamityLegendsReturn.Accssory;
+using CalamityLegendsReturn.Accssory.MC.General;
+using CalamityLegendsReturn.Weapons.Malachite.EXSkill;
+using CalamityLegendsReturn.Weapons;
+using CalamityMod;
+using CalamityMod.CalPlayer;
+using CalamityMod.Items;
+using CalamityMod.Items.Weapons.Rogue;
+using CalamityMod.Rarities;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Terraria;
+using Terraria.Audio;
+using Terraria.DataStructures;
+using Terraria.GameContent;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityLegendsReturn.Weapons.Malachite
+{
+    public class Malachite : RogueWeapon, ILocalizedModType
+    {
+        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+
+        public new string LocalizationCategory => "Items.Weapons";
+        private bool wasFinaleReady;
+
+        public override bool WeaponPrefix() => true;
+
+        public override bool RangedPrefix() => false;
+
+        public override void SetStaticDefaults()
+        {
+            ItemID.Sets.ItemsThatAllowRepeatedRightClick[Type] = true;
+        }
+
+        public override void SetDefaults()
+        {
+            Item.width = 28;
+            Item.height = 58;
+            Item.damage = MalachiteBalance.GetInitialLeftClickBaseDamage();
+            Item.DamageType = ModContent.GetInstance<RogueDamageClass>();
+            Item.noMelee = true;
+            Item.noUseGraphic = true;
+            Item.useAnimation = 14;
+            Item.useTime = 14;
+            Item.useStyle = ItemUseStyleID.Swing;
+            Item.knockBack = 2.5f;
+            Item.UseSound = SoundID.Item1;
+            Item.autoReuse = true;
+            Item.shoot = ModContent.ProjectileType<MalachiteKunai>();
+            Item.shootSpeed = 18f;
+            Item.value = CalamityGlobalItem.RarityYellowBuyPrice;
+            Item.rare = ModContent.RarityType<BurnishedAuric>();
+        }
+
+        public override bool AltFunctionUse(Player player) => true;
+
+        public override bool CanUseItem(Player player)
+        {
+            bool stealthStrike = player.Calamity().StealthStrikeAvailable();
+
+            if (player.altFunctionUse == 2)
+            {
+                if (!MalachiteBalance.RightClickUnlocked)
+                    return false;
+
+                if (MalachiteRightFeather.CountStoredRightFeathers(player) <= 0)
+                    return false;
+
+                Item.useAnimation = stealthStrike ? 28 : 16;
+                Item.useTime = stealthStrike ? 28 : 16;
+                Item.UseSound = SoundID.Item92;
+                return true;
+            }
+
+            if (stealthStrike)
+            {
+                Item.useAnimation = 34;
+                Item.useTime = 34;
+                Item.UseSound = SoundID.Item109;
+                return true;
+            }
+
+            Item.useAnimation = 14;
+            Item.useTime = 14;
+            Item.UseSound = SoundID.Item1;
+            return true;
+        }
+
+        public override float UseSpeedMultiplier(Player player)
+        {
+            if (player.altFunctionUse == 2 || player.Calamity().StealthStrikeAvailable())
+                return 1f;
+
+            float speed = MalachiteBalance.LeftClickUseSpeedMultiplier;
+            if (MalachiteKunai.CountStoredPeacockKunai(player) > 0)
+                speed *= 2f;
+            if (player.GetModPlayer<MalachitePlayer>().LeftClickHasteActive)
+                speed *= 2f;
+
+            return speed;
+        }
+
+        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        {
+            Vector2 mouseWorld = GetMouseWorld(player);
+            CalamityPlayer calamity = player.Calamity();
+            MalachitePlayer malachitePlayer = player.GetModPlayer<MalachitePlayer>();
+            bool stealthStrike = calamity.StealthStrikeAvailable();
+
+            if (player.altFunctionUse == 2)
+            {
+                TryReleaseRightClickAttack(player, source, mouseWorld, damage, knockback, stealthStrike);
+
+                return false;
+            }
+
+            if (stealthStrike)
+            {
+                MalachiteKunai.FireStoredPeacockKunaiAsLeftThrows(player, mouseWorld, damage, knockback);
+                MalachiteKunai.SpawnPeacockFan(player, source, damage, knockback);
+                MalachiteRightFeather.ReleaseStoredRightFeathers(player, source, mouseWorld, damage, knockback, stealthEnhanced: true);
+                HandleStealthAttackCost(malachitePlayer, calamity, rightClick: false);
+                SoundEngine.PlaySound(SoundID.Item109 with { Volume = 0.85f, Pitch = 0.08f }, player.Center);
+                return false;
+            }
+
+            bool scatterBurst = malachitePlayer.ConsumeLeftClickForScatterBurst();
+            if (MalachiteKunai.TryThrowStoredKunai(player, mouseWorld, damage, knockback))
+            {
+                if (scatterBurst)
+                    SpawnLeftClickScatterBurst(player, source, mouseWorld, damage, knockback);
+
+                SoundEngine.PlaySound(SoundID.Item1 with { Volume = 0.78f, Pitch = 0.22f }, player.Center);
+                return false;
+            }
+
+            if (scatterBurst)
+            {
+                SpawnLeftClickScatterBurst(player, source, mouseWorld, damage, knockback);
+                SoundEngine.PlaySound(SoundID.Item1 with { Volume = 0.78f, Pitch = 0.18f }, player.Center);
+                return false;
+            }
+
+            int kunaiCount = MalachiteBalance.NormalLeftClickKunaiCount;
+            if (kunaiCount > 1)
+            {
+                MalachiteKunai.SpawnNormalLeftClickVolley(player, source, damage, knockback, mouseWorld, kunaiCount, depletionBurst: false);
+                SoundEngine.PlaySound(SoundID.Item1 with { Volume = 0.78f, Pitch = 0.14f }, player.Center);
+                return false;
+            }
+
+            return true;
+        }
+
+        public override void ModifyWeaponDamage(Player player, ref StatModifier damage)
+        {
+            int targetDamage = player.altFunctionUse == 2
+                ? MalachiteBalance.GetRightClickBaseDamage()
+                : MalachiteBalance.GetLeftClickBaseDamage();
+            damage.Base += targetDamage - Item.damage;
+        }
+
+        public override void ModifyStatsExtra(Player player, ref Vector2 position, ref Vector2 velocity, ref int type, ref int damage, ref float knockback)
+        {
+            float baseSpeed = player.altFunctionUse == 2
+                ? MalachiteBalance.GetRightClickVelocity()
+                : MalachiteBalance.GetLeftClickVelocity();
+            velocity = velocity.SafeNormalize(Vector2.UnitX * player.direction) * baseSpeed * player.GetModPlayer<MCGeneralPlayer>().ProjectileSpeedMult;
+        }
+
+        public override void HoldItem(Player player)
+        {
+            player.GetModPlayer<MalachitePlayer>().SetHoldingMalachite();
+            player.Calamity().mouseWorldListener = true;
+
+            if (Main.myPlayer == player.whoAmI)
+                player.Calamity().rightClickListener = true;
+
+            CalamityPlayer calamity = player.Calamity();
+            if (player.GetModPlayer<LegendaryEmblemPlayer>().EXAccessoryEquipped)
+            {
+                if (!calamity.cooldowns.ContainsKey(MalachiteEXCooldown.ID))
+                {
+                    player.AddCooldown(MalachiteEXCooldown.ID, 0);
+                }
+            }
+
+            bool finaleReady = !IsFinaleCoolingDown(player) &&
+                player.GetModPlayer<LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            LegendaryUltimateReadySound.PlayIfReadyTransition(player, ref wasFinaleReady, finaleReady);
+
+            TryUseFinale(player);
+        }
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            string keyText = KeybindSystem.LegendarySkill.GetAssignedKeys().FirstOrDefault() ?? "Unbound";
+            bool shiftPressed = Main.keyState.PressingShift();
+            string legendarySection = shiftPressed
+                ? this.GetLocalizedValue("LegendaryText")
+                : this.GetLocalizedValue("LegendaryHint");
+            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            string finaleText = legendaryEmblemEquipped
+                ? string.Format(this.GetLocalizedValue("Finale"), keyText)
+                : this.GetLocalizedValue("FinaleLocked");
+
+            string finalText =
+                this.GetLocalizedValue($"LeftClick{MalachiteBalance.GetLeftClickTooltipTier()}") + "\n" +
+                this.GetLocalizedValue($"RightClick{MalachiteBalance.GetRightClickTooltipTier()}") + "\n" +
+                this.GetLocalizedValue($"StealthStrike{MalachiteBalance.GetStealthTooltipTier()}") + "\n" +
+                this.GetLocalizedValue("Passive") + "\n" +
+                finaleText + "\n";
+
+            if (shiftPressed)
+                tooltips.RemoveAll(t => t.Text == "[GFB]");
+            else
+                tooltips.FindAndReplace("[GFB]", finalText);
+            tooltips.Add(new TooltipLine(Mod, "MalachiteShadowPeacockLegendaryText", legendarySection));
+        }
+
+        public override void PostDrawInInventory(SpriteBatch spriteBatch, Vector2 position, Rectangle frame, Color drawColor, Color itemColor, Vector2 origin, float scale)
+        {
+            if (Main.LocalPlayer.HeldItem.type != Type)
+                return;
+
+            int storedFeathers = MalachiteRightFeather.CountStoredRightFeathers(Main.LocalPlayer);
+            if (storedFeathers <= 0)
+                return;
+
+            Texture2D barBackground = TextureAssets.MagicPixel.Value;
+            float completion = MathHelper.Clamp(storedFeathers / (float)MalachiteBalance.RightFeatherMaxCount, 0f, 1f);
+            Vector2 barPosition = position + new Vector2(-18f, frame.Height * 0.55f) * scale;
+            Rectangle back = new((int)barPosition.X, (int)barPosition.Y, (int)(36f * scale), (int)(4f * scale));
+            Rectangle front = new(back.X, back.Y, (int)(back.Width * completion), back.Height);
+
+            spriteBatch.Draw(barBackground, back, Color.Black * 0.65f);
+            spriteBatch.Draw(barBackground, front, new Color(90, 255, 148) * 0.9f);
+        }
+
+        private void TryUseFinale(Player player)
+        {
+            CalamityPlayer calamity = player.Calamity();
+            if (player.whoAmI != Main.myPlayer ||
+                KeybindSystem.LegendarySkill?.JustPressed != true ||
+                calamity.rogueStealthMax <= 0f ||
+                calamity.rogueStealth < calamity.rogueStealthMax * 0.999f ||
+                !player.GetModPlayer<LegendaryEmblemPlayer>().EXAccessoryEquipped)
+            {
+                return;
+            }
+
+            int finaleType = ModContent.ProjectileType<MalachiteFinaleController>();
+            if (player.ownedProjectileCounts[finaleType] > 0 || IsFinaleCoolingDown(player))
+                return;
+
+            calamity.ConsumeStealthByAttacking();
+
+            Vector2 direction = (GetMouseWorld(player) - player.Center).SafeNormalize(Vector2.UnitX * player.direction);
+            int finaleDamage = (int)player.GetTotalDamage(Item.DamageType).ApplyTo(MalachiteBalance.GetLeftClickBaseDamage() * MalachiteBalance.GetUltimateDamageMultiplier());
+            int holdoutDamage = Math.Max(1, (int)player.GetTotalDamage(Item.DamageType).ApplyTo(MalachiteBalance.GetLeftClickBaseDamage() * 0.1f));
+
+            Projectile.NewProjectile(
+                player.GetSource_ItemUse(Item),
+                player.Center,
+                direction,
+                finaleType,
+                finaleDamage,
+                Item.knockBack,
+                player.whoAmI,
+                holdoutDamage);
+
+            StartFinaleCooldown(player);
+            SoundEngine.PlaySound(SoundID.Item74 with { Volume = 0.95f, Pitch = -0.25f }, player.Center);
+        }
+
+        private static bool IsFinaleCoolingDown(Player player)
+        {
+            return player.Calamity().cooldowns.TryGetValue(MalachiteEXCooldown.ID, out var cooldown) &&
+                cooldown.timeLeft > 0;
+        }
+
+        private static void StartFinaleCooldown(Player player)
+        {
+            if (player.Calamity().cooldowns.TryGetValue(MalachiteEXCooldown.ID, out var cooldown))
+                cooldown.timeLeft = MalachiteEXCooldown.CooldownFrames;
+            else
+                player.AddCooldown(MalachiteEXCooldown.ID, MalachiteEXCooldown.CooldownFrames);
+        }
+
+        private static void HandleStealthAttackCost(MalachitePlayer malachitePlayer, CalamityPlayer calamity, bool rightClick)
+        {
+            if (rightClick && MalachiteBalance.RightClickConsumesNoStealth)
+            {
+                malachitePlayer.AdvanceFinaleCooldownFromStealthAttack();
+                return;
+            }
+
+            malachitePlayer.ConsumeHalfStealthAndRestore(calamity);
+        }
+
+        // Shared by the normal alt-use Shoot path and MalachitePlayer's left-hold input
+        // bridge, so both routes spend stealth, launch feathers, and grant follow-up buffs
+        // in exactly the same way.
+        internal static bool TryReleaseRightClickAttack(
+            Player player,
+            IEntitySource source,
+            Vector2 mouseWorld,
+            int damage,
+            float knockback,
+            bool stealthStrike)
+        {
+            if (!MalachiteBalance.RightClickUnlocked ||
+                MalachiteRightFeather.CountStoredRightFeathers(player) <= 0 ||
+                !MalachiteRightFeather.ReleaseStoredRightFeathers(player, source, mouseWorld, damage, knockback, stealthStrike))
+            {
+                return false;
+            }
+
+            MalachitePlayer malachitePlayer = player.GetModPlayer<MalachitePlayer>();
+            if (MalachiteBalance.RightClickMoveBoostUnlocked)
+                malachitePlayer.TriggerRightClickBoost();
+            if (MalachiteBalance.RightClickLeftHasteUnlocked)
+                malachitePlayer.TriggerLeftClickHaste();
+
+            if (stealthStrike)
+                HandleStealthAttackCost(malachitePlayer, player.Calamity(), rightClick: true);
+
+            SoundEngine.PlaySound(SoundID.Item92 with { Volume = 0.86f, Pitch = stealthStrike ? -0.08f : 0.18f }, player.Center);
+            SoundEngine.PlaySound(SoundID.Item71 with { Volume = 0.56f, Pitch = 0.35f }, player.Center);
+            return true;
+        }
+
+        private static void SpawnLeftClickScatterBurst(
+            Player player,
+            IEntitySource source,
+            Vector2 mouseWorld,
+            int damage,
+            float knockback)
+        {
+            int count = MalachiteBalance.LeftClickScatterKunaiPerWave;
+            for (int wave = 0; wave < MalachiteBalance.LeftClickScatterWaveCount; wave++)
+            {
+                MalachiteKunai.SpawnNormalLeftClickVolley(
+                    player,
+                    source,
+                    damage,
+                    knockback,
+                    mouseWorld,
+                    count,
+                    depletionBurst: false,
+                    launchDelayFrames: wave * 7);
+            }
+        }
+
+        private static Vector2 GetMouseWorld(Player player)
+        {
+            Vector2 mouseWorld = player.Calamity().mouseWorld;
+            return mouseWorld == Vector2.Zero ? Main.MouseWorld : mouseWorld;
+        }
+
+        private static void ClearStoredRightFeathers(Player player)
+        {
+            int type = ModContent.ProjectileType<MalachiteRightFeather>();
+            foreach (Projectile proj in Main.projectile)
+            {
+                if (proj.active &&
+                    proj.owner == player.whoAmI &&
+                    proj.type == type &&
+                    (int)proj.ai[0] == 0) // MalachiteRightFeatherState.Stored
+                {
+                    proj.Kill();
+                }
+            }
+        }
+    }
+}

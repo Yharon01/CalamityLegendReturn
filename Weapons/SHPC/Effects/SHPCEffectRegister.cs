@@ -1,0 +1,116 @@
+﻿// SHPCEffectLoader.cs
+using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.AshesofCala;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ascendant;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel;
+using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul;
+using Terraria.ModLoader;
+
+namespace CalamityLegendsReturn.Weapons.SHPC.Effects
+{
+    public class SHPCEffectRegister : ModSystem
+    {
+        public override void PostSetupContent()
+        {
+            RegisterAllEffects();  
+        }
+
+        private void RegisterAllEffects()
+        {
+            // 在这里注册所有弹药 → Effect
+
+            EffectRegistry.RegisterEffect(new EnergyCoreEffect()); // 钨钢能源核心
+            EffectRegistry.RegisterEffect(new PurifiedGelEffect()); // 纯净凝胶
+            EffectRegistry.RegisterEffect(new StormlionMandibleEffect()); // 风暴之颚
+            EffectRegistry.RegisterEffect(new SulphuricScaleEffect()); // 硫磺鳞片
+            // Kept implemented for future reuse, but intentionally not registered:
+            // it must not appear in the SHPC material list, encyclopedia, or effect logic.
+
+            EffectRegistry.RegisterEffect(new EssenceofHavocEffect()); // 混沌精华 5
+            EffectRegistry.RegisterEffect(new EssenceofSnowEffect()); // 冰川精华 6
+            EffectRegistry.RegisterEffect(new EssenceofSunlightEffect()); // 日光精华 7
+
+            EffectRegistry.RegisterEffect(new StarblightSootEffect()); // 泰坦之星 8
+
+
+            EffectRegistry.RegisterEffect(new SoulofLightEffect());   // 光明之魂 9
+            EffectRegistry.RegisterEffect(new SoulofNightEffect());   // 暗影之魂 10
+            EffectRegistry.RegisterEffect(new SoulofFlightEffect());  // 飞翔之魂 11
+
+            EffectRegistry.RegisterEffect(new BossSoulofFrightEffect()); // 恐惧之魂 12
+            EffectRegistry.RegisterEffect(new BossSoulofMightEffect());  // 力量之魂 13
+            EffectRegistry.RegisterEffect(new BossSoulofSightEffect());  // 视觉之魂 14
+
+
+            EffectRegistry.RegisterEffect(new LivingShardEffect()); // 生命碎片 15
+            //EffectRegistry.RegisterEffect(new EctoplasmEffect()); // 灵气 16
+            EffectRegistry.RegisterEffect(new DepthCellsEffect()); // 深渊细胞 17
+            EffectRegistry.RegisterEffect(new PlagueCellEffect()); // 瘟疫罐 18
+
+            // 19、20 为跳过的灾厄尘和甲虫外壳[这个大概率不会有了]
+            EffectRegistry.RegisterEffect(new AshesofCalamityEffect()); // 灾厄尘 19
+
+
+
+            EffectRegistry.RegisterEffect(new FragmentSolarEffect()); // 日耀碎片 21
+            EffectRegistry.RegisterEffect(new FragmentVortexEffect()); // 漩涡碎片 22
+            EffectRegistry.RegisterEffect(new FragmentNebulaEffect()); // 星云碎片 23
+            EffectRegistry.RegisterEffect(new FragmentStardustEffect()); // 星尘碎片 24
+            EffectRegistry.RegisterEffect(new FragmentEntropyEffect()); // 冥思溶剂 25
+
+
+            EffectRegistry.RegisterEffect(new UnholyEssenceEffect()); // 浊火精华 26
+            EffectRegistry.RegisterEffect(new NecroplasmEffect()); // 灵质 27
+
+            EffectRegistry.RegisterEffect(new DivineGeodeEffect()); // 神圣晶石 28
+            EffectRegistry.RegisterEffect(new BloodstoneCoreEffect()); // 血石核心 29
+            EffectRegistry.RegisterEffect(new RuinousSoulEffect()); // 毁灭之灵 30
+
+            EffectRegistry.RegisterEffect(new TwistingNetherEffect()); // 扭曲虚空 31
+            EffectRegistry.RegisterEffect(new DarkPlasmaEffect()); // 暗离子体 32
+            
+
+            EffectRegistry.RegisterEffect(new EndothermicEnergyEffect()); // 恒温能量 33
+            EffectRegistry.RegisterEffect(new NightmareFuelEffect()); // 梦魇魔能 34
+            EffectRegistry.RegisterEffect(new DarksunFragmentEffect()); // 日蚀之阴
+            EffectRegistry.RegisterEffect(new AscendantSpiritEffect()); // 化神魂晶 36
+            EffectRegistry.RegisterEffect(new YharonSoulFragmentEffect()); // 龙魂碎片 37
+            EffectRegistry.RegisterEffect(new ExoPrismEffect()); // 星流棱晶 38
+            EffectRegistry.RegisterEffect(new AshesofAnnEffect()); // 湮灭余烬 39
+
+
+
+            EffectRegistry.RegisterEffect(new ArmoredShellEffect()); // 装甲外壳，[补充] 40
+            EffectRegistry.RegisterEffect(new PearlShardEffect()); // 珍珠碎片 41
+            EffectRegistry.RegisterEffect(new CynosureEffect()); // 唯一材料 Cynosure 43
+            EffectRegistry.RegisterEffect(new CoreOfCalamityEffect()); // 灾劫核心 44
+
+            
+
+
+
+        }
+
+
+
+
+
+
+    }
+}

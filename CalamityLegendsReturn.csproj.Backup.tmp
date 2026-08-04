@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		
+	</PropertyGroup>
+	<ItemGroup>
+	  <Reference Include="CalamityMod">
+	    <HintPath>..\..\ModReader\CalamityMod\CalamityMod.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Sound\SHPC\" />
+	  <Folder Include="Sound\YC\" />
+	  <Folder Include="Weapons\BlossomFlux\BFUI\" />
+	  <Folder Include="Weapons\BlossomFlux\SpecialArrow\" />
+	  <Folder Include="Weapons\YharimsCrystal\Lazer\参考文献\" />
+	  <Folder Include="Weapons\YharimsCrystal\YCRight\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Remove="Weapons\BrinyBaron\CommonAttack\参考文献\**\*.cs" />
+	  <Compile Remove="Weapons\BlossomFlux\参考文献\**\*.cs" />
+	</ItemGroup>
+
+	<!-- References -->
+
+</Project>

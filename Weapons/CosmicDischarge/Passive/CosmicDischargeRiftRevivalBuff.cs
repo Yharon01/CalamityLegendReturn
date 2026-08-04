@@ -1,0 +1,26 @@
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+{
+    internal sealed class CosmicDischargeRiftRevivalBuff : ModBuff
+    {
+        public override string Texture => "CalamityLegendsReturn/Weapons/CosmicDischarge/CosmicDischarge";
+
+        public override void SetStaticDefaults()
+        {
+            Main.buffNoSave[Type] = true;
+            Main.debuff[Type] = false;
+        }
+
+        public override void Update(Player player, ref int buffIndex)
+        {
+            player.GetDamage(DamageClass.Generic) += 0.20f;
+            player.statDefense *= 1.20f;
+            player.moveSpeed += 0.20f;
+            Lighting.AddLight(player.Center, CosmicDischargeCommon.DoGSpecialColor.ToVector3() * 0.4f);
+        }
+    }
+}

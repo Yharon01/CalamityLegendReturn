@@ -1,0 +1,71 @@
+[h1]Calamity Legends Return [灾厄传奇][/h1]
+
+你，是否曾因为某把武器足够帅，但是碍于数值锁死，没能带着打到毕业而感到惋惜。
+你，是否曾因为某把武器数值不够，小头难以战胜兔头而感到烦恼。
+你，是否曾因为某把武器有种酷炫贴图却用着粒子特效，最后还被删除而无言。
+现在，你大抵是没这种烦恼了。
+这个模组将 灾厄MOD曾经的“传奇武器”理念复活了。随着时期成长的武器但是不是单纯的随流程修改伤害数字。
+
+我们希望传奇武器的玩法会逐步推进，新的阶段真的带来新的操作、机制和战斗节奏。
+因此我们将对每一把传奇武器进行重置、改造和可玩性开发。
+同时，该模组也不是单纯的复活传奇武器，在后续也会加入新的传奇武器，翻新机制较为古老的武器，如果产能足够，我们可能可以开发月后的探索内容。
+
+当前版本已完成的传奇武器：SHPC。
+模组里也会有一些重要的 QOL 内容。
+比如部分让人血压上来的物品补配方、一些流程体验调整。
+以及现在版本里的传奇补给包、复古游戏机包、高维矩阵核心、SHPP 平台、神镐、隔音耳罩和少量调试工具。
+
+整体观感会尽量贴合灾厄模组。
+特效、节奏和表现力会往灾厄本体的方向靠，目标是让东西看起来别太突兀
+最好像是本来就该在这个世界里。
+
+[h1]需要前置[/h1]
+Calamity Mod
+
+[h1]反馈与建议[/h1]
+反馈、报错、平衡建议都欢迎。
+如果哪里玩的不舒服，可以直接提出。这个模组还会继续长。
+如果您有意加入我们的制作组：可以加入Q“876728711”
+
+[h1]源码[/h1]
+[url=https://github.com/ZhouYouxun/CalamityLegendsReturn]点击以跳转[/url]
+
+--------------------------------------------------
+
+[h1]English Version[/h1]
+
+Have you ever loved a weapon's style, only to watch its hard-locked numbers fall off before graduation?
+Have you ever been bothered by a weapon whose stats were so modest that the little head stood no chance against the bunny head?
+Have you ever gone quiet because a weapon had a cool sprite, ran on particle effects, and then got deleted anyway?
+Well, you probably do not have to worry about that anymore.
+
+This mod revives Calamity Mod's old idea of "legendary weapons": weapons that grow across progression, without simply changing the damage number as the game moves on.
+
+We want legendary weapons to keep moving forward in how they play. New stages should bring real new inputs, mechanics, and combat rhythm.
+So we will reset, rebuild, and develop the playability of every legendary weapon.
+At the same time, this mod is not only about bringing old legendary weapons back. Later updates may add new legendary weapons, refresh older weapon mechanics, and, if production allows it, maybe even explore post-Moon Lord content.
+
+The currently completed legendary weapon is SHPC.
+The mod will also include some important QOL content.
+For example, extra recipes for items that raise your blood pressure, and some progression comfort changes.
+Current extras also include the Legendary Supply Box, retro game console pack, Hyperdimensional Matrix Core, SHPP platform, ShenGao pickaxe, Soundproof Earmuffs, and a few debug tools.
+
+The overall presentation will try to stay close to Calamity Mod.
+Effects, pacing, and visual style will lean toward Calamity itself. The goal is to keep new content from feeling too out of place,
+ideally as if it belonged in this world from the start.
+
+[h1]Requirements[/h1]
+Calamity Mod
+
+[h1]Credits[/h1]
+Lead Creator: 犽戎
+Code: 剃刀刃台风
+Sprites: 小小, 古圣金源, 混沌
+
+[h1]Feedback[/h1]
+Feedback, bug reports, and balance suggestions are welcome.
+If something feels uncomfortable to play, please say it directly. The mod is still growing.
+If you are interested in joining the development team, you can comment under the Steam Workshop page, or add me as a friend and send a private message directly.
+
+[h1]Source[/h1]
+[url=https://github.com/ZhouYouxun/CalamityLegendsReturn]Click to open[/url]

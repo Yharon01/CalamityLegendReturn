@@ -1,0 +1,34 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				NewLegendP90: {
+					DisplayName: 小传奇-P90
+					Tooltip: "[GFB]"
+					LeftClick: 左键以固定五十发弹匣全自动扫射目标
+					Conversion: 火枪子弹会转化成5.7×28毫米专用防卫弹
+					Reload: 特殊子弹装填十发即可供应五十发
+					Roll: 右键向后快速转移突进，前30帧免疫伤害，撞击敌人停下，冷却1.5秒
+					Dodge: 翻滚期间接触任意敌方弹幕即视为成功闪避
+					Empower: 成功闪避后子弹获得3秒黄金强化，造成1.2倍伤害
+					Modes: 近敌强化击退远敌为所有子弹追踪
+					MagazineStatus: 当前弹匣余量为{0}/{1}发并永远固定
+					LegendaryText:
+						'''
+						矩阵防卫体系收进一支短管冲锋枪，五十发弹匣只认射速，不认迟疑
+						翻滚撕开身位，震撼弹烙下电磁印记，每一发防卫弹都循着印记打向要害
+						'''
+				}
+			}
+		}
+
+		Projectiles: {
+			P90: {
+				NewLegendP90Holdout.DisplayName: 小传奇-P90
+				P90DefenseRound.DisplayName: 五点七防卫弹
+				P90RollHitbox.DisplayName: 翻滚冲击
+				P90CooldownBar.DisplayName: 翻滚冷却矩阵
+			}
+		}
+	}
+}

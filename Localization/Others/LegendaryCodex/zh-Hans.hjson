@@ -1,0 +1,66 @@
+﻿Mods: {
+	CalamityLegendsReturn: {
+		LegendaryCodex: {
+			SHPC: {
+				Tag: SYSTEM // SHPC
+				Body:
+					'''
+					发射SHPLB与SHPL
+					通过不同材料来强化SHPLB
+					消耗热量以释放SHPLB
+					'''
+			}
+
+			ProjectileOutline: {
+				Name: 敌方弹幕包边
+				Tag: VISUAL // ACCESSIBILITY
+				Body:
+					'''
+					默认关闭，可在客户端设置中开启
+					标准贴图敌方弹幕按当前帧主色包边
+					透明、隐藏及特殊自绘弹幕不会应用
+					'''
+			}
+
+			BlossomFlux: {
+				Tag: ???
+				Body:
+					'''
+					???
+					???
+					???
+					'''
+			}
+
+			BrinyBaron: {
+				Tag: ???
+				Body:
+					'''
+					???
+					???
+					???
+					'''
+			}
+
+			PristineFury: {
+				Tag: ???
+				Body:
+					'''
+					???
+					???
+					???
+					'''
+			}
+
+			Vesuvius: {
+				Tag: ???
+				Body:
+					'''
+					???
+					???
+					???
+					'''
+			}
+		}
+	}
+}

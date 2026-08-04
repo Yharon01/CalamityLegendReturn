@@ -1,0 +1,7 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Projectiles.A_Dev.ExtraBackpackPanel.DisplayName: 额外背包
+		// Keybinds.ExtraBackpack.DisplayName: Extra Backpack
+		TheSpecialText.ExtraBackpackTitle: 额外背包 [20x10]
+	}
+}

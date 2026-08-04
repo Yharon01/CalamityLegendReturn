@@ -1,0 +1,73 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				CallofDuty: {
+					DisplayName: 通情达理-责任的电话
+					Tooltip: "[GFB]"
+					Compact:
+						'''
+						[c/8FDFFF:左键【拨号】：连续三发按键脉冲（光标定位 → 信号包追踪 → 确认键接通）]
+						[c/8FDFFF:右键【重拨】：对最近接通的目标弹出 3x4 键盘轮廓，按键弹射爆破 (冷却 2.5 秒)]
+						[c/8FDFFF:左右键长按【快捷拨号】：蓄力半秒发射主信号，将目标设为优先通讯对象]
+						[c/6FA8FF:放在主背包中即可获得钨钢屏障等效护盾；佩戴钨钢屏障时每层护盾生命由 20 提高到 40]
+						[c/C2FF43:传奇技能（{0}）：都过来]
+						[c/C2FF43:先空投一台钨钢增幅器，落地后固定，0.5 秒后叫来另外 16 台钨钢机器人]
+						[c/C2FF43:大招与冷却均持续 60 秒；击败任意真实 Boss 会立即完成冷却]
+						'''
+					DetailsHint: "[c/97ADB8:按住 Shift 查看按键攻击与分队细节]"
+					Details:
+						'''
+						[c/8FDFFF:三段拨号：]第一发光标直线定位；第二发信号包弧线追踪；第三发确认键夹击并触发“接通脉冲”
+						[c/8FDFFF:目标重拨：]必须先由左键三连接通目标；右键在目标周围点亮 3 颗键帽并弹射击中爆发
+						[c/8FDFFF:快捷拨号：]蓄力期间略微减速，主信号命中后强化左键追踪，并使右键追加第 4 颗键帽弹射
+						[c/C2FF43:都过来：]1 台钨钢增幅器、6 台钨钢探测车、4 台钨钢回旋仪、4 台钨钢无人机、2 台钨钢气垫船
+						所有友军拥有钨钢绿色发光包边、独立生命，完整继承你的防御力，并能真正挡下可安全删除的敌方弹幕
+						钨钢增幅器空投后自由落体，落地即永远固定；990 像素场内玩家获得 20 防御，电话机器人获得 50% 生命、防御与攻击
+						'''
+					LegendaryText: “都过来。”
+				}
+			}
+		}
+
+		Cooldowns.CallofDuty_Ultimate: 都过来
+		UI.CallofDuty.Return: 回来
+
+		NPCs: {
+			ResponsibilityArmyAmplifier.DisplayName: 责任分队·钨钢增幅器
+			ResponsibilityArmyRover.DisplayName: 责任分队·钨钢探测车
+			ResponsibilityArmyGyrator.DisplayName: 责任分队·钨钢回旋仪
+			ResponsibilityArmyDrone.DisplayName: 责任分队·钨钢无人机
+			ResponsibilityArmyHovercraft.DisplayName: 责任分队·钨钢气垫船
+			Destroyer2041Body.DisplayName: 毁灭者2041车体
+			Destroyer2041Head.DisplayName: 毁灭者2041车头
+			Destroyer2041Tail.DisplayName: 毁灭者2041车尾
+			Prime2041.DisplayName: 机械毁灭者2041
+			Prime2041Cannon.DisplayName: 机械毁灭者2041重炮
+			Prime2041Laser.DisplayName: 机械毁灭者2041激光器
+			Prime2041Saw.DisplayName: 机械毁灭者2041电锯
+			Prime2041SecondHead.DisplayName: 机械毁灭者2041副头部
+			Prime2041Vice.DisplayName: 机械毁灭者2041机械钳
+			Twins2041Retinazer.DisplayName: 双子魔眼2041·激光眼
+			Twins2041Spazmatism.DisplayName: 双子魔眼2041·魔眼
+		}
+
+		Projectiles: {
+			CallofDutyHoldout.DisplayName: 使命召唤手持体
+			ResponsibilityCommunicationSequence.DisplayName: 钨钢通讯序列
+			ResponsibilityCommunicationToken.DisplayName: 钨钢通讯字符
+			ResponsibilityHatMarker.DisplayName: 钨钢帽子
+			ResponsibilityHatImpact.DisplayName: 强制扣帽
+			ResponsibilityStaticRing.DisplayName: 通讯干扰环
+			ResponsibilityUnitRamHitbox.DisplayName: 钨钢猛烈撞击
+			ResponsibilityDroneLaser.DisplayName: 钨钢定位激光
+			ResponsibilityHovercraftMissile.DisplayName: 钨钢延迟追踪导弹
+			ResponsibilityMissileExplosion.DisplayName: 钨钢导弹爆炸
+			ResponsibilityRoverScrap.DisplayName: 责任分队废料弹
+			ResponsibilityRoverFusionBolt.DisplayName: 责任分队融合弹
+			CallofDutyRedialKeyboard.DisplayName: 键盘重拨
+			CallofDutyRedialKeyCap.DisplayName: 按键帽
+			CallofDutyFastDialSignal.DisplayName: 快捷拨号主信号
+		}
+	}
+}

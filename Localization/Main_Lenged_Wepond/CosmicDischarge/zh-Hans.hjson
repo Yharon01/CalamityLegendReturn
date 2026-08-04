@@ -1,0 +1,129 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				Melee: {
+					CosmicDischarge: {
+						DisplayName: 寒宙弹刃
+						Tooltip: ""
+					}
+
+					DiseasedPike: {
+						// DisplayName: Diseased Pike
+						// Tooltip: ""
+					}
+				}
+
+				NewLegendCosmicDischarge: {
+					DisplayName: 星宇裁决-“神噬”裂宇弹刃
+					Tooltip: "[GFB]"
+					WhipName: 鞭形态
+					SwordName: 剑形态
+					ChainKnifeName: 链刃形态
+					UltimateActiveText: 神明裂隙展开!
+					CosmicDischargeLeft:
+						'''
+						[c/8DEBFF:左键：根据当前形态释放三连击，所有命中施加神灼业火与裂隙标记。]
+						[c/8DEBFF:鞭形态：中远距离三段鞭击；近战攻速提高12%，击退力提高15%。]
+						[c/8DEBFF:剑形态：近距离三段剑击；伤害提高12%，暴击率提高10%。]
+						[c/8DEBFF:链刃形态：中距离三段链刃攻击，终结段同时射出多枚链刃；移动速度提高12%，护甲穿透提高15点。]
+						'''
+					CosmicDischargeRight:
+						'''
+						[c/6FDFFF:右键：循环切换形态（鞭 → 剑 → 链刃）。]
+						[c/6FDFFF:第三段蓄力期间右键：发动速拔，20帧蓄力后攻击目标点并获得10点大招能量。]
+						'''
+					CosmicDischargeUltimate:
+						'''
+						[c/FFE85A:大招【维度压缩】：能量达到120后按] [[c/FFE85A:{0}]] [c/FFE85A:，蓄力60帧后造成大范围爆发。]
+						[c/FFE85A:随后获得10秒神明裂隙场：伤害减免35%，防御提高20，并周期性减速范围内敌怪与敌对弹幕。]
+						'''
+					CosmicDischargePassive:
+						'''
+						[c/B8F4FF:被动【裂隙封存】] [c/DCD6C8:手持时，单次伤害超过最大生命值20%的部分会被削减至上限。]
+						[c/DCD6C8:触发时获得5秒“裂隙复苏”（伤害、防御与移动速度提高20%），冷却60秒。]
+						'''
+					LegendaryHint: "[c/BABABA:按住Shift键以读取记录]"
+					LegendaryText:
+						'''
+						[c/8DEBFF:最初的裂宙弹刃更像一次被压缩的宇宙斩击：打开裂隙，将能量直接倾泻出去。]
+						[c/6FDFFF:这种爆发足够危险，却很难表现神明吞噬者那种分段、追咬与不断逼近的压迫感。]
+						[c/8DEBFF:重构后，裂隙不再只是弹幕的出口，而是每一种形态开始吞噬战场的起点。]
+						[c/6FDFFF:刀刃、裂口与虚空回响会依次接管攻击，把单次释放拆成多段推进的终结语言。]
+						[c/B8F4FF:当封印再次亮起，它不是在保证安全，只是在确认下一次吞噬仍然有目标可寻。]
+						'''
+				}
+			}
+		}
+
+		Buffs: {
+			CosmicDischargeWhipBuff: {
+				DisplayName: 鞭形态
+				Description: 攻击速度与击退力提高。
+			}
+
+			CosmicDischargeSwordBuff: {
+				DisplayName: 剑形态
+				Description: 暴击率与伤害提高。
+			}
+
+			CosmicDischargeChainKnifeBuff: {
+				DisplayName: 链刃形态
+				Description: 移动速度与穿甲能力提高。
+			}
+
+			CosmicDischargeRiftRevivalBuff: {
+				DisplayName: 裂隙复苏
+				Description: 神明裂隙打破极限，伤害、防御力与移动速度各提高20%。
+			}
+
+			CosmicDischargeUltimateGuardBuff: {
+				DisplayName: 神明裂隙场
+				Description: 受到的伤害降低，防御提高。
+			}
+
+			CosmicDischargeDoGMarkDebuff: {
+				DisplayName: 裂隙印记
+				Description: 被神明吞噬者裂隙标记，特定攻击会引爆印记。
+			}
+
+			CosmicDischargeDevourerAscensionBuff: {
+				DisplayName: 吞噬升格
+				Description: 伤害、机动、防御、伤害减免与近战攻速提高。
+			}
+
+			CosmicDischargeDevourerSliverBuff: {
+				DisplayName: 裂隙残辉
+				Description: 伤害与防御小幅提高。
+			}
+		}
+
+		Projectiles: {
+			CosmicDischargeRiftCrack.DisplayName: 神明裂隙
+
+			Melee: {
+				CosmicDischargeSwordWave.DisplayName: 裂隙剑气
+				CosmicDischargeDoGRiftBomb.DisplayName: 裂隙炸弹
+				CosmicDischargeDoGEnergyBolt.DisplayName: 神明光刃
+				CosmicDischargeDoGConvergenceExplosion.DisplayName: 段体裂隙爆破
+				CosmicDischargeSwitchPortal.DisplayName: 形态裂隙门
+				CosmicDischargeUltimateField.DisplayName: 神明裂隙场
+				CosmicDischargeChainKnife.DisplayName: 裂隙链刃
+				CosmicDischargeComboHoldout.DisplayName: 裂宙连击
+				CosmicDischargeRiftSplit.DisplayName: 裂隙分流
+				CosmicDischargeHookHead.DisplayName: 裂隙钩首
+				CosmicDischargeHookLimb.DisplayName: 裂隙钩肢
+				CosmicDischargeKillModeReady.DisplayName: 吞噬蓄势
+				CosmicDischargeKillModeSlash.DisplayName: 吞噬斩击
+				// DiseasedPikeProj.DisplayName: Diseased Pike Proj
+				// BrinyBaron_HeavySlash.DisplayName: Briny Baron_ Heavy Slash
+			}
+		}
+
+		Cooldowns: {
+			CosmicDischarge_Ultimate: 裂隙能量
+			CosmicDischarge_RiftSeal: 裂隙封存
+			CosmicDischarge_QuickDraw: 裂隙出鞘
+		}
+	}
+}

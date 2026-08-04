@@ -1,0 +1,55 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				NewDragoonDrizzlefish: {
+					DisplayName: 食髓知味-硫磺喷吐鱼
+					Tooltip:
+						'''
+						一条饿着肚子就不肯打架的小鱼炮
+						左键开火时若饿肚子，会自动吃掉背包前方第一件未收藏的有效食物并装填50发
+						<right>卖萌并点燃热情，10秒内提高5%伤害与5%移动速度
+						不同食物大类会把装填后的弹幕彻底改造成不同攻击
+						吃饱、饿了、打开心了都会可爱地叫一声
+						[c/9DA8B8:按住 Shift 查看食物大类效果]
+						'''
+					MealDetails:
+						'''
+						[c/FFE09A:喂食规则] 左键开火时如果弹夹为空，会自动消耗背包中从前往后的第一件有效可喂物，并装填50发弹夹。收藏物品会被跳过。
+						[c/FFBE5F:右键卖萌] 右键随机弹出颜文字并播放可爱音效，同时获得10秒热情火苗：提高5%伤害与5%移动速度。
+						[c/9DA8B8:只识别食物大类；被保护的非食物、鱼饵、武器/钩爪类鱼获和特殊排除项都不会被喂进去。]
+						[c/8FD8FF:凝胶] 基础鱼焰，保留原本飘动火球的节奏。
+						[c/FF7A42:肉类] 鱼焰明显变大，穿透次数和击退都大幅提高。
+						[c/74F074:水果] 快速连续喷射三枚细长的绿色追踪弹。
+						[c/55D2FF:鱼类] 射出高温水泡；碰到水后获得追踪和穿墙能力。
+						[c/BE78FF:酒类] 将攻击改成直线紫色激光，命中时爆出额外火花。
+						[c/FFE09A:大餐] 发射沉重的熟食彗弹，爆开后散出温热火焰。
+						[c/FF96EB:小零食] 发射糖果集束弹，空爆后炸出大量破片。
+						[c/FFFF78:金美味] 发射一枚金色追踪弹，伤害翻倍并产生小型爆炸。
+						[c/B6FF50:怪异蘑菇] 每次射击分裂成四枚诡异追踪孢子，每枚都是完整伤害。
+						[c/FF6A6A:饥饿] 弹夹打空后会拒绝开火，必须再次喂食。
+						'''
+				}
+			}
+		}
+
+		Projectiles: {
+			DragoonDrizzlefish: {
+				FoodDrizzlefishFireball.DisplayName: 宴火鱼焰
+				FoodDrizzlefishFire.DisplayName: 宴火大鱼焰
+				FoodDrizzlefishFireSplit.DisplayName: 宴火分裂焰
+				FoodDrizzlefishFruitNeedle.DisplayName: 果香细针
+				FoodDrizzlefishFishBubble.DisplayName: 沸腾水泡
+				FoodDrizzlefishBoozeLaser.DisplayName: 微醺激光
+				FoodDrizzlefishBoozeDroplet.DisplayName: 微醺酒滴
+				FoodDrizzlefishSnackRocket.DisplayName: 零食集束弹
+				FoodDrizzlefishSnackShard.DisplayName: 零食破片
+				FoodDrizzlefishGoldenSeeker.DisplayName: 金美味弹
+				FoodDrizzlefishOddSpore.DisplayName: 怪异孢子
+				FoodDrizzlefishFeastComet.DisplayName: 大餐彗弹
+				FoodDrizzlefishMealBurst.DisplayName: 宴火爆发
+				FoodDrizzlefishStatusBar.DisplayName: 美食细雨鱼状态条
+			}
+		}
+	}
+}

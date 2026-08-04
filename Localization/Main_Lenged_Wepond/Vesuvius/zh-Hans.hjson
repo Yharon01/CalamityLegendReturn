@@ -1,0 +1,103 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				NewVesuvius: {
+					DisplayName: 地动山摇-维苏维阿斯
+					Tooltip: "[GFB]"
+					LeftClick:
+						'''
+						[c/FF8A3D:左键：按住蓄积熔压，松手射出会在命中时爆发的火山弧光球。]
+						[c/FF8A3D:火山弧光球命中带有“火山灾祸”的敌人时，会沿原飞行方向喷出可伤敌的岩浆。]
+						'''
+					ChargeStage1: "[c/FF8A3D:当前解锁：第1层熔压，强化火球体积、伤害与爆发。]"
+					ChargeStage2: "[c/FF9F45:当前解锁：第2层熔压，火球开始追踪并撕开敌群。]"
+					ChargeStage3: "[c/FFE27E:当前解锁：第3层熔压，命中会引发更猛烈的连续喷发。]"
+					ChargeStage4: "[c/FFF4BE:当前解锁：第4层熔压，释放维苏维阿斯的完整热核。]"
+					RightClick:
+						'''
+						[c/FFB15C:右键：双手将法杖拖至身后短暂蓄力，完成后喷出造成250%伤害的超级火焰。]
+						[c/FFB15C:超级火焰施加17秒“火山灾祸”；90帧内下一次左键无需蓄力且更大更强，下一次右键改为召下熔岩陨石。]
+						'''
+					Passive:
+						'''
+						[c/CC9A6A:被动【移动火山】若魔力上限少于100则额外增加100；免疫火块、岩浆与燃烧。身边火山灰会施加“火山灾祸”。]
+						[c/D878FF:被动【灰烬之魂】维苏维阿斯击杀敌人或累计消耗400魔力会生成1枚魂火。]
+						[c/D878FF:魂火达到6枚后，下一次左键额外释放6颗围绕主火球飞行、伤害为40%的魂火。]
+						[c/FF7040:火山灾祸：受到的伤害×1.05，来自维苏维阿斯的伤害额外×1.2。]
+						'''
+					EXHint:
+						'''
+						[c/FFD86B:手持维苏维阿斯时会积蓄终极能量，最高60点。]
+						[c/FFD86B:大招【火山喷发】能量满后按] [[c/FFD86B:{0}]] [c/FFD86B:将法杖举过头顶并开始蓄力。]
+						[c/FFD86B:准备音效响起后，点击左键释放5秒的火山灰、岩浆、陨石、火焰弹和黑曜石碎片。]
+						'''
+					EXDisabledHint: "[c/9A9A9A:大招【火山喷发】当前大招未解锁。]"
+					Final: "[c/FFB15C:地壳崩裂、灰烬遮天、火山碎屑流横扫整个战场。]"
+					LegendaryHint: "[c/BABABA:按住 Shift 读取记录]"
+					LegendaryText:
+						'''
+						[c/FFB15C:最初的维苏维阿斯只是把火山理解成陨石：从天而降，砸碎目标，然后爆开。]
+						[c/FF8A3D:这种设计足够直接，却只表现了火山最表层的坠落，没有表现地层本身的灾变。]
+						[c/FFB15C:重构后，散落的喷出物被压缩成一颗热核；精准命中会把整场喷发打进目标体内。]
+						[c/D84BFF:右键把法杖拖到身后压住整座火山，随后以超级火焰撕开中距离战场。]
+						[c/FF4422:当最终爆发到来，落下的已经不是熔岩，而是整片地层替火山完成的一次宣告。]
+						'''
+				}
+			}
+		}
+
+		Buffs: {
+			VesuviusVolcanicCalamity: {
+				DisplayName: 火山灾祸
+				Description: 受到的伤害提高5%，维苏维阿斯造成的伤害额外提高20%
+			}
+		}
+
+		Projectiles: {
+			VesuviusEmberProj.DisplayName: 维苏维阿斯余烬
+
+			Vesuvius: {
+				VesuviusLeftHoldout.DisplayName: 维苏维阿斯
+				VesuviusArcOrb.DisplayName: 火山弧光球
+				VesuviusMagmaSpout.DisplayName: 喷发岩浆
+				VesuviusAshSoulVisual.DisplayName: 灰烬之魂
+				VesuviusAshSoulBolt.DisplayName: 灰烬魂火
+				VesuviusSuperFlameHoldout.DisplayName: 超级火焰蓄压
+				VesuviusSuperFlame.DisplayName: 超级火焰
+				VesuviusFollowupMeteor.DisplayName: 熔岩陨石
+				VesuviusFollowupMeteorBlast.DisplayName: 熔岩陨石爆发
+				VesuviusMoltenAsteroid.DisplayName: 熔融陨石
+				VesuviusVolcanicAsh.DisplayName: 火山灰
+				VesuviusVolcanicBomb.DisplayName: 火山弹
+				VesuviusLingeringLava.DisplayName: 残留熔岩
+				VesuviusMagmaPillar.DisplayName: 岩浆喷柱
+				VesuviusMagmaResidual.DisplayName: 岩浆残迹
+				VesuviusHomingCinder.DisplayName: 追踪火焰弹
+				VesuviusObsidianShard.DisplayName: 黑曜石碎片
+				VesuviusObsidianSlash.DisplayName: 黑曜石斩击
+				VesuviusObsidianBlast.DisplayName: 黑曜石爆破
+				VesuviusRightJavelinHoldout.DisplayName: 断层法杖手持体
+				VesuviusFaultJavelin.DisplayName: 断层法杖
+				VesuviusFaultCore.DisplayName: 活动断层核心
+				VesuviusFaultFireball.DisplayName: 火山火球
+				VesuviusPyroclasticFlow.DisplayName: 火山碎屑流
+				VesuviusSubductionZone.DisplayName: 俯冲带
+				VesuviusAshFall.DisplayName: 火山灰
+				VesuviusEXWeapon.DisplayName: 火山喷发
+				VesuviusVolcanicGasCloud.DisplayName: 火山气云
+				VesuviusThermalCore.DisplayName: 维苏维阿斯热核
+				VesuviusThermalCoreBlast.DisplayName: 维苏维阿斯热核破裂
+				VesuviusRightGravityFlame.DisplayName: 地心重力焰
+				VesuviusRightJavelinVent.DisplayName: 断层法杖排气
+				VesuviusRightMeteorExplosion.DisplayName: 回归流星爆裂
+				VesuviusRightReturningMeteor.DisplayName: 回归熔融流星
+				VesuviusRightRisingSpark.DisplayName: 断层升腾火星
+			}
+
+			PurifiedGel_BallExplosion.DisplayName: 净化凝胶球爆裂
+		}
+
+		Cooldowns.Vesuvius_EX: 火山喷发
+	}
+}

@@ -1,0 +1,69 @@
+using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityMod.Items.Materials;
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ModLoader;
+
+namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel
+{
+    internal class NightmareFuelEffect : DefaultEffect
+    {
+        public override int EffectID => 35;
+        public override int AmmoType => ModContent.ItemType<NightmareFuel>();
+
+        public override Color ThemeColor => new Color(72, 18, 120);
+        public override Color StartColor => new Color(145, 58, 225);
+        public override Color EndColor => new Color(18, 4, 38);
+
+        public override float SquishyLightParticleFactor => 0f;
+        public override float ExplosionPulseFactor => 0f;
+        public override bool PlayDefaultLeftClickFireSound => false;
+
+        public override void OnSpawn(Projectile projectile, Player owner)
+        {
+            projectile.GetGlobalProjectile<NightmareFuel_GP>().firstFrame = true;
+        }
+
+        public override void AI(Projectile projectile, Player owner)
+        {
+            NightmareFuel_GP gp = projectile.GetGlobalProjectile<NightmareFuel_GP>();
+            if (!gp.firstFrame)
+                return;
+
+            gp.firstFrame = false;
+            projectile.Kill();
+        }
+
+        public override void OnKill(Projectile projectile, Player owner, int timeLeft)
+        {
+            Vector2 baseVelocity = projectile.velocity.SafeNormalize(Vector2.UnitX) * 12f;
+            Projectile.NewProjectile(
+                projectile.GetSource_FromThis(),
+                projectile.Center,
+                baseVelocity,
+                ModContent.ProjectileType<NightmareFuel_ARC>(),
+                (int)(projectile.damage * 0.93),
+                projectile.knockBack,
+                owner.whoAmI,
+                projectile.ai[0],
+                0f
+            );
+        }
+
+        public override void ModifyHitNPC(Projectile projectile, Player owner, NPC target, ref NPC.HitModifiers modifiers)
+        {
+        }
+
+        public override void OnHitNPC(Projectile projectile, Player owner, NPC target, NPC.HitInfo hit, int damageDone)
+        {
+        }
+    }
+
+    public class NightmareFuel_GP : GlobalProjectile
+    {
+        public string LocalizationCategory => "Projectiles.SHPC";
+        public override bool InstancePerEntity => true;
+
+        public bool firstFrame;
+    }
+}

@@ -1,0 +1,79 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				Summon: {
+					GlacialEmbrace: {
+						ModeName0: 斩击形态
+						ModeName1: 突刺形态
+						ModeName2: 打击形态
+						GE_Intro:
+							'''
+							[c/7BC8E5:当前战斗形态：{0}，每五秒自动循环切换到下一形态]
+							[c/A0D8EF:左键先召冰核，再召冰钉；满仆从后长按蓄力特攻，释放后15帧冷却]
+							'''
+						GE_LeftClick:
+							'''
+							[c/90FFB0:斩击形态：冰钉分内外双环旋斩，并周期性飞出切穿目标]
+							[c/80EFFF:突刺形态：冰钉更快射出，命中敌人后嵌入体内]
+							[c/FF8B60:打击形态：冰钉平时会主动冲撞；对齐后左键合拢撞击并休眠]
+							'''
+						GE_SpikeMode0: ""
+						GE_SpikeMode1: ""
+						GE_SpikeMode2: ""
+						GE_SpecialIntro: "[c/A0D8EF:蓄力特攻变为冰刀、冰楔或冰柱；非完美释放仅10%起，线性提升到100%]"
+						GE_SpecialMode0: ""
+						GE_SpecialMode1: ""
+						GE_SpecialMode2: ""
+						GE_PassiveRhythm: "[c/B0E0FF:◇ 裂隙封存：右键开启节奏条，绿区松开叠连击；鞭击命中会命令冰钉协同突袭]"
+						GE_PassiveCombo: "[c/B0E0FF:当前连击{0}层：每秒持续回复+{1}且防御+{2}，十层后冰钉加速]"
+						GE_PassiveDivinity: ""
+						GE_PassiveAurora: ""
+						GE_PassiveSeal:
+							'''
+							[c/00C8FF:◇ 极地三相封印：冰刺命中积累印记（裂痕6秒/穿刺8秒/重创10秒，各最多3层）]
+							[c/00C8FF:  三相集齐 → SEALED：3秒后极寒爆发(3×伤害)，爆发扩散至附近敌人最多连锁3层]
+							[c/00C8FF:  冰川神性激活时：爆发伤害×1.5且留下余辉残区；QTE完美可提前引爆]
+							'''
+						GE_PassiveSealInfo: "[c/FFE050:  当前封印敌人：{0}个  共鸣余波（+15%伤害/+8防御）：{1}]"
+						GE_Ultimate:
+							'''
+							[c/A0F0FF:★ 大招 — 维度压缩 (满{1}/240后按{0}释放)]
+							[c/A0F0FF:特殊攻击和冰钉命中都会充能，释放时所有冰钉会聚成神钻向前贯穿，在此期间玩家处于无敌状态]
+							'''
+						LegendaryHint: "[c/BABABA:按住 Shift 键即可阅读冰霜之拥的完整传奇文本与背景]"
+						LegendaryText:
+							'''
+							[c/B0D8FF:最初的冰霜之拥更接近一枚被唤醒的冰核，用冰钉与寒刃回应持有者的动作。]
+							[c/B0D8FF:这种设计已经有形态感，却容易让斩击、突刺与打击彼此分散，像三套互不相干的招式。]
+							[c/80C8FF:重构后，所有形态都被并入同一场冰阵：挥斩铺开寒刃，突刺钉穿目标，打击压合冰架。]
+							[c/A0B0FF:稳定连击会加快冰钉运转，并把回复、护甲与短暂极光护身接进节奏之中。]
+							[c/E0C0FF:当极冰能量被完全推满，冰阵会收束成三层神钻，把此前的轮换一次性贯穿出去。]
+							'''
+					}
+				}
+			}
+		}
+
+		Projectiles: {
+			IceBlockMinion.DisplayName: 极寒冰核
+			IceSpikeMinion.DisplayName: 樊寒冰钉
+			GlacialEmbraceChargeHoldout.DisplayName: 冰霜蓄力
+			IceBladeProj.DisplayName: 极寒裂空斩刃
+			IceWedgeProj.DisplayName: 冰楔穿甲
+			IcePillarProj.DisplayName: 冰岩重崩柱
+			GlacialDrillProj.DisplayName: 维度压缩
+			FrostSealDetonation.DisplayName: 极寒三相爆发
+			FrostSealAfterglow.DisplayName: 极寒封印余辉
+		}
+
+		Buffs: {
+			GlacialEmbraceBuff: {
+				DisplayName: 冰霜之拥
+				Description: 远古冰川盘绕在你的身侧，赋予你极寒之拥的守护。
+			}
+		}
+
+		Cooldowns.GlacialEmbrace_Ultimate: 维度压缩
+	}
+}

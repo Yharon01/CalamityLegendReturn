@@ -1,0 +1,9 @@
+/.agents/
+/.claude/
+/.codex-docx-qa/
+/.codex-tools/
+/.codex_tmp/
+/.vs/
+/bin/
+/memory/
+/obj/

@@ -1,0 +1,32 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Buffs: {
+			ZhuangFangYiPetBuff: {
+				DisplayName: 宜
+				Description: 庄方宜会为你而战。看起来呆呆傻傻的……
+			}
+
+			YharonSoulFragment_Buff: {
+				// DisplayName: Yharon Soul Fragment_ Buff
+				// Description: Mods.CalamityLegendsReturn.Buffs.YharonSoulFragment_Buff.Description
+			}
+
+			SHPCRight_DeBuff: {
+				// DisplayName: S H P C Right_ De Buff
+				// Description: Mods.CalamityLegendsReturn.Buffs.SHPCRight_DeBuff.Description
+			}
+		}
+
+		Projectiles: {
+			AzureThunder: {
+				ZhuangFangYiPetProjectile.DisplayName: 庄方宜
+				// AzureThunderCannonStrike.DisplayName: Azure Thunder Cannon Strike
+			}
+
+			// BFPlagueBoom.DisplayName: B F Plague Boom
+			// BFPlagueSporeBomb.DisplayName: B F Plague Spore Bomb
+			// BrinyBaron_BubbleShield.DisplayName: Briny Baron_ Bubble Shield
+			// BrinyBaron.BaronHelixBubble.DisplayName: Baron Helix Bubble
+		}
+	}
+}

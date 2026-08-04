@@ -1,0 +1,57 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				NewLegendAntiMaterielRifle: {
+					DisplayName: 势如破竹-反器材狙击步枪
+					Tooltip: "[GFB]"
+					LeftClick: 发射极具破坏力的.408口径狙击弹
+					RightClick: 右键扩大视野，并进入沉浸式狙击模式；满蓄力时获得持续0.5秒的绝命一击
+					CurrentStage: 当前战绩：{0}
+					InventoryToggle: 可自行在背包中右键开关视角变化功能
+					ZoomState: 视野拉远：{0}
+					ZoomEnabled: 开启
+					ZoomDisabled: 关闭
+					Stage0: ""
+					Stage1: 击中敌人时造成死亡标记，并且无视对方60%的防御
+					Stage2: 制造额外金属碎屑伤害敌人
+					Stage3: 锁定敌怪边缘生成准心，主子弹击中准心造成1.25倍伤害并触发涡旋爆发
+					Stage4: ""
+					Stage5: ""
+					Stage6: 超过100%的暴击率将转化为额外暴击伤害倍率
+					Stage7: 普通与瞄准射击命中时召唤额外子弹二次攻击
+					Stage8: 弑神之铳！.408子弹可秒杀普通小怪
+					Stage9:
+						'''
+						统御万械！配备嘉登科技玛瑙爆炸弹夹，标记弹粘附目标或物块
+						引爆弹触发200%攻击力的玛瑙爆炸
+						'''
+					LegendaryText: 惨绝人寰，片甲不留
+				}
+			}
+		}
+
+		Projectiles: {
+			AntiMaterielRifle: {
+				AMRHoldout.DisplayName: 反器材狙击步枪
+				AMRAimScope.DisplayName: 反器材瞄准线
+				AMRRound.DisplayName: .408反器材弹
+				AMROnyxDetonation.DisplayName: 黑玛瑙引爆
+				AMRSlideExplosion.DisplayName: 反器材滑步爆炸
+				AMRMetalJetShard.DisplayName: 金属射流碎片
+				AMRSubBullet.DisplayName: 反器材夹击子弹
+				AMROnyxTileMarker.DisplayName: 玛瑙钉附弹
+				AMRCooldownStatusBar.DisplayName: 反器材滑步冷却条
+				AMRBullseye.DisplayName: 反器材战术准心
+				AMRBeamRound.DisplayName: 反器材步枪光束弹
+			}
+		}
+
+		Buffs: {
+			AMRDeadlyStrikeBuff: {
+				DisplayName: 绝命一击
+				Description: 下一次远程攻击暴击时造成双倍伤害
+			}
+		}
+	}
+}

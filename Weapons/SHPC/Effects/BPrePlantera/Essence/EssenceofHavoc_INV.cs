@@ -1,0 +1,39 @@
+using Microsoft.Xna.Framework;
+using System;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
+{
+    internal class EssenceofHavoc_INV : ModProjectile, ILocalizedModType
+    {
+        public new string LocalizationCategory => "Projectiles.SHPC";
+        public override string Texture => "CalamityMod/Projectiles/InvisibleProj";
+
+        public override void SetDefaults()
+        {
+            Projectile.width = 3;
+            Projectile.height = 3;
+            Projectile.friendly = true;
+            Projectile.ignoreWater = false;
+            Projectile.tileCollide = false;
+            Projectile.penetrate = 6;
+            Projectile.timeLeft = 90;
+            Projectile.extraUpdates = 3;
+            Projectile.DamageType = DamageClass.Magic;
+            Projectile.usesLocalNPCImmunity = true;
+            Projectile.localNPCHitCooldown = 15;
+        }
+        public override bool PreDraw(ref Color lightColor)
+        {
+            return false;
+        }
+
+        public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
+        {
+            // 鍐板喕鏁堟灉锛堝己鍖栨帶鍒讹級
+            target.AddBuff(BuffID.OnFire3, 180);
+        }
+    }
+}

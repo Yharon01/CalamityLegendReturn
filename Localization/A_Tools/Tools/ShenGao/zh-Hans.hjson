@@ -1,0 +1,12 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Weapons: {
+				ShenGao: {
+					DisplayName: 神镐
+					Tooltip: 会随游戏进度推进而提升性能的镐
+				}
+			}
+		}
+	}
+}

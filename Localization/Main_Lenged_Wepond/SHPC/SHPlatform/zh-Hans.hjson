@@ -1,0 +1,12 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Placeables: {
+				SHPPPlatform: {
+					DisplayName: SHPP
+					Tooltip: 一个可以无限放置的高科技平台
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+using CalamityLegendsReturn.Accssory.BF.Common;
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace CalamityLegendsReturn.Accssory.BF.General
+{
+    // 主宰箭袋
+    public sealed class BFDominationQuiver : ModItem
+    {
+        public override string Texture => "CalamityLegendsReturn/Accssory/BF/General/BFDominationQuiver";
+
+        public override void SetDefaults()
+        {
+            Item.width = 32;
+            Item.height = 32;
+            Item.accessory = true;
+            Item.value = Item.sellPrice(gold: 20);
+            Item.rare = ItemRarityID.Red;
+        }
+
+        public override void UpdateAccessory(Player player, bool hideVisual)
+        {
+            player.GetDamage(DamageClass.Ranged) += 0.18f;
+            player.GetCritChance(DamageClass.Ranged) += 8f;
+            player.GetModPlayer<BFAccessoryPlayer>().EquipQuiver(4);
+        }
+
+        public override void AddRecipes()
+        {
+            CreateRecipe()
+                .AddIngredient<BFResonatingQuiver>()
+                .AddIngredient<CalamityMod.Items.Materials.ReaperTooth>(10)
+                .AddIngredient<CalamityMod.Items.Materials.RuinousSoul>(10)
+                .AddTile(TileID.LunarCraftingStation)
+                .Register();
+        }
+    }
+}
