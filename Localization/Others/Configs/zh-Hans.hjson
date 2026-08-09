@@ -1,0 +1,79 @@
+Mods: {
+	CalamityLegendsComeBack: {
+		Configs: {
+			CalamityLegendsComeBackConfig: {
+				DisplayName: 传奇归来设置
+				Headers.RecipeSettings: 改进体验
+
+				AllowMassMaterialRecipes: {
+					Label: "[i:CrystalBall] 允许大量材料可制作"
+					Tooltip: 让许多游戏内的原材料可以快速制作
+				}
+
+				AllowBossRelicWeaponRecipes: {
+					Label: "[i:CalamityMod/ProvidenceRelic] 允许Boss遗物兑换武器"
+					Tooltip: 能够让大师或复仇模式的圣物直接兑换武器
+				}
+
+				AllowOtherRecipes: {
+					Label: "[i:Toolbox] 允许额外QOL配方"
+					Tooltip: 启用大量改善流程体验的配方
+				}
+
+				AllowBossSummonShop: {
+					Label: "[i:GuideVoodooDoll] 允许动物学家出售Boss召唤物"
+					Tooltip: 动物学家会在对应进度出售Boss召唤物；少数会反向产出首杀材料的配方将被暂时禁用。
+				}
+
+				AllowMechanicDraedonShop: {
+					Label: "[i:CalamityMod/CodebreakerBase] 允许机械师出售嘉登设备"
+					Tooltip: 机械师会在对应进度出售德拉顿能量电池与破译器的各级改造部件；加密图纸依然需要自行取得。
+				}
+
+				LightningDecryption: {
+					Label: "[i:CalamityMod/CodebreakerBase] 快速破译与充能"
+					Tooltip: 破译器中的加密图纸与充能器中的实验室定位球均会在一秒内完成 同时保留原本的电池消耗
+				}
+			}
+
+			CLCBClientConfig: {
+				DisplayName: 传奇归来客户端设置
+
+				Headers: {
+					Interface: 界面
+					Readability: 可读性
+				}
+
+				ShowMatrixBossBar: {
+					Label: "[i:CalamityMod/DraedonsHeart] 自定义血条显示"
+					Tooltip: 在屏幕顶端显示一种新的自定义血条
+				}
+
+				LockAmmoWheelToScreenCenter: {
+					Label: "[i:CalamityMod/PlasmaDriveCore] 固定SHPC弹药轮盘"
+					Tooltip: 开启后，按住传奇武器形态切换键时的弹药轮盘将固定在屏幕中心。
+				}
+
+				ShowModListIconShine: {
+					Label: "[i:GoldenCandelabra] 图标发光效果"
+					Tooltip: 在 Mods 列表中为本模组图标显示斜向扫光效果。
+				}
+
+				ShowInternalEnglishNames: {
+					Label: "[i:Book] 显示内部英文名"
+					Tooltip: 默认开启 查看物品时会一起看到其内部名 英文游戏语言下不会生效
+				}
+
+				ShowHostileProjectileOutlines: {
+					Label: "[i:RainbowGun] 显示敌方弹幕包边"
+					Tooltip: 更好的看清楚敌人的弹幕边框
+				}
+
+				HostileProjectileOutlineWidth: {
+					Label: "[i:RainbowGun] 敌方弹幕包边宽度"
+					Tooltip: 1至4档分别对应1至4像素宽度；仅在“显示敌方弹幕包边”开启时生效。
+				}
+			}
+		}
+	}
+}
