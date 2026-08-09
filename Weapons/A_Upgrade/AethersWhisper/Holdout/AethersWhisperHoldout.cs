@@ -38,6 +38,10 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
         private int roundTick;
         private int scattersFiredThisRound;
         private int rightFlashTimer;
+        private bool previousLeftHeld;
+        private bool previousRightHeld;
+        private int leftAttackIndex;
+        private int rightChargeTicks;
 
         // 星芒相位（每次开火推进，让核心像会转动的能量星）
         private float starPhaseKick;
@@ -98,16 +102,20 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
             {
                 // 右键优先：中断左键蓄力（不发射），执行二连散射。
                 if (IsCharging) CancelLeftCharge();
-                RunRightSweep();
+                rightChargeTicks++;
+                previousLeftHeld = false;
+                previousRightHeld = true;
                 return;
             }
 
-            ResetRightRound();
+            if (previousRightHeld)
+                ReleaseRightCharge(rightChargeTicks);
+            rightChargeTicks = 0;
+            previousRightHeld = false;
 
-            if (leftHeld)
-                AdvanceLeftCharge();
-            else if (IsCharging)
-                ReleaseLeftCharge();
+            if (leftHeld && !previousLeftHeld)
+                FireNextLeftAttack();
+            previousLeftHeld = leftHeld;
         }
 
         private bool CanUseWorldInput()

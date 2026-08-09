@@ -19,6 +19,12 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper
         public const float KnockBack = 5.5f;
         /// <summary>左键实际发射时扣除的魔力（未达最小蓄力松开不扣）。</summary>
         public const int LeftManaCost = 30;
+        // 传说成长版：所有攻击共享同一份明确的数值中枢。
+        public const float LeftAttackSpeed = 24f;
+        public const float FinalRecoil = 8f;
+        public const int RightChargeTicks = 36;
+        public const int RightManaCost = 45;
+        public const float RightOrbDamageMultiplier = 0.65f;
 
         // =====================================================================
         // 左键：蓄力（第 3.1 / 3.2 节）

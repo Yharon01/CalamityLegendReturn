@@ -6,11 +6,6 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper
     /// <summary>
     /// 以太之低语传奇成长/解锁中枢：按 Boss 进程决定「解锁了哪些攻击、哪些成长效果」。
     /// 所有解锁点集中在这里，武器各处只读这里的布尔/计数，方便统一调平衡。
-    ///
-    /// ⚠ 两个 Boss 映射尚未确认（本项目可能有自定义 downed 标记）：
-    ///   · 白金星舰 → 暂映射 Exo 机械（ScaleSpray）
-    ///   · 星神游龙 → 暂映射 卡萌龙 Yharon（FlightBoostBig）
-    /// 若这两个是本 mod 的自定义 Boss，请告知对应的 downed 字段，我改这两行即可。
     /// </summary>
     internal static class AethersWhisperProgression
     {
@@ -42,10 +37,10 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper
         public static bool PassiveIdleCannonLaser => NPC.downedBoss3;
 
         // ===== 后期成长 =====
-        /// <summary>白金星舰：最终射击后坐期，浮游炮持续发射密集鳞片弹（⚠待确认 Boss 映射）。</summary>
-        public static bool ScaleSprayOnFinal => DownedBossSystem.downedExoMechs;
-        /// <summary>星神游龙：手持时飞行时间 ×1.5（⚠待确认 Boss 映射）。</summary>
-        public static bool FlightTimeBoost => DownedBossSystem.downedYharon;
+        /// <summary>白金星舰（Astrum Aureus）：最终射击后坐期，浮游炮持续发射密集鳞片弹。</summary>
+        public static bool ScaleSprayOnFinal => DownedBossSystem.downedAstrumAureus;
+        /// <summary>星神游龙（Astrum Deus）：手持时飞行时间 ×1.5。</summary>
+        public static bool FlightTimeBoost => DownedBossSystem.downedAstrumDeus;
         /// <summary>西格纳斯：右键能量弹互不干涉，每炮各发一组（倍率减半）。</summary>
         public static bool IndependentEnergyBalls => DownedBossSystem.downedSignus;
         /// <summary>神吞：最终射击 / 右键激光升级为「终焉裂隙」（更大、倍率略高）。</summary>
