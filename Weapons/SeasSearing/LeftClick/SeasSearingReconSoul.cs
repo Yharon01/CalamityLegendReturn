@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     internal sealed class SeasSearingReconSoul : ModProjectile, ILocalizedModType
     {
@@ -330,7 +330,7 @@ namespace CalamityLegendsReturn.Weapons.SeasSearing
             if (fade < 0.01f)
                 return;
 
-            Texture2D optic = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/muzzle_02").Value;
+            Texture2D optic = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/muzzle_02").Value;
             Vector2 side = forward.RotatedBy(MathHelper.PiOver2);
             DrawOneScoutWing(optic, center, forward, side, 1f, fade);
             DrawOneScoutWing(optic, center, forward, -side, -1f, fade);

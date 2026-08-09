@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC
 {
     internal class ArmoredShell_Lightning : ModProjectile, ILocalizedModType
     {

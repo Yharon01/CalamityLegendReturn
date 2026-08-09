@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.AegisBlade.EXSkill;
-using CalamityLegendsReturn.Weapons.AegisBlade.Projectiles;
+using CalamityLegendReturn.Weapons.AegisBlade.EXSkill;
+using CalamityLegendReturn.Weapons.AegisBlade.Projectiles;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade
+namespace CalamityLegendReturn.Weapons.AegisBlade
 {
     public class AegisBlade : ModItem, ILocalizedModType
     {

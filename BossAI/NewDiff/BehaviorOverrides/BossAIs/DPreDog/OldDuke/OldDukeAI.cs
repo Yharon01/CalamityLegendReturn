@@ -1,8 +1,8 @@
 using System;
 using System.IO;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.OldDuke
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.OldDuke
 {
     // 硫海遗爵 — 引擎高频过载的暴虐飞兽. 设计文档: 大计划/O 硫海遗爵/硫海遗爵_重置版设计文档.md
     // 移动哲学(分寸感): 这是一头靠"冲刺动能"说话的鲨鲸 — 平时以10-12px/f绕玩家盘旋(猛禽巡猎),

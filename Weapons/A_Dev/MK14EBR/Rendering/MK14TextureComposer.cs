@@ -2,11 +2,11 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal static class MK14TextureComposer
     {
-        public const string Root = "CalamityLegendsReturn/Weapons/A_Dev/MK14EBR/Pic/";
+        public const string Root = "CalamityLegendReturn/Weapons/A_Dev/MK14EBR/Pic/";
         public const string BodyPath = Root + "m14枪身";
 
         public static string BarrelPath(MK14Barrel barrel, MK14Muzzle muzzle)

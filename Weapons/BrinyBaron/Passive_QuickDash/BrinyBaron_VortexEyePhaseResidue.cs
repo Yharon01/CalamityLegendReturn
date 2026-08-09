@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash
 {
     // The Xyk death animation's language translated into Briny Baron's sea-blue palette:
     // a short afterimage collapse, radial energy sparks, then a compact blue phase burst.

@@ -9,7 +9,7 @@ using Terraria.ModLoader;
 using CalamityMod;
 using CalamityMod.Particles;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.HeavyAT
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.HeavyAT
 {
     /// <summary>
     /// 回退复原的经典回旋打击（360度正圆圆盘自转 + VFX刀盘 + 纯净水流粒子）。
@@ -18,7 +18,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.HeavyAT
     public class BrinyBaron_HeavySlash : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Melee";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
 
         public Player Owner => Main.player[Projectile.owner];
 
@@ -116,8 +116,8 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.HeavyAT
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest").Value;
-            Texture2D swoosh = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/BrinyBaron/CommonAttack/BBSwing_Wave_Effect").Value;
+            Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest").Value;
+            Texture2D swoosh = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/BrinyBaron/CommonAttack/BBSwing_Wave_Effect").Value;
 
             Vector2 drawPos = Projectile.Center - Main.screenPosition;
             Vector2 origin = texture.Size() * 0.5f;

@@ -1,4 +1,4 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using System;
@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera
 {
     internal class SoulofNightEffect : DefaultEffect
     {

@@ -8,11 +8,11 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
+namespace CalamityLegendReturn.Weapons.A_Dev.PeaShooter
 {
     public class NewLegendPeaShooter : ModItem, ILocalizedModType
     {
-        public const string TextureAssetPath = "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/豌豆炮";
+        public const string TextureAssetPath = "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/豌豆炮";
 
         private static int HoldoutType => ModContent.ProjectileType<PeaShooterHoldout>();
         private static int AccessoryHoldoutType => ModContent.ProjectileType<PeaShooterASSHold>();

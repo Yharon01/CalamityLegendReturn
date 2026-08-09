@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     // Cosmic Discharge's compact DoG rift crack. It keeps the original 25-segment recursion,
     // while reducing both segment reach and width to 30% of the Calamity version.

@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // A physical glob of fluorescent waste. The projectile is invisible; sparks and liquid
     // particles form its body, copying the lively, granular silhouette of Slagfire.

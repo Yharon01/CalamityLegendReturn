@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     internal sealed class AzureThunderHarmonyImpactMark : ModProjectile, ILocalizedModType
     {
@@ -407,7 +407,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
 
         private void DrawMagicCircles(float opacity)
         {
-            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_04").Value;
+            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_04").Value;
             Vector2 drawPosition = impactPosition - Main.screenPosition;
             float pulse = 1f + (float)Math.Sin(Main.GlobalTimeWrappedHourly * 6f) * 0.06f;
             float explosionScale = exploding ? MathHelper.Lerp(1.35f, 2.35f, Utils.GetLerpValue(0f, 22f, timer, true)) : 1.15f;

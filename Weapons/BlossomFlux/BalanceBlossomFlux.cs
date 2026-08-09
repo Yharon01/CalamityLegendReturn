@@ -1,8 +1,8 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     public class BalanceBlossomFlux
     {

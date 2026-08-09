@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.TideValue
+namespace CalamityLegendReturn.Weapons.BrinyBaron.TideValue
 {
     internal class BBTideValueCooldown : CooldownHandler
     {
@@ -27,11 +27,11 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.TideValue
             instance.player.HeldItem.type == ModContent.ItemType<NewLegendBrinyBaron>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.BrinyBaron_Tide");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.BrinyBaron_Tide");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/TideValue/BBTideValueCooldown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/BrinyBaron/TideValue/BBTideValueCooldownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/BrinyBaron/TideValue/BBTideValueCooldownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/TideValue/BBTideValueCooldown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/BrinyBaron/TideValue/BBTideValueCooldownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/BrinyBaron/TideValue/BBTideValueCooldownOverlay";
 
         public override Color OutlineColor => Color.DarkSlateGray;
 

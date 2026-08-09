@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     internal class RuinousSoul_GhastlyES : ModProjectile, ILocalizedModType
     {

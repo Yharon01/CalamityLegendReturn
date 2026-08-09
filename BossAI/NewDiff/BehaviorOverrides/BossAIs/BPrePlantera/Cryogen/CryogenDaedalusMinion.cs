@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.Cryogen
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.Cryogen
 {
     public class CryogenDaedalusMinion : ModNPC
     {

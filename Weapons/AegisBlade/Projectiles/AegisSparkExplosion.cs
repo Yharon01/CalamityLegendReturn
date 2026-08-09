@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     /// <summary>
     /// 左键命中时在敌人身上炸开的圣火爆点。

@@ -1,7 +1,7 @@
 Mods: {
-	CalamityLegendsReturn: {
+	CalamityLegendReturn: {
 		Configs: {
-			CalamityLegendsReturnConfig: {
+			CalamityLegendReturnConfig: {
 				// DisplayName: Calamity Legends Return Settings
 
 				Headers: {
@@ -35,7 +35,7 @@ Mods: {
 				}
 
 				GiveQuickStartBoxOnSpawn: {
-					// Label: "[i:CalamityLegendsReturn/QuickStartBox] Give Quick Start Supply Box On Spawn"
+					// Label: "[i:CalamityLegendReturn/QuickStartBox] Give Quick Start Supply Box On Spawn"
 					// Tooltip: If enabled, new players will automatically receive a [Quick Start Supply Box] upon spawning. (WARNING: This severely ruins game balance!)
 				}
 

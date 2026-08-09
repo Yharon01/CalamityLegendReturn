@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Weapons;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Rarities;
@@ -11,12 +11,12 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     public class NewLegendCosmicDischarge : ModItem, ILocalizedModType
     {
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/CosmicDischarge/CosmicDischarge";
+        public override string Texture => "CalamityLegendReturn/Weapons/CosmicDischarge/CosmicDischarge";
 
         private static int HoldoutType => ModContent.ProjectileType<CosmicDischargeComboHoldout>();
 
@@ -101,7 +101,7 @@ namespace CalamityLegendsReturn.Weapons.CosmicDischarge
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             string keyText = KeybindSystem.LegendarySkill.GetAssignedKeys().FirstOrDefault() ?? "Unbound";
-            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             string ultimateText = legendaryEmblemEquipped
                 ? string.Format(this.GetLocalizedValue("CosmicDischargeUltimate"), keyText)
                 : this.GetLocalizedValue("CosmicDischargeUltimateLocked");

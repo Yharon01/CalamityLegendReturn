@@ -1,19 +1,19 @@
 using System;
 using System.IO;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty
 {
     internal static class CallofDutyPackets
     {
         public static void SendUltimateRequest()
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.CallofDutyUltimateRequest);
             packet.Send();
         }
@@ -54,7 +54,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
 
         public static void SendCommand(ResponsibilityCommandMode mode, Vector2 position, int target)
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.CallofDutyCommandRequest);
             packet.Write((byte)mode);
             packet.WriteVector2(position);
@@ -99,7 +99,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
                 return;
 
             CallofDutyPlayer phonePlayer = player.GetModPlayer<CallofDutyPlayer>();
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.CallofDutyStateSync);
             packet.Write((byte)player.whoAmI);
             packet.Write((short)phonePlayer.UltimateCharge);

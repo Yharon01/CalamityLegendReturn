@@ -1,13 +1,13 @@
 using System;
 using CalamityMod;
 using CalamityMod.NPCs.NormalNPCs;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle
 {
     /// <summary>
     /// 反物质步枪 (Anti-Materiel Rifle) 的游戏进度阶段定义。

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.PristineFury.LeftEffect;
+using CalamityLegendReturn.Weapons.PristineFury.LeftEffect;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal static class PristineFuryRightNovaVisuals
     {
@@ -117,7 +117,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
     internal sealed class PristineFuryRightPellet : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.PristineFury";
-        public override string Texture => "CalamityLegendsReturn/Weapons/PristineFury/RightAndHook/PristineFuryRightPellet";
+        public override string Texture => "CalamityLegendReturn/Weapons/PristineFury/RightAndHook/PristineFuryRightPellet";
 
         public override void SetStaticDefaults()
         {

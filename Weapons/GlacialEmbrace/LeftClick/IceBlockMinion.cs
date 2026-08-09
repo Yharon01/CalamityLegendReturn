@@ -6,10 +6,10 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.EXSkill;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.General;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.EXSkill;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.General;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.LeftClick
 {
     public class IceBlockMinion : ModProjectile
     {
@@ -93,9 +93,9 @@ namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick
 
         public override bool PreDraw(ref Color lightColor)
         {
-            Texture2D coreTex = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_02").Value;
+            Texture2D coreTex = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_02").Value;
             Texture2D glowTex = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D ringTex = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_03").Value;
+            Texture2D ringTex = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_03").Value;
 
             float time = Main.GlobalTimeWrappedHourly;
             Vector2 drawPos = Projectile.Center - Main.screenPosition;

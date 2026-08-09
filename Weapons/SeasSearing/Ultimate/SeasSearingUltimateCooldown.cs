@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     internal sealed class SeasSearingUltimateCooldown : CooldownHandler
     {
@@ -23,11 +23,11 @@ namespace CalamityLegendsReturn.Weapons.SeasSearing
         public override bool ShouldDisplay => instance.player.HeldItem.type == ModContent.ItemType<SeasSearing>() || SeasPlayer.UltimateCooldown > 0;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.SeasSearing_Ultimate");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.SeasSearing_Ultimate");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderCharge";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderCharge";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeOverlay";
 
         public override Color OutlineColor => Color.Lerp(SeasSearingPalette.AbyssBlack, SeasSearingPalette.DeepBlue, 0.65f);
         public override Color CooldownStartColor => Color.Lerp(SeasSearingPalette.DeepBlue, SeasSearingPalette.RadioactiveCyan, ReadyCompletion);

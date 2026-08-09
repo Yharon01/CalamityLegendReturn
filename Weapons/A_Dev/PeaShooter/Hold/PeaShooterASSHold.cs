@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
+namespace CalamityLegendReturn.Weapons.A_Dev.PeaShooter
 {
     internal sealed class PeaShooterASSHold : ModProjectile, ILocalizedModType
     {

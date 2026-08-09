@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     internal interface IScreenOverlayProjectile
     {
@@ -22,7 +22,7 @@ namespace CalamityLegendsReturn.Systems
                 cursorLayerIndex = 0;
 
             layers.Insert(cursorLayerIndex, new LegacyGameInterfaceLayer(
-                "CalamityLegendsReturn: Screen Overlay Projectiles",
+                "CalamityLegendReturn: Screen Overlay Projectiles",
                 DrawScreenOverlayProjectiles,
                 InterfaceScaleType.Game));
         }

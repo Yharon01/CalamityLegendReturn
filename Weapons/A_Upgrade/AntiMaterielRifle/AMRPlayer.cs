@@ -5,9 +5,9 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj;
+using CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle
 {
     internal sealed class AMRPlayer : ModPlayer
     {

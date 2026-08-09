@@ -1,13 +1,13 @@
-using CalamityLegendsReturn.Accssory.BB.Skill;
-using CalamityLegendsReturn.Weapons.BrinyBaron;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Accssory.BB.Skill;
+using CalamityLegendReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB
+namespace CalamityLegendReturn.Accssory.BB
 {
     public enum BBRightClickMode
     {

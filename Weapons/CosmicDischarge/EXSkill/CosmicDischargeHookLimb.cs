@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     public class CosmicDischargeHookLimb : ModProjectile, ILocalizedModType
     {

@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.PristineFury;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF
+namespace CalamityLegendReturn.Accssory.PF
 {
     // Hooks PF left-click projectile hits to register purification progress.
     internal sealed class PFAccessoryGlobalProjectile : GlobalProjectile

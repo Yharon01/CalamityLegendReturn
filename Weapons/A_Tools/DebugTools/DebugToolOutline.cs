@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools
 {
     // 调试工具共用的物品图标包边效果：改用原版贴图后，用这层描边区分各个工具
     internal static class DebugToolOutline

@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.AStage0;
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.CStage2;
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.DStage3;
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.EStage4;
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.FStage5;
-using CalamityLegendsReturn.Weapons.Vesuvius.Passive;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick;
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.AStage0;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.CStage2;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.DStage3;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.EStage4;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.FStage5;
+using CalamityLegendReturn.Weapons.Vesuvius.Passive;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick;
+using CalamityLegendReturn.Weapons;
 using CalamityMod;
 using CalamityMod.Cooldowns;
 using CalamityMod.Particles;
@@ -22,7 +22,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.EXSkill
+namespace CalamityLegendReturn.Weapons.Vesuvius.EXSkill
 {
     internal sealed class VesuviusEXPlayer : ModPlayer
     {
@@ -83,11 +83,11 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.EXSkill
 
         public override bool ShouldDisplay => instance.player.HeldItem.type == ModContent.ItemType<NewVesuvius>();
 
-        public override LocalizedText DisplayName => Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.Vesuvius_EX");
+        public override LocalizedText DisplayName => Language.GetText("Mods.CalamityLegendReturn.Cooldowns.Vesuvius_EX");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/EXSkill/VesuviusEXCooldown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/Vesuvius/EXSkill/VesuviusEXCooldownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/Vesuvius/EXSkill/VesuviusEXCooldownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/EXSkill/VesuviusEXCooldown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/Vesuvius/EXSkill/VesuviusEXCooldownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/Vesuvius/EXSkill/VesuviusEXCooldownOverlay";
 
         public override Color OutlineColor => new(78, 28, 16);
         public override Color CooldownStartColor => Color.Lerp(new Color(110, 35, 18), new Color(255, 96, 28), AdjustedCompletion);
@@ -151,7 +151,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.EXSkill
         private SlotId chargeSoundSlot;
 
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/NewVesuvius";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/NewVesuvius";
 
         private Player Owner => Main.player[Projectile.owner];
         private Vector2 GunTip => Projectile.Center - Vector2.UnitY * 58f;
@@ -486,7 +486,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.EXSkill
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
+            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;

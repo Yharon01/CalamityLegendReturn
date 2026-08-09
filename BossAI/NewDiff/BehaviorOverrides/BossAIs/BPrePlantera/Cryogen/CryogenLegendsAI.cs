@@ -12,15 +12,15 @@ using CalamityMod;
 using CalamityMod.NPCs;
 using CalamityMod.Events;
 using CalamityMod.World;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Systems;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Systems;
 using Terraria.DataStructures;
 using ReLogic.Content;
 
 using CalamityCryogen = CalamityMod.NPCs.Cryogen.Cryogen;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.Cryogen
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.Cryogen
 {
     internal sealed class CryogenLegendsAI : LegendsBossAI
     {

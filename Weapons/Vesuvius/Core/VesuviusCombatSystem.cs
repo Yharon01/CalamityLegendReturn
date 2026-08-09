@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick;
-using CalamityLegendsReturn.Weapons.Vesuvius.Passive;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick;
+using CalamityLegendReturn.Weapons.Vesuvius.Passive;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.Core
+namespace CalamityLegendReturn.Weapons.Vesuvius.Core
 {
     /// <summary>
     /// “火山灾祸”只负责显示标记，伤害倍率和命中喷发都由同目录下的全局状态统一处理。
@@ -17,7 +17,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.Core
     public sealed class VesuviusVolcanicCalamity : ModBuff, ILocalizedModType
     {
         public new string LocalizationCategory => "Buffs";
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/NewVesuviusGlow";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/NewVesuviusGlow";
 
         public override void SetStaticDefaults()
         {
@@ -34,7 +34,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.Core
         public static bool IsVesuviusProjectile(Projectile projectile)
         {
             string projectileNamespace = projectile.ModProjectile?.GetType().Namespace;
-            const string rootNamespace = "CalamityLegendsReturn.Weapons.Vesuvius";
+            const string rootNamespace = "CalamityLegendReturn.Weapons.Vesuvius";
             return projectileNamespace == rootNamespace ||
                 projectileNamespace?.StartsWith(rootNamespace + ".") == true;
         }

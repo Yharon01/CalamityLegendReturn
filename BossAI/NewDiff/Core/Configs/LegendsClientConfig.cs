@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Configs
+namespace CalamityLegendReturn.BossAI.NewDiff.Core.Configs
 {
     public sealed class LegendsClientConfig : ModConfig
     {

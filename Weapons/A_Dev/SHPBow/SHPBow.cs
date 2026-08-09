@@ -15,11 +15,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
+namespace CalamityLegendReturn.Weapons.A_Dev.SHPBow
 {
     public class SHPBow : ModItem, ILocalizedModType
     {
-        public const string TextureAssetPath = "CalamityLegendsReturn/Weapons/A_Dev/SHPBow/SHPB";
+        public const string TextureAssetPath = "CalamityLegendReturn/Weapons/A_Dev/SHPBow/SHPB";
 
         public override string Texture => TextureAssetPath;
         public new string LocalizationCategory => "Items.Weapons";

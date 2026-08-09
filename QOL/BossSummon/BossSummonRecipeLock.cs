@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL.BossSummon
+namespace CalamityLegendReturn.QOL.BossSummon
 {
     /// <summary>
     /// The Zoologist offers these summons as a recovery path before their first kill.
@@ -15,7 +15,7 @@ namespace CalamityLegendsReturn.QOL.BossSummon
     {
         public override void PostAddRecipes()
         {
-            if (CalamityLegendsReturnConfig.Instance?.AllowBossSummonShop != true)
+            if (CalamityLegendReturnConfig.Instance?.AllowBossSummonShop != true)
                 return;
 
             foreach (Recipe recipe in Main.recipe)
@@ -43,7 +43,7 @@ namespace CalamityLegendsReturn.QOL.BossSummon
     {
         public override void ModifyTooltips(Item item, List<TooltipLine> tooltips)
         {
-            if (CalamityLegendsReturnConfig.Instance?.AllowBossSummonShop != true || !IsRecipeLocked(item.type))
+            if (CalamityLegendReturnConfig.Instance?.AllowBossSummonShop != true || !IsRecipeLocked(item.type))
                 return;
 
             tooltips.Add(new TooltipLine(Mod, "ZoologistSaleChinese", "售卖自动物学家"));

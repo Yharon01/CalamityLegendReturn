@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CalamityLegendsReturn.Accssory.TS;
+using CalamityLegendReturn.Accssory.TS;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
 {
     internal sealed class ZhuangFangYiPetPlayer : ModPlayer
     {

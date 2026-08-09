@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.Polterghast
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.Polterghast
 {
     internal static class GhastFx
     {

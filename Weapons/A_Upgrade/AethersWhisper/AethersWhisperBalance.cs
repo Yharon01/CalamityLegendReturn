@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper
 {
     /// <summary>
     /// 「以太之低语 / Aether's Whisper」传奇重做的平衡中枢。

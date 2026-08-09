@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge
 {
     internal static class ScourgeFx
     {

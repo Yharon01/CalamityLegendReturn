@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     internal sealed class SHPCRight_HeatUI : ModProjectile
     {
@@ -66,8 +66,8 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
                 Projectile.Opacity <= 0.03f)
                 return false;
 
-            Texture2D barBG = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/SHPC/RightClick/SHPCBarBack").Value;
-            Texture2D barFG = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/SHPC/RightClick/SHPCBarFront").Value;
+            Texture2D barBG = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/SHPC/RightClick/SHPCBarBack").Value;
+            Texture2D barFG = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/SHPC/RightClick/SHPCBarFront").Value;
 
             float progress = heatPlayer.GetDetachedHeatProgress();
             Color color = Color.White * Projectile.Opacity;

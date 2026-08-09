@@ -10,9 +10,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     public class STG : ModItem, ILocalizedModType
     {
@@ -901,8 +901,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawRectangle(overlay, new Color(5, 7, 10, 228) * opacity);
             DrawBorder(overlay, new Color(226, 78, 78) * opacity, 2);
 
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.STGGameOver");
-            string restart = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.STGRestart");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.STGGameOver");
+            string restart = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.STGRestart");
             DrawCenteredText(title, new Rectangle(overlay.X, overlay.Y + 25, overlay.Width, 30), new Color(255, 220, 210), 0.78f, opacity);
             DrawCenteredText(restart, new Rectangle(overlay.X, overlay.Y + 67, overlay.Width, 26), new Color(214, 232, 238), 0.52f, opacity);
         }

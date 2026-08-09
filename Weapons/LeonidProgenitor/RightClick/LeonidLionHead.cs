@@ -6,10 +6,10 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Effects;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     public class LeonidLionHead : ModProjectile, ILocalizedModType
     {

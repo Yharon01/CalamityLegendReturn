@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     // Sea-blue variant of Hyperdeath Rift Scepter's delayed falling beam.
     internal sealed class BrinyBaron_UltimateAzureRiftBeam : ModProjectile, ILocalizedModType

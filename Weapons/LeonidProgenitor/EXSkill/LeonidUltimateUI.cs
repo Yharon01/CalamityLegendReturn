@@ -3,10 +3,10 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using Terraria;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     public class LeonidUltimateUI : ModProjectile
     {
@@ -83,7 +83,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
             // Draw a spinning star icon next to the bar when stealth is ready
             if (stealthReady)
             {
-                Texture2D star = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_01").Value;
+                Texture2D star = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_01").Value;
                 Vector2 starPos = barPos + new Vector2(barBG.Width + 12f, barBG.Height * 0.5f);
                 Color starColor = Color.Lerp(LeonidVisualUtils.StratusBlue, LeonidVisualUtils.MoonWhite, 0.3f + 0.3f * (float)Math.Sin(Main.GlobalTimeWrappedHourly * 6f));
                 

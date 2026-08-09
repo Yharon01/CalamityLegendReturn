@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
 {
     internal sealed class AMRCooldownStatusBar : ModProjectile, ILocalizedModType
     {

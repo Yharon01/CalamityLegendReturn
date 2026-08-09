@@ -1,17 +1,17 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     internal sealed class SeedOfSilvaDelphinium : SeedOfSilvaFlowerProjectile
     {
         private int delphiniumCooldown;
 
         protected override BlossomFluxChloroplastPresetType FlowerPreset => BlossomFluxChloroplastPresetType.Chlo_CDetec;
-        protected override string FlowerTexturePath => "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Delphinium";
+        protected override string FlowerTexturePath => "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Delphinium";
 
         protected override void UpdateBlooming(Player owner, BFAccessoryPlayer accessoryPlayer)
         {

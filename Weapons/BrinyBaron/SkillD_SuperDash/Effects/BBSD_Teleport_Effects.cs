@@ -1,11 +1,11 @@
-﻿using System;
+﻿﻿using System;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal static class BBSD_Teleport_Effects
     {

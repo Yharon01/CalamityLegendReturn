@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal sealed class PFPolterghast_StarBolt : ModProjectile, ILocalizedModType
     {

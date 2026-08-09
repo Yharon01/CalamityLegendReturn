@@ -5,7 +5,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // 侦查标记挂在 NPC 身上，统一处理描边、染色和团队增伤。
     internal class BFArrow_CDetecNPC : GlobalNPC

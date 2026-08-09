@@ -1,8 +1,8 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill;
-using CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux.EXSkill;
+using CalamityLegendReturn.Weapons.BlossomFlux.Passive.PaRevo;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using CalamityMod;
 using CalamityMod.World;
 using Microsoft.Xna.Framework;
@@ -13,7 +13,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     public class NewLegendBlossomFlux : ModItem, ILocalizedModType
     {
@@ -65,7 +65,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
 
             if (Main.myPlayer == player.whoAmI &&
                 KeybindSystem.LegendarySkill.JustPressed &&
-                player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped &&
+                player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped &&
                 exPlayer.ConsumeAllEX() &&
                 !exWeaponActive)
             {
@@ -127,7 +127,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
 
             var assignedKeys = KeybindSystem.LegendarySkill.GetAssignedKeys();
             string keyText = assignedKeys.Count > 0 ? assignedKeys[0] : "Unbound";
-            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             string exHint = legendaryEmblemEquipped
                 ? string.Format(this.GetLocalizedValue("BF_EXHint"), keyText)
                 : this.GetLocalizedValue("BF_EXDisabledHint");

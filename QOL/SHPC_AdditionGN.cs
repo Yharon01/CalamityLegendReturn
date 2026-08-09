@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Accssory;
+using CalamityLegendReturn.Accssory;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
@@ -9,9 +9,9 @@ using CalamityMod.Items.Tools;
 using CalamityMod.NPCs.AcidRain;
 using CalamityMod.NPCs.NormalNPCs;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Weapons.SHPC.SHPCBook;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC.SHPCBook;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,7 +23,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL
+namespace CalamityLegendReturn.QOL
 {
     internal class SHPC_AdditionGN : GlobalNPC
     {
@@ -37,7 +37,7 @@ namespace CalamityLegendsReturn.QOL
                 npcLoot.Add(firstWallKill);
             }
 
-            if (CalamityLegendsReturnConfig.Instance?.AllowMassMaterialRecipes != true)
+            if (CalamityLegendReturnConfig.Instance?.AllowMassMaterialRecipes != true)
                 return;
 
             if (npc.type == ModContent.NPCType<Stormlion>())

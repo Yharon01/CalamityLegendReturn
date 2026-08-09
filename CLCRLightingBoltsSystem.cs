@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using CalamityMod.Particles;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     internal class CLCRLightingBoltsSystem
     {

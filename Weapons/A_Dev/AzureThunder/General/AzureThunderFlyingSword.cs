@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General;
+using CalamityLegendReturn.Weapons.Visuals;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 左键连段生成的飞剑：先蓄势悬停，再沿锁定鼠标方向高速飞出。
     internal sealed class AzureThunderFlyingSword : ModProjectile, ILocalizedModType
@@ -19,7 +19,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
         public const int AttackModeTriggerCannon = 1;
 
         public new string LocalizationCategory => "Projectiles.AzureThunder";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/AzureThunder";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/AzureThunder";
 
         // 本地计时器，控制蓄势、发射和绘制强度。
         private int Timer
@@ -253,7 +253,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
         {
             // 主体贴图、幽灵贴图和旧位置缓存共同构成飞剑的残影层。
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/AzureThunderGhost").Value;
+            Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/A_Dev/AzureThunder/AzureThunderGhost").Value;
             Vector2 origin = new(texture.Width * 0.5f, texture.Height * 0.5f);
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             SpriteEffects effects = Projectile.spriteDirection == -1 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;

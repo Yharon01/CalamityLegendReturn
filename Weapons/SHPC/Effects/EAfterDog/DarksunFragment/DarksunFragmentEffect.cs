@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityDarksunFragment = CalamityMod.Items.Materials.DarksunFragment;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
 {
     internal class DarksunFragmentEffect : DefaultEffect
     {
@@ -174,8 +174,8 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
         {
             Texture2D ring = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D softRing = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D reticle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_04").Value;
+            Texture2D softRing = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D reticle = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_04").Value;
             Vector2 drawPos = projectile.Center - Main.screenPosition;
             float opacity = MathHelper.Clamp(projectile.timeLeft / 18f, 0f, 1f);
 

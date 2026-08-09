@@ -1,10 +1,10 @@
-﻿using Microsoft.Xna.Framework;
+﻿﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     public class FragmentVortex_Pixel : ModProjectile, ILocalizedModType
     {

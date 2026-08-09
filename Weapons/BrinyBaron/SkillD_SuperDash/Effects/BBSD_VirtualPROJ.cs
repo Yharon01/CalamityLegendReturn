@@ -8,7 +8,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal class BBSD_VirtualPROJ : ModProjectile
     {
@@ -68,14 +68,14 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
 
             string[] starTextures =
             {
-                "CalamityLegendsReturn/Texture/KsTexture/star_01",
-                "CalamityLegendsReturn/Texture/KsTexture/star_02",
-                "CalamityLegendsReturn/Texture/KsTexture/star_04",
-                "CalamityLegendsReturn/Texture/KsTexture/star_05",
-                "CalamityLegendsReturn/Texture/KsTexture/star_06",
-                "CalamityLegendsReturn/Texture/KsTexture/star_07",
-                "CalamityLegendsReturn/Texture/KsTexture/star_08",
-                "CalamityLegendsReturn/Texture/KsTexture/star_09"
+                "CalamityLegendReturn/Texture/KsTexture/star_01",
+                "CalamityLegendReturn/Texture/KsTexture/star_02",
+                "CalamityLegendReturn/Texture/KsTexture/star_04",
+                "CalamityLegendReturn/Texture/KsTexture/star_05",
+                "CalamityLegendReturn/Texture/KsTexture/star_06",
+                "CalamityLegendReturn/Texture/KsTexture/star_07",
+                "CalamityLegendReturn/Texture/KsTexture/star_08",
+                "CalamityLegendReturn/Texture/KsTexture/star_09"
             };
             starTexturePath = starTextures[Main.rand.Next(starTextures.Length)];
             scaleVariance = Main.rand.NextFloat(0.94f, 1.08f);

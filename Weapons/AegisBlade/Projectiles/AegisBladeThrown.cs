@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     /// <summary>
     /// 下插的庇护之刃。坠地后钉在地上，从插入点升起庇护土墙，随后自身烧尽消散。
@@ -17,7 +17,7 @@ namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
     /// </summary>
     public class AegisBladeThrown : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/AegisBlade/AegisBlade";
+        public override string Texture => "CalamityLegendReturn/Weapons/AegisBlade/AegisBlade";
 
         private bool embedded;
         private bool wallSpawned;

@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     // 瘟疫形态右键：蓄力期间在准星前方挂一颗孢子球，松手把它甩出去引爆。
     // 球的生命周期完全由这里托管，取消蓄力或换形态都会让它自己散掉。

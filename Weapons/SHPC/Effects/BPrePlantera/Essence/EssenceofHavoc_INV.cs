@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
 {
     internal class EssenceofHavoc_INV : ModProjectile, ILocalizedModType
     {

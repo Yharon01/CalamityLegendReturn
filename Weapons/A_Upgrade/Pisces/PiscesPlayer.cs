@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Anchor;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Anchor;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces
 {
     /// <summary>
     /// 双鱼座的玩家侧状态——只放“仅该玩家拥有”的东西：

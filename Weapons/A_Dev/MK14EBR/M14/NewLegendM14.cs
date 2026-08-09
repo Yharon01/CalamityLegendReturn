@@ -8,14 +8,14 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     public class NewLegendM14 : ModItem, ILocalizedModType
     {
         private static int HoldoutType => ModContent.ProjectileType<MK14EBRHoldout>();
 
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/MK14EBR/M14/m14";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/MK14EBR/M14/m14";
 
         public override void SetDefaults()
         {

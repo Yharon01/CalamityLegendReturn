@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
+namespace CalamityLegendReturn.Weapons.Vesuvius.RightClick
 {
     public class VesuviusVolcanicGasCloud : ModProjectile, ILocalizedModType
     {

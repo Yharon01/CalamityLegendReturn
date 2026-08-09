@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.Dragonfolly
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.Dragonfolly
 {
     internal sealed class DragonfollyAI : LegendsBossAI
     {

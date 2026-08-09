@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     internal abstract class ElementalCodexBaseDebuff : ModBuff
     {
@@ -16,31 +16,31 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
 
     internal sealed class ElementalFireDebuff : ElementalCodexBaseDebuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalFireDebuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalFireDebuff";
     }
 
     internal sealed class ElementalWaterDebuff : ElementalCodexBaseDebuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalWaterDebuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalWaterDebuff";
     }
 
     internal sealed class ElementalIceDebuff : ElementalCodexBaseDebuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalIceDebuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalIceDebuff";
     }
 
     internal sealed class ElementalLightningDebuff : ElementalCodexBaseDebuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalLightningDebuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalLightningDebuff";
     }
 
     internal sealed class ElementalNatureDebuff : ElementalCodexBaseDebuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalNatureDebuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalNatureDebuff";
     }
 
     internal sealed class ElementalDiseaseDebuff : ElementalCodexBaseDebuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalDiseaseDebuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/ElementalCodex/Buffs/ElementalDiseaseDebuff";
     }
 }

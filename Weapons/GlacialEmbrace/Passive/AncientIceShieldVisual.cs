@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.General;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.General;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.Passive
 {
     public class AncientIceShieldVisual : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/GlacialEmbrace/远古冰盾";
+        public override string Texture => "CalamityLegendReturn/Weapons/GlacialEmbrace/远古冰盾";
 
         public override void SetDefaults()
         {

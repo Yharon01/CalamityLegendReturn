@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     internal sealed class ElementalCodexGlobalNPC : GlobalNPC
     {

@@ -15,7 +15,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     /// <summary>
     /// 事件强度分级。
@@ -67,7 +67,7 @@ namespace CalamityLegendsReturn.Weapons.CosmicDischarge
 
     internal static class CosmicDischargeCommon
     {
-        public const string ChainTexturePath = "CalamityLegendsReturn/Weapons/CosmicDischarge/LeftClick/CosmicDischargeFlail";
+        public const string ChainTexturePath = "CalamityLegendReturn/Weapons/CosmicDischarge/LeftClick/CosmicDischargeFlail";
         public const string RingTexturePath = "CalamityMod/Particles/BloomRing";
 
         private const int ChainHandleHeight = 62;

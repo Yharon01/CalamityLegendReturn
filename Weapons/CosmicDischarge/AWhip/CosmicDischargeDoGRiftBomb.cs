@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     public class CosmicDischargeDoGRiftBomb : ModProjectile, ILocalizedModType
     {

@@ -1,4 +1,4 @@
-//using CalamityLegendsReturn.Accssory.SHPC.ChangeRight;
+//using CalamityLegendReturn.Accssory.SHPC.ChangeRight;
 //using CalamityMod.Items.Materials;
 //using CalamityMod.Items.Weapons.Ranged;
 //using CalamityMod.Tiles.Furniture.CraftingStations;
@@ -6,11 +6,11 @@
 //using Terraria.ID;
 //using Terraria.ModLoader;
 
-//namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.KarasawaModule
+//namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.KarasawaModule
 //{
 //    public sealed class KarasawaModule : ModItem
 //    {
-//        public override string Texture => "CalamityLegendsReturn/Accssory/SHPC/ChangeRight/MilitaryCaller/MilitaryCaller";
+//        public override string Texture => "CalamityLegendReturn/Accssory/SHPC/ChangeRight/MilitaryCaller/MilitaryCaller";
 
 //        public override void SetDefaults()
 //        {

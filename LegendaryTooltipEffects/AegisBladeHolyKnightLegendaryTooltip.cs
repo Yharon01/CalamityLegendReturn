@@ -5,9 +5,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
-using AegisBladeItem = CalamityLegendsReturn.Weapons.AegisBlade.AegisBlade;
+using AegisBladeItem = CalamityLegendReturn.Weapons.AegisBlade.AegisBlade;
 
-namespace CalamityLegendsReturn.LegendaryTooltipEffects
+namespace CalamityLegendReturn.LegendaryTooltipEffects
 {
     public sealed class AegisBladeHolyKnightLegendaryTooltip : GlobalItem
     {

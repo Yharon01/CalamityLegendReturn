@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
+using CalamityLegendReturn.Accssory.TS;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Graphics.Primitives;
@@ -11,7 +11,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General
 {
     // 左键第一段释放的发光体：高速追踪目标，并用 PrimitiveRenderer 绘制雷光拖尾。
     internal sealed class AzureThunderLightOrb : ModProjectile, ILocalizedModType
@@ -19,7 +19,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General
         public new string LocalizationCategory => "Projectiles.AzureThunder";
 
         public override string Texture =>
-            "CalamityLegendsReturn/Texture/KsTexture/light_03";
+            "CalamityLegendReturn/Texture/KsTexture/light_03";
 
         private int timer;
 

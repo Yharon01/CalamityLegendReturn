@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral
 {
     // Shared heavy-attack ordnance for every drone role: a slow, decelerating gold bomb
     // that detonates into a wide radial blast. Not a re-skin of Omicron's grenade —

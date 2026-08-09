@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.LeviathanAnahita
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.LeviathanAnahita
 {
     // Leviathan and Anahita are TWO NPC entities that both route through this ONE shared AI instance (see
     // LegendsBossAIRegistry.Load — both npc.type values map to the same object), so every instance field here

@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight
 {
     /// <summary>
     /// SHPC 右键改造饰品互斥规则：同一时间只能装备一个右键改造模块。
@@ -10,9 +10,9 @@ namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight
     {
         public static bool IsChangeRightAccessoryItem(int itemType)
         {
-            return itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.ChangeRight.CommandAscend.CommandAscend>() ||
-                   itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.ChangeRight.MilitaryCaller.MilitaryCaller>() ||
-                   itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule.ProjectilePossessionModule>();
+            return itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.ChangeRight.CommandAscend.CommandAscend>() ||
+                   itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.ChangeRight.MilitaryCaller.MilitaryCaller>() ||
+                   itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule.ProjectilePossessionModule>();
         }
 
         public static bool CanEquipWith(Item equippedItem, Item incomingItem)

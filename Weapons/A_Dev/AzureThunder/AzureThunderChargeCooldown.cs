@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 一息万变层数的灾厄冷却栏显示器，本身不倒计时，只读玩家层数。
     internal sealed class AzureThunderChargeCooldown : CooldownHandler
@@ -26,11 +26,11 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
         public override bool ShouldDisplay => instance.player.HeldItem.type == ModContent.ItemType<AzureThunder>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.AzureThunder_ThunderCharge");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.AzureThunder_ThunderCharge");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderCharge";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderCharge";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeOverlay";
 
         public override Color OutlineColor => new(24, 62, 92);
         public override Color CooldownStartColor => Color.Lerp(AzureThunderColors.Azure, AzureThunderColors.Yellow, AdjustedCompletion);

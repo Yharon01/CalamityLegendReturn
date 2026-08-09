@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Effects
 {
     // 星光形态：决定贴图、体积、拖尾长度与节奏。
     // 灾厄贴图库里这几张原图都很大（512²~972²），必须大幅缩小并压低不透明度才不会糊屏。

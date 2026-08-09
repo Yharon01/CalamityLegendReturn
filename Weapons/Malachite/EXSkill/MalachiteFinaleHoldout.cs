@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
+namespace CalamityLegendReturn.Weapons.Malachite.EXSkill
 {
     // The EX finale's continuous hand-held cutter. Its seven-frame texture loops every 21 ticks.
     public sealed class MalachiteFinaleHoldout : ModProjectile, ILocalizedModType
@@ -21,7 +21,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
         private const float BladeReach = 94f;
         private const float BladeWidth = 28f;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/孔雀翎刀光";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/孔雀翎刀光";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 

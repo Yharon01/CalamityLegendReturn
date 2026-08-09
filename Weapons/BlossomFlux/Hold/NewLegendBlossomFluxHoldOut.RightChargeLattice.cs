@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using Terraria;
-using HaloParams = CalamityLegendsReturn.Weapons.BlossomFlux.BFRightChargeHaloProj.HaloSpawnParams;
+using HaloParams = CalamityLegendReturn.Weapons.BlossomFlux.BFRightChargeHaloProj.HaloSpawnParams;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     // 右键蓄力专属视觉：持续生成短命的着色器环绕弹幕（实现见 BFRightChargeHaloProj.cs）。
     // 五种战术各有一套完全不同的轨迹风格——数量、生成位置、半径、寿命、转速与加/减速全部在这里按 preset 分别定义，

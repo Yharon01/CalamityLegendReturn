@@ -3,12 +3,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class Overclock : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/图片放这里/过速";
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/图片放这里/过速";
 
         public override void SetDefaults()
         {
@@ -29,7 +29,7 @@ namespace CalamityLegendsReturn.Accssory.TS
             CreateRecipe()
                 .AddIngredient<CoreofCalamity>(3)
                 .AddIngredient<UnholyEssence>(10)
-                .AddIngredient<BloodstoneCore>(8)
+                .AddIngredient<Bloodstone>(8)
                 .AddTile(TileID.LunarCraftingStation)
                 .Register();
         }

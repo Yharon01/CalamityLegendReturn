@@ -132,7 +132,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.B_Report
+namespace CalamityLegendReturn.Weapons.B_Report
 {
     public class WhipComboPlayer : ModPlayer
     {
@@ -167,7 +167,7 @@ using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
 
-namespace CalamityLegendsReturn.Weapons.B_Report
+namespace CalamityLegendReturn.Weapons.B_Report
 {
     public class ComboWhipItem : ModItem
     {
@@ -212,11 +212,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 
-namespace CalamityLegendsReturn.Weapons.B_Report
+namespace CalamityLegendReturn.Weapons.B_Report
 {
     public class ComboWhipProj : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/B_Report/ComboWhipProj"; // 路径根据实际替换
+        public override string Texture => "CalamityLegendReturn/Weapons/B_Report/ComboWhipProj"; // 路径根据实际替换
 
         // 用于记录碰撞检测中，到底是哪一个关节碰到了怪物
         private int lastHitSegmentIndex = -1;

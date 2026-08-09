@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.FlyChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.FlyChip
 {
     public class FlyChip : ModItem
     {

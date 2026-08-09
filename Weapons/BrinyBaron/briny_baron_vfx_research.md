@@ -1,6 +1,6 @@
 # 《NewLegendBrinyBaron》非大招特效研究报告
 
-> 研究对象：`CalamityLegendsReturn.Weapons.BrinyBaron` 系列文件中的普通攻击、右键手里剑、短冲刺、被动快斩与水柱派生特效。
+> 研究对象：`CalamityLegendReturn.Weapons.BrinyBaron` 系列文件中的普通攻击、右键手里剑、短冲刺、被动快斩与水柱派生特效。
 > 研究目的：在不分析大招本体的前提下，提炼这把武器已经形成的视觉语言，让后续重做大招时能够继承现有武器的“水蓝、冰白、潮汐、切割、龙卷、短促爆闪”的特效体系。  
 > 核心原则：**本文只要提到视觉特效，就一定写出它的名字；如果特效是 `CustomSpark`，则额外写出它使用的贴图路径。**
 
@@ -16,7 +16,7 @@
 
 第三层是 **additive 光刃绘制**，代表贴图包括 `CalamityMod/Particles/GlowBlade`、`CalamityMod/Particles/ThinEndedLine`、`CalamityMod/Particles/BloomCircle`、`CalamityMod/ExtraTextures/BloomCirclePinpoint`、`CalamityMod/ExtraTextures/SimpleStar`、`CalamityMod/Particles/CircularSmearSmokey`、`CalamityMod/Particles/SemiCircularSmearSwipe`。这一层让武器从“水”上升为“高速水刃”，尤其短冲刺 `BrinyBaron_SkillDashTornado_BladeDash` 和右键手里剑 `BrinyBaron_RightClick_Shuriken` 的绘制都明显依赖 additive 光效。
 
-第四层是 **符文水魔法核心**，代表贴图包括 `CalamityLegendsReturn/Texture/KsTexture/light_03`、`CalamityLegendsReturn/Texture/KsTexture/circle_03`、`CalamityLegendsReturn/Texture/KsTexture/circle_04`、`CalamityLegendsReturn/Texture/KsTexture/magic_03`、`CalamityLegendsReturn/Texture/KsTexture/magic_04`、`CalamityLegendsReturn/Texture/KsTexture/star_04`、`CalamityLegendsReturn/Texture/KsTexture/twirl_02`、`CalamityLegendsReturn/Texture/KsTexture/window_04`。这些贴图让武器不是纯自然水流，而是有“海爵、潮汐、魔法阵、旋涡核心”的高级感。
+第四层是 **符文水魔法核心**，代表贴图包括 `CalamityLegendReturn/Texture/KsTexture/light_03`、`CalamityLegendReturn/Texture/KsTexture/circle_03`、`CalamityLegendReturn/Texture/KsTexture/circle_04`、`CalamityLegendReturn/Texture/KsTexture/magic_03`、`CalamityLegendReturn/Texture/KsTexture/magic_04`、`CalamityLegendReturn/Texture/KsTexture/star_04`、`CalamityLegendReturn/Texture/KsTexture/twirl_02`、`CalamityLegendReturn/Texture/KsTexture/window_04`。这些贴图让武器不是纯自然水流，而是有“海爵、潮汐、魔法阵、旋涡核心”的高级感。
 
 第五层是 **成长阶段差异**。`BBSwing_Wave` 通过 `SpawnStage` 改变水波大小、粒子密度和水流丝线数量；`BrinyBaron_RightClick_Shuriken` 通过 `GrowthTier` 解锁 `BBShuriken_Hardmode_Effects`、`BBShuriken_Fishron_Effects`、`BBShuriken_BoomerDuke_Effects`；`BrinyBaron_SkillDashTornado_BladeDash` 通过 `ShortDashProfile` 改变速度倍率、接触伤害倍率、是否解锁敌人反弹。也就是说，这把武器不是只有数值成长，视觉也在成长。
 
@@ -144,19 +144,19 @@ new Color(15, 45, 85)
 | `Terraria/Images/Projectile_0` | `BBSwing_Wave` | 主水波占位本体 |
 | `CalamityMod/Projectiles/InvisibleProj` | `BBSwing_INV`、`BrinyBaron_TornadoWaterExplosion`、`BrinyBaron_WaterStream`、`BrinyBaron_DashWaterPillar` | 隐形判定体，不直接绘制 |
 | `Terraria/Images/Extra_98` / `TextureAssets.Extra[ExtrasID.SharpTears]` | `BBSwing_Slash` | 薄水刃斩击 |
-| `CalamityLegendsReturn/Texture/KsTexture/light_03` | `BrinyBaron_TornadoBolt` | 水魔法核心弹主体 |
+| `CalamityLegendReturn/Texture/KsTexture/light_03` | `BrinyBaron_TornadoBolt` | 水魔法核心弹主体 |
 | `CalamityMod/ExtraTextures/BloomCirclePinpoint` | `BrinyBaron_TornadoBolt` | 中心 pinpoint bloom |
 | `CalamityMod/ExtraTextures/SimpleStar` | `BrinyBaron_TornadoBolt`、`BrinyBaron_TornadoWaterExplosion` | 星芒高光 |
-| `CalamityLegendsReturn/Texture/KsTexture/magic_03` | `BrinyBaron_TornadoBolt` | 魔法符文层 |
-| `CalamityLegendsReturn/Texture/KsTexture/magic_04` | `BrinyBaron_TornadoBolt` | 旋转魔法符文层与拖尾螺旋片 |
-| `CalamityLegendsReturn/Texture/KsTexture/circle_03` | `BrinyBaron_TornadoBolt` | 中心圆环符文 |
-| `CalamityLegendsReturn/Texture/KsTexture/circle_04` | `BrinyBaron_TornadoWaterExplosion` | 水爆圆环 |
-| `CalamityLegendsReturn/Texture/KsTexture/twirl_02` | `BrinyBaron_TornadoBolt` | 旋涡核心 |
-| `CalamityLegendsReturn/Texture/KsTexture/star_04` | `BrinyBaron_TornadoBolt` | 符文星芒 |
+| `CalamityLegendReturn/Texture/KsTexture/magic_03` | `BrinyBaron_TornadoBolt` | 魔法符文层 |
+| `CalamityLegendReturn/Texture/KsTexture/magic_04` | `BrinyBaron_TornadoBolt` | 旋转魔法符文层与拖尾螺旋片 |
+| `CalamityLegendReturn/Texture/KsTexture/circle_03` | `BrinyBaron_TornadoBolt` | 中心圆环符文 |
+| `CalamityLegendReturn/Texture/KsTexture/circle_04` | `BrinyBaron_TornadoWaterExplosion` | 水爆圆环 |
+| `CalamityLegendReturn/Texture/KsTexture/twirl_02` | `BrinyBaron_TornadoBolt` | 旋涡核心 |
+| `CalamityLegendReturn/Texture/KsTexture/star_04` | `BrinyBaron_TornadoBolt` | 符文星芒 |
 | `CalamityMod/Particles/BloomCircle` | `BrinyBaron_TornadoWaterExplosion`、`BrinyBaron_DashWaterPillar`、部分 `CustomSpark` | 圆形 bloom 光斑 |
 | `CalamityMod/Particles/ThinEndedLine` | `BrinyBaron_DashWaterPillar` | 竖向水柱线 |
 | `CalamityMod/Particles/GlowBlade` | `BrinyBaron_SkillDashTornado_BladeDash.PreDraw` | 短冲刺光刃外层与核心 |
-| `CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron` | `BrinyBaron_SkillDashTornado_BladeDash`、`BrinyBaron_SkillSlashDash_SlashDash` | 武器本体贴图 |
+| `CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron` | `BrinyBaron_SkillDashTornado_BladeDash`、`BrinyBaron_SkillSlashDash_SlashDash` | 武器本体贴图 |
 | `CalamityMod/Projectiles/TornadoProj` | `BrinyBaron_RightClick_Shuriken` | 右键手里剑主体 |
 | `CalamityMod/Particles/CircularSmearSmokey` | `BBShuriken_BoomerDuke_Effects.DrawBladeDisc` | 高阶手里剑圆形旋转拖抹 |
 | `CalamityMod/Particles/SemiCircularSmearSwipe` | `BBShuriken_BoomerDuke_Effects.DrawBladeDisc` | 高阶手里剑半圆挥砍拖抹 |
@@ -169,19 +169,19 @@ new Color(15, 45, 85)
 
 | 所属模块 | 释放函数 | 特效名字 | 贴图路径 | 用途 |
 |---|---|---|---|---|
-| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnDashStartEffects` | `CustomSpark` | `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` | 短冲刺启动刀尖蓝白光刃线，释放 3 条 |
-| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnDashFlightEffects` | `CustomSpark` | `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` | 短冲刺飞行中持续刀尖光刃线，释放 2 条 |
-| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnDashFlightEffects` | `CustomSpark` | `CalamityLegendsReturn/Texture/KsTexture/window_04` | 短冲刺本体中心闪耀 flare，放在 `projectile.Center` |
-| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnReboundFlightEffects` | `CustomSpark` | `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` | 反弹阶段较短较弱的回弹光刃线 |
+| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnDashStartEffects` | `CustomSpark` | `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` | 短冲刺启动刀尖蓝白光刃线，释放 3 条 |
+| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnDashFlightEffects` | `CustomSpark` | `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` | 短冲刺飞行中持续刀尖光刃线，释放 2 条 |
+| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnDashFlightEffects` | `CustomSpark` | `CalamityLegendReturn/Texture/KsTexture/window_04` | 短冲刺本体中心闪耀 flare，放在 `projectile.Center` |
+| `BrinyBaron_SkillDashTornado_FlightEffects` | `SpawnReboundFlightEffects` | `CustomSpark` | `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` | 反弹阶段较短较弱的回弹光刃线 |
 | `BBShuriken_BoomerDuke_Effects` | `SpawnFlight` | `CustomSpark` | `CalamityMod/Particles/BloomCircle` | Boomer Duke 阶段右键手里剑两侧水蓝 bloom 光斑 |
 | `BBShuriken_BoomerDuke_Effects` | `SpawnHitBurst` | `CustomSpark` | `CalamityMod/Particles/BloomCircle` | Boomer Duke 阶段右键手里剑命中时的水蓝 bloom 爆点 |
 | `BrinyBaron_SkillSlashDash_SlashDash` | `AdditionalAI` 的 `inSwing` 段 | `CustomSpark` | `CalamityMod/Particles/VerticalSmearLarge` | 被动快斩进入挥砍时的大型竖向拖抹刀光 |
 
 这些 `CustomSpark` 可以分成三种美术角色：
 
-第一种是 **刀锋型 `CustomSpark`**，使用 `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade`。这种 `CustomSpark` 应该理解为短冲刺刀尖的光刃，不是普通光点。它通常有 `glowCenter: true`、`glowCenterScale`、`glowOpacity`、纵向拉伸 `new Vector2(0.56f, 2.15f)` 或类似参数，表现的是细长光刃。
+第一种是 **刀锋型 `CustomSpark`**，使用 `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade`。这种 `CustomSpark` 应该理解为短冲刺刀尖的光刃，不是普通光点。它通常有 `glowCenter: true`、`glowCenterScale`、`glowOpacity`、纵向拉伸 `new Vector2(0.56f, 2.15f)` 或类似参数，表现的是细长光刃。
 
-第二种是 **符文 flare 型 `CustomSpark`**，使用 `CalamityLegendsReturn/Texture/KsTexture/window_04`。这个 `CustomSpark` 放在短冲刺弹幕中心，颜色是 `new Color(160, 242, 255) * 1.96f`，亮度明显强于普通水蓝。它的任务是给短冲刺本体一个“核心亮点”，避免只有刀尖亮而本体不亮。
+第二种是 **符文 flare 型 `CustomSpark`**，使用 `CalamityLegendReturn/Texture/KsTexture/window_04`。这个 `CustomSpark` 放在短冲刺弹幕中心，颜色是 `new Color(160, 242, 255) * 1.96f`，亮度明显强于普通水蓝。它的任务是给短冲刺本体一个“核心亮点”，避免只有刀尖亮而本体不亮。
 
 第三种是 **水蓝 bloom 型 `CustomSpark`**，使用 `CalamityMod/Particles/BloomCircle`。这个 `CustomSpark` 出现在 `BBShuriken_BoomerDuke_Effects`，用于高阶手里剑的飞行侧光与命中爆点。它不是刀形，而是圆形光斑，所以后续如果做大招时想表达“爆闪”而不是“切割”，可以参考这一类。
 
@@ -466,7 +466,7 @@ rotation = Projectile.rotation + PiOver2
 
 ## 8. 水魔法飞弹系统：`BrinyBaron_TornadoBolt`
 
-`BrinyBaron_TornadoBolt` 是这批文件中最“魔法化”的普通弹幕。它使用贴图 `CalamityLegendsReturn/Texture/KsTexture/light_03`，但真正的视觉由多层符文和水蓝光效组成。
+`BrinyBaron_TornadoBolt` 是这批文件中最“魔法化”的普通弹幕。它使用贴图 `CalamityLegendReturn/Texture/KsTexture/light_03`，但真正的视觉由多层符文和水蓝光效组成。
 
 ### 8.1 `BrinyBaron_TornadoBolt` 的定位
 
@@ -517,14 +517,14 @@ AngleTowards(desiredDirection, turnRate)
 `BrinyBaron_TornadoBolt.PreDraw` 使用的贴图非常多：
 
 ```csharp
-CalamityLegendsReturn/Texture/KsTexture/light_03
+CalamityLegendReturn/Texture/KsTexture/light_03
 CalamityMod/ExtraTextures/BloomCirclePinpoint
 CalamityMod/ExtraTextures/SimpleStar
-CalamityLegendsReturn/Texture/KsTexture/magic_03
-CalamityLegendsReturn/Texture/KsTexture/magic_04
-CalamityLegendsReturn/Texture/KsTexture/circle_03
-CalamityLegendsReturn/Texture/KsTexture/twirl_02
-CalamityLegendsReturn/Texture/KsTexture/star_04
+CalamityLegendReturn/Texture/KsTexture/magic_03
+CalamityLegendReturn/Texture/KsTexture/magic_04
+CalamityLegendReturn/Texture/KsTexture/circle_03
+CalamityLegendReturn/Texture/KsTexture/twirl_02
+CalamityLegendReturn/Texture/KsTexture/star_04
 ```
 
 它的绘制顺序非常值得保留：
@@ -615,7 +615,7 @@ mainColor * 0.78f
 
 ```csharp
 CalamityMod/Particles/BloomCircle
-CalamityLegendsReturn/Texture/KsTexture/circle_04
+CalamityLegendReturn/Texture/KsTexture/circle_04
 CalamityMod/ExtraTextures/SimpleStar
 ```
 
@@ -997,7 +997,7 @@ TryFireDashProjectile
 短冲刺主绘制使用两个贴图：
 
 ```csharp
-CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron
+CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron
 CalamityMod/Particles/GlowBlade
 ```
 
@@ -1034,12 +1034,12 @@ new Color(245, 255, 255, 0) * 0.88f
 `BrinyBaron_SkillDashTornado_FlightEffects` 是短冲刺特效的核心工具类。它定义了 `GlowBladeTexture`：
 
 ```csharp
-CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
+CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
 ```
 
 这个贴图只用于 `CustomSpark`，不是主绘制里的 `CalamityMod/Particles/GlowBlade`。两者不要混淆：
 
-- `CustomSpark` 使用的 `GlowBladeTexture` 是 `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade`。
+- `CustomSpark` 使用的 `GlowBladeTexture` 是 `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade`。
 - `PreDraw` 使用的 `glowBlade` 是 `CalamityMod/Particles/GlowBlade`。
 
 ### 13.1 `BrinyBaron_SkillDashTornado_FlightEffects.GetFrontAnchor`
@@ -1063,7 +1063,7 @@ FrontAnchorDistance = 16f * 3f
 
 ```csharp
 CustomSpark
-Texture: CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
+Texture: CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
 ```
 
 它释放 3 条刀尖光刃线，颜色 `new Color(145, 235, 255) * 0.95f`，缩放 `new Vector2(0.58f, 2f)`，`glowCenter: true`。这组 `CustomSpark` 是短冲刺启动瞬间的“拔刀蓝光”。
@@ -1080,7 +1080,7 @@ Texture: CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
 
 ```csharp
 CustomSpark
-Texture: CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
+Texture: CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
 ```
 
 每帧释放 2 条刀尖光刃线，颜色 `new Color(160, 242, 255)`，纵向拉伸约 `new Vector2(0.56f, 2.15f)` 到 `new Vector2(0.56f, 2.6f)`。这组 `CustomSpark` 是短冲刺飞行中最主要的刀刃残光。
@@ -1089,7 +1089,7 @@ Texture: CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
 
 ```csharp
 CustomSpark
-Texture: CalamityLegendsReturn/Texture/KsTexture/window_04
+Texture: CalamityLegendReturn/Texture/KsTexture/window_04
 ```
 
 这个 `CustomSpark` 放在 `projectile.Center`，寿命 10 帧，大小 `0.26f`，颜色 `new Color(160, 242, 255) * 1.96f`。它是中心 flare，让短冲刺本体发光。
@@ -1106,7 +1106,7 @@ Texture: CalamityLegendsReturn/Texture/KsTexture/window_04
 
 ```csharp
 CustomSpark
-Texture: CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
+Texture: CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade
 ```
 
 颜色 `new Color(120, 220, 255) * 0.7f`，缩放 `new Vector2(0.45f, 1.4f)`。它比冲刺阶段的 `CustomSpark` 弱，表现回弹而不是主冲锋。
@@ -1386,10 +1386,10 @@ new Color(25, 95, 205)
 
 如果大招使用 `CustomSpark`，建议预先命名几种用途：
 
-- `CustomSpark` + `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade`：用于主水刃或刀尖光刃。
+- `CustomSpark` + `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade`：用于主水刃或刀尖光刃。
 - `CustomSpark` + `CalamityMod/Particles/BloomCircle`：用于水蓝爆点或中心 bloom。
 - `CustomSpark` + `CalamityMod/Particles/VerticalSmearLarge`：用于瞬间大斩击拖抹。
-- `CustomSpark` + `CalamityLegendsReturn/Texture/KsTexture/window_04`：用于符文核心 flare。
+- `CustomSpark` + `CalamityLegendReturn/Texture/KsTexture/window_04`：用于符文核心 flare。
 
 绝对不要在文案或代码注释里只写“放一个 `CustomSpark`”。这句话没有视觉含义。必须写成“放一个 `CustomSpark`，贴图是某某路径，用途是某某视觉”。
 
@@ -1400,8 +1400,8 @@ new Color(25, 95, 205)
 - 使用 `GlowOrbParticle` 从屏幕周围向玩家刀尖汇聚，模拟潮汐回流。
 - 使用 `LineParticle` 从两侧拉出水流丝线，表现海水被压缩成刃。
 - 使用 `DirectionalPulseRing` 在刀尖前方连续收缩，表现水压临界。
-- 使用 `CustomSpark` + `CalamityLegendsReturn/Texture/KsTexture/window_04` 在玩家中心或刀尖生成符文 flare。
-- 使用 `CustomSpark` + `CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` 生成数条刀尖光刃。
+- 使用 `CustomSpark` + `CalamityLegendReturn/Texture/KsTexture/window_04` 在玩家中心或刀尖生成符文 flare。
+- 使用 `CustomSpark` + `CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade` 生成数条刀尖光刃。
 - 使用 `PrimitiveRenderer.RenderTrail` + `GameShaders.Misc["CalamityMod:SideStreakTrail"]` 生成主水刃轨迹。
 - 命中后使用 `ImpactParticle` 做中心冲击，`WaterFoamParticle` 做泡沫，`DustID.Water` 做水花，`DustID.Frost` 做冰白碎屑，`DirectionalPulseRing` 做扩散冲击环。
 - 结束后使用 `GlowOrbParticle` 低速漂移和少量 `DustID.Water` / `DustID.Frost` 消散。

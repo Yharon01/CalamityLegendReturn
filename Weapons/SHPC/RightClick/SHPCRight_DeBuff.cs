@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     public class SHPCRight_DeBuff : ModBuff
     {

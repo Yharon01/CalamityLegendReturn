@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.Dragonfolly
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.Dragonfolly
 {
     internal static class FollyFx
     {

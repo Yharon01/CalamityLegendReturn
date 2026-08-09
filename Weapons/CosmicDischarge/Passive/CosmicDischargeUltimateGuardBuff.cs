@@ -3,11 +3,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     internal sealed class CosmicDischargeUltimateGuardBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/CosmicDischarge/CosmicDischarge";
+        public override string Texture => "CalamityLegendReturn/Weapons/CosmicDischarge/CosmicDischarge";
 
         public override void SetStaticDefaults()
         {

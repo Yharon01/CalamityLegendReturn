@@ -19,11 +19,11 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     internal sealed class GaelGreatswordCapeFinisher : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword";
+        public override string Texture => "CalamityLegendReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword";
 
         private const int Duration = 210;
         private const float CapeRadius = 150f;
@@ -287,7 +287,7 @@ namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
                 ("CalamityMod/Items/Accessories/SandCloak", 1),
                 ("CalamityMod/Items/Accessories/Wings/SilvaWings_Wings", 4),
                 ("CalamityMod/Items/Accessories/Wings/TarragonWings_Wings", 4),
-                ("CalamityLegendsReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword", 1),
+                ("CalamityLegendReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword", 1),
             };
 
             foreach ((string path, int verticalFrames) in candidates)
@@ -296,7 +296,7 @@ namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
                     return (asset, verticalFrames);
             }
 
-            return (ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword"), 1);
+            return (ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword"), 1);
         }
     }
 }

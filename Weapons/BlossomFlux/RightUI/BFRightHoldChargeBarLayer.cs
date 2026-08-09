@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightUI
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightUI
 {
     internal sealed class BFRightHoldChargeBarLayer : PlayerDrawLayer
     {

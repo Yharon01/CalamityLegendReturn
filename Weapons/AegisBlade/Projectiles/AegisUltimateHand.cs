@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     // 终结技：神手沿玩家相对坐标下降，蓄力后握住玩家，赋予10秒无敌+70%减速。
     //

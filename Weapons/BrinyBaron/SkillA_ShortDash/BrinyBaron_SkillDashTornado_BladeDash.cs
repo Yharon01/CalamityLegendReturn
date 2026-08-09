@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons.BrinyBaron;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -19,12 +19,12 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash
 {
     public class BrinyBaron_SkillDashTornado_BladeDash : ModProjectile
     {
         public new string LocalizationCategory => "Projectiles.BrinyBaron";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
 
         private const int DashHistoryLength = 8;
 
@@ -322,6 +322,19 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
                 }
             }
 
+            // The rebound package is a Hardmode unlock. Before then the dash is a
+            // single contact hit: it grants tide and halves its next cooldown, but
+            // never grants a rebound, i-frames, shield, or follow-up effect.
+            if (!enemyReboundUnlocked)
+            {
+                if (Main.myPlayer == Projectile.owner)
+                    owner.GetModPlayer<BrinyBaronRightClickDashCooldownPlayer>().ReduceCooldownTo(BB_Balance.PreHardmodeRightClickHitCooldown);
+
+                hasBounced = true;
+                Projectile.Kill();
+                return;
+            }
+
             if (hardmodeOrLater)
                 SpawnDashImpactExplosion(target.Center, GetReliableDashDirection());
             // Match Myrindael's post-impact protection: a real hit grants a
@@ -513,7 +526,8 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
             if (helixVariant)
             {
                 int damage = Math.Max(1, (int)(Projectile.damage * BB_Balance.BaronHelixJazzTyphoonDamageMultiplier));
-                for (int i = 0; i < 3; i++)
+                int count = CalamityMod.DownedBossSystem.downedBoomerDuke ? 5 : 3;
+                for (int i = 0; i < count; i++)
                     BrinyBaron_JazzTyphoon.Spawn(Projectile, target, damage, Projectile.knockBack, true, i);
                 return;
             }
@@ -868,7 +882,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
 
             Texture2D texture = TextureAssets.Projectile[Type].Value;
             Texture2D glowBlade = ModContent.Request<Texture2D>("CalamityMod/Particles/GlowBlade").Value;
-            Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest").Value;
+            Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest").Value;
             Texture2D smearTex = ModContent.Request<Texture2D>("CalamityMod/Particles/VerticalSmearLarge").Value;
             Texture2D flareTex = ModContent.Request<Texture2D>("CalamityMod/Particles/HalfStar").Value;
 

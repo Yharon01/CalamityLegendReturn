@@ -1,6 +1,6 @@
 using System;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
+using CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     /// <summary>
     /// 超维矩阵主宰——攻击模组实现与程序化绘制。

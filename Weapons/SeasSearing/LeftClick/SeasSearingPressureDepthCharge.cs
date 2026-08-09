@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // A long-lived tracking bubble. It drifts until it has a target, then keeps accelerating until contact.
     internal sealed class SeasSearingPressureDepthCharge : ModProjectile, ILocalizedModType

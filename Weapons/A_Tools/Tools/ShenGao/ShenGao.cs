@@ -8,12 +8,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ShenGao
+namespace CalamityLegendReturn.Weapons.A_Tools.Tools.ShenGao
 {
     public class ShenGao : ModItem, ILocalizedModType
     {
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Tools/Tools/ShenGao/神镐";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Tools/Tools/ShenGao/神镐";
 
         public override void SetStaticDefaults()
         {

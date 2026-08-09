@@ -1,13 +1,13 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.Skill.BFArrowRest
+namespace CalamityLegendReturn.Accssory.BF.Skill.BFArrowRest
 {
     public sealed class BFArrowRest : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/BFArrowRest/BFArrowRest";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/BFArrowRest/BFArrowRest";
 
         public override void SetDefaults()
         {

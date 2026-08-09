@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash
 {
     // Stores the other end of Vortex Eye's current teleport pair. This is deliberately
     // player state instead of projectile state: the pair remains usable after the

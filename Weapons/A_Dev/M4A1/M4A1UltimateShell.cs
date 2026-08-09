@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 大招齐射的追踪炮弹：极快、近乎直线，命中造成剧烈超级爆炸。

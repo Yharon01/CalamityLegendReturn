@@ -1,11 +1,11 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Buffs;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Buffs;
 using CalamityMod.Dusts;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General
 {
     /// <summary>
     /// 蚀痕叠层系统——冥蚀天底"呼应"的核心。

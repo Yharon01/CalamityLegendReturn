@@ -3,11 +3,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.Skill
+namespace CalamityLegendReturn.Accssory.BB.Skill
 {
     public class AbyssalBastion : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BB/贴图/渊洋壁垒";
+        public override string Texture => "CalamityLegendReturn/Accssory/BB/贴图/渊洋壁垒";
 
         public override void SetDefaults()
         {

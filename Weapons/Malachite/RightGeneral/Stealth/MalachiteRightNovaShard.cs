@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.RightGeneral.Stealth
+namespace CalamityLegendReturn.Weapons.Malachite.RightGeneral.Stealth
 {
     public sealed class MalachiteRightNovaShard : ModProjectile, ILocalizedModType
     {

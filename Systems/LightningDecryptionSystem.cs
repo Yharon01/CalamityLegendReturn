@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     // Keeps the two Draedon machines separate: codebreakers decrypt schematics,
     // while charging stations only fast-charge the six lab-seeking mechanisms.
@@ -16,7 +16,7 @@ namespace CalamityLegendsReturn.Systems
 
         public override void PostUpdateEverything()
         {
-            if (Main.netMode == NetmodeID.MultiplayerClient || !CalamityLegendsReturnConfig.Instance.LightningDecryption)
+            if (Main.netMode == NetmodeID.MultiplayerClient || !CalamityLegendReturnConfig.Instance.LightningDecryption)
                 return;
 
             foreach (TileEntity tileEntity in TileEntity.ByID.Values)

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash
 {
     // Tiny high-speed cutting lights left across each teleport line. They are intentionally
     // compact: the path reads as a rapid sequence of cuts instead of a continuous beam.

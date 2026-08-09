@@ -10,7 +10,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 左键荧光绿能量弹（改自 SHPC 的 EndlessDevourJavOrbSmall，换成荧光绿）：

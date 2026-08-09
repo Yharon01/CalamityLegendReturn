@@ -1,10 +1,10 @@
-﻿using CalamityMod.Particles;
+﻿﻿using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
+namespace CalamityLegendReturn.Weapons.A_Dev.DesertEagle
 {
     internal sealed class DesertEagleSilverGlobalProjectile : GlobalProjectile
     {

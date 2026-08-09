@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.Pa5
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.Pa5
 {
     internal static class BFPa5PassiveSystem
     {

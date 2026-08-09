@@ -1,4 +1,4 @@
-﻿using CalamityMod.Systems.Collections;
+﻿﻿using CalamityMod.Systems.Collections;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
 {
     internal sealed class SHPCProjectilePossessionGlobalProjectile : GlobalProjectile
     {

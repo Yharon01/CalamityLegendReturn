@@ -1,7 +1,7 @@
 #if KARASAWA_MODULE_ENABLED
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.KarasawaModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.KarasawaModule
 {
     public sealed class KarasawaModulePlayer : ModPlayer
     {

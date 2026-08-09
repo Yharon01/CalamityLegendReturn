@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General
 {
     // 自研“活电弧”粒子：
     // 1. 用平滑随机游走生成锯齿折线（中点位移思路），而不是贴图或 shader；

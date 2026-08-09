@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     internal class RuinousSoul_OrbitGhost : ModProjectile, ILocalizedModType
     {
@@ -13,7 +13,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
         public const int ForcedReleaseTime = 100;
 
         public new string LocalizationCategory => "Projectiles.SHPC";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/DPreDog/RuinousSoul_OrbitGhost";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/DPreDog/RuinousSoul_OrbitGhost";
 
         public ref float State => ref Projectile.ai[0];
         public ref float TargetIndex => ref Projectile.ai[1];
@@ -217,7 +217,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
         private static bool OwnerStillHoldingSHPC(Player owner)
         {
             int heldType = owner.HeldItem?.type ?? ItemID.None;
-            return heldType == ModContent.ItemType<global::CalamityLegendsReturn.Weapons.SHPC.NewLegendSHPC>();
+            return heldType == ModContent.ItemType<global::CalamityLegendReturn.Weapons.SHPC.NewLegendSHPC>();
         }
 
         private void SpawnPhantasmalTrail()

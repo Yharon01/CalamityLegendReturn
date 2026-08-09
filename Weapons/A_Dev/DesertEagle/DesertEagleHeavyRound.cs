@@ -1,11 +1,11 @@
-﻿using CalamityMod.Particles;
+﻿﻿using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
+namespace CalamityLegendReturn.Weapons.A_Dev.DesertEagle
 {
     internal sealed class DesertEagleHeavyRound : ModProjectile, ILocalizedModType
     {
@@ -16,7 +16,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
         private static readonly Color SilverDark = new(140, 152, 170);
 
         public new string LocalizationCategory => "Projectiles.A_Dev";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/DesertEagle/HandheldTankShell";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/DesertEagle/HandheldTankShell";
 
         public override void SetDefaults()
         {

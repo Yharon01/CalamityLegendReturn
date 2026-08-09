@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord
 {
     internal class DepthCellsEffect : DefaultEffect
     {

@@ -1,14 +1,14 @@
 using CalamityMod;
 using CalamityMod.Graphics.Metaballs;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Netcode;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerSaddle;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
-using CalamityLegendsReturn.Weapons.A_Tools.Tools.ArtisanToken;
-using CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Netcode;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.PlayerLocker;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.PlayerSaddle;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.A_Tools.Tools.ArtisanToken;
+using CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
@@ -22,12 +22,12 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
 	// Please read https://github.com/tModLoader/tModLoader/wiki/Basic-tModLoader-Modding-Guide#mod-skeleton-contents for more information about the various files in a mod.
-	public class CalamityLegendsReturn : Mod
+	public class CalamityLegendReturn : Mod
 	{
-		internal const string AzureThunderGreenUltimateFilterKey = "CalamityLegendsReturn:AzureThunderGreenUltimateFilter";
+		internal const string AzureThunderGreenUltimateFilterKey = "CalamityLegendReturn:AzureThunderGreenUltimateFilter";
 
         public override void Load()
         {

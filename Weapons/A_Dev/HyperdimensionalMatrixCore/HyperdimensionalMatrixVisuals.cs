@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
+namespace CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
 {
     internal enum MatrixGeometryShape
     {
@@ -277,7 +277,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D ring = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
             Texture2D star = ModContent.Request<Texture2D>("CalamityMod/Particles/HalfStar").Value;
-            Texture2D localStar = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_01").Value;
+            Texture2D localStar = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_01").Value;
             float iconScale = MathHelper.Clamp(scale, 0.7f, 1.35f);
             float coreRadius = 27f * iconScale;
 
@@ -352,7 +352,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D ring = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
             Texture2D star = ModContent.Request<Texture2D>("CalamityMod/Particles/HalfStar").Value;
-            Texture2D localStar = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_01").Value;
+            Texture2D localStar = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_01").Value;
             float iconScale = MathHelper.Clamp(scale * 0.92f, 0.65f, 1.22f);
             float coreRadius = 25f * iconScale;
             Vector2 center = screenCenter + Vector2.UnitY * (float)Math.Sin(time * 2.1f) * 2.4f * iconScale;

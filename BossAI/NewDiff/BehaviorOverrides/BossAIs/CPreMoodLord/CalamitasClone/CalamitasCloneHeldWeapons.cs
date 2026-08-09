@@ -1,8 +1,8 @@
 using System;
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.CalamitasClone
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.CalamitasClone
 {
     // =====================================================================================================================
     // OBLIVION — held near the hip while the thrown yoyo does the sweeping; recoils once as it's cast out.

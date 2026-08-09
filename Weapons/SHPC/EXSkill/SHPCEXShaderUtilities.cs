@@ -1,12 +1,12 @@
 using CalamityMod;
-using CalamityLegendsReturn.Shader;
+using CalamityLegendReturn.Shader;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
+namespace CalamityLegendReturn.Weapons.SHPC.EXSkill
 {
     internal static class SHPCEXShaderUtilities
     {

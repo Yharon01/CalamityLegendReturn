@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.General
+namespace CalamityLegendReturn.Accssory.BF.General
 {
     // 备用箭袋 — 合成同调箭袋的前置材料。
     public sealed class BFSpareQuiver : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/General/BFSpareQuiver";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/General/BFSpareQuiver";
 
         public override void SetDefaults()
         {

@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.ParticleLab
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.ParticleLab
 {
     public sealed class ParticleLabDebugItem : ModItem, ILocalizedModType
     {

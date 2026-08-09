@@ -1,7 +1,7 @@
-﻿using CalamityLegendsReturn.Accssory.SHPC.General;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Weapons.SHPC.RightClick;
-using CalamityLegendsReturn.Weapons.Visuals;
+﻿﻿using CalamityLegendReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Weapons.SHPC.RightClick;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClickTurret
+namespace CalamityLegendReturn.Weapons.SHPC.RightClickTurret
 {
     internal sealed class MilitaryCaller_HoldOut : RightClickHoldoutBase, ILocalizedModType
     {

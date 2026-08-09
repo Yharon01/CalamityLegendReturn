@@ -6,9 +6,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Systems;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Systems;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
 {
     internal abstract class LegendsBossAI
     {

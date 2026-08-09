@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -15,7 +15,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.RightClick
 {
     /// <summary>
     /// 冥蚀天底右键投矛（三连之一）。物品贴图（更短小）、极高更新次数、直线飞行、不追踪。
@@ -25,7 +25,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
     public class UmbralNadirJavelin : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Nadir";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/Nadir/UmbralNadir";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/Nadir/UmbralNadir";
 
         private static readonly Color MeldGreen = Color.LightGreen;
         private static readonly Color ShaderColorOne = Color.Black;

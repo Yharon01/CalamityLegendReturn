@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
@@ -11,7 +11,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class AzureThunderAccessoryPlayer : ModPlayer
     {
@@ -376,7 +376,7 @@ namespace CalamityLegendsReturn.Accssory.TS
         private const int Lifetime = 32;
 
         public new string LocalizationCategory => "Projectiles.AzureThunder";
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/图片放这里/弭弗";
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/图片放这里/弭弗";
 
         private int TargetIndex => (int)Projectile.ai[0];
         private float Fade => Utils.GetLerpValue(0f, 4f, Lifetime - Projectile.timeLeft, true) * Utils.GetLerpValue(0f, 7f, Projectile.timeLeft, true);

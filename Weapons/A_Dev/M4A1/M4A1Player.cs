@@ -3,7 +3,7 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 战术同步率（Tactical Sync Rate）资源载体。

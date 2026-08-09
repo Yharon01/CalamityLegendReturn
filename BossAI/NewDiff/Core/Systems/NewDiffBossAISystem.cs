@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.UI;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.UI;
 using CalamityMod.Systems;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Systems
+namespace CalamityLegendReturn.BossAI.NewDiff.Core.Systems
 {
     internal sealed class NewDiffBossAISystem : ModSystem
     {

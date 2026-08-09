@@ -2,7 +2,7 @@ using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -14,7 +14,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
 {
     /// <summary>
     /// 灾劫核心的主弹。
@@ -25,7 +25,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
         private static readonly Color BrightGray = new(224, 230, 238);
         private static readonly Color MidGray = new(138, 146, 158);
         private static readonly Color DarkGray = new(50, 54, 64);
-        private static readonly SoundStyle ImpactSound = new("CalamityLegendsReturn/Sound/Other/DeltaForce/ASH12消音");
+        private static readonly SoundStyle ImpactSound = new("CalamityLegendReturn/Sound/Other/DeltaForce/ASH12消音");
 
         public GeneralDrawLayer LayerToRenderTo => GeneralDrawLayer.BeforeProjectiles;
         public new string LocalizationCategory => "Projectiles.SHPC";
@@ -320,7 +320,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
         {
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D smear = ModContent.Request<Texture2D>("CalamityMod/Particles/ForwardSmear").Value;
-            Texture2D needle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/SHPC/Effects/EAfterDog/Ascendant/AscendantSpirit_PROJ").Value;
+            Texture2D needle = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/SHPC/Effects/EAfterDog/Ascendant/AscendantSpirit_PROJ").Value;
             Texture2D star = ModContent.Request<Texture2D>("CalamityMod/Particles/HalfStar").Value;
             Vector2 screenCenter = center - Main.screenPosition;
             Vector2 perpendicular = forward.RotatedBy(MathHelper.PiOver2);

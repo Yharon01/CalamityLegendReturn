@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     internal sealed class SeedOfSilvaDaisy : SeedOfSilvaFlowerProjectile
     {
@@ -17,7 +17,7 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
         private int daisyHitCooldown;
 
         protected override BlossomFluxChloroplastPresetType FlowerPreset => BlossomFluxChloroplastPresetType.Chlo_BRecov;
-        protected override string FlowerTexturePath => "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Daisy";
+        protected override string FlowerTexturePath => "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Daisy";
 
         protected override void UpdateBlooming(Player owner, BFAccessoryPlayer accessoryPlayer)
         {

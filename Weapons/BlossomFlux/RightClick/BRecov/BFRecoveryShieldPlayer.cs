@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     public class BFRecoveryShieldPlayer : ModPlayer
     {

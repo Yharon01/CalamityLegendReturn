@@ -1,8 +1,8 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade
+namespace CalamityLegendReturn.Weapons.AegisBlade
 {
     public class BalanceAegisBlade
     {

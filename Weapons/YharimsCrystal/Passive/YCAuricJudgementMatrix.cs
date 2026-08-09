@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.Passive
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.Passive
 {
     // A compact 3x3 charge readout for the nine follow-up Judgement waves.
     internal sealed class YCAuricJudgementMatrix : ModProjectile, IScreenOverlayProjectile

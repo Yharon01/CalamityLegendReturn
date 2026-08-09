@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.LeftClick
 {
     internal class BFLeftPlagueFlame : ModProjectile
     {

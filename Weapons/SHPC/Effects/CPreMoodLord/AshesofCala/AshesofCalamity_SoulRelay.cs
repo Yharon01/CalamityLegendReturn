@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.AshesofCala
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.AshesofCala
 {
     internal sealed class AshesofCalamity_SoulRelay : ModProjectile, ILocalizedModType
     {

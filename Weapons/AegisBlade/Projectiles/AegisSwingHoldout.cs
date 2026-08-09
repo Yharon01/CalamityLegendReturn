@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
@@ -12,11 +12,11 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     public class AegisSwingHoldout : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/AegisBlade/AegisBlade";
+        public override string Texture => "CalamityLegendReturn/Weapons/AegisBlade/AegisBlade";
 
         private const int SwingDuration = 52;
         private const float FireballSpawnProgress = 0.3f;

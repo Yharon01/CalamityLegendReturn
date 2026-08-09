@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 左键间歇火箭弹：沿用 AcidRocket 贴图，换成我们的荧光绿。轻微追踪，命中/触地引爆小范围战术爆破。

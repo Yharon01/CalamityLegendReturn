@@ -9,9 +9,9 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal sealed class MK14ModificationPanel : ModProjectile, ILocalizedModType, IScreenOverlayProjectile
     {
@@ -156,7 +156,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
 
         private void DrawHeader(Rectangle panelArea, NewLegendMK14EBR weapon)
         {
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.MK14EBR.UI.Title");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.MK14EBR.UI.Title");
             string stage = BalanceMK14EBR.GetLocalizedStageName(new BalanceMK14EBR().GetCompletedStageIndex());
             DrawText(title, new Vector2(panelArea.X + PanelPadding, panelArea.Y + 10f), new Color(225, 238, 255) * Projectile.Opacity, 0.82f);
             Vector2 stageSize = FontAssets.MouseText.Value.MeasureString(stage) * 0.62f;
@@ -223,7 +223,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
             DrawRectangle(listArea, new Color(10, 14, 20, 208) * (Projectile.Opacity * 0.86f));
             DrawBorder(listArea, new Color(74, 104, 132) * Projectile.Opacity, 1);
 
-            string header = Language.GetTextValue("Mods.CalamityLegendsReturn.MK14EBR.UI.EffectHeader");
+            string header = Language.GetTextValue("Mods.CalamityLegendReturn.MK14EBR.UI.EffectHeader");
             DrawText(header, new Vector2(listArea.X + 8f, listArea.Y + 8f), new Color(255, 232, 170) * Projectile.Opacity, 0.62f);
 
             float y = listArea.Y + 30f;
@@ -425,7 +425,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
             if (!unlocked)
             {
                 string unlockStage = BalanceMK14EBR.GetLocalizedStageName(entry.UnlockStage);
-                string lockedFormat = Language.GetTextValue("Mods.CalamityLegendsReturn.MK14EBR.UI.LockedWithStage");
+                string lockedFormat = Language.GetTextValue("Mods.CalamityLegendReturn.MK14EBR.UI.LockedWithStage");
                 return string.Format(lockedFormat, name, unlockStage, effect);
             }
 
@@ -434,7 +434,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
 
         private static string GetCategoryName(MK14AttachmentSlot slot)
         {
-            return Language.GetTextValue($"Mods.CalamityLegendsReturn.MK14EBR.UI.Category.{slot}");
+            return Language.GetTextValue($"Mods.CalamityLegendReturn.MK14EBR.UI.Category.{slot}");
         }
 
         private static string FitText(string text, float maxWidth, float scale)

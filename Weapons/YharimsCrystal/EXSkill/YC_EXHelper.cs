@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.EXSkill
 {
     internal static class YC_EXHelper
     {

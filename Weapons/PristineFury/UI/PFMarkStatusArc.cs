@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.UI
+namespace CalamityLegendReturn.Weapons.PristineFury.UI
 {
     // 右侧弧形弹夹面板：将玩家存储的印记以圆形图标弧排列显示在玩家右侧。
     // 被选中的印记有旋转星芒高亮，空格暗化显示。

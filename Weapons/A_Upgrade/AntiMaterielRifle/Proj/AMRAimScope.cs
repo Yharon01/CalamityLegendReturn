@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.YharimsCrystal;
+using CalamityLegendReturn.Weapons.YharimsCrystal;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
 {
     internal sealed class AMRAimScope : ModProjectile, ILocalizedModType
     {

@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
 {
     public class EssenceofSunlight_Lighting : ModProjectile, ILocalizedModType
     {

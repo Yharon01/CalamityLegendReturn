@@ -14,7 +14,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
+namespace CalamityLegendReturn.Weapons.A_Upgrade.BlackHawkRemote
 {
     public sealed class LegendaryBlackHawkRemote : ModItem, ILocalizedModType
     {

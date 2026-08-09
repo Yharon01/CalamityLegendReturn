@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClickMortar
+namespace CalamityLegendReturn.Weapons.SHPC.RightClickMortar
 {
     internal sealed class RightClickMortar_Lazer : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

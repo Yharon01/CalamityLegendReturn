@@ -12,7 +12,7 @@ using Terraria.ModLoader;
 using Terraria.UI;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     // A draw-only inventory overlay so it remains responsive while single-player auto-pause is active.
     internal sealed class LegendarySupplyBoxSelectionUI : ModSystem
@@ -33,7 +33,7 @@ namespace CalamityLegendsReturn
                 return;
 
             layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
-                "CalamityLegendsReturn: Legendary Supply Box Selection",
+                "CalamityLegendReturn: Legendary Supply Box Selection",
                 () =>
                 {
                     Draw(Main.spriteBatch);
@@ -187,7 +187,7 @@ namespace CalamityLegendsReturn
             return -1;
         }
 
-        private static string Text(string key) => Language.GetTextValue($"Mods.CalamityLegendsReturn.Items.Consumables.LegendarySupplyBox.{key}");
+        private static string Text(string key) => Language.GetTextValue($"Mods.CalamityLegendReturn.Items.Consumables.LegendarySupplyBox.{key}");
 
         private static void DrawCenteredText(SpriteBatch spriteBatch, string text, Rectangle area, Color color, float maxScale, float minScale)
         {

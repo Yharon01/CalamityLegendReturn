@@ -1,4 +1,4 @@
-CalamityLegendsReturn Shader 使用教程
+CalamityLegendReturn Shader 使用教程
 ======================================
 
 这份文档写给完全没接触过 Shader 的人。
@@ -64,17 +64,17 @@ Shader/
 
 这些 key 可以直接在代码里使用：
 
-GameShaders.Misc["CalamityLegendsReturn:TailFirstEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TailSecondEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TailMagicEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TailModernEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TailTechnologyEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TrailFrostCrystalEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TrailGhostlyPhantomEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TrailBlazingFlameEffect"]
-GameShaders.Misc["CalamityLegendsReturn:TrailWarpDistortionEffect"]
-GameShaders.Misc["CalamityLegendsReturn:ArtAttackTrail"]
-GameShaders.Misc["CalamityLegendsReturn:HGTShader"]
+GameShaders.Misc["CalamityLegendReturn:TailFirstEffect"]
+GameShaders.Misc["CalamityLegendReturn:TailSecondEffect"]
+GameShaders.Misc["CalamityLegendReturn:TailMagicEffect"]
+GameShaders.Misc["CalamityLegendReturn:TailModernEffect"]
+GameShaders.Misc["CalamityLegendReturn:TailTechnologyEffect"]
+GameShaders.Misc["CalamityLegendReturn:TrailFrostCrystalEffect"]
+GameShaders.Misc["CalamityLegendReturn:TrailGhostlyPhantomEffect"]
+GameShaders.Misc["CalamityLegendReturn:TrailBlazingFlameEffect"]
+GameShaders.Misc["CalamityLegendReturn:TrailWarpDistortionEffect"]
+GameShaders.Misc["CalamityLegendReturn:ArtAttackTrail"]
+GameShaders.Misc["CalamityLegendReturn:HGTShader"]
 
 注意：
 key 必须完整写对。
@@ -132,7 +132,7 @@ public override bool PreDraw(ref Color lightColor)
     Vector2 drawPosition = Projectile.Center - Main.screenPosition;
     Vector2 origin = texture.Size() * 0.5f;
 
-    var shader = GameShaders.Misc["CalamityLegendsReturn:TailModernEffect"];
+    var shader = GameShaders.Misc["CalamityLegendReturn:TailModernEffect"];
 
     shader.SetShaderTexture(ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/Trails/SylvestaffStreak"));
     shader.UseColor(new Color(50, 200, 255));
@@ -220,7 +220,7 @@ HGTShader
 有些 Shader 没有注册进 GameShaders.Misc，只是加载进了 ShaderGames.LoadedShaders。
 可以这样拿：
 
-using CalamityLegendsReturn.Shader;
+using CalamityLegendReturn.Shader;
 using Microsoft.Xna.Framework.Graphics;
 
 Effect effect = ShaderGames.GetEffect("RainbowShader");
@@ -282,11 +282,11 @@ public override bool PreDraw(ref Color lightColor)
 
 目前已经注册：
 
-Filters.Scene["CalamityLegendsReturn:ScreenSimplyDistorted"]
+Filters.Scene["CalamityLegendReturn:ScreenSimplyDistorted"]
 
 最简单的临时启用：
 
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
 ShaderFullScreenSystem.ActivateScreenSimplyDistorted();
 
@@ -398,11 +398,11 @@ RegisterMiscShader("MyCoolTrail", "TrailPass", "MyCoolTrail");
 
 这代表以后这样调用：
 
-GameShaders.Misc["CalamityLegendsReturn:MyCoolTrail"]
+GameShaders.Misc["CalamityLegendReturn:MyCoolTrail"]
 
 第 5 步：在弹幕里调用
 
-var shader = GameShaders.Misc["CalamityLegendsReturn:MyCoolTrail"];
+var shader = GameShaders.Misc["CalamityLegendReturn:MyCoolTrail"];
 shader.SetShaderTexture(ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/Trails/SylvestaffStreak"));
 shader.UseColor(Color.Cyan);
 shader.UseSecondaryColor(Color.White);
@@ -416,7 +416,7 @@ PrimitiveRenderer.RenderTrail(
 第 6 步：build
 
 运行：
-dotnet build CalamityLegendsReturn.csproj
+dotnet build CalamityLegendReturn.csproj
 
 必须 0 errors。
 
@@ -456,11 +456,11 @@ dotnet build CalamityLegendsReturn.csproj
    RegisterSceneFilter("MyScreenShader", "Pass1", "MyScreenShader", EffectPriority.Medium);
 
 4. 调用：
-   Filters.Scene.Activate("CalamityLegendsReturn:MyScreenShader");
+   Filters.Scene.Activate("CalamityLegendReturn:MyScreenShader");
 
 5. 如果需要每帧传参数，在 ShaderGames.PostUpdateEverything() 或专门的 ModSystem 里设置：
 
-Filter filter = Filters.Scene["CalamityLegendsReturn:MyScreenShader"];
+Filter filter = Filters.Scene["CalamityLegendReturn:MyScreenShader"];
 if (filter != null && filter.IsActive())
 {
     Effect shader = filter.GetShader().Shader;
@@ -528,7 +528,7 @@ effect.Parameters["uTime"]?.SetValue(Main.GlobalTimeWrappedHourly);
 GameShaders.Misc["TailModernEffect"]
 
 正确写法：
-GameShaders.Misc["CalamityLegendsReturn:TailModernEffect"]
+GameShaders.Misc["CalamityLegendReturn:TailModernEffect"]
 
 
 错误 2：只放了 .fx，没有 .xnb
@@ -606,23 +606,23 @@ pow(abs(sin(coords.y * 3.141 + uTime)), 1.5)
    只改 .fx 不会影响游戏实际加载结果。
 
 3. 每次改 ShaderGames.cs 后运行：
-   dotnet build CalamityLegendsReturn.csproj
+   dotnet build CalamityLegendReturn.csproj
 
 4. 命名保持一致：
    MyCoolTrail.fx
    MyCoolTrail.xnb
    "MyCoolTrail"
-   GameShaders.Misc["CalamityLegendsReturn:MyCoolTrail"]
+   GameShaders.Misc["CalamityLegendReturn:MyCoolTrail"]
 
 5. 不要把旧模组名写进新代码。
    当前模组统一使用：
-   CalamityLegendsReturn
+   CalamityLegendReturn
 
 
 十四、最快可复制调用模板
 ------------------------
 
-var shader = GameShaders.Misc["CalamityLegendsReturn:TailModernEffect"];
+var shader = GameShaders.Misc["CalamityLegendReturn:TailModernEffect"];
 shader.SetShaderTexture(ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/Trails/SylvestaffStreak"));
 shader.UseColor(Color.Cyan);
 shader.UseSecondaryColor(Color.White);

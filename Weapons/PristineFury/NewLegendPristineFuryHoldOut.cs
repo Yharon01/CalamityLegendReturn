@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Accssory.PF;
-using CalamityLegendsReturn.Weapons.PristineFury.LeftEffect;
-using CalamityLegendsReturn.Weapons.PristineFury.UI;
+using CalamityLegendReturn.Accssory.PF;
+using CalamityLegendReturn.Weapons.PristineFury.LeftEffect;
+using CalamityLegendReturn.Weapons.PristineFury.UI;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal sealed class NewLegendPristineFuryHoldOut : ModProjectile, ILocalizedModType
     {
@@ -89,7 +89,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
         private int fomoEchoTimer;
 
         public new string LocalizationCategory => "Projectiles.PristineFury";
-        public override string Texture => "CalamityLegendsReturn/Weapons/PristineFury/NewLegendPristineFuryHoldOut";
+        public override string Texture => "CalamityLegendReturn/Weapons/PristineFury/NewLegendPristineFuryHoldOut";
 
         internal Player Owner => Main.player[Projectile.owner];
         internal Vector2 AimDirection => Projectile.velocity.SafeNormalize(Vector2.UnitX * Owner.direction);

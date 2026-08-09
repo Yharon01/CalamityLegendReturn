@@ -1,11 +1,11 @@
 using Terraria;
 using Terraria.Audio;
 
-namespace CalamityLegendsReturn.Weapons
+namespace CalamityLegendReturn.Weapons
 {
     internal static class LegendaryUltimateReadySound
     {
-        private static readonly SoundStyle ReadySound = new("CalamityLegendsReturn/Sound/SHPC/PH2禅技准备就绪")
+        private static readonly SoundStyle ReadySound = new("CalamityLegendReturn/Sound/SHPC/PH2禅技准备就绪")
         {
             Volume = 0.95f,
             Pitch = 0f,

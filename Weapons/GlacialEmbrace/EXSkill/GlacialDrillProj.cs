@@ -8,11 +8,11 @@ using Terraria.ID;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.General;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.General;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.LeftClick;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.Passive;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.EXSkill
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.EXSkill
 {
     public class GlacialDrillProj : ModProjectile
     {
@@ -302,8 +302,8 @@ namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.EXSkill
         {
             Texture2D spikeTex = ModContent.Request<Texture2D>("CalamityMod/Projectiles/Summon/GlacialEmbracePointyThing").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D star = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_01").Value;
-            Texture2D twirl = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/twirl_02").Value;
+            Texture2D star = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_01").Value;
+            Texture2D twirl = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/twirl_02").Value;
             Texture2D pixel = TextureAssets.MagicPixel.Value;
 
             float time = Main.GlobalTimeWrappedHourly;

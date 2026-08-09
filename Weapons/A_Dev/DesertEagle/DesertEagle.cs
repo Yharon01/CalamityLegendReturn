@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.A_Dev.DesertEagle;
+using CalamityLegendReturn.Weapons.A_Dev.DesertEagle;
 using CalamityMod;
 using CalamityMod.Items.Materials;
 using CalamityMod.Items.Weapons.Ranged;
@@ -11,11 +11,11 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
+namespace CalamityLegendReturn.Weapons.A_Dev.DesertEagle
 {
     public class DesertEagle : ModItem, ILocalizedModType
     {
-        public const string TextureAssetPath = "CalamityLegendsReturn/Weapons/A_Dev/DesertEagle/沙漠之鹰";
+        public const string TextureAssetPath = "CalamityLegendReturn/Weapons/A_Dev/DesertEagle/沙漠之鹰";
 
         // Balance knobs kept out of SetDefaults so they are easy to tune while testing.
         public virtual int SilverVolleyDamage => 200;
@@ -31,9 +31,9 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
 
         internal static int SharedHoldoutType => ModContent.ProjectileType<DesertEagleHoldout>();
         protected virtual int HoldoutType => SharedHoldoutType;
-        internal static readonly SoundStyle DeltaForceDesertEagleUnsuppressedSound = new("CalamityLegendsReturn/Sound/Other/DeltaForce/沙漠之鹰无消音");
-        internal static readonly SoundStyle DeltaForceDesertEagleSuppressedSound = new("CalamityLegendsReturn/Sound/Other/DeltaForce/沙漠之鹰有消音");
-        internal static readonly SoundStyle DeltaForceSvdMarksmanRifleSound = new("CalamityLegendsReturn/Sound/Other/DeltaForce/Svd射手步枪");
+        internal static readonly SoundStyle DeltaForceDesertEagleUnsuppressedSound = new("CalamityLegendReturn/Sound/Other/DeltaForce/沙漠之鹰无消音");
+        internal static readonly SoundStyle DeltaForceDesertEagleSuppressedSound = new("CalamityLegendReturn/Sound/Other/DeltaForce/沙漠之鹰有消音");
+        internal static readonly SoundStyle DeltaForceSvdMarksmanRifleSound = new("CalamityLegendReturn/Sound/Other/DeltaForce/Svd射手步枪");
 
         public override void SetStaticDefaults()
         {

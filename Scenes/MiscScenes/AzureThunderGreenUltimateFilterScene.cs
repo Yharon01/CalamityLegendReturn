@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder;
 using Terraria;
 using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Scenes.MiscScenes
+namespace CalamityLegendReturn.Scenes.MiscScenes
 {
     internal sealed class AzureThunderGreenUltimateFilterScene : ModSceneEffect
     {
@@ -17,11 +17,11 @@ namespace CalamityLegendsReturn.Scenes.MiscScenes
         public override void SpecialVisuals(Player player, bool isActive)
         {
             float opacity = isActive ? player.GetModPlayer<AzureThunderPlayer>().GreenUltimateFilterOpacity : 0f;
-            Filter filter = Filters.Scene[CalamityLegendsReturn.AzureThunderGreenUltimateFilterKey];
+            Filter filter = Filters.Scene[CalamityLegendReturn.AzureThunderGreenUltimateFilterKey];
             if (filter != null)
                 filter.GetShader().UseOpacity(opacity);
 
-            player.ManageSpecialBiomeVisuals(CalamityLegendsReturn.AzureThunderGreenUltimateFilterKey, isActive);
+            player.ManageSpecialBiomeVisuals(CalamityLegendReturn.AzureThunderGreenUltimateFilterKey, isActive);
         }
     }
 }

@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode
 {
     internal class EnergyCore_Spark : ModProjectile, ILocalizedModType, IModType
     {

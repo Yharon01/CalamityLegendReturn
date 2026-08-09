@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.CStage2;
-using CalamityLegendsReturn.Weapons.Vesuvius.Passive;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick.Javelin;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.CStage2;
+using CalamityLegendReturn.Weapons.Vesuvius.Passive;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick.Javelin;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -12,13 +12,13 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
+namespace CalamityLegendReturn.Weapons.Vesuvius.RightClick
 {
     public class VesuviusFaultJavelin : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Vesuvius";
         // Throw the staff itself — use the weapon's own texture
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/NewVesuvius";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/NewVesuvius";
 
         private const int FlightState = 0;
         private const int NpcStickState = 1;
@@ -385,7 +385,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
+            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
 
             // Mirror via an actual horizontal flip (matching the holdout) instead of faking
             // it with rotation — otherwise leftward throws end up rotated 180 degrees off.

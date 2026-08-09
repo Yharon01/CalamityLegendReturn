@@ -1,4 +1,4 @@
-﻿//using System;
+﻿﻿//using System;
 //using CalamityMod.Particles;
 //using Microsoft.Xna.Framework;
 //using Terraria;
@@ -6,7 +6,7 @@
 //using Terraria.ID;
 //using Terraria.ModLoader;
 //
-//namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+//namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 //{
 //    internal class BBShuriken_Lazer : ModProjectile
 //    {

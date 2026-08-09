@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Weapons;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     internal sealed class CosmicDischargePlayer : ModPlayer
     {
@@ -189,9 +189,9 @@ namespace CalamityLegendsReturn.Weapons.CosmicDischarge
             {
                 string modeName = AttackMode switch
                 {
-                    CosmicDischargeAttackMode.Sword => Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendCosmicDischarge.SwordName"),
-                    CosmicDischargeAttackMode.ChainKnife => Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendCosmicDischarge.ChainKnifeName"),
-                    _ => Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendCosmicDischarge.WhipName")
+                    CosmicDischargeAttackMode.Sword => Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendCosmicDischarge.SwordName"),
+                    CosmicDischargeAttackMode.ChainKnife => Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendCosmicDischarge.ChainKnifeName"),
+                    _ => Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendCosmicDischarge.WhipName")
                 };
                 Color textColor = CosmicDischargeCommon.GetModeColor(AttackMode);
                 CombatText.NewText(Player.getRect(), textColor, modeName, true, false);
@@ -298,7 +298,7 @@ namespace CalamityLegendsReturn.Weapons.CosmicDischarge
             if (Player.whoAmI == Main.myPlayer)
             {
                 Player.Calamity().GeneralScreenShakePower = System.Math.Max(Player.Calamity().GeneralScreenShakePower, 15f);
-                string activeText = Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendCosmicDischarge.UltimateActiveText");
+                string activeText = Terraria.Localization.Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendCosmicDischarge.UltimateActiveText");
                 CombatText.NewText(Player.getRect(), CosmicDischargeCommon.DoGSpecialColor, activeText, true, true);
             }
         }

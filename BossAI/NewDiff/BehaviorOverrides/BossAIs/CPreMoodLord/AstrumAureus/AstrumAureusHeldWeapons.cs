@@ -1,8 +1,8 @@
 using System;
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.AstrumAureus
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.AstrumAureus
 {
     // =====================================================================================================================
     // NEBULASH — held whip, heavy windup heave into an explosive crack.

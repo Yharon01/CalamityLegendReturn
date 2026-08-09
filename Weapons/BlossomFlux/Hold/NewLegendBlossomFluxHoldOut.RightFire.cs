@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.EXSkill;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Projectiles.BaseProjectiles;
 using Microsoft.Xna.Framework;
@@ -18,7 +18,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     internal sealed partial class NewLegendBlossomFluxHoldOut
     {

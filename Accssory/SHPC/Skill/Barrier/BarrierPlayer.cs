@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using CalamityMod.CalPlayer;
 using CalamityMod.Cooldowns;
@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.Barrier
 {
     public class BarrierPlayer : ModPlayer
     {

@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal sealed class PristineFuryPlayer : ModPlayer
     {
@@ -123,8 +123,8 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
 
             string markName = PristineFuryMarkHelper.GetName(mark);
             string textKey = temporaryDebugSwitch
-                ? "Mods.CalamityLegendsReturn.PristineFury.DebugMarkSwitched"
-                : "Mods.CalamityLegendsReturn.PristineFury.MarkExtracted";
+                ? "Mods.CalamityLegendReturn.PristineFury.DebugMarkSwitched"
+                : "Mods.CalamityLegendReturn.PristineFury.MarkExtracted";
             string text = Language.GetTextValue(textKey, markName);
             Rectangle textArea = new((int)Player.Center.X - 24, (int)Player.Top.Y - 28, 48, 20);
             CombatText.NewText(textArea, PristineFuryMarkHelper.GetColor(mark), text, dramatic: true);

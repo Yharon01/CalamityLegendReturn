@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     /// <summary>
     /// Shows an item's registration name beside its localized display name in non-English game cultures.

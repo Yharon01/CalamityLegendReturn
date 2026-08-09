@@ -10,9 +10,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress
 {
     public class CTRLBoss : ModItem, ILocalizedModType
     {
@@ -524,10 +524,10 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
         private static void AnnounceChange(BossProgressEntry entry, bool downed)
         {
             string stateText = Language.GetTextValue(downed
-                ? "Mods.CalamityLegendsReturn.TheSpecialText.CTRLBossDefeated"
-                : "Mods.CalamityLegendsReturn.TheSpecialText.CTRLBossUndefeated");
+                ? "Mods.CalamityLegendReturn.TheSpecialText.CTRLBossDefeated"
+                : "Mods.CalamityLegendReturn.TheSpecialText.CTRLBossUndefeated");
             string message = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.TheSpecialText.CTRLBossStatusSet",
+                "Mods.CalamityLegendReturn.TheSpecialText.CTRLBossStatusSet",
                 entry.ChineseName,
                 stateText);
             Color messageColor = downed ? new Color(112, 240, 148) : new Color(255, 132, 118);
@@ -538,7 +538,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
         private static void AnnounceBulkChange(BulkProgressAction action, int changedCount)
         {
             string message = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.TheSpecialText.CTRLBossBulkChanged",
+                "Mods.CalamityLegendReturn.TheSpecialText.CTRLBossBulkChanged",
                 GetBulkHoverText(action),
                 changedCount);
 
@@ -611,14 +611,14 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
 
         private static string GetBulkHoverText(BulkProgressAction action)
         {
-            return Language.GetTextValue($"Mods.CalamityLegendsReturn.TheSpecialText.{action.HoverTextKey}");
+            return Language.GetTextValue($"Mods.CalamityLegendReturn.TheSpecialText.{action.HoverTextKey}");
         }
 
         private static string GetHoverText(BossProgressEntry entry, bool downed)
         {
             string stateText = Language.GetTextValue(downed
-                ? "Mods.CalamityLegendsReturn.TheSpecialText.CTRLBossDefeated"
-                : "Mods.CalamityLegendsReturn.TheSpecialText.CTRLBossUndefeated");
+                ? "Mods.CalamityLegendReturn.TheSpecialText.CTRLBossDefeated"
+                : "Mods.CalamityLegendReturn.TheSpecialText.CTRLBossUndefeated");
 
             return $"{entry.ChineseName} / {entry.EnglishName} - {stateText}";
         }
@@ -789,7 +789,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
                 phase,
                 englishName,
                 chineseName,
-                $"CalamityLegendsReturn/Weapons/A_Tools/DebugTools/BossProgress/Assets/Icons/{folder}/{textureName}",
+                $"CalamityLegendReturn/Weapons/A_Tools/DebugTools/BossProgress/Assets/Icons/{folder}/{textureName}",
                 getDowned,
                 setDowned,
                 progressKey ?? englishName);

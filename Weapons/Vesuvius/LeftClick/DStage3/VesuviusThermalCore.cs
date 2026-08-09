@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.DStage3
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.DStage3
 {
     // The left-click charge payoff: a fast, straight volcanic core with no homing or ballistic drift.
     public class VesuviusThermalCore : ModProjectile, ILocalizedModType

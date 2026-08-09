@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal static class NewLegendPristineFuryHoldOut_DragonDrawData
     {
@@ -33,8 +33,8 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
         internal static string DragonMouthChargeBloomTexturePath() => "CalamityMod/Particles/BloomCircle";
         internal static string DragonMouthChargeSmearTexturePath() => "CalamityMod/Particles/ForwardSmear";
         internal static string DragonMouthChargeRingTexturePath() => "CalamityMod/Particles/BloomRing";
-        internal static string DragonMouthMagicTexturePath() => "CalamityLegendsReturn/Texture/KsTexture/magic_03";
-        internal static string DragonMouthSmokeTexturePath() => "CalamityLegendsReturn/Texture/KsTexture/smoke_04";
+        internal static string DragonMouthMagicTexturePath() => "CalamityLegendReturn/Texture/KsTexture/magic_03";
+        internal static string DragonMouthSmokeTexturePath() => "CalamityLegendReturn/Texture/KsTexture/smoke_04";
 
         // Forward travel distances for charge visual anchors.
         internal const float FakeCalamityChargeForwardTravelFromMouth = 6f;

@@ -1,6 +1,6 @@
-﻿using System;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+﻿﻿using System;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal class BBSD_Final_INV : ModProjectile, ILocalizedModType
     {

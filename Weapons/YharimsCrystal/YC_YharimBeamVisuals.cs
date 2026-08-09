@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal
+namespace CalamityLegendReturn.Weapons.YharimsCrystal
 {
     internal static class YC_YharimBeamVisuals
     {

@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     /// <summary>
     /// 圣火光矢。挥舞庇护之刃时爆发散射（模仿 Entropic Claymore）。

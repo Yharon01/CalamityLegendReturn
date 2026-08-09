@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal sealed class BFArrow_DBombVisual : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
 
         private ref float Timer => ref Projectile.localAI[0];
 

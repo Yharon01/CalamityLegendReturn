@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.General
+namespace CalamityLegendReturn.Accssory.BF.General
 {
     // 调谐箭袋 — 由本模组的备用箭袋升级。
     public sealed class BFTunedQuiver : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/General/BFTunedQuiver";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/General/BFTunedQuiver";
 
         public override void SetDefaults()
         {

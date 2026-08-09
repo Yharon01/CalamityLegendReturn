@@ -2,9 +2,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.AAARules
 {
     public class DefaultEffect : RulesOfEffect
     {

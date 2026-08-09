@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.MC.General;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Accssory.MC.General;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.Malachite
+namespace CalamityLegendReturn.Weapons.Malachite
 {
     internal enum MalachiteProgressionStage
     {

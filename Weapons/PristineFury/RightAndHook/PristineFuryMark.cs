@@ -1,4 +1,4 @@
-﻿using CalamityMod.NPCs.AstrumAureus;
+﻿﻿using CalamityMod.NPCs.AstrumAureus;
 using CalamityMod.NPCs.BrimstoneElemental;
 using CalamityMod.NPCs.CalClone;
 using CalamityMod.NPCs.DesertScourge;
@@ -21,7 +21,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal enum PristineFuryMark
     {
@@ -227,7 +227,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
             IsRavagerTarget(target) && !DownedBossSystem.downedProvidence;
 
         internal static string GetName(PristineFuryMark mark) =>
-            Language.GetTextValue($"Mods.CalamityLegendsReturn.PristineFury.Marks.{mark}");
+            Language.GetTextValue($"Mods.CalamityLegendReturn.PristineFury.Marks.{mark}");
 
         internal static Color GetColor(PristineFuryMark mark)
         {

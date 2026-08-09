@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+﻿﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.passive
+namespace CalamityLegendReturn.Weapons.Malachite.passive
 {
     public sealed class MalachiteGrazeSlashVisual : ModProjectile, ILocalizedModType
     {

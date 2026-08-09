@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     internal sealed class ElementalCodexPlayer : ModPlayer
     {

@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Shader
+namespace CalamityLegendReturn.Shader
 {
     public sealed partial class ShaderGames
     {

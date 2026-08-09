@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // A dropped torpedo: it coasts off its launch line, aligns on the nearest hostile, then makes one committed run.
     internal sealed class SkyfinTorpedo : ModProjectile

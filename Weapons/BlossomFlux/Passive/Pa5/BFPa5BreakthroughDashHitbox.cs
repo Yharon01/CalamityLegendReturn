@@ -2,7 +2,7 @@ using CalamityMod;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.Pa5
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.Pa5
 {
     // The player is invulnerable while this follows the dash; local NPC immunity makes each target take one impact per dash.
     internal sealed class BFPa5BreakthroughDashHitbox : ModProjectile

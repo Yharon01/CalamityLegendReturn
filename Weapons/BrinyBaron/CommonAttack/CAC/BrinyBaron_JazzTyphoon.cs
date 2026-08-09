@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     // A synchronized, target-bound blue vortex derived from the Nadir singularity's
     // transparent-background visual language. ai[0] is the target NPC; ai[1] is -1
@@ -26,7 +26,9 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
         private float VisualScale =>
             Utils.GetLerpValue(0f, 10f, Age, true) *
             Utils.GetLerpValue(BB_Balance.JazzTyphoonLifetime, BB_Balance.JazzTyphoonLifetime - 18f, Age, true) *
-            (IsHelixVariant ? 0.68f : 1f);
+            (IsHelixVariant ? 0.68f : 1.42f);
+
+        private static int HelixCount => CalamityMod.DownedBossSystem.downedBoomerDuke ? 5 : 3;
 
         private NPC BoundTarget
         {
@@ -39,7 +41,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
 
         public override void SetDefaults()
         {
-            Projectile.width = Projectile.height = 90;
+            Projectile.width = Projectile.height = 120;
             Projectile.friendly = true;
             Projectile.penetrate = -1;
             Projectile.tileCollide = false;
@@ -53,7 +55,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
         public override void SetStaticDefaults() => Main.projFrames[Type] = 3;
 
         public override bool? Colliding(Rectangle projHitbox, Rectangle targetHitbox)
-            => CalamityUtils.CircularHitboxCollision(Projectile.Center, 42f * VisualScale, targetHitbox);
+            => CalamityUtils.CircularHitboxCollision(Projectile.Center, 50f * VisualScale, targetHitbox);
 
         public override void AI()
         {
@@ -76,7 +78,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
             else if (Age < BB_Balance.BaronHelixJazzTyphoonOrbitFrames && target is not null)
             {
                 float angle = Age * BB_Balance.BaronHelixJazzTyphoonOrbitAngularVelocity +
-                              MathHelper.TwoPi * Slot / 3f;
+                              MathHelper.TwoPi * Slot / HelixCount;
                 Vector2 ellipse = new(
                     (float)System.Math.Cos(angle) * BB_Balance.BaronHelixJazzTyphoonOrbitRadiusX,
                     (float)System.Math.Sin(angle) * BB_Balance.BaronHelixJazzTyphoonOrbitRadiusY);
@@ -98,8 +100,33 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
             }
 
             Projectile.rotation += IsHelixVariant ? 0.17f : 0.12f;
+            if (!IsHelixVariant)
+                PullNearbyNPCs();
             Lighting.AddLight(Projectile.Center, new Vector3(0.08f, 0.56f, 0.92f) * VisualScale);
             EmitVortexParticles();
+        }
+
+        private void PullNearbyNPCs()
+        {
+            if (Main.netMode == NetmodeID.MultiplayerClient)
+                return;
+
+            foreach (NPC npc in Main.ActiveNPCs)
+            {
+                if (!npc.CanBeChasedBy(Projectile) || npc.boss || npc.knockBackResist <= 0f)
+                    continue;
+
+                Vector2 offset = Projectile.Center - npc.Center;
+                float distance = offset.Length();
+                if (distance <= 12f || distance >= BB_Balance.JazzTyphoonPullRange)
+                    continue;
+
+                float pull = BB_Balance.JazzTyphoonPullStrength * (1f - distance / BB_Balance.JazzTyphoonPullRange) * npc.knockBackResist;
+                npc.velocity += offset / distance * pull;
+                if (npc.velocity.LengthSquared() > BB_Balance.JazzTyphoonMaxPullSpeed * BB_Balance.JazzTyphoonMaxPullSpeed)
+                    npc.velocity = npc.velocity.SafeNormalize(Vector2.Zero) * BB_Balance.JazzTyphoonMaxPullSpeed;
+                npc.netUpdate = true;
+            }
         }
 
         private void EmitVortexParticles()

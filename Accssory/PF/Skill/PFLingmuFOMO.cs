@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.Skill
+namespace CalamityLegendReturn.Accssory.PF.Skill
 {
     // 灵梦FOMO：
     // 左键使用当前印记攻击时，印记队列中未被选中的印记会周期性释放低威力残响弹幕。
@@ -11,7 +11,7 @@ namespace CalamityLegendsReturn.Accssory.PF.Skill
     internal sealed class PFLingmuFOMO : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/Skill/PFLingmuFOMO";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/Skill/PFLingmuFOMO";
 
         public override void SetDefaults()
         {

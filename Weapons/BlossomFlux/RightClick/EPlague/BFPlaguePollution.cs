@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Accssory.BF.Common;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
@@ -8,11 +8,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal sealed class BFPlagueWitherBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/疫亡";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/疫亡";
 
         public override void SetStaticDefaults()
         {
@@ -24,7 +24,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
 
     internal sealed class BFPlagueDeathBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/疫亡2";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/疫亡2";
 
         public override void SetStaticDefaults()
         {

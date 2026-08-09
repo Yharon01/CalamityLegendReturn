@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Effects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     public class LeonidCometSmall : ModProjectile, ILocalizedModType
     {

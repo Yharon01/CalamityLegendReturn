@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal static class PFDesertScourgeEffect
     {

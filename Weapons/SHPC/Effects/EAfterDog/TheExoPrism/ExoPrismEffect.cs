@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism
 {
     internal class ExoPrismEffect : DefaultEffect
     {

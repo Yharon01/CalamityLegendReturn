@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal sealed class BBSuperDashAfterimage : ModProjectile
     {
@@ -236,7 +236,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
 
         private void DrawWeaponAfterimage(Vector2 drawPosition, float opacity, float outlineOpacity)
         {
-            Texture2D weaponTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron").Value;
+            Texture2D weaponTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron").Value;
             Rectangle frame = weaponTexture.Frame();
             Vector2 origin = frame.Size() * 0.5f;
             bool facingLeft = SnapshotDirection < 0;

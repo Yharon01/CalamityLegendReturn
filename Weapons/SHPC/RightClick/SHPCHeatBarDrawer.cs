@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     internal static class SHPCHeatBarDrawer
     {

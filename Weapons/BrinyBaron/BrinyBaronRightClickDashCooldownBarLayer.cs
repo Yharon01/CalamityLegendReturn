@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.UI;
+using CalamityLegendReturn.UI;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     // Uses the shared hard-bounded short-bar renderer. Unlike the old compressed
     // shield frame, it has no L-brackets, crosses, or free line geometry.

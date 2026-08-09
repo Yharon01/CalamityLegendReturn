@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 左键特殊子弹：短促、低密度的荧光绿曳光弹。它是实体步枪火力的延伸，

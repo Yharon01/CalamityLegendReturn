@@ -1,10 +1,10 @@
 using System;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General;
 using Microsoft.Xna.Framework;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     // 元素图鉴的专属特效层：每个元素的常驻氛围、每种反应触发瞬间的爆发都要有独立辨识度，
     // 不能只是换色的 Dust。几何结构上刻意区分"数学美感"（黄金角螺旋/正多边形/斐波那契环）

@@ -2,11 +2,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB
+namespace CalamityLegendReturn.Accssory.BB
 {
     public abstract class BBMeleeBonusAccessory : ModItem
     {
-        public override string Texture => $"CalamityLegendsReturn/Accssory/BB/贴图/{GetType().Name}";
+        public override string Texture => $"CalamityLegendReturn/Accssory/BB/贴图/{GetType().Name}";
 
         protected abstract float MeleeBonus { get; }
         protected virtual int TideCapBonus => 0;

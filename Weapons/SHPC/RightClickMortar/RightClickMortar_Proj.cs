@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Enums;
@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClickMortar
+namespace CalamityLegendReturn.Weapons.SHPC.RightClickMortar
 {
     internal sealed class RightClickMortar_Proj : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {
@@ -26,7 +26,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClickMortar
         private const float MouseTargetLockRange = 460f;
 
         public new string LocalizationCategory => "Projectiles.SHPC";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/RightClickMortar/RightClickMortar_Proj";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/RightClickMortar/RightClickMortar_Proj";
 
         private ref float SavedMouseX => ref Projectile.ai[0];
         private ref float SavedMouseY => ref Projectile.ai[1];
@@ -468,7 +468,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClickMortar
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D glowTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/SHPC/RightClickMortar/RightClickMortar_Proj_Glow").Value;
+            Texture2D glowTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/SHPC/RightClickMortar/RightClickMortar_Proj_Glow").Value;
             Rectangle frame = texture.Frame(1, Main.projFrames[Type], 0, Projectile.frame);
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 origin = frame.Size() * 0.5f;

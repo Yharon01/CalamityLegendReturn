@@ -9,9 +9,9 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
+namespace CalamityLegendReturn.Weapons.A_Dev.SHPBow
 {
     internal sealed class SHPBowSelectionPanel : ModProjectile, ILocalizedModType, IScreenOverlayProjectile
     {
@@ -154,14 +154,14 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
             if (appendMode.HasValue)
             {
                 bowPlayer.AppendMode(appendMode.Value);
-                string modeName = Language.GetTextValue($"Mods.CalamityLegendsReturn.Items.Weapons.SHPBow.ModeName{(int)appendMode.Value}");
+                string modeName = Language.GetTextValue($"Mods.CalamityLegendReturn.Items.Weapons.SHPBow.ModeName{(int)appendMode.Value}");
                 CombatText.NewText(owner.Hitbox, SHPBowModeHelpers.MainColor(appendMode.Value), modeName, dramatic: false, dot: false);
                 SoundEngine.PlaySound(SoundID.Item23 with { Volume = 0.55f, Pitch = 0.02f }, owner.Center);
             }
             else if (resetMode.HasValue)
             {
                 bowPlayer.ResetSequence(resetMode.Value);
-                string modeName = Language.GetTextValue($"Mods.CalamityLegendsReturn.Items.Weapons.SHPBow.ModeName{(int)resetMode.Value}");
+                string modeName = Language.GetTextValue($"Mods.CalamityLegendReturn.Items.Weapons.SHPBow.ModeName{(int)resetMode.Value}");
                 CombatText.NewText(owner.Hitbox, SHPBowModeHelpers.AccentColor(resetMode.Value), modeName, dramatic: false, dot: false);
                 SoundEngine.PlaySound(SoundID.MenuTick with { Volume = 0.58f, Pitch = -0.1f }, owner.Center);
             }
@@ -284,7 +284,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
                 SpriteEffects.None,
                 0);
 
-            string modeName = Language.GetTextValue($"Mods.CalamityLegendsReturn.Items.Weapons.SHPBow.ModeName{(int)mode}");
+            string modeName = Language.GetTextValue($"Mods.CalamityLegendReturn.Items.Weapons.SHPBow.ModeName{(int)mode}");
             DrawCenteredTextFitted(modeName, new Rectangle(slotArea.X + 5, slotArea.Bottom - 24, slotArea.Width - 10, 18), Color.Lerp(Color.White, accentColor, selected ? 0.26f : 0.06f), 0.42f, opacity);
 
             if (coreCount > 0)

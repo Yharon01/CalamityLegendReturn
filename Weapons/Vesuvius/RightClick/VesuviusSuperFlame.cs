@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.Core;
-using CalamityLegendsReturn.Weapons.Vesuvius.EXSkill;
-using CalamityLegendsReturn.Weapons.Vesuvius.Passive;
+using CalamityLegendReturn.Weapons.Vesuvius.Core;
+using CalamityLegendReturn.Weapons.Vesuvius.EXSkill;
+using CalamityLegendReturn.Weapons.Vesuvius.Passive;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
+namespace CalamityLegendReturn.Weapons.Vesuvius.RightClick
 {
     public sealed class VesuviusSuperFlameHoldout : ModProjectile, ILocalizedModType
     {
@@ -24,7 +24,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
         private bool fired;
 
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/Vesuvius2Flame";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/Vesuvius2Flame";
 
         private Player Owner => Main.player[Projectile.owner];
         private int PowerStage => Math.Max(1, (int)Projectile.ai[0]);
@@ -258,7 +258,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
+            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
             int mouthFrame = fired || ChargeProgress >= 1f ? 1 : 0;
             Rectangle frame = texture.Frame(1, 2, 0, mouthFrame);
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;

@@ -3,7 +3,7 @@ using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.Melee;
-using CalamityLegendsReturn.Weapons.CosmicDischarge.General;
+using CalamityLegendReturn.Weapons.CosmicDischarge.General;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     public partial class CosmicDischargeComboHoldout : BaseFlailProjectile, ILocalizedModType
     {

@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     // ══════════════════════════════════════════════════════════════════════════════
     //  SeedOfSilvaDelphiniumArc
@@ -995,7 +995,7 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
             float phMult = InPhase3 ? 1.30f : (InPhase2 ? 0.90f : 0.40f);
 
             Texture2D opticTex = ModContent.Request<Texture2D>(
-                "CalamityLegendsReturn/Texture/KsTexture/muzzle_02").Value;
+                "CalamityLegendReturn/Texture/KsTexture/muzzle_02").Value;
             Vector2 side = fwd.RotatedBy(MathHelper.PiOver2);
 
             BeginAdditive();

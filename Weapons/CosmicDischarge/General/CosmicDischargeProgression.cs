@@ -1,7 +1,7 @@
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     internal static class CosmicDischargeProgression
     {

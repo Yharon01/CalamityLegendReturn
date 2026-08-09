@@ -1,10 +1,10 @@
 using System.IO;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Core
 {
     internal static class LeonidConstellationPackets
     {
@@ -16,7 +16,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
                 return;
             }
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.LeonidConstellationRequest);
             packet.Write((byte)0);
             packet.Write((byte)star);
@@ -31,7 +31,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
                 return;
             }
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.LeonidConstellationRequest);
             packet.Write((byte)1);
             packet.Write((byte)0);
@@ -59,7 +59,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
             if (Main.netMode != NetmodeID.Server)
                 return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.LeonidConstellationStateSync);
             packet.Write((byte)player.whoAmI);
             packet.Write(player.GetModPlayer<LeonidConstellationPlayer>().GetUnlockedMask());

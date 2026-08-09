@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     internal sealed class SHPCNecroplasmBeam : ModProjectile, ILocalizedModType
     {

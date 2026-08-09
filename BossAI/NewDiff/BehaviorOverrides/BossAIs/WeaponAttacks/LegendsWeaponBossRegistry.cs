@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.WeaponAttacks
 {
     internal static class LegendsWeaponBossRegistry
     {
@@ -60,7 +60,7 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs
             int type = 0;
             if (ModContent.TryFind("CalamityMod/" + internalName, out ModItem calamityItem))
                 type = calamityItem.Type;
-            else if (ModContent.TryFind("CalamityLegendsReturn/" + internalName, out ModItem localItem))
+            else if (ModContent.TryFind("CalamityLegendReturn/" + internalName, out ModItem localItem))
                 type = localItem.Type;
 
             ItemTypeCache[internalName] = type;

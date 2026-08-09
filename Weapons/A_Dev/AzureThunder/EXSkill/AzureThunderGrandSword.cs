@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -12,13 +12,13 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 天理真和左键第三段召唤的巨剑：高空锁定、急坠、落地爆雷。
     internal sealed class AzureThunderGrandSword : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.AzureThunder";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/AzureThunder";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/AzureThunder";
 
         // ai[0] 锁定目标，ai[1]/ai[2] 保存兜底落点。
         private int TargetIndex => (int)Projectile.ai[0];

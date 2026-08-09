@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Effects;
 using CalamityMod.Dusts;
 using CalamityMod.Items.Weapons.Ranged;
 using CalamityMod;
@@ -12,7 +12,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     // Full grey-white adaptation of Ontological Despoiler's small negative tracking shot.
     public class LeonidVoidSeeker : ModProjectile, ILocalizedModType

@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Weapons.PristineFury.UI;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.PristineFury.UI;
+using CalamityLegendReturn.Weapons.SHPC;
 using Microsoft.Xna.Framework;
 using ReLogic.Utilities;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle.SlowDown
+namespace CalamityLegendReturn.Weapons.A_Dev.DesertEagle.SlowDown
 {
     internal sealed class DesertEagleSlowDownSystem : ModSystem
     {
@@ -65,7 +65,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle.SlowDown
             if (Main.netMode != NetmodeID.SinglePlayer || Main.gameMenu || Main.myPlayer < 0 || Main.myPlayer >= Main.maxPlayers)
                 return false;
 
-            if (CalamityLegendsReturnConfig.Instance?.AllowWheelSlowdown != true)
+            if (CalamityLegendReturnConfig.Instance?.AllowWheelSlowdown != true)
                 return false;
 
             Player player = Main.LocalPlayer;

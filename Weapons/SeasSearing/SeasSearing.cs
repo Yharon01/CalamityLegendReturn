@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Accssory;
+using CalamityLegendReturn.Accssory;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
@@ -11,14 +11,14 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     public class SeasSearing : ModItem, ILocalizedModType
     {
         private static int HoldoutType => ModContent.ProjectileType<SeasSearingHoldout>();
 
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SeasSearing/NewLegendSeasSearing";
+        public override string Texture => "CalamityLegendReturn/Weapons/SeasSearing/NewLegendSeasSearing";
 
         public override void SetStaticDefaults()
         {

@@ -1,5 +1,5 @@
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.DStage3
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.DStage3
 {
     public class VesuviusMagmaPillar : ModProjectile, ILocalizedModType
     {

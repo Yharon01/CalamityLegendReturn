@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClickTurret
+namespace CalamityLegendReturn.Weapons.SHPC.RightClickTurret
 {
     internal sealed class MilitaryFriendlyTurret : ModProjectile, ILocalizedModType
     {

@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     [BackgroundColor(15, 27, 52, 230)]
     public sealed class CLCRClientConfig : ModConfig

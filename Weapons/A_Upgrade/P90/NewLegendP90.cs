@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.P90
+namespace CalamityLegendReturn.Weapons.A_Upgrade.P90
 {
     public sealed class NewLegendP90 : ModItem, ILocalizedModType
     {
@@ -22,7 +22,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.P90
         private static int HoldoutType => ModContent.ProjectileType<NewLegendP90Holdout>();
 
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/P90/NewLegendP90";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/P90/NewLegendP90";
 
         public override void SetStaticDefaults()
         {

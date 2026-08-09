@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.General
+namespace CalamityLegendReturn.Accssory.BF.General
 {
     // 共鸣箭袋
     public sealed class BFResonatingQuiver : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/General/BFResonatingQuiver";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/General/BFResonatingQuiver";
 
         public override void SetDefaults()
         {

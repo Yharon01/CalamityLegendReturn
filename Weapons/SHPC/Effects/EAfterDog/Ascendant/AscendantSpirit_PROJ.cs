@@ -14,12 +14,12 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ascendant
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ascendant
 {
     internal class AscendantSpirit_PROJ : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {
         public new string LocalizationCategory => "Projectiles.SHPC";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/EAfterDog/Ascendant/AscendantSpirit_PROJ";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/EAfterDog/Ascendant/AscendantSpirit_PROJ";
 
         private const float DefaultLaunchDelayFrames = 7f;
         internal const float DefaultLaunchSpeed = 20.5f;

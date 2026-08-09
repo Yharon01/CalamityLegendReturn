@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Graphics.Metaballs;
@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     /// <summary>
     /// 盖尔大剑的共享视觉 DNA —— 让整套武器和至尊灾厄 / 灾厄克隆体"一个妈生的"。

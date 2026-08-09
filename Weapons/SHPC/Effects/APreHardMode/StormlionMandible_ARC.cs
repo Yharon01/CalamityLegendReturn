@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode
 {
     internal class StormlionMandible_ARC : ModProjectile, ILocalizedModType
     {

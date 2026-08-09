@@ -1,5 +1,5 @@
 Mods: {
-	CalamityLegendsReturn: {
+	CalamityLegendReturn: {
 		Projectiles.A_Dev.ExtraBackpackPanel.DisplayName: Sac à dos supplémentaire
 		Keybinds.ExtraBackpack.DisplayName: Sac à dos supplémentaire
 		TheSpecialText.ExtraBackpackTitle: Sac à dos supplémentaire [20x10]

@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Anchor
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Anchor
 {
     /// <summary>
     /// 联动的唯一货币——“锚点”。两种类型：

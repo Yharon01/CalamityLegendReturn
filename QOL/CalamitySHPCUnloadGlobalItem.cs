@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL
+namespace CalamityLegendReturn.QOL
 {
     /// <summary>
     /// External quality-of-life support for Calamity's original SHPC.

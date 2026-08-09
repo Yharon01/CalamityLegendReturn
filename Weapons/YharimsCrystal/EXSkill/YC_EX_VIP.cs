@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.LeftGeneral;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.EXSkill
 {
     public class YC_EX_VIP : ModProjectile, ILocalizedModType
     {
@@ -498,7 +498,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill
                 {
                     float charge = MathHelper.Clamp(Timer / CrystalChargeTime, 0f, 1f);
 
-                    Texture2D prism = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/YharimsCrystal/YharimsCrystalPrism").Value;
+                    Texture2D prism = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/YharimsCrystal/YharimsCrystalPrism").Value;
                     Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
                     Texture2D ring = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
                     int prismFrameCount = prism.Height % 6 == 0 ? 6 : 1;

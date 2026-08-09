@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Straight-flying companion projectile spawned with torpedoes in stages 3-4.
     // Unlike AcidRocket it doesn't home; it leaves a toxic cloud on death.

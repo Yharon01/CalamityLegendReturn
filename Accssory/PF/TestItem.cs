@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.PristineFury;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF
+namespace CalamityLegendReturn.Accssory.PF
 {
     internal sealed class TestItem : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Weapons/PristineFury/NewLegendPristineFury";
+        public override string Texture => "CalamityLegendReturn/Weapons/PristineFury/NewLegendPristineFury";
 
         public override void SetDefaults()
         {

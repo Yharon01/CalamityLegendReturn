@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.YC
+namespace CalamityLegendReturn.Accssory.YC
 {
     internal enum YCAccessoryKind
     {
@@ -117,7 +117,7 @@ namespace CalamityLegendsReturn.Accssory.YC
                     ? "Mainline"
                     : "Sideline";
 
-                return $"CalamityLegendsReturn/Accssory/YC/{category}/{typeName}/{typeName}";
+                return $"CalamityLegendReturn/Accssory/YC/{category}/{typeName}/{typeName}";
             }
         }
 

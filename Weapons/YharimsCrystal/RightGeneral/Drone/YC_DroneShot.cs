@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral
 {
     // ai[0]: 0 = needle, 1 = orbiting crossfire. ai[1]: cursor-focus command.
     internal sealed class YC_DroneShot : ModProjectile, ILocalizedModType

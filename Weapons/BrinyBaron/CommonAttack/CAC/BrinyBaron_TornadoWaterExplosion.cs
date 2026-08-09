@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     internal sealed class BrinyBaron_TornadoWaterExplosion : ModProjectile, ILocalizedModType
     {
@@ -45,7 +45,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_04").Value;
+            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_04").Value;
             Texture2D star = ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/SimpleStar").Value;
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             float progress = 1f - Projectile.timeLeft / (float)Lifetime;

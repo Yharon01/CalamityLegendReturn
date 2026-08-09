@@ -12,14 +12,14 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
 {
     /// <summary>
     /// 外层充能单元。它们围成圆环，短暂停留后向目标释放细电弧并自爆。
     /// </summary>
     public class CynosureChargedCell : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/EAfterDog/Cynosure/注能金源珠九帧图";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/EAfterDog/Cynosure/注能金源珠九帧图";
         public new string LocalizationCategory => "Projectiles.SHPC";
 
         private Vector2 OrbitCenter

@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Accssory.PF;
-using CalamityLegendsReturn.Weapons.PristineFury.LeftEffect;
+using CalamityLegendReturn.Accssory.PF;
+using CalamityLegendReturn.Weapons.PristineFury.LeftEffect;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     // 大招「劫火重燃」群芒齐发阶段的单枚回响立柱：先于地面预警，再轰下一道圣焰光柱，
     // 命中后直接把目标纯化等级顶到当前上限，呼应百合系列的纯化机制。

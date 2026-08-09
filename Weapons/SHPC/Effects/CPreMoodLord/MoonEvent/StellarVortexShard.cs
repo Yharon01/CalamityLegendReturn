@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     // Pure visual sub-projectile spawned by FragmentVortexEffect during flight.
     // ai[0] = pixel size, ai[1] = colorFactor (0=deep teal, 1=bright turquoise-white), ai[2] = lifetime override

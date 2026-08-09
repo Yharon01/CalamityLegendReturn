@@ -1,11 +1,11 @@
 using CalamityMod.Buffs.DamageOverTime;
-using CalamityLegendsReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.PristineFury;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.Skill
+namespace CalamityLegendReturn.Accssory.PF.Skill
 {
     // 月华烙印 — 月饼配饰的范围效果弹幕。
     // 在命中位置停留 240 帧（4 秒），期间范围内的敌人会以双倍速率积累纯化进度。

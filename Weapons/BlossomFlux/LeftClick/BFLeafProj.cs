@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.LeftClick
 {
     internal sealed class BFLeafProj : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {
@@ -29,7 +29,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
 
         public GeneralDrawLayer LayerToRenderTo => GeneralDrawLayer.BeforeProjectiles;
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/LeftClick/BFLeafProj";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/LeftClick/BFLeafProj";
 
         private BlossomFluxChloroplastPresetType Preset => Projectile.ai[0] switch
         {

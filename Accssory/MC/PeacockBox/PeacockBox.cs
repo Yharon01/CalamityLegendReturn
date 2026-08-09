@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.PeacockBox
+namespace CalamityLegendReturn.Accssory.MC.PeacockBox
 {
     public sealed class PeacockBox : ModItem
     {

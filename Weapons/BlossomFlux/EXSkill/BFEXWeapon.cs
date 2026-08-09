@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill.SpecialEffects;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera;
+using CalamityLegendReturn.Weapons.BlossomFlux.EXSkill.SpecialEffects;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
+namespace CalamityLegendReturn.Weapons.BlossomFlux.EXSkill
 {
     internal sealed class BFEXWeapon : ModProjectile, ILocalizedModType
     {
@@ -46,7 +46,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
         private readonly BalanceBlossomFlux damageBalance = new();
 
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/NewLegendBlossomFlux";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/NewLegendBlossomFlux";
 
         private Player Owner => Main.player[Projectile.owner];
         private int State

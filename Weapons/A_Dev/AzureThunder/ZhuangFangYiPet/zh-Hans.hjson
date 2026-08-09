@@ -1,5 +1,5 @@
 Mods: {
-	CalamityLegendsReturn: {
+	CalamityLegendReturn: {
 		Buffs: {
 			ZhuangFangYiPetBuff: {
 				DisplayName: 宜
@@ -8,12 +8,12 @@ Mods: {
 
 			YharonSoulFragment_Buff: {
 				// DisplayName: Yharon Soul Fragment_ Buff
-				// Description: Mods.CalamityLegendsReturn.Buffs.YharonSoulFragment_Buff.Description
+				// Description: Mods.CalamityLegendReturn.Buffs.YharonSoulFragment_Buff.Description
 			}
 
 			SHPCRight_DeBuff: {
 				// DisplayName: S H P C Right_ De Buff
-				// Description: Mods.CalamityLegendsReturn.Buffs.SHPCRight_DeBuff.Description
+				// Description: Mods.CalamityLegendReturn.Buffs.SHPCRight_DeBuff.Description
 			}
 		}
 

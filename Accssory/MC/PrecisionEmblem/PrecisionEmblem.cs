@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.PrecisionEmblem
+namespace CalamityLegendReturn.Accssory.MC.PrecisionEmblem
 {
     public sealed class PrecisionEmblem : ModItem
     {

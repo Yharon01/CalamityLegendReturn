@@ -1,6 +1,6 @@
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Accssory.YC
+namespace CalamityLegendReturn.Accssory.YC
 {
     internal sealed class YharimsCrystalGamma : YCAccessoryBase
     {

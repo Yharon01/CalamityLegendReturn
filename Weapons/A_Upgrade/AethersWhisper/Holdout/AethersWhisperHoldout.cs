@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
 using CalamityMod;
 using CalamityMod.Projectiles.BaseProjectiles;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
 {
     /// <summary>
     /// 以太之低语的唯一常驻持械弹幕（嘉登军械库持械范式，继承 <see cref="BaseIdleHoldoutProjectile"/>）。

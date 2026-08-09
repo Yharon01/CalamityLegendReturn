@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     internal class UnholyEssence_HolyNova : ModProjectile, ILocalizedModType
     {

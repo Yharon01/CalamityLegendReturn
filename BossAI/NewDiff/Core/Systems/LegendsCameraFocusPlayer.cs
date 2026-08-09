@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Systems
+namespace CalamityLegendReturn.BossAI.NewDiff.Core.Systems
 {
     // Minimal "运镜" primitive: briefly pulls the camera toward a world point (a death, a ritual altar,
     // a telegraph epicenter) instead of relying on screen shake alone to sell a big moment. It blends with

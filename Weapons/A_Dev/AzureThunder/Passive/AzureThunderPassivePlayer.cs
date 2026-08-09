@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.Passive
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.Passive
 {
     // 承天之佑被动：手持青霆剑时提供一次可消耗闪避和回血。
     internal sealed class AzureThunderPassivePlayer : ModPlayer

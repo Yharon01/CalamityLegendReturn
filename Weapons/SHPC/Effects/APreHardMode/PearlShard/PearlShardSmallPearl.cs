@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
 {
     public class PearlShardSmallPearl : ModProjectile, ILocalizedModType
     {
@@ -20,7 +20,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
         private const float WanderingTurnStrength = 0.006f;
 
         public new string LocalizationCategory => "Projectiles.SHPC";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/APreHardMode/PearlShard/PearlShardParticle";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/APreHardMode/PearlShard/PearlShardParticle";
 
         private int timer;
 

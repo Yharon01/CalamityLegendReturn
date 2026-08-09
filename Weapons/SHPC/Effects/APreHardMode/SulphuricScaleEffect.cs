@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.Boss;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode
 {
     public class SulphuricScaleEffect : DefaultEffect
     {
@@ -65,7 +65,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode
                 projectile.Center,
                 Vector2.Zero,
                 new Color(150, 215, 88) * 1.25f,
-                "CalamityLegendsReturn/Texture/Myown/IonizingRadiation",
+                "CalamityLegendReturn/Texture/Myown/IonizingRadiation",
                 Vector2.One * 0.18f,
                 Main.rand.NextFloat(-6f, 6f),
                 0.13f,

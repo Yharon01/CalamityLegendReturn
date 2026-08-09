@@ -8,11 +8,11 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade
+namespace CalamityLegendReturn.Weapons.AegisBlade
 {
     public class AegisBladePlayer : ModPlayer
     {
-        private const string RaisableShieldTexture = "CalamityLegendsReturn/Weapons/AegisBlade/\u5E87\u62A4\u76FE\u724C\u591A\u5E27\u56FE";
+        private const string RaisableShieldTexture = "CalamityLegendReturn/Weapons/AegisBlade/\u5E87\u62A4\u76FE\u724C\u591A\u5E27\u56FE";
         private const string RaisableShieldName = "AegisBladeRaisableShield";
 
         // ── 能量 ──────────────────────────────────────────────────────────

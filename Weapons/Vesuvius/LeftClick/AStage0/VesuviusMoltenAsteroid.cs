@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.AStage0
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.AStage0
 {
     public class VesuviusMoltenAsteroid : ModProjectile, ILocalizedModType
     {

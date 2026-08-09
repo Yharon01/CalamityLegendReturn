@@ -5,9 +5,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
-using GlacialEmbraceItem = CalamityLegendsReturn.Weapons.GlacialEmbrace.GlacialEmbrace;
+using GlacialEmbraceItem = CalamityLegendReturn.Weapons.GlacialEmbrace.GlacialEmbrace;
 
-namespace CalamityLegendsReturn.LegendaryTooltipEffects
+namespace CalamityLegendReturn.LegendaryTooltipEffects
 {
     public sealed class GlacialEmbraceAuroraFrostLegendaryTooltip : GlobalItem
     {

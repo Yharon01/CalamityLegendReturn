@@ -1,4 +1,4 @@
-﻿using CalamityMod;
+﻿﻿using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
 using CalamityMod.Particles;
@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal sealed class PFProvidence_NukeOfBliss : ModProjectile, ILocalizedModType
     {
@@ -21,7 +21,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
         private const float TargetLockRange = 460f;
 
         public new string LocalizationCategory => "Projectiles.PristineFury";
-        public override string Texture => "CalamityLegendsReturn/Weapons/PristineFury/LeftEffect/DPreDog/Providence/NukeOfBliss";
+        public override string Texture => "CalamityLegendReturn/Weapons/PristineFury/LeftEffect/DPreDog/Providence/NukeOfBliss";
 
         private ref float SavedTargetX => ref Projectile.ai[0];
         private ref float SavedTargetY => ref Projectile.ai[1];

@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.Passive
+namespace CalamityLegendReturn.Weapons.PristineFury.Passive
 {
     internal sealed class PristineFuryPassivePlayer : ModPlayer
     {

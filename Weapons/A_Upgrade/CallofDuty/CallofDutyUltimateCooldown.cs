@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty
 {
     internal sealed class CallofDutyUltimateCooldown : CooldownHandler
     {
@@ -14,7 +14,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
 
         public override bool CanTickDown => false;
         public override bool ShouldDisplay => PhonePlayer.HoldingPhone || !PhonePlayer.UltimateReady || PhonePlayer.ArmyActive;
-        public override LocalizedText DisplayName => Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.CallofDuty_Ultimate");
+        public override LocalizedText DisplayName => Language.GetText("Mods.CalamityLegendReturn.Cooldowns.CallofDuty_Ultimate");
         public override string Texture => "CalamityMod/Cooldowns/WulfrumRoverDriveActive";
         public override string OutlineTexture => "CalamityMod/Cooldowns/WulfrumRoverDriveOutline";
         public override string OverlayTexture => "CalamityMod/Cooldowns/WulfrumRoverDriveOverlay";

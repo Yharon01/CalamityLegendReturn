@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Shared
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Shared
 {
     /// <summary>
     /// 冥融虚空核 —— 冥蚀天底的连锁反应载体。
@@ -21,7 +21,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Shared
     public class UmbralNadirVoidEssence : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Nadir";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/Nadir/Shared/UmbralNadirVoidEssence";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/Nadir/Shared/UmbralNadirVoidEssence";
 
         private const int NumAnimationFrames = 4;
         private const int AnimationFrameTime = 12;

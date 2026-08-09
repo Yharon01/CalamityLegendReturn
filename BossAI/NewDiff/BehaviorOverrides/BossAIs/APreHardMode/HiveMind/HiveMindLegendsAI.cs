@@ -40,12 +40,12 @@ using Terraria.GameContent;
 using CalamityMod;
 using CalamityMod.NPCs;
 using CalamityMod.Events;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 using Terraria.Localization;
 
 using CalamityHiveMind = CalamityMod.NPCs.HiveMind.HiveMind;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage1.HiveMind
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage1.HiveMind
 {
     internal sealed class HiveMindLegendsAI : LegendsBossAI
     {

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord
 {
     public class LivingShardEffect : DefaultEffect
     {
@@ -62,7 +62,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
         // ================= OnKill：引爆炸出萤火魂蝶群 =================
         public override void OnKill(Projectile projectile, Player owner, int timeLeft)
         {
-            SoundEngine.PlaySound(new SoundStyle("CalamityLegendsReturn/Sound/Other/DeltaForce/沙漠之鹰有消音"), projectile.Center);
+            SoundEngine.PlaySound(new SoundStyle("CalamityLegendReturn/Sound/Other/DeltaForce/沙漠之鹰有消音"), projectile.Center);
 
             if (projectile.owner == Main.myPlayer)
                 SpawnFireflyButterflies(projectile, owner);

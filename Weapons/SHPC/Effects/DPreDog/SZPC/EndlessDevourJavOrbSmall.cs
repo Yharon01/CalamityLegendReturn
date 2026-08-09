@@ -10,7 +10,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC
 {
     internal class EndlessDevourJavOrbSmall : ModProjectile, ILocalizedModType
     {

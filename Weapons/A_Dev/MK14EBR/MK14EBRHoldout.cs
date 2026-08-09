@@ -8,32 +8,32 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal sealed class MK14EBRHoldout : ModProjectile, ILocalizedModType
     {
-        private static readonly SoundStyle FireSound = new("CalamityLegendsReturn/Sound/SHPC/M14开枪")
+        private static readonly SoundStyle FireSound = new("CalamityLegendReturn/Sound/SHPC/M14开枪")
         {
             Volume = 0.78f,
             PitchVariance = 0.05f,
             MaxInstances = 6
         };
 
-        private static readonly SoundStyle UniversalSuppressorFireSound = new("CalamityLegendsReturn/Sound/Other/DeltaForce/M14消音")
+        private static readonly SoundStyle UniversalSuppressorFireSound = new("CalamityLegendReturn/Sound/Other/DeltaForce/M14消音")
         {
             Volume = 0.78f,
             PitchVariance = 0.05f,
             MaxInstances = 6
         };
 
-        private static readonly SoundStyle HeavySuppressorFireSound = new("CalamityLegendsReturn/Sound/Other/DeltaForce/M250消音")
+        private static readonly SoundStyle HeavySuppressorFireSound = new("CalamityLegendReturn/Sound/Other/DeltaForce/M250消音")
         {
             Volume = 0.78f,
             PitchVariance = 0.05f,
             MaxInstances = 6
         };
 
-        private static readonly SoundStyle GrenadeLauncherFireSound = new("CalamityLegendsReturn/Sound/SHPC/解放者机甲左手火箭弹")
+        private static readonly SoundStyle GrenadeLauncherFireSound = new("CalamityLegendReturn/Sound/SHPC/解放者机甲左手火箭弹")
         {
             Volume = 0.72f,
             Pitch = -0.18f,
@@ -408,7 +408,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
             }
             else
             {
-                Texture2D texture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/A_Dev/MK14EBR/M14/m14").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/A_Dev/MK14EBR/M14/m14").Value;
                 Main.EntitySpriteDraw(
                     texture,
                     Projectile.Center - Main.screenPosition,

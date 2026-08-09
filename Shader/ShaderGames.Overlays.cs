@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework.Graphics;
 
-namespace CalamityLegendsReturn.Shader
+namespace CalamityLegendReturn.Shader
 {
     public sealed partial class ShaderGames
     {

@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty.Ultimate
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty.Ultimate
 {
     internal sealed class ResponsibilityArmyAmplifier : ResponsibilityArmyUnitBase
     {

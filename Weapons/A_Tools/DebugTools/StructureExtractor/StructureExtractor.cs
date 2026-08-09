@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using CalamityMod.Schematics;
 using Microsoft.Xna.Framework;
@@ -15,7 +15,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.StructureExtractor
 {
     public sealed class StructureExtractor : ModItem, ILocalizedModType
     {
@@ -285,7 +285,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
             DrawCornerBrackets(screenArea, accent * opacity);
 
             string label = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorSelectionLabel",
+                "Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorSelectionLabel",
                 tileArea.Width,
                 tileArea.Height,
                 tileArea.X,
@@ -325,11 +325,11 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
             DrawMatrixPanel(panelArea, Projectile.Opacity);
 
             Rectangle titleArea = new(panelArea.X + ModalPadding, panelArea.Y + 16, panelArea.Width - ModalPadding * 2, 32);
-            DrawFitText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorConfirmTitle"), titleArea, new Color(222, 255, 244), 0.86f, 0.5f, Projectile.Opacity);
+            DrawFitText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorConfirmTitle"), titleArea, new Color(222, 255, 244), 0.86f, 0.5f, Projectile.Opacity);
 
             Rectangle bodyArea = new(panelArea.X + ModalPadding, panelArea.Y + 58, panelArea.Width - ModalPadding * 2, 96);
             string bodyText = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorConfirmBody",
+                "Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorConfirmBody",
                 selectedArea.X,
                 selectedArea.Y,
                 selectedArea.Width,
@@ -338,8 +338,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
                 GetExportDirectory());
             DrawWrappedText(bodyText, bodyArea, new Color(210, 238, 232), 0.64f, Projectile.Opacity);
 
-            DrawButton(cancelButton, Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorCancel"), new Color(255, 116, 108), cancelHovered, false, Projectile.Opacity);
-            DrawButton(confirmButton, Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorConfirm"), new Color(70, 255, 188), confirmHovered, buttonPulseTimer > 0, Projectile.Opacity);
+            DrawButton(cancelButton, Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorCancel"), new Color(255, 116, 108), cancelHovered, false, Projectile.Opacity);
+            DrawButton(confirmButton, Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorConfirm"), new Color(70, 255, 188), confirmHovered, buttonPulseTimer > 0, Projectile.Opacity);
 
             if (leftClickPressed && Projectile.Opacity >= 0.94f)
             {
@@ -373,7 +373,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
             }
             catch (Exception exception)
             {
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorExportError", exception.Message), new Color(255, 116, 108));
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorExportError", exception.Message), new Color(255, 116, 108));
                 SoundEngine.PlaySound(SoundID.MenuClose with { Volume = 0.58f, Pitch = -0.18f }, owner.Center);
                 ResetSelection();
                 return;
@@ -381,7 +381,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
 
             if (result != ExportResult.Success)
             {
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorExportFailed", result), new Color(255, 168, 110));
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorExportFailed", result), new Color(255, 168, 110));
                 SoundEngine.PlaySound(SoundID.MenuClose with { Volume = 0.58f, Pitch = -0.12f }, owner.Center);
                 ResetSelection();
                 return;
@@ -389,14 +389,14 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
 
             string exportedPath = MoveNewestCalamityExport(exportStart);
             string details = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorExportDetails",
+                "Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorExportDetails",
                 selectedArea.X,
                 selectedArea.Y,
                 selectedArea.Width,
                 selectedArea.Height,
                 selectedArea.Width * selectedArea.Height);
 
-            Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorExportSaved", exportedPath), new Color(112, 255, 190));
+            Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorExportSaved", exportedPath), new Color(112, 255, 190));
             Main.NewText(details, new Color(164, 224, 255));
             SoundEngine.PlaySound(SoundID.Item37 with { Volume = 0.62f, Pitch = 0.22f }, owner.Center);
             buttonPulseTimer = 10;
@@ -405,7 +405,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
 
         private void CancelSelection(Player owner)
         {
-            Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.StructureExtractorCanceled"), new Color(255, 160, 126));
+            Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.StructureExtractorCanceled"), new Color(255, 160, 126));
             SoundEngine.PlaySound(SoundID.MenuClose with { Volume = 0.58f, Pitch = 0.02f }, owner.Center);
             ResetSelection();
         }
@@ -456,7 +456,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.StructureExtractor
             return newestPath;
         }
 
-        private static string GetExportDirectory() => Path.Combine(Main.SavePath, "CalamityLegendsReturn", "ExtractedStructures");
+        private static string GetExportDirectory() => Path.Combine(Main.SavePath, "CalamityLegendReturn", "ExtractedStructures");
 
         private static string GetUniquePath(string basePath)
         {

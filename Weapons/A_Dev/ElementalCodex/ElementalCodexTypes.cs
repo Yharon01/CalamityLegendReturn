@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     internal enum ElementalCodexElement
     {
@@ -97,14 +97,14 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
 
         public static string GetElementName(ElementalCodexElement element)
         {
-            string key = $"Mods.CalamityLegendsReturn.ElementalCodex.Elements.{element}";
+            string key = $"Mods.CalamityLegendReturn.ElementalCodex.Elements.{element}";
             string value = Language.GetTextValue(key);
             return value == key ? element.ToString() : value;
         }
 
         public static string GetReactionName(ElementalCodexReaction reaction)
         {
-            string key = $"Mods.CalamityLegendsReturn.ElementalCodex.Reactions.{reaction}";
+            string key = $"Mods.CalamityLegendReturn.ElementalCodex.Reactions.{reaction}";
             string value = Language.GetTextValue(key);
             return value == key ? reaction.ToString() : value;
         }

@@ -3,11 +3,11 @@ using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     public class RetroGameConsoleSupplyBox : ModItem, ILocalizedModType
     {
-        //public override string Texture => "CalamityLegendsReturn/LegendarySupplyBox";
+        //public override string Texture => "CalamityLegendReturn/LegendarySupplyBox";
         public new string LocalizationCategory => "Items.Consumables";
 
         public override void SetDefaults()

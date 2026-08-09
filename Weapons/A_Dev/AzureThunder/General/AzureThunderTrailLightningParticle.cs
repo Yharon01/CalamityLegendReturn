@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General
 {
     // “轨迹缠绕电流”粒子：沿弹幕的历史飞行轨迹（oldPos 快照）铺设电流。
     // 数学结构：

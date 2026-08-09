@@ -1,5 +1,5 @@
 Mods: {
-	CalamityLegendsReturn: {
+	CalamityLegendReturn: {
 		Projectiles.A_Dev.ExtraBackpackPanel.DisplayName: Zaino aggiuntivo
 		Keybinds.ExtraBackpack.DisplayName: Zaino aggiuntivo
 		TheSpecialText.ExtraBackpackTitle: Zaino aggiuntivo [20x10]

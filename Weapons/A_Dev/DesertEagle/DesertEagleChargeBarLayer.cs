@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
+namespace CalamityLegendReturn.Weapons.A_Dev.DesertEagle
 {
     internal sealed class DesertEagleChargeBarLayer : PlayerDrawLayer
     {

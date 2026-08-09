@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -14,7 +14,7 @@ using CalamityMod.NPCs;
 using CalamityMod.Events;
 using CalamityMod.World;
 
-namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
+namespace CalamityLegendReturn.BossAI.ReBack.Prime2041
 {
     public class Prime2041 : ModNPC
     {
@@ -942,7 +942,7 @@ namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
 
             if (masterMode && revenge)
             {
-                Texture2D texture = ModContent.Request<Texture2D>("CalamityLegendsReturn/BossAI/ReBack/Prime2041/ChadPrime").Value;
+                Texture2D texture = ModContent.Request<Texture2D>("CalamityLegendReturn/BossAI/ReBack/Prime2041/ChadPrime").Value;
                 SpriteEffects effects = NPC.spriteDirection == 1 ? SpriteEffects.FlipHorizontally : SpriteEffects.None;
                 Vector2 drawOrigin = NPC.frame.Size() / 2f;
                 Vector2 drawPos = NPC.Center - screenPos;
@@ -963,7 +963,7 @@ namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
 
             if (masterMode && revenge)
             {
-                glowTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/BossAI/ReBack/Prime2041/ChadPrimeHeadGlow").Value;
+                glowTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/BossAI/ReBack/Prime2041/ChadPrimeHeadGlow").Value;
                 eyesColor = new Color(255, 255, 0, NPC.alpha);
             }
             else

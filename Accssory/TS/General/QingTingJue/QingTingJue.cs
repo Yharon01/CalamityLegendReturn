@@ -2,7 +2,7 @@ using CalamityMod.Items.Materials;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class QingTingJue : AzureThunderDashAccessory
     {
@@ -10,7 +10,7 @@ namespace CalamityLegendsReturn.Accssory.TS
         protected override int FlightTime => 200;
         protected override float FlightSpeed => 10f;
         protected override float FlightAcceleration => 2.6f;
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/图片放这里/青霆诀";
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/图片放这里/青霆诀";
 
         public override void AddRecipes()
         {

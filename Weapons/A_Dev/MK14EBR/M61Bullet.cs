@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     public class M61Bullet : ModProjectile, ILocalizedModType
     {
@@ -14,7 +14,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
         private static readonly Color HelixGoldDeep = new(255, 168, 32);
 
         public new string LocalizationCategory => "Projectiles.MK14EBR";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/MK14EBR/M61Bullet";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/MK14EBR/M61Bullet";
 
         public override void SetStaticDefaults()
         {

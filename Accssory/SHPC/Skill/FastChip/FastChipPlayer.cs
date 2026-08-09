@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.FastChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.FastChip
 {
     public class FastChipPlayer : ModPlayer
     {
@@ -21,7 +21,7 @@ namespace CalamityLegendsReturn.Accssory.SHPC.Skill.FastChip
 
             Player.lifeRegen /= 2;
 
-            int heatStage = Player.GetModPlayer<global::CalamityLegendsReturn.Weapons.SHPC.RightClick.SHPCRight_Player>().HeatStage;
+            int heatStage = Player.GetModPlayer<global::CalamityLegendReturn.Weapons.SHPC.RightClick.SHPCRight_Player>().HeatStage;
             if (heatStage > 0)
                 Player.lifeRegen -= heatStage * 4;
         }

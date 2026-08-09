@@ -1,16 +1,16 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight.CommandAscend;
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight.MilitaryCaller;
-using CalamityLegendsReturn.Accssory.SHPC.General;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule;
-using CalamityLegendsReturn.Weapons.SHPC.EXSkill;
-using CalamityLegendsReturn.Weapons.SHPC.RightClick;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickMortar;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickTurret;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure;
-using CalamityLegendsReturn.LegendaryTooltipEffects;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight.CommandAscend;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight.MilitaryCaller;
+using CalamityLegendReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule;
+using CalamityLegendReturn.Weapons.SHPC.EXSkill;
+using CalamityLegendReturn.Weapons.SHPC.RightClick;
+using CalamityLegendReturn.Weapons.SHPC.RightClickMortar;
+using CalamityLegendReturn.Weapons.SHPC.RightClickTurret;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure;
+using CalamityLegendReturn.LegendaryTooltipEffects;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.LoreItems;
@@ -33,7 +33,7 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     public class NewLegendSHPC : ModItem, ILocalizedModType
     {
@@ -54,15 +54,15 @@ namespace CalamityLegendsReturn.Weapons.SHPC
         public static readonly SoundStyle VacuumLoop = new SoundStyle("CalamityMod/Sounds/Item/SHPCVacuumLoop") { Volume = 0.5f };
         public static readonly SoundStyle VacuumEnd = new SoundStyle("CalamityMod/Sounds/Item/SHPCVacuumEnd") { Volume = 0.5f };
 
-        public static readonly SoundStyle RocketLaunch = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/解放者机甲左手火箭弹") { Volume = 1f, Pitch = 0f };
-        public static readonly SoundStyle LightningChainRelease = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/雷霆开火与换弹") { Volume = 1f, Pitch = 0f };
-        public static readonly SoundStyle EnergyMinigunFire = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/双刃镰开火音效") { Volume = 1f, Pitch = 0f };
-        public static readonly SoundStyle EnergyMinigunSpinUp = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/双刃镰启动音效") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle RocketLaunch = new SoundStyle("CalamityLegendReturn/Sound/SHPC/解放者机甲左手火箭弹") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle LightningChainRelease = new SoundStyle("CalamityLegendReturn/Sound/SHPC/雷霆开火与换弹") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle EnergyMinigunFire = new SoundStyle("CalamityLegendReturn/Sound/SHPC/双刃镰开火音效") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle EnergyMinigunSpinUp = new SoundStyle("CalamityLegendReturn/Sound/SHPC/双刃镰启动音效") { Volume = 1f, Pitch = 0f };
 
-        public static readonly SoundStyle MortarSentryShot = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/迫击哨戒炮单次攻击") { Volume = 1f, Pitch = 0f };
-        public static readonly SoundStyle FinalUltimatumExplosion = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/最后通牒爆炸") { Volume = 1f, Pitch = 0f };
-        public static readonly SoundStyle Eagle500kgExplosion = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/飞鹰500KG爆炸") { Volume = 1f, Pitch = 0f };
-        public static readonly SoundStyle AntiPersonnelMineExplosion = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/反步兵地雷爆炸") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle MortarSentryShot = new SoundStyle("CalamityLegendReturn/Sound/SHPC/迫击哨戒炮单次攻击") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle FinalUltimatumExplosion = new SoundStyle("CalamityLegendReturn/Sound/SHPC/最后通牒爆炸") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle Eagle500kgExplosion = new SoundStyle("CalamityLegendReturn/Sound/SHPC/飞鹰500KG爆炸") { Volume = 1f, Pitch = 0f };
+        public static readonly SoundStyle AntiPersonnelMineExplosion = new SoundStyle("CalamityLegendReturn/Sound/SHPC/反步兵地雷爆炸") { Volume = 1f, Pitch = 0f };
         #endregion
 
         #region ===== 灌注与动画状态 =====
@@ -231,7 +231,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
             Item.knockBack = 3f;
             if (Main.zenithWorld)
             {
-                Item.UseSound = new SoundStyle("CalamityLegendsReturn/Sound/SHPC/AWM开火")
+                Item.UseSound = new SoundStyle("CalamityLegendReturn/Sound/SHPC/AWM开火")
                 {
                     Volume = 1.5f,
                     Pitch = 0.1f
@@ -861,7 +861,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
             }
 
             var exPlayer = player.GetModPlayer<NewLegend_EXPlayer>();
-            if (player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped &&
+            if (player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped &&
                 exPlayer.EXValue >= NewLegend_EXPlayer.GetCurrentEXMax(player) &&
                 KeybindSystem.LegendarySkill.Current)
             {
@@ -933,7 +933,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
                 return;
 
             int currentMaxEX = NewLegend_EXPlayer.GetCurrentEXMax(player);
-            int chargeMultiplier = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.SHPC.Skill.FastChip.FastChipPlayer>().FastChipEquipped ? 2 : 1;
+            int chargeMultiplier = player.GetModPlayer<global::CalamityLegendReturn.Accssory.SHPC.Skill.FastChip.FastChipPlayer>().FastChipEquipped ? 2 : 1;
             exPlayer.EXValue += NewLegend_EXPlayer.GetBaseFramesPerDisplayUnit() * Math.Max(1, multiplier) * chargeMultiplier;
 
             if (exPlayer.EXValue > currentMaxEX)
@@ -1079,7 +1079,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
             SHPCRight_Player heatPlayer = player.GetModPlayer<SHPCRight_Player>();
             bool shpcAttackLocked = heatPlayer.IsForcedShutdownCooling() || heatPlayer.AttackLockoutTimer > 0;
             bool exUnlocked = exPlayer.EXUnlocked;
-            bool legendaryEXUnlocked = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool legendaryEXUnlocked = player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             bool canUseEX = exUnlocked && legendaryEXUnlocked;
 
             if (canUseEX)
@@ -1548,7 +1548,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
                     string compactLoadingKeyText = GetSHPCLoadingUIKeyText(isChinese);
                     string compactAmmoEffectText = BuildCurrentAmmoEffectTooltipText();
                     string compactUltimateKeyText = KeybindSystem.LegendarySkill.GetAssignedKeys().FirstOrDefault() ?? (isChinese ? "未绑定" : "Unbound");
-                    bool compactLegendaryEmblemEquipped = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+                    bool compactLegendaryEmblemEquipped = player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
                     string compactExHint = compactLegendaryEmblemEquipped
                         ? string.Format(this.GetLocalizedValue("SHPC_EXHint"), compactUltimateKeyText)
                         : this.GetLocalizedValue("SHPC_EXDisabledHint");
@@ -1590,7 +1590,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
                 string formKeyText = KeybindSystem.LegendaryWeaponFormSwitch.GetAssignedKeys().FirstOrDefault() ?? (isChinese ? "未绑定" : "Unbound");
                 string loadingKeyText = GetSHPCLoadingUIKeyText(isChinese);
 
-                bool legendaryEmblemEquipped = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+                bool legendaryEmblemEquipped = player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
                 string exHint = legendaryEmblemEquipped
                     ? string.Format(this.GetLocalizedValue("SHPC_EXHint"), keyText)
                     : this.GetLocalizedValue("SHPC_EXDisabledHint");
@@ -1719,7 +1719,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
         private string BuildCurrentAmmoEffectTooltipText()
         {
             string effectDescription = IsMagazineConfigured(CurrentMagazineIndex)
-                ? Language.GetTextValue($"Mods.CalamityLegendsReturn.AMMO.SHPCAmmo{magazineEffectIDs[CurrentMagazineIndex]}")
+                ? Language.GetTextValue($"Mods.CalamityLegendReturn.AMMO.SHPCAmmo{magazineEffectIDs[CurrentMagazineIndex]}")
                 : this.GetLocalizedValue("SHPC_DefaultAmmoEffect");
 
             return string.Format(this.GetLocalizedValue("SHPC_CurrentAmmoEffect"), effectDescription).TrimEnd('\r', '\n');

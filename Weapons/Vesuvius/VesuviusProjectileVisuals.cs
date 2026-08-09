@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius
+namespace CalamityLegendReturn.Weapons.Vesuvius
 {
     internal static class VesuviusProjectileVisuals
     {

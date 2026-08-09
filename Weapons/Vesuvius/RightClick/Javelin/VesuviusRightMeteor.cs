@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick.Javelin
+namespace CalamityLegendReturn.Weapons.Vesuvius.RightClick.Javelin
 {
     public sealed class VesuviusRightReturningMeteor : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

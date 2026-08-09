@@ -25,8 +25,8 @@
 
 本次问题同时出现在两个短条中：
 
-- `ModSources\CalamityLegendsReturn\Weapons\BrinyBaron\BrinyBaronRightClickDashCooldownBarLayer.cs`
-- `ModSources\CalamityLegendsReturn\Weapons\BlossomFlux\RightClick\BRecov\BFRecoveryShieldVisual.cs`
+- `ModSources\CalamityLegendReturn\Weapons\BrinyBaron\BrinyBaronRightClickDashCooldownBarLayer.cs`
+- `ModSources\CalamityLegendReturn\Weapons\BlossomFlux\RightClick\BRecov\BFRecoveryShieldVisual.cs`
 
 二者都曾使用过类似下面的结构：
 
@@ -83,7 +83,7 @@ float nSize = 4.5f + hit * 2.5f;
 
 优秀的大型矩阵护盾范例位于：
 
-`ModSources\CalamityLegendsReturn\Accssory\SHPC\Skill\Barrier\BarrierShieldVisual.cs`
+`ModSources\CalamityLegendReturn\Accssory\SHPC\Skill\Barrier\BarrierShieldVisual.cs`
 
 其主体尺寸约为：
 
@@ -251,11 +251,11 @@ Rectangle clipped = Rectangle.Intersect(outerBounds, requestedRectangle);
 
 典型范例：
 
-- `ModSources\CalamityLegendsReturn\Weapons\A_Dev\SHPBow\SHPBowChargeBarLayer.cs`
-- `ModSources\CalamityLegendsReturn\Weapons\A_Dev\DesertEagle\DesertEagleChargeBarLayer.cs`
-- `ModSources\CalamityLegendsReturn\Weapons\BlossomFlux\RightUI\BFRightHoldChargeBarLayer.cs`
-- `ModSources\CalamityLegendsReturn\Weapons\A_Upgrade\P90\P90CooldownBar.cs`
-- `ModSources\CalamityLegendsReturn\Weapons\LeonidProgenitor\EXSkill\LeonidUltimateUI.cs`
+- `ModSources\CalamityLegendReturn\Weapons\A_Dev\SHPBow\SHPBowChargeBarLayer.cs`
+- `ModSources\CalamityLegendReturn\Weapons\A_Dev\DesertEagle\DesertEagleChargeBarLayer.cs`
+- `ModSources\CalamityLegendReturn\Weapons\BlossomFlux\RightUI\BFRightHoldChargeBarLayer.cs`
+- `ModSources\CalamityLegendReturn\Weapons\A_Upgrade\P90\P90CooldownBar.cs`
+- `ModSources\CalamityLegendReturn\Weapons\LeonidProgenitor\EXSkill\LeonidUltimateUI.cs`
 
 核心方式是：
 
@@ -310,7 +310,7 @@ Rectangle crop = new(
 
 ### 4.3 大型 Boss 面板
 
-`ModSources\CalamityLegendsReturn\UI\CLCRBossHealthBar.cs` 的面板宽约 `460`、高约 `56`，角支架长度约 `9`。
+`ModSources\CalamityLegendReturn\UI\CLCRBossHealthBar.cs` 的面板宽约 `460`、高约 `56`，角支架长度约 `9`。
 
 角支架只占总高度的一小部分，而且带有内缩量，因此上下支架不会连接。这里的 L 形装饰是安全的，因为面板确实有足够空间。
 
@@ -324,7 +324,7 @@ Rectangle crop = new(
 
 公共实现位于：
 
-`ModSources\CalamityLegendsReturn\UI\BoundedHeadBarRenderer.cs`
+`ModSources\CalamityLegendReturn\UI\BoundedHeadBarRenderer.cs`
 
 BB 与 BF 都调用这一份代码：
 
@@ -460,7 +460,7 @@ Rectangle.Intersect(outerBounds, requestedRectangle)
 适合玩家头顶充能条、冷却条。
 
 ```csharp
-using CalamityLegendsReturn.UI;
+using CalamityLegendReturn.UI;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
@@ -857,14 +857,14 @@ player.gfxOffY
 
 以后遇到任何玩家头顶矩阵条，优先复用：
 
-`ModSources\CalamityLegendsReturn\UI\BoundedHeadBarRenderer.cs`
+`ModSources\CalamityLegendReturn\UI\BoundedHeadBarRenderer.cs`
 
 如果需求只是普通进度条，使用固定 `GenericBarBack` / `GenericBarFront` 贴图裁剪。
 
 如果需求是大型护盾或大型面板，可以参考：
 
-- `ModSources\CalamityLegendsReturn\Accssory\SHPC\Skill\Barrier\BarrierShieldVisual.cs`
-- `ModSources\CalamityLegendsReturn\UI\CLCRBossHealthBar.cs`
+- `ModSources\CalamityLegendReturn\Accssory\SHPC\Skill\Barrier\BarrierShieldVisual.cs`
+- `ModSources\CalamityLegendReturn\UI\CLCRBossHealthBar.cs`
 
 但必须重新核对装饰长度与整体尺寸的比例，不能把大型结构原样压缩。
 

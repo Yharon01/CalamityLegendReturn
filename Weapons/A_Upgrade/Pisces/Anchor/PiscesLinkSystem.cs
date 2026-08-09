@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Anchor
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Anchor
 {
     /// <summary>
     /// 联动的选择与串联逻辑——把左键留下的硫火锚点用右键精确串起来。

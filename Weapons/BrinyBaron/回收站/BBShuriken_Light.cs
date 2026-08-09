@@ -1,4 +1,4 @@
-﻿//using System;
+﻿﻿//using System;
 //using CalamityMod.Particles;
 //using Microsoft.Xna.Framework;
 //using Microsoft.Xna.Framework.Graphics;
@@ -8,7 +8,7 @@
 //using Terraria.ID;
 //using Terraria.ModLoader;
 //
-//namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+//namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 //{
 //    internal class BBShuriken_Light : ModProjectile
 //    {

@@ -1,7 +1,7 @@
 Mods: {
-	CalamityLegendsReturn: {
+	CalamityLegendReturn: {
 		Configs: {
-			CalamityLegendsReturnConfig: {
+			CalamityLegendReturnConfig: {
 				DisplayName: 传奇归来设置
 
 				Headers: {
@@ -35,7 +35,7 @@ Mods: {
 				}
 
 				GiveQuickStartBoxOnSpawn: {
-					Label: "[i:CalamityLegendsReturn/QuickStartBox] 开局赠送快速发展道具箱"
+					Label: "[i:CalamityLegendReturn/QuickStartBox] 开局赠送快速发展道具箱"
 					Tooltip: 开启后，新玩家/新角色创号生成时，背包内将自动获得一个【快速发展道具箱】（注意：此功能会极大地破坏游戏平衡，请谨慎开启）
 				}
 

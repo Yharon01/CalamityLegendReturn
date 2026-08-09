@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.BaseProjectiles;
@@ -17,12 +17,12 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.GameContent;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     public class BrinyBaron_LeftClick_Swing : BaseCustomUseStyleProjectile
     {
         public new string LocalizationCategory => "Projectiles.BrinyBaron";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
         public override int AssignedItemID => ModContent.ItemType<NewLegendBrinyBaron>();
         public override Vector2 SpriteOrigin => new(0f, 102f);
         public override float HitboxOutset => BB_Balance.LeftClickCoreHitboxOutset;
@@ -1285,7 +1285,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
                 return false;
 
             Asset<Texture2D> texture = ModContent.Request<Texture2D>(Texture);
-            Asset<Texture2D> ghost = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest");
+            Asset<Texture2D> ghost = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest");
             Asset<Texture2D> swoosh = ModContent.Request<Texture2D>("CalamityMod/Particles/VerticalSmearLarge");
 
             float r = FlipAsSword ? MathHelper.ToRadians(90f) : 0f;

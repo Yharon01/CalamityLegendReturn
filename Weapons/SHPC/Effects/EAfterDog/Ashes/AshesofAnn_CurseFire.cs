@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Graphics.Metaballs;
@@ -12,7 +12,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
 {
     internal sealed class AshesofAnn_CurseFire : ModProjectile, ILocalizedModType
     {

@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
+namespace CalamityLegendReturn.Weapons.A_Upgrade.BlackHawkRemote
 {
     internal sealed class BlackHawkLoadoutWheel : ModProjectile, ILocalizedModType, IScreenOverlayProjectile
     {
@@ -148,7 +148,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
             DrawSlot(centerArea, autoColor, current == BlackHawkLoadout.Auto, hovered == BlackHawkLoadout.Auto, opacity);
             DrawCenteredText("AUTO", centerArea, hovered == BlackHawkLoadout.Auto ? Color.White : autoColor, 0.52f, opacity);
 
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.BlackHawkWheelTitle");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.BlackHawkWheelTitle");
             string name = BlackHawkLoadoutInfo.Name(hovered);
             DrawCenteredText(title, new Rectangle((int)screenCenter.X - 180, (int)screenCenter.Y - 178, 360, 26),
                 new Color(210, 230, 240), 0.58f, opacity);

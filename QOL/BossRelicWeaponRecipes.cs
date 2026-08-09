@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using System.Collections.Generic;
 
-namespace CalamityLegendsReturn.QOL
+namespace CalamityLegendReturn.QOL
 {
     public class BossRelicWeaponRecipes : ModSystem
     {
@@ -122,10 +122,10 @@ namespace CalamityLegendsReturn.QOL
 
         public override void AddRecipes()
         {
-            if (CalamityLegendsReturnConfig.Instance?.AllowBossRelicWeaponRecipes == true)
+            if (CalamityLegendReturnConfig.Instance?.AllowBossRelicWeaponRecipes == true)
                 RegisterCalamityBossRelicRecipes();
 
-            if (CalamityLegendsReturnConfig.Instance?.AllowOtherRecipes == true)
+            if (CalamityLegendReturnConfig.Instance?.AllowOtherRecipes == true)
                 RegisterVanillaExtraQolRecipes();
         }
 

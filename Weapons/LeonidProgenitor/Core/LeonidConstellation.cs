@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Core
 {
     /// <summary>
     /// The fourteen principal stars used by the Leonid constellation matrix. Regulus is the

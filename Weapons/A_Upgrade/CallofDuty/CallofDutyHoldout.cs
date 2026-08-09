@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty
 {
     internal sealed class CallofDutyHoldout : ModProjectile
     {

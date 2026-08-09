@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism
 {
     internal class ExoPrism_Lazer : ModProjectile, ILocalizedModType
     {

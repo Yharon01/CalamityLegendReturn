@@ -1,7 +1,7 @@
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Accssory
+namespace CalamityLegendReturn.Accssory
 {
     internal sealed class LegendaryEmblemPlayer : ModPlayer
     {

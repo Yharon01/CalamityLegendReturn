@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 using CalamityMod.Items.TreasureBags.MiscGrabBags;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     internal class NeverGonnaGiveYouWeapon : GlobalItem
     {

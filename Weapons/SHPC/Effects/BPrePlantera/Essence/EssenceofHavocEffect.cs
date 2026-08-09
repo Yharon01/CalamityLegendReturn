@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
 {
     public class EssenceofHavocEffect : DefaultEffect
     {
@@ -51,7 +51,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
 
         public override void OnKill(Projectile projectile, Player owner, int timeLeft)
         {
-            SoundEngine.PlaySound(new SoundStyle("CalamityLegendsReturn/Sound/SHPC/最后通牒爆炸")
+            SoundEngine.PlaySound(new SoundStyle("CalamityLegendReturn/Sound/SHPC/最后通牒爆炸")
             {
                 Volume = 3f
             }, projectile.Center);

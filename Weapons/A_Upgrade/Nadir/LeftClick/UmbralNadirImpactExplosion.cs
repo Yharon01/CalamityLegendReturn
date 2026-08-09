@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick
 {
     /// <summary>
     /// 左键上挑 / 劈落命中的一次性冥蚀黑洞冲击（第三段的黑洞交给持续奇点）。

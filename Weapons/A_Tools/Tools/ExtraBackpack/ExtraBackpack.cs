@@ -13,9 +13,9 @@ using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.UI.Chat;
 using CalamityMod;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ExtraBackpack
+namespace CalamityLegendReturn.Weapons.A_Tools.Tools.ExtraBackpack
 {
     // ── Item ─────────────────────────────────────────────────────────────────
     // ── ModPlayer (storage) ───────────────────────────────────────────────────
@@ -53,7 +53,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ExtraBackpack
             if (Main.myPlayer != Player.whoAmI) return;
 
             // Keybind toggle
-            if (global::CalamityLegendsReturn.KeybindSystem.ExtraBackpack?.JustPressed == true)
+            if (global::CalamityLegendReturn.KeybindSystem.ExtraBackpack?.JustPressed == true)
             {
                 int panelType = ModContent.ProjectileType<ExtraBackpackPanel>();
                 for (int i = 0; i < Main.maxProjectiles; i++)
@@ -193,7 +193,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ExtraBackpack
             DrawRect(new Rectangle(sweepX, panelArea.Y + 10, 2, panelArea.Height - 20), new Color(80, 200, 120) * (op * 0.12f));
 
             // ── Title ──
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.ExtraBackpackTitle");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.ExtraBackpackTitle");
             Rectangle titleRect = new(panelArea.X + PanelPad, panelArea.Y + PanelPad, PanelW - PanelPad * 2, TitleH - 4);
             DrawFitText(title, titleRect, new Color(120, 240, 160), 0.88f, 0.5f, op);
             DrawRect(new Rectangle(panelArea.X + PanelPad, panelArea.Y + PanelPad + TitleH - 2, PanelW - PanelPad * 2, 1),

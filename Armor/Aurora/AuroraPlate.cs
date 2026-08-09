@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Armor.Aurora
+namespace CalamityLegendReturn.Armor.Aurora
 {
     [AutoloadEquip(EquipType.Body)]
     public class AuroraPlate : ModItem, ILocalizedModType
@@ -42,7 +42,7 @@ namespace CalamityLegendsReturn.Armor.Aurora
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Armor.AuroraPlate.SetBonus");
+            player.setBonus = Language.GetTextValue("Mods.CalamityLegendReturn.Items.Armor.AuroraPlate.SetBonus");
 
             // Deliberately low, easy stats — the point of this set is the visual effect.
             player.moveSpeed += 0.10f;      // +10% movement speed

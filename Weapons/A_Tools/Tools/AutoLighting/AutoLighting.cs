@@ -4,9 +4,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.AutoLighting
+namespace CalamityLegendReturn.Weapons.A_Tools.Tools.AutoLighting
 {
     public class AutoLighting : ModItem, ILocalizedModType
     {

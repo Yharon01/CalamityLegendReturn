@@ -2,11 +2,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.Skill
+namespace CalamityLegendReturn.Accssory.BB.Skill
 {
     public class TideRadar : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BB/贴图/潮汐雷达";
+        public override string Texture => "CalamityLegendReturn/Accssory/BB/贴图/潮汐雷达";
 
         public override void SetDefaults()
         {

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip
 {
     public class CtrlChip : ModItem
     {

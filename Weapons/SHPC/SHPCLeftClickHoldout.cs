@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     /// <summary>
     /// 左键手持弹幕。出现时播放后坐力动画和枪口星芒，动画结束后自动消失。

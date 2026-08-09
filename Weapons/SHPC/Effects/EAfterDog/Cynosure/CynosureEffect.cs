@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Items.LoreItems;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
 {
     /// <summary>
     /// SHPC 的 Cynosure 入口。普通能量球出生后会立即转换为重型穿甲弹。

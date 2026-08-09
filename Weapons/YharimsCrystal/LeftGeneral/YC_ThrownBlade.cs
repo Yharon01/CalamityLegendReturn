@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.LeftGeneral
 {
     internal sealed class YC_ThrownBlade : ModProjectile, ILocalizedModType
     {

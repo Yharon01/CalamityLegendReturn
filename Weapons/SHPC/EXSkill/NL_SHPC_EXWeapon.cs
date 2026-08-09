@@ -1,4 +1,4 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera;
 using CalamityMod;
 using CalamityMod.Particles;
 using CalamityMod.Skies;
@@ -12,7 +12,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
+namespace CalamityLegendReturn.Weapons.SHPC.EXSkill
 {
     internal class NL_SHPC_EXWeapon : ModProjectile
     {
@@ -136,7 +136,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
             if (ChargeSoundSlot == default)
             {
                 ChargeSoundSlot = SoundEngine.PlaySound(
-                    new SoundStyle("CalamityLegendsReturn/Sound/SHPC/蜃景大招正在蓄力")
+                    new SoundStyle("CalamityLegendReturn/Sound/SHPC/蜃景大招正在蓄力")
                     {
                         Volume = 1.0f,
                         IsLooped = true
@@ -174,7 +174,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
 
             // 播放蓄力完成音
             SoundEngine.PlaySound(
-                new SoundStyle("CalamityLegendsReturn/Sound/SHPC/蜃景大招准备就绪")
+                new SoundStyle("CalamityLegendReturn/Sound/SHPC/蜃景大招准备就绪")
                 {
                     Volume = 1.2f,
                     Pitch = 0f
@@ -231,7 +231,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
             if (LaserSoundSlot == default)
             {
                 LaserSoundSlot = SoundEngine.PlaySound(
-                    new SoundStyle("CalamityLegendsReturn/Sound/SHPC/蜃景大招发射")
+                    new SoundStyle("CalamityLegendReturn/Sound/SHPC/蜃景大招发射")
                     {
                         Volume = 9.0f,
                         IsLooped = true

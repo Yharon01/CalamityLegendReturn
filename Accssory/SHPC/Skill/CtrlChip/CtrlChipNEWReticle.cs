@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip
 {
     internal sealed class CtrlChipNEWReticle : ModProjectile
     {

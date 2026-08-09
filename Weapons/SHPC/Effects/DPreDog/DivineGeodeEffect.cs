@@ -1,4 +1,4 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Dusts;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     public class DivineGeodeEffect : DefaultEffect
     {

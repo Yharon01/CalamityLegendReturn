@@ -4,9 +4,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.General;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.General;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.Passive
 {
     public class FrostSealGlobal : GlobalNPC
     {

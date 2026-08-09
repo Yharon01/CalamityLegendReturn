@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Spawned on grade-3+ detonation in radial burst; flies outward and inflicts pollution.
     internal sealed class SSPollutionSpike : ModProjectile, ILocalizedModType

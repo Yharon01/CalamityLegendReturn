@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -10,9 +10,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     internal sealed class SHPCAmmoSelectionPanel : ModProjectile, ILocalizedModType, IScreenOverlayProjectile
     {
@@ -427,7 +427,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
 
             string itemName = Lang.GetItemNameValue(slot.AmmoType);
             int capacity = NewLegendSHPC.GetAdjustedAmmoCapacity(owner, slot.EffectID);
-            return $"{slot.Index + 1}号弹夹: {Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SHPCAmmoWheelHover", itemName, capacity)} ({slot.Power}/{capacity})";
+            return $"{slot.Index + 1}号弹夹: {Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SHPCAmmoWheelHover", itemName, capacity)} ({slot.Power}/{capacity})";
         }
 
         private static string GetMagazineSwitchText(NewLegendSHPC.SHPCMagazineSlot slot)

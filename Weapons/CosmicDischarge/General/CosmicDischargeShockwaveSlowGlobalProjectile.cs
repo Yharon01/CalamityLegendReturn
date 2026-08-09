@@ -2,7 +2,7 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     public sealed class CosmicDischargeShockwaveSlowGlobalProjectile : GlobalProjectile
     {

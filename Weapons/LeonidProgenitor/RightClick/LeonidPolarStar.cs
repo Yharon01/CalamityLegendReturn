@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Effects;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     // Stealth-right-click payload: a deliberately straight, non-homing star shot.
     public class LeonidPolarStar : ModProjectile, ILocalizedModType

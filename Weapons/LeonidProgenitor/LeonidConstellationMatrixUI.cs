@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +13,7 @@ using Terraria.ModLoader;
 using Terraria.UI;
 using Microsoft.Xna.Framework.Input;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     /// <summary>
     /// A draw-only matrix UI. It deliberately has two opening contexts:
@@ -42,7 +42,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
                 return;
 
             layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
-                "CalamityLegendsReturn: Leonid Constellation Matrix",
+                "CalamityLegendReturn: Leonid Constellation Matrix",
                 () =>
                 {
                     Draw(Main.spriteBatch);
@@ -147,10 +147,10 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
 
         private static void DrawPanel(SpriteBatch spriteBatch, Rectangle panel, LeonidConstellationPlayer progress)
         {
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Title");
-            string subtitle = Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Subtitle");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Title");
+            string subtitle = Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Subtitle");
             string status = string.Format(
-                Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Status"),
+                Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Status"),
                 progress.AvailablePoints,
                 progress.SpentPoints,
                 progress.EarnedPoints,
@@ -178,7 +178,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
                 DrawNodeLabel(spriteBatch, position, node, unlocked, affordable, hovered);
             }
 
-            string reset = Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Reset");
+            string reset = Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Reset");
             string resetDisplay = $"✦ {reset} ✦";
             Vector2 resetSize = FontAssets.MouseText.Value.MeasureString(resetDisplay) * 0.72f;
             resetArea = new Rectangle(panel.Right - (int)resetSize.X - 28, panel.Bottom - 76, (int)resetSize.X + 12, 26);
@@ -190,7 +190,7 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
                 DrawNodeDetail(spriteBatch, panel, hoveredNode.Value, progress);
             else
                 DrawCenteredText(spriteBatch,
-                    Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.HoverHint"),
+                    Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.HoverHint"),
                     new Vector2(panel.Center.X, panel.Bottom - 82f),
                     new Color(174, 193, 255),
                     0.58f);
@@ -299,14 +299,14 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
 
         private static void DrawNodeDetail(SpriteBatch spriteBatch, Rectangle panel, LeonidConstellationNode node, LeonidConstellationPlayer progress)
         {
-            string root = "Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Nodes." + LeonidConstellation.LocalizationKey(node.Star);
+            string root = "Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Nodes." + LeonidConstellation.LocalizationKey(node.Star);
             string name = Language.GetTextValue(root + ".Name");
             string description = Language.GetTextValue(root + ".Description");
             string state = node.Star == LeonidStar.Regulus
-                ? Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Heart")
+                ? Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Heart")
                 : progress.IsUnlocked(node.Star)
-                    ? Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Unlocked")
-                    : string.Format(Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.LeonidProgenitor.Constellation.Cost"), node.Cost);
+                    ? Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Unlocked")
+                    : string.Format(Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.LeonidProgenitor.Constellation.Cost"), node.Cost);
 
             Vector2 detailOrigin = new(panel.X + 30f, panel.Bottom - 158f);
             Vector2 stateSize = FontAssets.MouseText.Value.MeasureString(state) * 0.55f;

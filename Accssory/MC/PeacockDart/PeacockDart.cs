@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.PeacockDart
+namespace CalamityLegendReturn.Accssory.MC.PeacockDart
 {
     public sealed class PeacockDart : ModItem
     {

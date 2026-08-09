@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
 {
     // Weapon-side version of Supreme Cataclysm's fist. CurseFire impact supplies a locked
     // target, which the fist actively tracks until it connects.

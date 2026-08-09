@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.EXSkill;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick.Javelin;
+using CalamityLegendReturn.Weapons.Vesuvius.EXSkill;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick.Javelin;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -11,12 +11,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
+namespace CalamityLegendReturn.Weapons.Vesuvius.RightClick
 {
     public class VesuviusRightJavelinHoldout : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/NewVesuvius";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/NewVesuvius";
 
         private const int PullbackLength = 30;
         private const int MaxChargeLength = 78;
@@ -237,10 +237,10 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
+            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D bloomRing = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
-            Texture2D lightFlash = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/fx_LightFlash2").Value;
+            Texture2D lightFlash = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/fx_LightFlash2").Value;
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 tipPosition = JavelinTip - Main.screenPosition;

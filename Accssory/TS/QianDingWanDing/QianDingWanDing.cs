@@ -3,12 +3,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class QianDingWanDing : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/图片放这里/千定万定";
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/图片放这里/千定万定";
 
         public override void SetDefaults()
         {

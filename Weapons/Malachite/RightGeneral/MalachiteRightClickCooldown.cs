@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.RightGeneral
+namespace CalamityLegendReturn.Weapons.Malachite.RightGeneral
 {
     internal sealed class MalachiteRightClickCooldown : CooldownHandler
     {
@@ -26,11 +26,11 @@ namespace CalamityLegendsReturn.Weapons.Malachite.RightGeneral
             instance.player.HeldItem.type == ModContent.ItemType<Malachite>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.Malachite_RightClick");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.Malachite_RightClick");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => new(12, 54, 28);
         public override Color CooldownStartColor => Color.Lerp(new Color(32, 82, 45), new Color(82, 255, 132), ReadyCompletion);

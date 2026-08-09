@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal static class BFArrowCommon
     {
@@ -514,12 +514,12 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
 
         public static string GetTexturePathForPreset(BlossomFluxChloroplastPresetType preset) => preset switch
         {
-            BlossomFluxChloroplastPresetType.Chlo_ABreak => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/ABreak/BFArrow_ABreak",
-            BlossomFluxChloroplastPresetType.Chlo_BRecov => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/BRecov/BFArrow_BRecov",
-            BlossomFluxChloroplastPresetType.Chlo_CDetec => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/CDetec/BFArrow_CDetec",
-            BlossomFluxChloroplastPresetType.Chlo_DBomb => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb",
-            BlossomFluxChloroplastPresetType.Chlo_EPlague => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/EPlague/BFArrow_EPlague",
-            _ => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/ABreak/BFArrow_ABreak"
+            BlossomFluxChloroplastPresetType.Chlo_ABreak => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/ABreak/BFArrow_ABreak",
+            BlossomFluxChloroplastPresetType.Chlo_BRecov => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/BRecov/BFArrow_BRecov",
+            BlossomFluxChloroplastPresetType.Chlo_CDetec => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/CDetec/BFArrow_CDetec",
+            BlossomFluxChloroplastPresetType.Chlo_DBomb => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb",
+            BlossomFluxChloroplastPresetType.Chlo_EPlague => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/EPlague/BFArrow_EPlague",
+            _ => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/ABreak/BFArrow_ABreak"
         };
 
         public static Color GetPresetColor(BlossomFluxChloroplastPresetType preset) => ChloroplastCommon.PresetColor(preset);

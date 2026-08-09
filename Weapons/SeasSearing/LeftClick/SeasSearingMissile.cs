@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Stage-5 paired missile: fast, strongly homing, with a 200x200 detonation.
     internal sealed class SeasSearingMissile : ModProjectile

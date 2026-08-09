@@ -18,11 +18,11 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     internal sealed class GaelGreatswordGuardHoldout : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword";
+        public override string Texture => "CalamityLegendReturn/Weapons/GaelsGreatsword/NewLegendGaelsGreatsword";
 
         private const float SwordVisualScale = 1.5f;
         private const float BladeReach = 132f;

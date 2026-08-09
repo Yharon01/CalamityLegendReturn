@@ -5,9 +5,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
-using SeasSearingItem = CalamityLegendsReturn.Weapons.SeasSearing.SeasSearing;
+using SeasSearingItem = CalamityLegendReturn.Weapons.SeasSearing.SeasSearing;
 
-namespace CalamityLegendsReturn.LegendaryTooltipEffects
+namespace CalamityLegendReturn.LegendaryTooltipEffects
 {
     public sealed class SeasSearingAbyssalPollutionLegendaryTooltip : GlobalItem
     {

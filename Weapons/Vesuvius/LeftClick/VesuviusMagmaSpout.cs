@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick
 {
     /// <summary>
     /// 命中火山灾祸目标后喷出的岩浆。它沿触发弹幕原来的运动方向冲出去，

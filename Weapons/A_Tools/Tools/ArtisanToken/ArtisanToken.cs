@@ -13,11 +13,11 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 using CalamityMod;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ArtisanToken
+namespace CalamityLegendReturn.Weapons.A_Tools.Tools.ArtisanToken
 {
     public class ArtisanToken : ModItem, ILocalizedModType
     {
@@ -198,7 +198,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ArtisanToken
                 new Color(100, 80, 20, 160) * op, 1);
 
             // Title
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.ArtisanTokenTitle");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.ArtisanTokenTitle");
             Rectangle titleRect = new(panelArea.X + PanelPad, panelArea.Y + PanelPad, PanelW - PanelPad * 2, TitleH - 6);
             DrawFitText(title, titleRect, new Color(255, 220, 100), 0.9f, 0.5f, op);
             DrawRect(new Rectangle(panelArea.X + PanelPad, panelArea.Y + PanelPad + TitleH - 4,
@@ -334,7 +334,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ArtisanToken
 
         private static void ShowAppliedMessage(PrefixEntry entry, int applied)
         {
-            string msg = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.ArtisanTokenApplied",
+            string msg = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.ArtisanTokenApplied",
                 entry.ChineseName, applied);
             Main.NewText(msg, new Color(255, 220, 100));
         }
@@ -370,7 +370,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ArtisanToken
     {
         public static void RequestApplyPrefix(int prefixId)
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.ArtisanTokenApplyPrefix);
             packet.Write((byte)prefixId);
             packet.Send();
@@ -390,7 +390,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.ArtisanToken
                 return;
 
             int applied = ArtisanTokenPanel.ApplyPrefixToAccessories(player, prefixId);
-            ModPacket response = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket response = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             response.Write((byte)GamePacketType.ArtisanTokenPrefixApplied);
             response.Write((byte)prefixId);
             response.Write((byte)applied);

@@ -1,6 +1,6 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod.Dusts;
 using CalamityMod.Enums;
 using CalamityMod.Items.Materials;
@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC
 {
     public class DarkPlasmaEffect : DefaultEffect
     {
@@ -971,7 +971,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
                 projectile.GetSource_FromThis(),
                 center,
                 Vector2.Zero,
-                ModContent.ProjectileType<global::CalamityLegendsReturn.Weapons.SHPC.NewLegendSHPE>(),
+                ModContent.ProjectileType<global::CalamityLegendReturn.Weapons.SHPC.NewLegendSHPE>(),
                 (int)(projectile.damage * damageMultiplier),
                 projectile.knockBack,
                 projectile.owner);
@@ -1149,7 +1149,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
 
                 // 贴图
                 Texture2D fbm = ModContent.Request<Texture2D>(
-                    "CalamityLegendsReturn/Weapons/SHPC/Effects/DPreDog/fbmnoise2_007"
+                    "CalamityLegendReturn/Weapons/SHPC/Effects/DPreDog/fbmnoise2_007"
                 ).Value;
 
                 Vector2 fbmOrigin = fbm.Size() * 0.5f;

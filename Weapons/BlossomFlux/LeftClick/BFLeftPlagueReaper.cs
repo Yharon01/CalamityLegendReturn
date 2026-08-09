@@ -1,6 +1,6 @@
 using System;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,12 +9,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.LeftClick
 {
     internal class BFLeftPlagueReaper : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        //public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/LeftClick/BlossomFluxBOMB";
+        //public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/LeftClick/BlossomFluxBOMB";
 
         // 缩放方向控制
         private bool scaleExpand = true;

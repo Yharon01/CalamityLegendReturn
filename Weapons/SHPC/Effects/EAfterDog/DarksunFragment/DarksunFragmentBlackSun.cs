@@ -1,6 +1,6 @@
 using CalamityMod;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera;
+using CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
 {
     internal class DarksunFragmentBlackSun : ModProjectile, ILocalizedModType
     {
@@ -268,11 +268,11 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
             Texture2D ring = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
             Texture2D[] sunsetVortexTextures =
             {
-                ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/Sun/fbmnoise2_003").Value,
-                ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/Sun/fbmnoise2_004").Value,
-                ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/Sun/fbmnoise2_005").Value,
-                ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/Sun/fbmnoise2_006").Value,
-                ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/Sun/gradationline_004").Value
+                ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/Sun/fbmnoise2_003").Value,
+                ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/Sun/fbmnoise2_004").Value,
+                ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/Sun/fbmnoise2_005").Value,
+                ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/Sun/fbmnoise2_006").Value,
+                ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/Sun/gradationline_004").Value
             };
 
             Vector2 drawPos = Projectile.Center - Main.screenPosition;

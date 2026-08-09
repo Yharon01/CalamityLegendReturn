@@ -9,14 +9,14 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     public class Game2048 : ModItem, ILocalizedModType
     {
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Tools/Toys/RetroGames/Game2048";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Tools/Toys/RetroGames/Game2048";
 
         private static int PanelType => ModContent.ProjectileType<Game2048Panel>();
 
@@ -443,8 +443,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
             DrawTextWithShadow("2048", new Vector2(panelArea.X + PanelPadding, panelArea.Y + 12), new Color(245, 244, 236) * opacity, 1f, opacity);
 
-            string scoreText = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048Score", score);
-            string bestText = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048Best", bestTile);
+            string scoreText = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048Score", score);
+            string bestText = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048Best", bestTile);
             DrawStatPill(scoreText, new Rectangle(panelArea.Right - PanelPadding - 180, panelArea.Y + 10, 84, 36), opacity);
             DrawStatPill(bestText, new Rectangle(panelArea.Right - PanelPadding - 88, panelArea.Y + 10, 88, 36), opacity);
 
@@ -453,10 +453,10 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawBorder(footer, new Color(86, 92, 102) * opacity, 1);
 
             string status = gameOver
-                ? Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048Restart")
+                ? Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048Restart")
                 : won2048
-                    ? Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048Won")
-                    : Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048Slide");
+                    ? Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048Won")
+                    : Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048Slide");
 
             DrawCenteredText(status, footer, new Color(210, 218, 226), 0.58f, opacity);
         }
@@ -527,8 +527,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawRectangle(overlay, new Color(8, 10, 12, 226) * opacity);
             DrawBorder(overlay, new Color(220, 88, 92) * opacity, 2);
 
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048GameOver");
-            string restart = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.Game2048Restart");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048GameOver");
+            string restart = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.Game2048Restart");
             DrawCenteredText(title, new Rectangle(overlay.X, overlay.Y + 22, overlay.Width, 30), new Color(255, 218, 218), 0.8f, opacity);
             DrawCenteredText(restart, new Rectangle(overlay.X, overlay.Y + 62, overlay.Width, 26), new Color(218, 226, 236), 0.54f, opacity);
         }

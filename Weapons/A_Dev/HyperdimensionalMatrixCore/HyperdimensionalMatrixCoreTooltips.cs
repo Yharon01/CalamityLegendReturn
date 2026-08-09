@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
+namespace CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
 {
     public sealed class HyperdimensionalMatrixCoreTooltipGlobalItem : GlobalItem
     {

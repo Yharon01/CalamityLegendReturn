@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
+namespace CalamityLegendReturn.Weapons.A_Dev.SHPBow
 {
     internal enum SHPBowMode
     {
@@ -19,11 +19,11 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
 
         public static string IconTexturePath(SHPBowMode mode) => mode switch
         {
-            SHPBowMode.Pierce => "CalamityLegendsReturn/Weapons/A_Dev/SHPBow/\u7a7f\u900f",
-            SHPBowMode.Ricochet => "CalamityLegendsReturn/Weapons/A_Dev/SHPBow/\u53cd\u5f39",
-            SHPBowMode.Scatter => "CalamityLegendsReturn/Weapons/A_Dev/SHPBow/\u6563\u5c04",
-            SHPBowMode.Homing => "CalamityLegendsReturn/Weapons/A_Dev/SHPBow/\u8ffd\u8e2a",
-            _ => "CalamityLegendsReturn/Weapons/A_Dev/SHPBow/\u7a7f\u900f"
+            SHPBowMode.Pierce => "CalamityLegendReturn/Weapons/A_Dev/SHPBow/\u7a7f\u900f",
+            SHPBowMode.Ricochet => "CalamityLegendReturn/Weapons/A_Dev/SHPBow/\u53cd\u5f39",
+            SHPBowMode.Scatter => "CalamityLegendReturn/Weapons/A_Dev/SHPBow/\u6563\u5c04",
+            SHPBowMode.Homing => "CalamityLegendReturn/Weapons/A_Dev/SHPBow/\u8ffd\u8e2a",
+            _ => "CalamityLegendReturn/Weapons/A_Dev/SHPBow/\u7a7f\u900f"
         };
 
         public static Color MainColor(SHPBowMode mode) => mode switch

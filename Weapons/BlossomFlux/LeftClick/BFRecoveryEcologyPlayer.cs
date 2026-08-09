@@ -1,6 +1,6 @@
-﻿using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+﻿﻿using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod;
 using Microsoft.Xna.Framework;
@@ -9,11 +9,11 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.LeftClick
 {
     internal class BFRecoveryLeafBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/复苏之叶";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/复苏之叶";
 
         public override LocalizedText Description
         {

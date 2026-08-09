@@ -1,12 +1,12 @@
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.Pa5
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.Pa5
 {
     internal sealed class BFPa5BreakthroughPlayer : ModPlayer
     {

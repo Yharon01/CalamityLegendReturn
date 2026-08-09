@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Accssory.BF.Common;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -17,7 +17,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal class BFArrow_CDetec : ModProjectile, IPixelatedPrimitiveRenderer
     {
@@ -349,7 +349,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
             if (Main.dedServ)
                 return;
 
-            Texture2D opticTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/muzzle_02").Value;
+            Texture2D opticTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/muzzle_02").Value;
             Vector2 center = Projectile.Center - Main.screenPosition;
             Vector2 forward = Projectile.velocity.SafeNormalize(Vector2.UnitX);
             Vector2 side = forward.RotatedBy(MathHelper.PiOver2);

@@ -1,10 +1,10 @@
-﻿using CalamityLegendsReturn.Accssory.SHPC.General;
+﻿﻿using CalamityLegendReturn.Accssory.SHPC.General;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.General.WastelandEnergyCore
+namespace CalamityLegendReturn.Accssory.SHPC.General.WastelandEnergyCore
 {
     public class WastelandEnergyCore : ModItem
     {

@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.Skill
+namespace CalamityLegendReturn.Accssory.PF.Skill
 {
     // 嫦娥怨火罐：
     // 手持纯元时，燃料背包拥有独立血量，可以阻挡敌方弹幕；
@@ -13,7 +13,7 @@ namespace CalamityLegendsReturn.Accssory.PF.Skill
     internal sealed class PFChangEFireCan : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/Skill/PFChangEFireCan";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/Skill/PFChangEFireCan";
 
         public override void SetDefaults()
         {

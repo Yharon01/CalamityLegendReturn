@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Configs;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Configs;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Graphics;
@@ -11,7 +11,7 @@ using Terraria.ModLoader;
 using Terraria.UI.Chat;
 using Terraria.UI;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Systems
+namespace CalamityLegendReturn.BossAI.NewDiff.Core.Systems
 {
     public class LegendsDebugSystem : ModSystem
     {
@@ -27,7 +27,7 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Systems
             if (mouseTextIndex < 0)
                 return;
 
-            layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer("CalamityLegendsReturn: NewDiff Debug", DrawDebugText, InterfaceScaleType.UI));
+            layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer("CalamityLegendReturn: NewDiff Debug", DrawDebugText, InterfaceScaleType.UI));
         }
 
         public static void Clear()

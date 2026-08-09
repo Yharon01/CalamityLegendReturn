@@ -1,8 +1,8 @@
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Accssory.SHPC.General;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.HeatModule;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.HeatModule;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.BaseProjectiles;
@@ -18,7 +18,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     internal partial class SHPCRight_HoulOut : RightClickHoldoutBase, ILocalizedModType
     {
@@ -600,7 +600,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
 
             // ===== 降温音效 =====
             SoundEngine.PlaySound(
-                new SoundStyle("CalamityLegendsReturn/Sound/SHPC/AWM\u5F00\u706B")
+                new SoundStyle("CalamityLegendReturn/Sound/SHPC/AWM\u5F00\u706B")
                 {
                     Volume = 5.2f,
                     Pitch = 0.2f

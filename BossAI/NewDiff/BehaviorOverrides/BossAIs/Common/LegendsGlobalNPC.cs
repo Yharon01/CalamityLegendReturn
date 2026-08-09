@@ -1,5 +1,5 @@
 using System.IO;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Systems;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
 {
     public class LegendsGlobalNPC : GlobalNPC
     {

@@ -8,9 +8,9 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
-using CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj;
+using CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle
 {
     public sealed class NewLegendAntiMaterielRifle : ModItem, ILocalizedModType
     {

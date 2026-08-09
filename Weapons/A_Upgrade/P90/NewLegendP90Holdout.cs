@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.P90
+namespace CalamityLegendReturn.Weapons.A_Upgrade.P90
 {
     internal enum P90RangeMode
     {
@@ -34,7 +34,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.P90
         private P90RangeMode currentMode;
 
         public new string LocalizationCategory => "Projectiles.P90";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/P90/NewLegendP90";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/P90/NewLegendP90";
 
         private Player Owner => Main.player[Projectile.owner];
         private NewLegendP90Player P90Player => Owner.GetModPlayer<NewLegendP90Player>();

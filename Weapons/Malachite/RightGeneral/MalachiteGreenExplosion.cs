@@ -7,11 +7,11 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite
+namespace CalamityLegendReturn.Weapons.Malachite
 {
     public class MalachiteGreenExplosion : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 

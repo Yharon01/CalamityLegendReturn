@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.EStage4
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.EStage4
 {
     public class VesuviusHomingCinder : ModProjectile, ILocalizedModType
     {

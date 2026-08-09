@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     // Right-click dash-only tuning. Keep damage, movement and cooldown
     // values here so they can be adjusted without touching the dash state machine.
@@ -26,6 +26,9 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
         public const float RightClickReboundBladeDistance = 18f;
         public const int RightClickDashLocalHitCooldown = 24;
         public const int RightClickHitCooldownAfterEnemyHit = 60;
+        // Before Hardmode a successful dash should only shorten the next cooldown by half.
+        // Keep this independent from the later rebound and Typhoon package.
+        public const int PreHardmodeRightClickHitCooldown = DefaultRightClickCooldown / 2;
         public const int AbyssalBastionRightClickCooldown = 120;
         public const int AbyssalBastionDashFrames = 30;
         public const float AbyssalBastionDashSpeedMultiplier = 1.25f;
@@ -36,6 +39,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
 
         public const int OceanHormoneUseTimeReduction = 12;
         public const int RightSpinShurikenInterval = 36;
+        // Retained only because the retired spin projectile still compiles with the mod.
         public const float RightSpinPostFishronBubbleRadiusMultiplier = 3f;
     }
 }

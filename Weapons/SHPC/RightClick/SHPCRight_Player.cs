@@ -1,12 +1,12 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight.CommandAscend;
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight.MilitaryCaller;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.HeatModule;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickMortar;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight.CommandAscend;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight.MilitaryCaller;
+using CalamityLegendReturn.Accssory.SHPC.Skill.HeatModule;
+using CalamityLegendReturn.Weapons.SHPC.RightClickMortar;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     public class SHPCRight_Player : ModPlayer
     {

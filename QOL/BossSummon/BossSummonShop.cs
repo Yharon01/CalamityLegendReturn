@@ -9,13 +9,13 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL.BossSummon
+namespace CalamityLegendReturn.QOL.BossSummon
 {
     internal sealed class BossSummonShop : GlobalNPC
     {
         public override void ModifyShop(NPCShop shop)
         {
-            if (shop.NpcType != NPCID.BestiaryGirl || CalamityLegendsReturnConfig.Instance?.AllowBossSummonShop != true)
+            if (shop.NpcType != NPCID.BestiaryGirl || CalamityLegendReturnConfig.Instance?.AllowBossSummonShop != true)
                 return;
 
             // 困难模式前，任何时期：4金

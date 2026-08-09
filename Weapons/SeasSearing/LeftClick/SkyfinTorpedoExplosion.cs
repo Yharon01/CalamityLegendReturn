@@ -4,7 +4,7 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // 100×100 explosion spawned when a SkyfinTorpedo hits.
     internal sealed class SkyfinTorpedoExplosion : ModProjectile

@@ -1,8 +1,8 @@
 using Terraria;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Weapons;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
+namespace CalamityLegendReturn.Weapons.BlossomFlux.EXSkill
 {
     internal sealed class BFEXPlayer : ModPlayer
     {

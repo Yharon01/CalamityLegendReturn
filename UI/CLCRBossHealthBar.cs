@@ -10,7 +10,7 @@ using Terraria.ModLoader;
 using Terraria.UI;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn.UI
+namespace CalamityLegendReturn.UI
 {
     public class CLCRBossHealthBarSystem : ModSystem
     {
@@ -149,7 +149,7 @@ namespace CalamityLegendsReturn.UI
             if (idx < 0) return;
 
             layers.Insert(idx, new LegacyGameInterfaceLayer(
-                "CalamityLegendsReturn: Matrix Boss Bars",
+                "CalamityLegendReturn: Matrix Boss Bars",
                 () => { DrawAllBars(Main.spriteBatch); return true; },
                 InterfaceScaleType.None));
         }

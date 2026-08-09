@@ -3,11 +3,11 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL.QuickStart
+namespace CalamityLegendReturn.QOL.QuickStart
 {
     public class QuickStartBox : ModItem, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/LegendarySupplyBox";
+        public override string Texture => "CalamityLegendReturn/LegendarySupplyBox";
         public new string LocalizationCategory => "Items.Consumables";
 
         public override void SetDefaults()

@@ -1,4 +1,4 @@
-﻿using Terraria.ID;
+﻿﻿using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.DataStructures;
 using Microsoft.Xna.Framework;
@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System.Linq;
 using Terraria.Localization;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     public class KeybindSystem : ModSystem
     {

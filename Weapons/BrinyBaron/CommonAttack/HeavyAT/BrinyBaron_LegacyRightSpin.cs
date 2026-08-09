@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.HeavyAT
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.HeavyAT
 {
     /// <summary>
     /// 重击 / 回旋打击归档类。

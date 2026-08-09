@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal static class PFEmpressEffect
     {
@@ -127,7 +127,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
         private const float StreamLength = 1100f;
 
         public new string LocalizationCategory => "Projectiles.PristineFury";
-        public override string Texture => "CalamityLegendsReturn/Weapons/PristineFury/LeftEffect/CPreMoodLord/Empress/PFEmpressRainbowFireStream";
+        public override string Texture => "CalamityLegendReturn/Weapons/PristineFury/LeftEffect/CPreMoodLord/Empress/PFEmpressRainbowFireStream";
 
         private int HoldoutIndex => (int)Projectile.ai[0];
         private int TargetIndex => (int)Projectile.ai[1];

@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
 {
     internal static class LegendsThemeCatalog
     {

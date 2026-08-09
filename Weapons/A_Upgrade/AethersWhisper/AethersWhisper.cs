@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Holdout;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Items;
@@ -11,7 +11,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper
 {
     /// <summary>
     /// 以太之低语 / Aether's Whisper —— 由原版以太之低语重铸的微光魔法重炮（传奇重做）。

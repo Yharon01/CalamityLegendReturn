@@ -1,9 +1,9 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.BossAI.ReBack.Prime2041;
+using CalamityLegendReturn.BossAI.ReBack.Prime2041;
 
-namespace CalamityLegendsReturn.BossAI.ReBack
+namespace CalamityLegendReturn.BossAI.ReBack
 {
     public sealed class Mechs2041RecipeConversions : ModSystem
     {

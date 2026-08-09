@@ -1,15 +1,15 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.General
+namespace CalamityLegendReturn.Accssory.PF.General
 {
     // 百合：印记队列 +1（共4）；远程伤害 +8%；纯化等级上限提高至 3 级。
     internal sealed class PFLily : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/General/PFLily";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/General/PFLily";
 
         public override void SetDefaults()
         {

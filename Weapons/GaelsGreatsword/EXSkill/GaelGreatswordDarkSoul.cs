@@ -19,7 +19,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     internal sealed class GaelGreatswordDarkSoul : ModProjectile
     {

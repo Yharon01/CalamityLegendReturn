@@ -16,7 +16,7 @@
 //using Terraria.ID;
 //using Terraria.ModLoader;
 
-//namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
+//namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord
 //{
 //    internal sealed class AshesofCalamity_Fire : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
 //    {
@@ -112,7 +112,7 @@
 //        {
 //            Timer++;
 
-//            // Ö»ÔÚÃ¿¸öÕæÊµÓÎÏ·Ö¡¼ÓÒ»´Î£¬±ÜÃâ MaxUpdates = 10 µ¼ÖÂ×·×Ù¼ÆÊ±¹ý¿ì¡£
+//            // Ö»ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ï·Ö¡ï¿½ï¿½Ò»ï¿½Î£ï¿½ï¿½ï¿½ï¿½ï¿½ MaxUpdates = 10 ï¿½ï¿½ï¿½ï¿½×·ï¿½Ù¼ï¿½Ê±ï¿½ï¿½ï¿½ì¡£
 //            if (Projectile.numUpdates == 0)
 //                HomingTimer++;
 
@@ -145,7 +145,7 @@
 
 //        private Vector2 UpdateHomingDirection(Vector2 currentDirection)
 //        {
-//            // Éú³ÉºóÇ° 30 ¸öÕæÊµÓÎÏ·Ö¡±£³ÖÖ±Ïß·ÉÐÐ£¬Ö®ºó²Å¿ªÊ¼×·×Ù¡£
+//            // ï¿½ï¿½ï¿½Éºï¿½Ç° 30 ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ï·Ö¡ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ß·ï¿½ï¿½Ð£ï¿½Ö®ï¿½ï¿½Å¿ï¿½Ê¼×·ï¿½Ù¡ï¿½
 //            if (HomingTimer < HomingStartFrames)
 //                return currentDirection;
 

@@ -1,13 +1,13 @@
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Accssory.BF.FairyDanceSeries;
-using CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.FairyDanceSeries;
+using CalamityLegendReturn.Weapons.BlossomFlux.EXSkill;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using CalamityMod;
 using CalamityMod.CalPlayer.Dashes;
-using CalamityMod.Buffs.Cooldowns;
+using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Cooldowns;
 using Terraria;
 using Terraria.Audio;
@@ -15,7 +15,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.PaRevo
 {
     internal sealed class BFPassivePlayer : ModPlayer
     {

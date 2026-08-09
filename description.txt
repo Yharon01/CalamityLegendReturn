@@ -28,7 +28,7 @@ Calamity Mod
 如果您有意加入我们的制作组：可以加入Q“876728711”
 
 [h1]源码[/h1]
-[url=https://github.com/ZhouYouxun/CalamityLegendsReturn]点击以跳转[/url]
+[url=https://github.com/ZhouYouxun/CalamityLegendReturn]点击以跳转[/url]
 
 --------------------------------------------------
 
@@ -68,4 +68,4 @@ If something feels uncomfortable to play, please say it directly. The mod is sti
 If you are interested in joining the development team, you can comment under the Steam Workshop page, or add me as a friend and send a private message directly.
 
 [h1]Source[/h1]
-[url=https://github.com/ZhouYouxun/CalamityLegendsReturn]Click to open[/url]
+[url=https://github.com/ZhouYouxun/CalamityLegendReturn]Click to open[/url]

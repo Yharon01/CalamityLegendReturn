@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Dusts;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     public class FragmentVortexEffect : DefaultEffect
     {
@@ -34,7 +34,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
             projectile.penetrate = 2;
 
             if (projectile.owner == Main.myPlayer)
-                SoundEngine.PlaySound(new SoundStyle("CalamityLegendsReturn/Sound/SHPC/电弧发射器-蓄力结束"), projectile.Center);
+                SoundEngine.PlaySound(new SoundStyle("CalamityLegendReturn/Sound/SHPC/电弧发射器-蓄力结束"), projectile.Center);
         }
 
         private int fireTimer;

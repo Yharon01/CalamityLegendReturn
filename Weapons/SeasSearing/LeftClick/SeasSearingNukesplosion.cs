@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Stage 4+ only: spawned when the 4th bullet in a burst hits an enemy.
     // Ranged damage class, independent iframes, 2× bullet damage (set externally).

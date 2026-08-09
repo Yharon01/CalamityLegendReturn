@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Particles;
@@ -11,7 +11,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     internal partial class SHPCRight_HoulOut
     {
@@ -34,8 +34,8 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
             bool zenith = Main.zenithWorld;
 
             string path = zenith
-                ? "CalamityLegendsReturn/Sound/SHPC/M14拉枪"
-                : "CalamityLegendsReturn/Sound/SHPC/双刃镰启动音效";
+                ? "CalamityLegendReturn/Sound/SHPC/M14拉枪"
+                : "CalamityLegendReturn/Sound/SHPC/双刃镰启动音效";
 
             SoundStyle style = new SoundStyle(path)
             {
@@ -51,8 +51,8 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
             bool zenith = Main.zenithWorld;
 
             string path = zenith
-                ? "CalamityLegendsReturn/Sound/SHPC/M14开枪"
-                : "CalamityLegendsReturn/Sound/SHPC/双刃镰开火音效";
+                ? "CalamityLegendReturn/Sound/SHPC/M14开枪"
+                : "CalamityLegendReturn/Sound/SHPC/双刃镰开火音效";
 
             SoundStyle style = new SoundStyle(path)
             {
@@ -66,7 +66,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
         private void PlayStageUpSound()
         {
             SoundEngine.PlaySound(
-                new SoundStyle("CalamityLegendsReturn/Sound/SHPC/迫击哨戒炮单次攻击")
+                new SoundStyle("CalamityLegendReturn/Sound/SHPC/迫击哨戒炮单次攻击")
                 {
                     Volume = 5.2f,
                     Pitch = 0.2f
@@ -88,7 +88,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
         private void PlayManualCooldownSound()
         {
             SoundEngine.PlaySound(
-                new SoundStyle("CalamityLegendsReturn/Sound/SHPC/解放者机甲左手火箭弹")
+                new SoundStyle("CalamityLegendReturn/Sound/SHPC/解放者机甲左手火箭弹")
                 {
                     Volume = 2.7f,
                     Pitch = 0.2f
@@ -563,7 +563,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
                     laneDirection * Main.rand.NextFloat(
                         MathHelper.Lerp(10.5f, 12.5f, heatInterpolant),
                         MathHelper.Lerp(14.5f, 18f, heatInterpolant)),
-                    "CalamityLegendsReturn/Texture/Shared/GlowBlade",
+                    "CalamityLegendReturn/Texture/Shared/GlowBlade",
                     false,
                     8 + (int)(heatInterpolant * 3f),
                     MathHelper.Lerp(0.05f, 0.075f, heatInterpolant) * centerWeight,
@@ -589,7 +589,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
                             MathHelper.Lerp(9.2f, 11.5f, heatInterpolant),
                             MathHelper.Lerp(13f, 16.5f, heatInterpolant))
                         + laneRight * side * 0.18f,
-                        "CalamityLegendsReturn/Texture/Shared/GlowBlade",
+                        "CalamityLegendReturn/Texture/Shared/GlowBlade",
                         false,
                         7 + (int)(heatInterpolant * 2f),
                         MathHelper.Lerp(0.036f, 0.052f, heatInterpolant) * centerWeight,
@@ -612,7 +612,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
                 direction * Main.rand.NextFloat(
                     MathHelper.Lerp(4.5f, 5.8f, heatInterpolant),
                     MathHelper.Lerp(6.8f, 8.2f, heatInterpolant)),
-                "CalamityLegendsReturn/Texture/KsTexture/window_04",
+                "CalamityLegendReturn/Texture/KsTexture/window_04",
                 false,
                 10,
                 MathHelper.Lerp(0.11f, 0.16f, heatInterpolant),
@@ -661,7 +661,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
             SpawnNormalShotMuzzleEffect(player, dir);
             SpawnRocketSalvoMuzzleEffect(player, dir);
 
-            var concentrationModule = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.SHPC.Skill.DiffuChip.DiffuChipPlayer>();
+            var concentrationModule = player.GetModPlayer<global::CalamityLegendReturn.Accssory.SHPC.Skill.DiffuChip.DiffuChipPlayer>();
             int orbCount = 3;
             float maxAngle = 0.22f * concentrationModule.EmpoweredLeftClickSpreadMultiplier;
             for (int i = 0; i < orbCount; i++)

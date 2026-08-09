@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     public class BrinyBaronBubbleShieldPlayer : ModPlayer
     {

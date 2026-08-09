@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // 瘟疫形态右键蓄力体：在准星前方凝聚一颗孢子球，松手甩出，撞击或到时引爆成两圈瘟疫箭 + 三层疫爆。
     // 结构对标狞桀的蓄力球（图元圆环 + 甩出 + 环形散射），粒子语汇与配色沿用叶流自己的一套。

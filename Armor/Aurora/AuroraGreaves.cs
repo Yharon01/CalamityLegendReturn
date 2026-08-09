@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Armor.Aurora
+namespace CalamityLegendReturn.Armor.Aurora
 {
     [AutoloadEquip(EquipType.Legs)]
     public class AuroraGreaves : ModItem, ILocalizedModType

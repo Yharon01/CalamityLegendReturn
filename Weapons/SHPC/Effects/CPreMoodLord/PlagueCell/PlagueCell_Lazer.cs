@@ -8,7 +8,7 @@ using Terraria.Enums;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell
 {
     internal class PlagueCell_Lazer : ModProjectile, ILocalizedModType
     {

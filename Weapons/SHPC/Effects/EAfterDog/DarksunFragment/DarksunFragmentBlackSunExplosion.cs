@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
 {
     internal class DarksunFragmentBlackSunExplosion : ModProjectile, ILocalizedModType
     {

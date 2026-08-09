@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.OldDuke
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.OldDuke
 {
     // SlitheringEels, SkyfinBombers, SpentFuelContainer and SulphurousGrabber are shared with Aquatic
     // Scourge per the design docs, so their held-weapon classes (ScourgeHeldSlitheringEels, etc.) are

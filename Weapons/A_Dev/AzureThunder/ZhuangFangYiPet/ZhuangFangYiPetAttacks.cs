@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
 {
     internal static class ZhuangFangYiPetAttacks
     {

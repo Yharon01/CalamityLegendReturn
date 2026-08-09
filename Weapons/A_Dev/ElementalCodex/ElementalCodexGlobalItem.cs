@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     internal sealed class ElementalCodexGlobalItem : GlobalItem
     {
@@ -18,7 +18,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
                 return;
 
             string text = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.ElementalCodex.WeaponTooltip",
+                "Mods.CalamityLegendReturn.ElementalCodex.WeaponTooltip",
                 definition.ChineseName,
                 definition.InternalName,
                 definition.GetLocalizedElementList());

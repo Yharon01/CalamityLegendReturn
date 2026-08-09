@@ -1,13 +1,13 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.FairyDanceSeries
+namespace CalamityLegendReturn.Accssory.BF.FairyDanceSeries
 {
     public sealed class RainbowSpiritDance : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/FairyDanceSeries/虹灵";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/FairyDanceSeries/虹灵";
 
         public override void SetDefaults()
         {

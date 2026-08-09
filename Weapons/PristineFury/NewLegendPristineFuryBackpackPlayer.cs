@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal sealed class NewLegendPristineFuryBackpackPlayer : ModPlayer
     {
@@ -26,7 +26,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
                 return;
             }
 
-            if (!ModContent.RequestIfExists("CalamityLegendsReturn/Weapons/PristineFury/Backpack_NewLegendPF", out ReLogic.Content.Asset<Texture2D> backpackAsset))
+            if (!ModContent.RequestIfExists("CalamityLegendReturn/Weapons/PristineFury/Backpack_NewLegendPF", out ReLogic.Content.Asset<Texture2D> backpackAsset))
                 return;
 
             Texture2D backpackTexture = backpackAsset.Value;

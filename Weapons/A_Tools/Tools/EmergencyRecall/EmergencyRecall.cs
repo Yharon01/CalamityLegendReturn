@@ -9,9 +9,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Tools.EmergencyRecall
+namespace CalamityLegendReturn.Weapons.A_Tools.Tools.EmergencyRecall
 {
     public class EmergencyRecall : ModItem, ILocalizedModType
     {

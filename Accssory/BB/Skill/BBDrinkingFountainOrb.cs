@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.Skill
+namespace CalamityLegendReturn.Accssory.BB.Skill
 {
     internal sealed class BBDrinkingFountainOrb : ModProjectile, ILocalizedModType
     {
@@ -79,8 +79,8 @@ namespace CalamityLegendsReturn.Accssory.BB.Skill
             Texture2D core = ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/TinyGreyscaleCircle").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D line = ModContent.Request<Texture2D>("CalamityMod/Particles/ThinEndedLine").Value;
-            Texture2D magic = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_04").Value;
+            Texture2D magic = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_04").Value;
             Color paleBlue = new(88, 202, 255, 0);
             Color whiteBlue = new(220, 247, 255, 0);
             Vector2 bloomOrigin = bloom.Size() * 0.5f;

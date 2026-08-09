@@ -5,7 +5,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal class BFArrow_CDetecReticle : ModProjectile
     {
@@ -64,8 +64,8 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D glowTex = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D magic03 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D magic04 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_04").Value;
+            Texture2D magic03 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D magic04 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_04").Value;
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Color outerColor = new Color(116, 236, 255, 0) * Projectile.Opacity;
             Color innerColor = new Color(240, 255, 255, 0) * Projectile.Opacity;

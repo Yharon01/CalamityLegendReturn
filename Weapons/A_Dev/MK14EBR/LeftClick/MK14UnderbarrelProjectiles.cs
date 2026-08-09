@@ -8,12 +8,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal sealed class MK14GrenadeProjectile : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.MK14EBR";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/MK14EBR/Pic/下挂/m14榴弹";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/MK14EBR/Pic/下挂/m14榴弹";
 
         public override void SetStaticDefaults()
         {

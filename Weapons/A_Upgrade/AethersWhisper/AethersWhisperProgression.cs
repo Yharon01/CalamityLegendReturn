@@ -1,7 +1,7 @@
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper
 {
     /// <summary>
     /// 以太之低语传奇成长/解锁中枢：按 Boss 进程决定「解锁了哪些攻击、哪些成长效果」。

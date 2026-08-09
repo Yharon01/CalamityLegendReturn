@@ -10,12 +10,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal sealed class PFGoliath_HiveNukeMissile : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.PristineFury";
-        public override string Texture => "CalamityLegendsReturn/Weapons/PristineFury/LeftEffect/CPreMoodLord/Goliath/HiveNuke";
+        public override string Texture => "CalamityLegendReturn/Weapons/PristineFury/LeftEffect/CPreMoodLord/Goliath/HiveNuke";
 
         private const int HomingDelay = 34;
         private const float HomingSpeed = 21.5f;

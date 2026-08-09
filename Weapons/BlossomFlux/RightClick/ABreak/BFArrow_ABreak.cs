@@ -1,6 +1,6 @@
 using System;
 using System.Linq;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -14,7 +14,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal class BFArrow_ABreak : ModProjectile, IPixelatedPrimitiveRenderer
     {
@@ -23,7 +23,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         private const float PostImpactSlowdownStartFrame = 36f;
 
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/ABreak/BFArrow_ABreak";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/ABreak/BFArrow_ABreak";
         public GeneralDrawLayer LayerToRenderTo => GeneralDrawLayer.BeforeProjectiles;
         private ref float ConfiguredPenetrate => ref Projectile.ai[0];
         private ref float IgnorePenetrationDamageFalloff => ref Projectile.ai[1];

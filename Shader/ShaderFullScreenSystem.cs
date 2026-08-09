@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Shader;
+using CalamityLegendReturn.Shader;
 using Terraria;
 using Terraria.Graphics.Effects;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     public sealed class ShaderFullScreenSystem : ModSystem
     {

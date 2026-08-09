@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Passive
+namespace CalamityLegendReturn.Weapons.SHPC.Passive
 {
     internal sealed class SHPCManaPotionGlobalItem : GlobalItem
     {

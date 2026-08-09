@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Small homing orb spawned in a ring by SeasSearingPressureBolt or as a split from VentShot.
     internal sealed class SeasSearingSatellite : ModProjectile, ILocalizedModType

@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
+namespace CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
 {
     public sealed class HyperdimensionalMatrixCore : ModItem, ILocalizedModType
     {
@@ -132,7 +132,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
 
     public sealed class HyperdimensionalMatrixCoreBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/HyperdimensionalMatrixCore/矩阵BUFF";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/HyperdimensionalMatrixCore/矩阵BUFF";
 
         public override void SetStaticDefaults()
         {

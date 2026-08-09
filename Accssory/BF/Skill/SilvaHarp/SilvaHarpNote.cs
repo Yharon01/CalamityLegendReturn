@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using System.Collections.Generic;
 using System;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SilvaHarp
+namespace CalamityLegendReturn.Accssory.BF.SilvaHarp
 {
     internal sealed class SilvaHarpNote : ModProjectile
     {

@@ -1,4 +1,4 @@
-﻿using CalamityMod.Particles;
+﻿﻿using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     internal class BrinyBaron_HomingLightOrb : ModProjectile, ILocalizedModType
     {

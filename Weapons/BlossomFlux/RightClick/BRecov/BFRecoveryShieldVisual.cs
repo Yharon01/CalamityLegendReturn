@@ -1,14 +1,14 @@
 using System;
 using CalamityMod.Particles;
 using CalamityMod;
-using CalamityLegendsReturn.UI;
+using CalamityLegendReturn.UI;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     public class BFRecoveryShieldVisual : ModProjectile
     {

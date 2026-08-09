@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Buffs
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Buffs
 {
     /// <summary>
     /// 蚀痕（Umbral Corrosion）——冥蚀天底在敌人身上累积的可视标记。
@@ -10,7 +10,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Buffs
     public class UmbralCorrosion : ModBuff
     {
         // 复用物品贴图作图标，避免额外美术依赖
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/Nadir/UmbralNadir";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/Nadir/UmbralNadir";
 
         public override void SetStaticDefaults()
         {

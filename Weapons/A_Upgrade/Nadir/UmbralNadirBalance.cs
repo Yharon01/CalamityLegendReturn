@@ -2,7 +2,7 @@ using System;
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir
 {
     /// <summary>
     /// 「冥蚀天底 / Umbral Nadir」——小传奇武器的平衡中枢。

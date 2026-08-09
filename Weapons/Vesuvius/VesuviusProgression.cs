@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius
+namespace CalamityLegendReturn.Weapons.Vesuvius
 {
     internal static class VesuviusProgression
     {

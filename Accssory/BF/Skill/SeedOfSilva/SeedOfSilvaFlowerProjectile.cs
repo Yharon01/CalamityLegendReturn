@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     internal abstract class SeedOfSilvaFlowerProjectile : ModProjectile
     {
@@ -23,10 +23,10 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
 
         private static readonly string[] SmallSeedTextures =
         {
-            "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed1",
-            "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed2",
-            "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed3",
-            "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed4"
+            "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed1",
+            "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed2",
+            "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed3",
+            "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/SmallSeed4"
         };
 
         public BlossomFluxChloroplastPresetType CurrentPreset => FlowerPreset;
@@ -219,7 +219,7 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
         private void DrawDormantMagicGlow(Vector2 center, float opacity)
         {
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D magic = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D magic = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
             float pulse = 0.9f + 0.1f * (float)System.Math.Sin(Main.GlobalTimeWrappedHourly * 2.6f + Projectile.identity);
             Color seedColor = Color.Lerp(new Color(88, 144, 84), FlowerColor, 0.34f) * opacity;
 

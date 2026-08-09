@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral
 {
     internal sealed class YC_RightScorchingLaser : ModProjectile, ILocalizedModType
     {

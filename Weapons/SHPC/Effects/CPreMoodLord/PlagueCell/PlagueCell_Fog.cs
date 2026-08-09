@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell
 {
     public class PlagueCell_Fog : ModProjectile, ILocalizedModType
     {

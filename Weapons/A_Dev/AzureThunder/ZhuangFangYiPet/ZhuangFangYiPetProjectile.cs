@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -11,7 +11,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
 {
     internal sealed class ZhuangFangYiPetProjectile : ModProjectile, ILocalizedModType
     {
@@ -23,7 +23,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
             Transform
         }
 
-        private const string TexturePath = "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ZhuangFangYiPet/新版贴图/";
+        private const string TexturePath = "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ZhuangFangYiPet/新版贴图/";
         private const int TransformFrameTime = 5;
         private const int TransformFrames = 13;
         private const int StrongAttackReleaseFrame = 18;

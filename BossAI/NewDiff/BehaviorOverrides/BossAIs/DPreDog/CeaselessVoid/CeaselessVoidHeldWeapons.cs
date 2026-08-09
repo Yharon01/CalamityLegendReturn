@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.CeaselessVoid
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.CeaselessVoid
 {
     internal sealed class VoidHeldMirrorBlade : BossHeldAimedWeapon
     {

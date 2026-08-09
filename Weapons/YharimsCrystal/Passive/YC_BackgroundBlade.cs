@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.Passive
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.Passive
 {
     /// <summary>
     /// When the player is holding the right-click crystal form, this small background blade

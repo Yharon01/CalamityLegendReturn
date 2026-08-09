@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared
 {
     /// <summary>
     /// 回收晶片的「同组防重」记录器（第 6.4 节）。

@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.UI
+namespace CalamityLegendReturn.Weapons.PristineFury.UI
 {
     // 轮盘键按住时显示的5格印记选择轮盘，释放时选中悬停项作为当前印记。
     // 布局与 BFSelectionPanel 相同（正五边形），每个格显示boss头像。
@@ -114,7 +114,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury.UI
             float time = Main.GlobalTimeWrappedHourly;
             Vector2 drawPos = screenCenter.Floor();
 
-            Texture2D innerRing = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_03").Value;
+            Texture2D innerRing = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_03").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D halfStar = ModContent.Request<Texture2D>("CalamityMod/Particles/HalfStar").Value;
 

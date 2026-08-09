@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     /// <summary>
     /// 未编译的矩阵核心：召唤超维矩阵主宰的 Boss 召唤物。

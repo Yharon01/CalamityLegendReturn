@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.PlaguebringerGoliath
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.PlaguebringerGoliath
 {
     // Shared plague-green burst, mirroring Cryogen's EmitFrostBurst standard (fadeIn bloom + upward-biased scatter).
     internal static class PlagueFx

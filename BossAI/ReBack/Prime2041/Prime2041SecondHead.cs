@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -13,7 +13,7 @@ using CalamityMod.NPCs;
 using CalamityMod.Events;
 using CalamityMod.World;
 
-namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
+namespace CalamityLegendReturn.BossAI.ReBack.Prime2041
 {
     public class Prime2041SecondHead : ModNPC
     {
@@ -30,7 +30,7 @@ namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
             NPCID.Sets.NPCBestiaryDrawOffset.Add(Type, bestiaryData);
             if (!Main.dedServ)
             {
-                EyeTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/BossAI/ReBack/Prime2041/SkeletronPrime2HeadGlow");
+                EyeTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/BossAI/ReBack/Prime2041/SkeletronPrime2HeadGlow");
             }
         }
 

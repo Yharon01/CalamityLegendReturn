@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder;
 using CalamityMod;
 using CalamityMod.Cooldowns;
 using CalamityMod.Items.Accessories.Wings;
@@ -14,7 +14,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal enum AzureThunderDashTier
     {
@@ -472,10 +472,10 @@ namespace CalamityLegendsReturn.Accssory.TS
 
         public override bool CanTickDown => false;
         public override bool ShouldDisplay => DashPlayer.EquippedTier != AzureThunderDashTier.None && DashPlayer.LightningCoolingDown;
-        public override LocalizedText DisplayName => Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.AzureThunderDash_Lightning");
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/JiDianFa/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Accssory/TS/JiDianFa/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Accssory/TS/JiDianFa/EXCoolDownOverlay";
+        public override LocalizedText DisplayName => Language.GetText("Mods.CalamityLegendReturn.Cooldowns.AzureThunderDash_Lightning");
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/JiDianFa/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Accssory/TS/JiDianFa/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Accssory/TS/JiDianFa/EXCoolDownOverlay";
 
         public override Color OutlineColor => new(16, 86, 122);
         public override Color CooldownStartColor => Color.Lerp(AzureThunderColors.Azure, Color.White, instance.Completion);

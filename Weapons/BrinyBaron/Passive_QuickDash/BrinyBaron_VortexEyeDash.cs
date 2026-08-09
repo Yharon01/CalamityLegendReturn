@@ -1,5 +1,5 @@
 using System.IO;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash
 {
     // A single Vortex Eye activation. It teleports immediately; the return endpoint
     // is retained by BrinyBaronVortexEyeTeleportPlayer until the cooldown ends.

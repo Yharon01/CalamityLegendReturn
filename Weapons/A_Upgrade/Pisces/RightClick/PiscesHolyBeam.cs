@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Anchor;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Anchor;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Projectiles.BaseProjectiles;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.RightClick
 {
     /// <summary>
     /// 满蓄释放的双束短神圣激光——取长补短：借 Purge Guzzler/HolyLaser 的 Start/Mid/End 三段结构与双束略向内收拢，

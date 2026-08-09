@@ -8,11 +8,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.SHPlatform.Tiles
+namespace CalamityLegendReturn.Weapons.SHPC.SHPlatform.Tiles
 {
     public class SHPPPlatformTile : ModTile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/SHPlatform/SHPPPlatformPlace";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/SHPlatform/SHPPPlatformPlace";
 
         public override void SetStaticDefaults()
         {

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.Vesuvius;
+using CalamityLegendReturn.Weapons.Vesuvius;
 using Microsoft.Xna.Framework;
 using System;
 using System.Linq;
@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn.LegendaryTooltipEffects
+namespace CalamityLegendReturn.LegendaryTooltipEffects
 {
     public sealed class VesuviusVolcanoLegendaryTooltip : GlobalItem
     {

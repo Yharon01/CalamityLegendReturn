@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
 {
 
     /// <summary>

@@ -1,12 +1,12 @@
-using CalamityLegendsReturn.Accssory.MC.PeacockScroll;
-using CalamityLegendsReturn.Weapons.Malachite;
+using CalamityLegendReturn.Accssory.MC.PeacockScroll;
+using CalamityLegendReturn.Weapons.Malachite;
 using CalamityMod;
 using CalamityMod.CalPlayer;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.General
+namespace CalamityLegendReturn.Accssory.MC.General
 {
     public sealed class MCGeneralPlayer : ModPlayer
     {

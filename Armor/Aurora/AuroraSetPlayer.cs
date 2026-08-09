@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Armor.Aurora
+namespace CalamityLegendReturn.Armor.Aurora
 {
     /// <summary>
     /// Drives everything dynamic about the Aurora set: the velocity-reactive motion

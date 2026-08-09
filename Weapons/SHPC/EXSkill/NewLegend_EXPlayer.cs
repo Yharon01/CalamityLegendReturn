@@ -1,12 +1,12 @@
 using Terraria;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.FastChip;
-using CalamityLegendsReturn.Weapons;
-using CalamityLegendsReturn.Weapons.SHPC.RightClick;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickMortar;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickTurret;
-namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule;
+using CalamityLegendReturn.Accssory.SHPC.Skill.FastChip;
+using CalamityLegendReturn.Weapons;
+using CalamityLegendReturn.Weapons.SHPC.RightClick;
+using CalamityLegendReturn.Weapons.SHPC.RightClickMortar;
+using CalamityLegendReturn.Weapons.SHPC.RightClickTurret;
+namespace CalamityLegendReturn.Weapons.SHPC.EXSkill
 {
     internal class NewLegend_EXPlayer : ModPlayer
     {
@@ -25,8 +25,8 @@ namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
         public int EXDisplayValue => Utils.Clamp(EXValue / GetFramesPerDisplayUnit(Player), 0, EXDisplayMax);
         public bool EXUnlocked =>
             BalanceSHPC.GetCompletedStageIndex() >= 5 ||
-            Player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().PermanentEXUnlock ||
-            Player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            Player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().PermanentEXUnlock ||
+            Player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
 
         public static int GetCurrentEXMax(Player player)
         {

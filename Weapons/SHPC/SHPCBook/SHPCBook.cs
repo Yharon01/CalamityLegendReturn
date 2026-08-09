@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress;
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,9 +15,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.SHPCBook
+namespace CalamityLegendReturn.Weapons.SHPC.SHPCBook
 {
     public class SHPCBook : ModItem, ILocalizedModType
     {
@@ -257,7 +257,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.SHPCBook
             if (entries.Length == 0)
             {
                 DrawFitText(
-                    Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SHPCBookNoRecords"),
+                    Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SHPCBookNoRecords"),
                     new Rectangle(
                         panelArea.X + ScaleOffset(16, layoutScale),
                         panelArea.Y + ScaleOffset(PanelPadding + HeaderHeight, layoutScale),
@@ -626,17 +626,17 @@ namespace CalamityLegendsReturn.Weapons.SHPC.SHPCBook
             string multiplierText = new BalanceSHPC()
                 .GetLeftClickMaterialDamageMultiplier(entry.EffectID)
                 .ToString("0.##", CultureInfo.InvariantCulture);
-            string panelText = Language.GetTextValue("Mods.CalamityLegendsReturn.AMMO.SHPCAmmoPanel", multiplierText, capacity);
+            string panelText = Language.GetTextValue("Mods.CalamityLegendReturn.AMMO.SHPCAmmoPanel", multiplierText, capacity);
 
             return $"{itemName}\n{effectText}\n{panelText}";
         }
 
         private static string GetAmmoEffectText(int effectID)
         {
-            string key = $"Mods.CalamityLegendsReturn.AMMO.SHPCAmmo{effectID}";
+            string key = $"Mods.CalamityLegendReturn.AMMO.SHPCAmmo{effectID}";
             string text = Language.GetTextValue(key);
             if (text == key)
-                return Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SHPCBookMissingEffect");
+                return Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SHPCBookMissingEffect");
 
             return text;
         }
@@ -1104,7 +1104,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.SHPCBook
 
         private static string GetHeatDescription(int level)
         {
-            string key = $"Mods.CalamityLegendsReturn.Items.Weapons.NewLegendSHPC.SHPC_RightIntro{level}";
+            string key = $"Mods.CalamityLegendReturn.Items.Weapons.NewLegendSHPC.SHPC_RightIntro{level}";
             string text = Language.GetTextValue(key);
             if (text == key)
                 return level switch

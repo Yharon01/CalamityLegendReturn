@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Accssory.MC.General;
-using CalamityLegendsReturn.Accssory.MC.PeacockDart;
-using CalamityLegendsReturn.Weapons.Malachite.LeftGeneral;
+using CalamityLegendReturn.Accssory.MC.General;
+using CalamityLegendReturn.Accssory.MC.PeacockDart;
+using CalamityLegendReturn.Weapons.Malachite.LeftGeneral;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite
+namespace CalamityLegendReturn.Weapons.Malachite
 {
     internal enum MalachiteKunaiMode
     {
@@ -53,7 +53,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite
         private const float OrbitDashChargeSpeed = 46f;
         private const float OrbitDashTargetRange = 1400f;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 

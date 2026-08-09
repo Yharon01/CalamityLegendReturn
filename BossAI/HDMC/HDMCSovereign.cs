@@ -2,17 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using CalamityMod;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;
 using Terraria.ModLoader;
-using HDMCWeaponItem = CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore.HyperdimensionalMatrixCore;
+using HDMCWeaponItem = CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore.HyperdimensionalMatrixCore;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     /// <summary>
     /// 超维矩阵主宰——高维矩阵核心的母体。

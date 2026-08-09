@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General
 {
     /// <summary>
     /// 冥蚀天底所有部件共用的视觉工具：分层黑洞事件视界、拉扯、双色火花、反向虚空尘，

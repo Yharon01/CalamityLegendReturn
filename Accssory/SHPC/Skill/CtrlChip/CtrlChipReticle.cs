@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip
 {
     internal sealed class CtrlChipReticle : ModProjectile
     {
@@ -57,8 +57,8 @@ namespace CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip
             float pulse = 0.78f + 0.22f * (float)System.Math.Sin(time * (locked ? 10f : 7f));
 
             Texture2D glow = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D ringA = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D ringB = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_04").Value;
+            Texture2D ringA = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D ringB = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_04").Value;
             Texture2D line = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomLineSoftEdge").Value;
 
             Color techBlue = new(70, 190, 255, 0);

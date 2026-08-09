@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Shared;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -12,7 +12,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick
 {
     /// <summary>
     /// 天底奇点 —— 左键第三段冲刺贯穿命中时撕开的持续黑洞。

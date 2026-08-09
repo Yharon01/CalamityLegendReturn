@@ -1,11 +1,11 @@
-﻿using CalamityMod.Particles;
+﻿﻿using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash
 {
     internal sealed class BrinyBaron_DashWaterPillar : ModProjectile, ILocalizedModType
     {

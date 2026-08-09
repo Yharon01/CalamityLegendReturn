@@ -1,28 +1,28 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BrinyBaron;
-using CalamityLegendsReturn.Weapons.CosmicDischarge;
-using CalamityLegendsReturn.Weapons.GaelsGreatsword;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor;
-using CalamityLegendsReturn.Weapons.Malachite;
-using CalamityLegendsReturn.Weapons.PristineFury;
-using CalamityLegendsReturn.Weapons.SeasSearing;
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Weapons.Vesuvius;
-using CalamityLegendsReturn.Weapons.YharimsCrystal;
+using CalamityLegendReturn.Weapons.AegisBlade;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.CosmicDischarge;
+using CalamityLegendReturn.Weapons.GaelsGreatsword;
+using CalamityLegendReturn.Weapons.GlacialEmbrace;
+using CalamityLegendReturn.Weapons.LeonidProgenitor;
+using CalamityLegendReturn.Weapons.Malachite;
+using CalamityLegendReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.SeasSearing;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.Vesuvius;
+using CalamityLegendReturn.Weapons.YharimsCrystal;
 using CalamityMod.Rarities;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     public class LegendarySupplyBox : ModItem, ILocalizedModType
     {
-        //public override string Texture => "CalamityLegendsReturn/传奇补给箱";
+        //public override string Texture => "CalamityLegendReturn/传奇补给箱";
         public new string LocalizationCategory => "Items.Consumables";
 
         public override void SetDefaults()

@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.Skill
+namespace CalamityLegendReturn.Accssory.PF.Skill
 {
     // 月饼：
     // 右键纯化火球命中或爆炸时，在范围内留下短暂的"月华烙印"。
@@ -12,7 +12,7 @@ namespace CalamityLegendsReturn.Accssory.PF.Skill
     internal sealed class PFMooncake : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/Skill/PFMooncake";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/Skill/PFMooncake";
 
         public override void SetDefaults()
         {

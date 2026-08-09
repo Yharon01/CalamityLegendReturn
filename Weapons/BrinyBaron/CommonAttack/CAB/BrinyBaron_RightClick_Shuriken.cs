@@ -1,6 +1,6 @@
 using System;
 using System.IO;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken
 {
     public class BrinyBaron_RightClick_Shuriken : ModProjectile
     {

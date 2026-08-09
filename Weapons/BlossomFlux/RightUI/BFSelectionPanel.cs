@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -8,9 +8,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightUI
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightUI
 {
     internal class BFSelectionPanel : ModProjectile, ILocalizedModType, IScreenOverlayProjectile
     {
@@ -46,12 +46,12 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightUI
 
             public string TexturePath => Preset switch
             {
-                BlossomFluxChloroplastPresetType.Chlo_ABreak => "CalamityLegendsReturn/Weapons/BlossomFlux/RightUI/BFUI_ABreak",
-                BlossomFluxChloroplastPresetType.Chlo_BRecov => "CalamityLegendsReturn/Weapons/BlossomFlux/RightUI/BFUI_BRecov",
-                BlossomFluxChloroplastPresetType.Chlo_CDetec => "CalamityLegendsReturn/Weapons/BlossomFlux/RightUI/BFUI_CDetec",
-                BlossomFluxChloroplastPresetType.Chlo_DBomb => "CalamityLegendsReturn/Weapons/BlossomFlux/RightUI/BFUI_DBomb",
-                BlossomFluxChloroplastPresetType.Chlo_EPlague => "CalamityLegendsReturn/Weapons/BlossomFlux/RightUI/BFUI_EPlague",
-                _ => "CalamityLegendsReturn/Weapons/BlossomFlux/RightUI/BFUI_ABreak"
+                BlossomFluxChloroplastPresetType.Chlo_ABreak => "CalamityLegendReturn/Weapons/BlossomFlux/RightUI/BFUI_ABreak",
+                BlossomFluxChloroplastPresetType.Chlo_BRecov => "CalamityLegendReturn/Weapons/BlossomFlux/RightUI/BFUI_BRecov",
+                BlossomFluxChloroplastPresetType.Chlo_CDetec => "CalamityLegendReturn/Weapons/BlossomFlux/RightUI/BFUI_CDetec",
+                BlossomFluxChloroplastPresetType.Chlo_DBomb => "CalamityLegendReturn/Weapons/BlossomFlux/RightUI/BFUI_DBomb",
+                BlossomFluxChloroplastPresetType.Chlo_EPlague => "CalamityLegendReturn/Weapons/BlossomFlux/RightUI/BFUI_EPlague",
+                _ => "CalamityLegendReturn/Weapons/BlossomFlux/RightUI/BFUI_ABreak"
             };
 
             public Texture2D IconTexture => ModContent.Request<Texture2D>(TexturePath).Value;
@@ -191,7 +191,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightUI
             Player owner = Main.player[Projectile.owner];
             BFRightUIPlayer rightUIPlayer = owner.GetModPlayer<BFRightUIPlayer>();
             Vector2 drawPosition = screenCenter.Floor();
-            Texture2D innerRing = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_03").Value;
+            Texture2D innerRing = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_03").Value;
             Color innerColor = new Color(182, 255, 190, 0) * (0.28f * Projectile.Opacity);
 
             Main.EntitySpriteDraw(
@@ -253,8 +253,8 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightUI
                     {
                         BlossomFluxChloroplastPresetType preset = icons[formSwitchHoveredIndex].Preset;
                         rightUIPlayer.TrySetPreset(preset);
-                        string presetName = Language.GetTextValue($"Mods.CalamityLegendsReturn.Items.Weapons.NewLegendBlossomFlux.PresetName{(int)preset}");
-                        string selectionText = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.BlossomFluxPresetSelected", presetName);
+                        string presetName = Language.GetTextValue($"Mods.CalamityLegendReturn.Items.Weapons.NewLegendBlossomFlux.PresetName{(int)preset}");
+                        string selectionText = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.BlossomFluxPresetSelected", presetName);
                         CombatText.NewText(owner.Hitbox, ChloroplastCommon.PresetColor(preset), selectionText, dramatic: false, dot: false);
                         icons[formSwitchHoveredIndex].ClickFeedbackTimer = 10;
                         SoundEngine.PlaySound(SoundID.Item23 with { Pitch = 0.06f, Volume = 0.72f }, owner.Center);

@@ -1,15 +1,15 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.General
+namespace CalamityLegendReturn.Accssory.PF.General
 {
     // 杀意的百合：印记队列 +4（共7）；远程伤害 +22%；纯化等级上限提高至 6 级。
     internal sealed class PFKillIntentLily : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/General/PFKillIntentLily";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/General/PFKillIntentLily";
 
         public override void SetDefaults()
         {

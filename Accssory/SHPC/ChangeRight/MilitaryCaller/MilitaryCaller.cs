@@ -1,15 +1,15 @@
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight;
 using CalamityMod.Items.Materials;
 using CalamityMod.Items.Weapons.DraedonsArsenal;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.MilitaryCaller
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.MilitaryCaller
 {
     public sealed class MilitaryCaller : ModItem
     {
-        //public override string Texture => "CalamityLegendsReturn/Accssory/SHPC/备用贴图/定位模块";
+        //public override string Texture => "CalamityLegendReturn/Accssory/SHPC/备用贴图/定位模块";
 
         public override void SetDefaults()
         {

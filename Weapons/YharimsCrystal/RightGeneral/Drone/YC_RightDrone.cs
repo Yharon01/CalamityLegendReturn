@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral.Drone;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral.Drone;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral
 {
     // Six-unit projectile battery. Each lane has a different firing language, but the fleet can
     // collapse every trajectory into the cursor during a focus command.
@@ -23,7 +23,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
         private static readonly Color DroneOrange = new(255, 104, 36);
 
         public new string LocalizationCategory => "Projectiles.YharimsCrystal";
-        public override string Texture => "CalamityLegendsReturn/Weapons/YharimsCrystal/图片/默认战机2";
+        public override string Texture => "CalamityLegendReturn/Weapons/YharimsCrystal/图片/默认战机2";
 
         private const int ShutdownFrames = 120;
         private const float MaxOffsetLength = 5f;
@@ -348,7 +348,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
             if (time <= 0)
                 return false;
 
-            Texture2D texture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/YharimsCrystal/图片/默认战机2").Value;
+            Texture2D texture = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/YharimsCrystal/图片/默认战机2").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition + new Vector2(0f, Owner.gfxOffY);

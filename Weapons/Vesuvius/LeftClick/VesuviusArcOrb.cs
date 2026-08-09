@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.DStage3;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.DStage3;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick
 {
     // The left-click payoff. Every charge release fires a single orange light orb — the same
     // muzzle-concentrated orb Calamity's Arc Nova Diffuser draws at its gun tip, recoloured to

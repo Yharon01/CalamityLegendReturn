@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     public class BFAimScope : ModProjectile, ILocalizedModType
     {
@@ -237,8 +237,8 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         internal static void DrawBombardMouseReticle(Vector2 centerWorld, float chargeCompletion)
         {
             Texture2D glowTex = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D magic03 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D magic04 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_04").Value;
+            Texture2D magic03 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D magic04 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_04").Value;
             Texture2D sparkTex = ModContent.Request<Texture2D>("CalamityMod/Particles/GlowSpark").Value;
             Vector2 drawPosition = centerWorld - Main.screenPosition;
             float time = Main.GlobalTimeWrappedHourly;

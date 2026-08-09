@@ -7,10 +7,10 @@ using Terraria.GameContent;
 using Terraria.Graphics.Shaders;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     public class LeonidEXCooldown : CooldownHandler
     {
@@ -35,12 +35,12 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
 
         // Localized name of the cooldown/energy bar
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.LeonidEX");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.LeonidEX");
 
         // Textures copied to the weapon's own directory
-        public override string Texture => "CalamityLegendsReturn/Weapons/LeonidProgenitor/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/LeonidProgenitor/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/LeonidProgenitor/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/LeonidProgenitor/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/LeonidProgenitor/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/LeonidProgenitor/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => new Color(20, 36, 120);
 

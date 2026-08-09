@@ -13,11 +13,11 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 using CalamityMod;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.PlayerLocker
 {
     public sealed class PlayerLocker : ModItem, ILocalizedModType
     {
@@ -75,7 +75,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker
             int target = FindPlayerNearMouse(player.whoAmI);
             if (target < 0)
             {
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerLockerNoTarget"), new Color(255, 160, 90));
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerLockerNoTarget"), new Color(255, 160, 90));
                 return true;
             }
 
@@ -275,7 +275,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker
             if (!inventoryReceived)
             {
                 DrawCenteredText(panelArea,
-                    Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerLockerLoading"),
+                    Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerLockerLoading"),
                     new Color(255, 210, 160), Projectile.Opacity);
             }
             else
@@ -368,7 +368,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker
 
             SoundEngine.PlaySound(SoundID.Grab, thief.Center);
             Main.NewText(
-                Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerLockerStolen", itemName, targetName),
+                Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerLockerStolen", itemName, targetName),
                 new Color(220, 170, 255));
         }
 
@@ -412,7 +412,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker
 
         private static void DrawTitle(Rectangle panelArea, string targetName, float opacity)
         {
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerLockerTitle", targetName);
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerLockerTitle", targetName);
             Rectangle titleRect = new(panelArea.X + PanelPadding, panelArea.Y + PanelPadding, panelArea.Width - PanelPadding * 2, TitleHeight - 4);
             DrawFitText(title, titleRect, new Color(255, 185, 110), 0.86f, 0.5f, opacity);
             DrawRect(new Rectangle(panelArea.X + PanelPadding, panelArea.Y + PanelPadding + TitleHeight - 3,
@@ -499,8 +499,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerLocker
 
     internal static class PlayerLockerPackets
     {
-        private static global::CalamityLegendsReturn.CalamityLegendsReturn Mod
-            => ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>();
+        private static global::CalamityLegendReturn.CalamityLegendReturn Mod
+            => ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>();
 
         public static void SendInventoryRequest(int targetWhoAmI)
         {

@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     internal enum BlossomFluxChloroplastPresetType
     {

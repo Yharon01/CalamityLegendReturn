@@ -1,7 +1,7 @@
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
+namespace CalamityLegendReturn.Weapons.A_Dev.PeaShooter
 {
     internal enum PeaShooterFireStyle
     {
@@ -133,33 +133,33 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
 
         public static string GetFireStyleKey(PeaShooterFireStyle style) => style switch
         {
-            PeaShooterFireStyle.Double => "Mods.CalamityLegendsReturn.PeaShooter.FireStyleDouble",
-            PeaShooterFireStyle.ThreeLine => "Mods.CalamityLegendsReturn.PeaShooter.FireStyleThreeLine",
-            PeaShooterFireStyle.Gatling => "Mods.CalamityLegendsReturn.PeaShooter.FireStyleGatling",
-            PeaShooterFireStyle.WildGatling => "Mods.CalamityLegendsReturn.PeaShooter.FireStyleWildGatling",
-            _ => "Mods.CalamityLegendsReturn.PeaShooter.FireStyleSingle"
+            PeaShooterFireStyle.Double => "Mods.CalamityLegendReturn.PeaShooter.FireStyleDouble",
+            PeaShooterFireStyle.ThreeLine => "Mods.CalamityLegendReturn.PeaShooter.FireStyleThreeLine",
+            PeaShooterFireStyle.Gatling => "Mods.CalamityLegendReturn.PeaShooter.FireStyleGatling",
+            PeaShooterFireStyle.WildGatling => "Mods.CalamityLegendReturn.PeaShooter.FireStyleWildGatling",
+            _ => "Mods.CalamityLegendReturn.PeaShooter.FireStyleSingle"
         };
 
         public static string GetPeaNameKey(PeaShooterPeaType peaType) => peaType switch
         {
-            PeaShooterPeaType.Electric => "Mods.CalamityLegendsReturn.PeaShooter.PeaNameElectric",
-            PeaShooterPeaType.Fire => "Mods.CalamityLegendsReturn.PeaShooter.PeaNameFire",
-            PeaShooterPeaType.Ice => "Mods.CalamityLegendsReturn.PeaShooter.PeaNameIce",
-            PeaShooterPeaType.Starlight => "Mods.CalamityLegendsReturn.PeaShooter.PeaNameStarlight",
-            PeaShooterPeaType.Poison => "Mods.CalamityLegendsReturn.PeaShooter.PeaNamePoison",
-            PeaShooterPeaType.Rock => "Mods.CalamityLegendsReturn.PeaShooter.PeaNameRock",
-            _ => "Mods.CalamityLegendsReturn.PeaShooter.PeaNameNormal"
+            PeaShooterPeaType.Electric => "Mods.CalamityLegendReturn.PeaShooter.PeaNameElectric",
+            PeaShooterPeaType.Fire => "Mods.CalamityLegendReturn.PeaShooter.PeaNameFire",
+            PeaShooterPeaType.Ice => "Mods.CalamityLegendReturn.PeaShooter.PeaNameIce",
+            PeaShooterPeaType.Starlight => "Mods.CalamityLegendReturn.PeaShooter.PeaNameStarlight",
+            PeaShooterPeaType.Poison => "Mods.CalamityLegendReturn.PeaShooter.PeaNamePoison",
+            PeaShooterPeaType.Rock => "Mods.CalamityLegendReturn.PeaShooter.PeaNameRock",
+            _ => "Mods.CalamityLegendReturn.PeaShooter.PeaNameNormal"
         };
 
         public static string GetPeaEffectKey(PeaShooterPeaType peaType) => peaType switch
         {
-            PeaShooterPeaType.Electric => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectElectric",
-            PeaShooterPeaType.Fire => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectFire",
-            PeaShooterPeaType.Ice => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectIce",
-            PeaShooterPeaType.Starlight => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectStarlight",
-            PeaShooterPeaType.Poison => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectPoison",
-            PeaShooterPeaType.Rock => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectRock",
-            _ => "Mods.CalamityLegendsReturn.PeaShooter.PeaEffectNormal"
+            PeaShooterPeaType.Electric => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectElectric",
+            PeaShooterPeaType.Fire => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectFire",
+            PeaShooterPeaType.Ice => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectIce",
+            PeaShooterPeaType.Starlight => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectStarlight",
+            PeaShooterPeaType.Poison => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectPoison",
+            PeaShooterPeaType.Rock => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectRock",
+            _ => "Mods.CalamityLegendReturn.PeaShooter.PeaEffectNormal"
         };
 
         private static int GetIntStageValue(int stageIndex, int column)

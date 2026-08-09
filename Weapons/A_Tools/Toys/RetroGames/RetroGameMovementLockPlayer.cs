@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     internal sealed class RetroGameMovementLockPlayer : ModPlayer
     {

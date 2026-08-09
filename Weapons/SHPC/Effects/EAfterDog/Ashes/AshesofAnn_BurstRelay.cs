@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
 {
     // The primary fire is a paired spiral fired from the relay at the gun muzzle. The two
     // lanes tighten over time, then independently home after leaving that fixed origin.

@@ -6,12 +6,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.Passive
+namespace CalamityLegendReturn.Weapons.Vesuvius.Passive
 {
     public sealed class VesuviusAshSoulVisual : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/DPreDog/RuinousSoul_OrbitGhost";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/DPreDog/RuinousSoul_OrbitGhost";
 
         private int Slot => (int)Projectile.ai[0];
 
@@ -81,7 +81,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.Passive
     public sealed class VesuviusAshSoulBolt : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/DPreDog/RuinousSoul_OrbitGhost";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/DPreDog/RuinousSoul_OrbitGhost";
 
         private int ParentIndex => (int)Projectile.ai[0];
         private int Slot => (int)Projectile.ai[1];

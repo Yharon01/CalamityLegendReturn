@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria.DataStructures;
 using Terraria.GameContent;
 
-namespace CalamityLegendsReturn.UI
+namespace CalamityLegendReturn.UI
 {
     /// <summary>
     /// A compact, stepped status bar for world-space player HUDs.

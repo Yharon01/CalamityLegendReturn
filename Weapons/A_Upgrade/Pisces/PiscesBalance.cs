@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces
 {
     /// <summary>
     /// 「双鱼座 / Pisces」的平衡中枢——数值直接取自《Dragoon Drizzlefish × Polaris Parrotfish 双态联动武器制作文稿》。

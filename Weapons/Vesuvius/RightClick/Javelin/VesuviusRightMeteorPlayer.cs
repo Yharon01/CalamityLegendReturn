@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.RightClick.Javelin
+namespace CalamityLegendReturn.Weapons.Vesuvius.RightClick.Javelin
 {
     public sealed class VesuviusRightMeteorPlayer : ModPlayer
     {

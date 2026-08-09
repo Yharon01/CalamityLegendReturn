@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle
 {
     internal sealed class AMRDeadlyStrikeBuff : ModBuff
     {

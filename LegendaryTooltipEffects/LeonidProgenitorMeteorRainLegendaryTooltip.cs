@@ -5,9 +5,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
-using LeonidProgenitorItem = CalamityLegendsReturn.Weapons.LeonidProgenitor.LeonidProgenitor;
+using LeonidProgenitorItem = CalamityLegendReturn.Weapons.LeonidProgenitor.LeonidProgenitor;
 
-namespace CalamityLegendsReturn.LegendaryTooltipEffects
+namespace CalamityLegendReturn.LegendaryTooltipEffects
 {
     public sealed class LeonidProgenitorMeteorRainLegendaryTooltip : GlobalItem
     {

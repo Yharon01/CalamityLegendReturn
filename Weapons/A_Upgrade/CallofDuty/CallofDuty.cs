@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Accessories;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty
 {
     public sealed class CallofDuty : ModItem, ILocalizedModType
     {

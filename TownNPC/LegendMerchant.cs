@@ -1,19 +1,19 @@
 using System.Collections.Generic;
 using CalamityMod;
 // 传奇武器（第1商店）
-using CalamityLegendsReturn.Weapons.AegisBlade;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BrinyBaron;
-using CalamityLegendsReturn.Weapons.CosmicDischarge;
-using CalamityLegendsReturn.Weapons.GaelsGreatsword;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor;
-using CalamityLegendsReturn.Weapons.Malachite;
-using CalamityLegendsReturn.Weapons.PristineFury;
-using CalamityLegendsReturn.Weapons.SeasSearing;
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Weapons.Vesuvius;
-using CalamityLegendsReturn.Weapons.YharimsCrystal;
+using CalamityLegendReturn.Weapons.AegisBlade;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.CosmicDischarge;
+using CalamityLegendReturn.Weapons.GaelsGreatsword;
+using CalamityLegendReturn.Weapons.GlacialEmbrace;
+using CalamityLegendReturn.Weapons.LeonidProgenitor;
+using CalamityLegendReturn.Weapons.Malachite;
+using CalamityLegendReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.SeasSearing;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.Vesuvius;
+using CalamityLegendReturn.Weapons.YharimsCrystal;
 // BOSS召唤物（第2商店）
 using CalamityMod.Items.SummonItems;
 // 密码破译机相关（第3商店）
@@ -25,7 +25,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.TownNPC
+namespace CalamityLegendReturn.TownNPC
 {
     // 临时性城镇NPC：直接借用灾厄“盗贼(Bandit)”的贴图与小地图头像。
     // 三个商店：传奇武器 / BOSS召唤物 / 密码破译机套件。
@@ -82,7 +82,7 @@ namespace CalamityLegendsReturn.TownNPC
             bestiaryEntry.Info.AddRange(new IBestiaryInfoElement[]
             {
                 BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Surface,
-                new FlavorTextBestiaryInfoElement("Mods.CalamityLegendsReturn.NPCs.LegendMerchant.Bestiary")
+                new FlavorTextBestiaryInfoElement("Mods.CalamityLegendReturn.NPCs.LegendMerchant.Bestiary")
             });
         }
 

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿﻿using System.Collections.Generic;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.AAARules
 {
     public static class EffectRegistry
     {

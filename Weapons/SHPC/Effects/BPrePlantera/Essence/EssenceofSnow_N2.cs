@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 using Terraria.ID;
 using CalamityMod.Particles;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera.Essence
 {
     internal class EssenceofSnow_N2 : ModProjectile, ILocalizedModType
     {

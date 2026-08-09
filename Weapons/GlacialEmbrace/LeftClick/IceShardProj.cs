@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.LeftClick
 {
     /// <summary>
     /// 小型冰碎片弹幕，由 IceSpikeMinion 的 CryoShardVolley 攻击发射。

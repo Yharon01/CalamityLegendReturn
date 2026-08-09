@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     internal sealed class SeedOfSilvaTorchFlame : ModProjectile
     {
@@ -123,7 +123,7 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
 
     internal sealed class SeedOfSilvaMandrakeDart : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/WitheredPetal";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/WitheredPetal";
 
         public override void SetStaticDefaults()
         {

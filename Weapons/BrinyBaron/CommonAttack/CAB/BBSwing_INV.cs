@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using System;
@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     internal class BBSwing_INV : ModProjectile, ILocalizedModType
     {

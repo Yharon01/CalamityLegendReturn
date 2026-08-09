@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
 {
     internal class AshesofAnn_SuperEXP : ModProjectile, ILocalizedModType
     {

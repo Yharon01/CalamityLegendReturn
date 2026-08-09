@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.Barrier
 {
     public class BarrierShieldVisual : ModProjectile
     {

@@ -9,14 +9,14 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
+namespace CalamityLegendReturn.Weapons.A_Dev.PeaShooter
 {
     internal sealed class PeaShooterHoldout : ModProjectile, ILocalizedModType
     {
         private const float HoldoutLength = 30f;
         private const float MuzzleLength = 36f;
         private const int MuzzleFlashFrames = 8;
-        private static readonly SoundStyle FireSound = new("CalamityLegendsReturn/Sound/Other/Helldiver2/榴弹发射器-爆炸");
+        private static readonly SoundStyle FireSound = new("CalamityLegendReturn/Sound/Other/Helldiver2/榴弹发射器-爆炸");
 
         private readonly BalancePeaShooter balance = new();
         private int burstCooldown;

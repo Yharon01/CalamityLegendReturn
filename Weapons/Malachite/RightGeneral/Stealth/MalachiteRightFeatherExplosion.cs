@@ -1,4 +1,4 @@
-﻿using CalamityMod;
+﻿﻿using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -12,11 +12,11 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.RightGeneral.Stealth
+namespace CalamityLegendReturn.Weapons.Malachite.RightGeneral.Stealth
 {
     public sealed class MalachiteRightFeatherExplosion : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 

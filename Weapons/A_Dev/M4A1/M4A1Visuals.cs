@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Terraria.Localization;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>M4A1 全家桶共享的视觉语言：阶段配色 + 阶段名本地化键。</summary>
     public static class M4A1Visuals
@@ -30,10 +30,10 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
         public static string StageName(int stage)
         {
             int i = stage < 0 ? 0 : stage > 3 ? 3 : stage;
-            return Language.GetTextValue($"Mods.CalamityLegendsReturn.M4A1.Stage.{StageKeys[i]}");
+            return Language.GetTextValue($"Mods.CalamityLegendReturn.M4A1.Stage.{StageKeys[i]}");
         }
 
         public static string SyncLabel() =>
-            Language.GetTextValue("Mods.CalamityLegendsReturn.M4A1.UI.SyncLabel");
+            Language.GetTextValue("Mods.CalamityLegendReturn.M4A1.UI.SyncLabel");
     }
 }

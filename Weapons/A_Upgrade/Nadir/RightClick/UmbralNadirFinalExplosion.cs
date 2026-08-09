@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.RightClick
 {
     /// <summary>
     /// 第三发投矛命中的终爆——冥蚀天底"呼应循环"的结算点。

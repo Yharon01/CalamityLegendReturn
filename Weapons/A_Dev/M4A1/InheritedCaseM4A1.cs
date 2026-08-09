@@ -9,7 +9,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 传承武器箱·M4A1（Inherited Case, M4A1）。
@@ -19,7 +19,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
     public class InheritedCaseM4A1 : ModItem, ILocalizedModType
     {
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/M4A1/InheritedCase";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/M4A1/InheritedCase";
 
         private static int LeftHoldoutType => ModContent.ProjectileType<M4A1LeftHoldout>();
         private static int CannonType => ModContent.ProjectileType<M4A1CannonHoldout>();

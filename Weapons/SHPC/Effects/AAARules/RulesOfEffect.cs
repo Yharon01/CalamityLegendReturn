@@ -2,9 +2,9 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Audio;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.AAARules
 {
     public abstract class RulesOfEffect
     {
@@ -42,29 +42,29 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules
 
         public virtual string LeftClickReplacementFireSoundPath => EffectID switch
         {
-            4 => "CalamityLegendsReturn/Sound/Other/Helldiver2/榴弹发射器-开火",
-            8 => "CalamityLegendsReturn/Sound/Other/Helldiver2/反器材狙击步枪开火",
-            10 => "CalamityLegendsReturn/Sound/Other/Helldiver2/轨道烟雾攻击",
-            13 => "CalamityLegendsReturn/Sound/Other/Helldiver2/机炮开火",
-            17 => "CalamityLegendsReturn/Sound/Other/Helldiver2/Wasp单次开火",
-            18 => "CalamityLegendsReturn/Sound/Other/Helldiver2/Wasp连续开火",
-            19 => "CalamityLegendsReturn/Sound/Other/Helldiver2/电弧发射器-发射",
-            21 => "CalamityLegendsReturn/Sound/Other/Helldiver2/最后通牒开火",
-            23 => "CalamityLegendsReturn/Sound/Other/Helldiver2/电弧发射器-发射",
-            25 => "CalamityLegendsReturn/Sound/Other/Helldiver2/轨道空爆攻击",
-            26 => "CalamityLegendsReturn/Sound/Other/Helldiver2/焦土-开枪",
-            33 => "CalamityLegendsReturn/Sound/Other/Helldiver2/磁轨炮-开火",
-            34 => "CalamityLegendsReturn/Sound/Other/Helldiver2/激光大炮开火",
-            35 => "CalamityLegendsReturn/Sound/Other/Helldiver2/焦土-开枪",
-            36 => "CalamityLegendsReturn/Sound/Other/Helldiver2/轨道炮攻击-仅开火",
-            37 => "CalamityLegendsReturn/Sound/Other/Helldiver2/焦土-开枪",
-            38 => "CalamityLegendsReturn/Sound/Other/Helldiver2/磁轨炮-开火",
-            39 => "CalamityLegendsReturn/Sound/Other/Helldiver2/爆裂铳开火",
-            40 => "CalamityLegendsReturn/Sound/SHPC/雷霆开火与换弹",
-            41 => "CalamityLegendsReturn/Sound/Other/Helldiver2/反器材狙击步枪开火",
-            43 => "CalamityLegendsReturn/Sound/Other/Helldiver2/反坦克炮-开火与换弹",
-            44 => "CalamityLegendsReturn/Sound/Other/Helldiver2/榴弹发射器-开火",
-            _ => "CalamityLegendsReturn/Sound/Other/Helldiver2/爆裂铳开火"
+            4 => "CalamityLegendReturn/Sound/Other/Helldiver2/榴弹发射器-开火",
+            8 => "CalamityLegendReturn/Sound/Other/Helldiver2/反器材狙击步枪开火",
+            10 => "CalamityLegendReturn/Sound/Other/Helldiver2/轨道烟雾攻击",
+            13 => "CalamityLegendReturn/Sound/Other/Helldiver2/机炮开火",
+            17 => "CalamityLegendReturn/Sound/Other/Helldiver2/Wasp单次开火",
+            18 => "CalamityLegendReturn/Sound/Other/Helldiver2/Wasp连续开火",
+            19 => "CalamityLegendReturn/Sound/Other/Helldiver2/电弧发射器-发射",
+            21 => "CalamityLegendReturn/Sound/Other/Helldiver2/最后通牒开火",
+            23 => "CalamityLegendReturn/Sound/Other/Helldiver2/电弧发射器-发射",
+            25 => "CalamityLegendReturn/Sound/Other/Helldiver2/轨道空爆攻击",
+            26 => "CalamityLegendReturn/Sound/Other/Helldiver2/焦土-开枪",
+            33 => "CalamityLegendReturn/Sound/Other/Helldiver2/磁轨炮-开火",
+            34 => "CalamityLegendReturn/Sound/Other/Helldiver2/激光大炮开火",
+            35 => "CalamityLegendReturn/Sound/Other/Helldiver2/焦土-开枪",
+            36 => "CalamityLegendReturn/Sound/Other/Helldiver2/轨道炮攻击-仅开火",
+            37 => "CalamityLegendReturn/Sound/Other/Helldiver2/焦土-开枪",
+            38 => "CalamityLegendReturn/Sound/Other/Helldiver2/磁轨炮-开火",
+            39 => "CalamityLegendReturn/Sound/Other/Helldiver2/爆裂铳开火",
+            40 => "CalamityLegendReturn/Sound/SHPC/雷霆开火与换弹",
+            41 => "CalamityLegendReturn/Sound/Other/Helldiver2/反器材狙击步枪开火",
+            43 => "CalamityLegendReturn/Sound/Other/Helldiver2/反坦克炮-开火与换弹",
+            44 => "CalamityLegendReturn/Sound/Other/Helldiver2/榴弹发射器-开火",
+            _ => "CalamityLegendReturn/Sound/Other/Helldiver2/爆裂铳开火"
         };
 
         public virtual int LeftClickReplacementFireSoundMaxInstances => 4;

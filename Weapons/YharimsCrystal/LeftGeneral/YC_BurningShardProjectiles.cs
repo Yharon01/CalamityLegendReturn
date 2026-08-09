@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Graphics.Primitives;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.LeftGeneral
 {
     internal sealed class YC_BurningShard : ModProjectile, ILocalizedModType
     {
@@ -644,7 +644,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral
     internal sealed class YC_RainbowUltimaBolt : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.YharimsCrystal";
-        public override string Texture => "CalamityLegendsReturn/Texture/Calamity/RangePROJ/UltimaBolt";
+        public override string Texture => "CalamityLegendReturn/Texture/Calamity/RangePROJ/UltimaBolt";
 
         private ref float Timer => ref Projectile.localAI[0];
         private const float HomingRange = 1650f;

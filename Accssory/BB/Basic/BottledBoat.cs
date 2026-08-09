@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.General
+namespace CalamityLegendReturn.Accssory.BB.General
 {
     public class BottledBoat : BBMeleeBonusAccessory
     {

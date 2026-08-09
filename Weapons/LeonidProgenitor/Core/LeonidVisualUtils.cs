@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Core
 {
     public static class LeonidVisualUtils
     {

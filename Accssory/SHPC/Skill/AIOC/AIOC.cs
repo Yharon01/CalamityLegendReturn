@@ -1,16 +1,16 @@
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.DiffuChip;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.FastChip;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.FlyChip;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.DiffuChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.FastChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.FlyChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.Barrier;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.AIOC
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.AIOC
 {
     public class AIOC : ModItem
     {

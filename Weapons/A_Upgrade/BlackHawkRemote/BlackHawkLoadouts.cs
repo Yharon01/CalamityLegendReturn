@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
+namespace CalamityLegendReturn.Weapons.A_Upgrade.BlackHawkRemote
 {
     internal enum BlackHawkLoadout : sbyte
     {
@@ -143,7 +143,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
                 BlackHawkLoadout.HeavyBomb => "HeavyBomb",
                 _ => "Auto"
             };
-            return Language.GetTextValue($"Mods.CalamityLegendsReturn.TheSpecialText.BlackHawkLoadout{suffix}");
+            return Language.GetTextValue($"Mods.CalamityLegendReturn.TheSpecialText.BlackHawkLoadout{suffix}");
         }
     }
 

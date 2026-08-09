@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Accssory.BF.SeedOfSilva;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.SeedOfSilva;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.Common
+namespace CalamityLegendReturn.Accssory.BF.Common
 {
     internal static class BFAccessorySystem
     {

@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // 200×200 explosion spawned by SeasSearingMissile. More dramatic than torpedo explosion.
     // Spawns pollution spikes, fallout cloud, and screen shake.

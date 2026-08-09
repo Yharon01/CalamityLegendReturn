@@ -1,8 +1,8 @@
 using System;
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.LeviathanAnahita
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.LeviathanAnahita
 {
     // =====================================================================================================================
     // GREENTIDE — Anahita's held tide-blade, a heavy singing swing as the wave-cutters are called down.

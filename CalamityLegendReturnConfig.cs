@@ -1,12 +1,12 @@
 using System.ComponentModel;
 using Terraria.ModLoader.Config;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     [BackgroundColor(15, 27, 52, 230)]
-    public sealed class CalamityLegendsReturnConfig : ModConfig
+    public sealed class CalamityLegendReturnConfig : ModConfig
     {
-        public static CalamityLegendsReturnConfig Instance;
+        public static CalamityLegendReturnConfig Instance;
 
         public override ConfigScope Mode => ConfigScope.ServerSide;
 

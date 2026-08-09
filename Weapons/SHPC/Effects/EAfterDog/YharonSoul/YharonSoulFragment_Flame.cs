@@ -14,7 +14,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul
 {
     internal class YharonSoulFragment_Flame : ModProjectile, ILocalizedModType
     {
@@ -203,7 +203,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul
 
             // 播放音效
             SoundEngine.PlaySound(
-                new SoundStyle("CalamityLegendsReturn/Sound/SHPC/轨道炮攻击-仅开火")
+                new SoundStyle("CalamityLegendReturn/Sound/SHPC/轨道炮攻击-仅开火")
                 {
                     Volume = 1.1f,
                     Pitch = 0.1f

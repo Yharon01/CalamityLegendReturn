@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord
 {
     /// <summary>
     /// 深渊细胞生成的主鲨鱼。

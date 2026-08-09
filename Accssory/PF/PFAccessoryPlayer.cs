@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF
+namespace CalamityLegendReturn.Accssory.PF
 {
     internal sealed class PFAccessoryPlayer : ModPlayer
     {

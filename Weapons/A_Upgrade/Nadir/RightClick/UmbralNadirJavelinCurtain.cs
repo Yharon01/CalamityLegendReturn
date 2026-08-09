@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -11,7 +11,7 @@ using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.RightClick
 {
     /// <summary>
     /// 高速投矛划开的短命冥幕：以投掷方向展开一条大范围黑绿斩幕。

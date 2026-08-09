@@ -1,11 +1,11 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     public class FragmentStardustEffect : DefaultEffect
     {

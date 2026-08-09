@@ -10,7 +10,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     // This landing passive belongs to Meteorfall: a high fall compresses the starlight into the ground.
     public sealed class LeonidLandingImpactPlayer : ModPlayer

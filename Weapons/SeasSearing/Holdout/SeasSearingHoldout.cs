@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     internal sealed class SeasSearingHoldout : ModProjectile, ILocalizedModType
     {
@@ -84,7 +84,7 @@ namespace CalamityLegendsReturn.Weapons.SeasSearing
         private bool rightHeldLastFrame;
 
         public new string LocalizationCategory => "Projectiles.SeasSearing";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SeasSearing/NewLegendSeasSearing";
+        public override string Texture => "CalamityLegendReturn/Weapons/SeasSearing/NewLegendSeasSearing";
 
         private Player  Owner          => Main.player[Projectile.owner];
         private Vector2 AimDirection   => Projectile.velocity.SafeNormalize(Vector2.UnitX * Math.Max(Owner.direction, 1));

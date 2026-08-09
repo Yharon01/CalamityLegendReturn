@@ -9,11 +9,11 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 using CalamityMod.Items;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.General;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.General;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.LeftClick;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.Passive;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace
 {
     [LegacyName("ColdDivinity")]
     public class GlacialEmbrace : ModItem, ILocalizedModType

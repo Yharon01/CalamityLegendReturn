@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using CalamityMod;
 using CalamityMod.Particles;
-using CalamityLegendsReturn;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
+namespace CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
 {
     // ──────────────────────────────────────────────────────
     // MODULE · MÖBIUS RING

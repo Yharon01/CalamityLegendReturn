@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Accssory.YC;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral;
+using CalamityLegendReturn.Accssory.YC;
+using CalamityLegendReturn.Weapons.YharimsCrystal.EXSkill;
+using CalamityLegendReturn.Weapons.YharimsCrystal.LeftGeneral;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral;
 using CalamityMod;
 using CalamityMod.Cooldowns;
 using Microsoft.Xna.Framework;
@@ -14,7 +14,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal
+namespace CalamityLegendReturn.Weapons.YharimsCrystal
 {
     public class NewLegendYharimsCrystal : ModItem, ILocalizedModType
     {
@@ -112,7 +112,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal
 
             if (Main.myPlayer != player.whoAmI ||
                 !KeybindSystem.LegendarySkill.JustPressed ||
-                !player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped ||
+                !player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped ||
                 !exPlayer.CanActivateUltimate ||
                 player.ownedProjectileCounts[VipType] > 0)
             {

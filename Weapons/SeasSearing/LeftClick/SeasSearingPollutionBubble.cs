@@ -5,7 +5,7 @@ using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Spawned 2-4 per bullet hit at stage 2+. Floats outward and melts on contact.
     internal sealed class SeasSearingPollutionBubble : ModProjectile

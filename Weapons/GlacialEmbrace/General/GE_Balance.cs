@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.General
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.General
 {
     internal static class GE_Balance
     {

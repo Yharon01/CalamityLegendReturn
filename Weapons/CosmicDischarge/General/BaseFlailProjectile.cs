@@ -1,11 +1,11 @@
-﻿using System;
+﻿﻿using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.Enums;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge.General
+namespace CalamityLegendReturn.Weapons.CosmicDischarge.General
 {
     public abstract class BaseFlailProjectile : ModProjectile
     {

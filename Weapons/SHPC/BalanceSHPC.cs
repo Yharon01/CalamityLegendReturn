@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Accssory.SHPC.General;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.HeatModule;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.Skill.HeatModule;
+using CalamityLegendReturn.Systems;
 using CalamityMod;
 using Terraria;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     public class BalanceSHPC
     {

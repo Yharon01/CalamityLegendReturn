@@ -12,7 +12,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC
 {
     internal class ArmoredShell_Ball : ModProjectile
     {

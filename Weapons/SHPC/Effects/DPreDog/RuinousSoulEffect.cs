@@ -1,4 +1,4 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     public class RuinousSoulEffect : DefaultEffect
     {

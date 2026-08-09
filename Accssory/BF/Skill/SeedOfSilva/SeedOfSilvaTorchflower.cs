@@ -1,12 +1,12 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     internal sealed class SeedOfSilvaTorchflower : SeedOfSilvaFlowerProjectile
     {
@@ -15,7 +15,7 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
         private int torchflowerCooldown;
 
         protected override BlossomFluxChloroplastPresetType FlowerPreset => BlossomFluxChloroplastPresetType.Chlo_DBomb;
-        protected override string FlowerTexturePath => "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Torchflower";
+        protected override string FlowerTexturePath => "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Torchflower";
 
         protected override void UpdateCommon(Player owner, BFAccessoryPlayer accessoryPlayer)
         {

@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     internal sealed class CosmicDischargeQuickDrawCooldown : CooldownHandler
     {
@@ -23,11 +23,11 @@ namespace CalamityLegendsReturn.Weapons.CosmicDischarge
         public override bool ShouldDisplay => instance.player.HeldItem.type == ModContent.ItemType<NewLegendCosmicDischarge>() && DischargePlayer.QuickDrawCooldownTimer > 0;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.CosmicDischarge_QuickDraw");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.CosmicDischarge_QuickDraw");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/CosmicDischarge/General/CD/CosmicDischargeCooldown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/CosmicDischarge/General/CD/CosmicDischargeCooldownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/CosmicDischarge/General/CD/CosmicDischargeCooldownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/CosmicDischarge/General/CD/CosmicDischargeCooldown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/CosmicDischarge/General/CD/CosmicDischargeCooldownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/CosmicDischarge/General/CD/CosmicDischargeCooldownOverlay";
 
         public override Color OutlineColor => new(22, 48, 70);
         public override Color CooldownStartColor => CosmicDischargeCommon.RiftTwilight;

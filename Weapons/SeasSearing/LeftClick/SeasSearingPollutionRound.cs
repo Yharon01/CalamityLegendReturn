@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     internal sealed class SeasSearingPollutionRound : ModProjectile, ILocalizedModType
     {
@@ -22,7 +22,7 @@ namespace CalamityLegendsReturn.Weapons.SeasSearing
         private bool NukeEligible => Projectile.ai[2] >= 0.5f;
 
         public new string LocalizationCategory => "Projectiles.SeasSearing";
-        public override string Texture          => "CalamityLegendsReturn/Texture/Calamity/RangePROJ/PlagueTaintedProjectile";
+        public override string Texture          => "CalamityLegendReturn/Texture/Calamity/RangePROJ/PlagueTaintedProjectile";
 
         public override void SetStaticDefaults()
         {

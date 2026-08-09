@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Accssory.MC.General;
-using CalamityLegendsReturn.Accssory.MC.PeacockDart;
-using CalamityLegendsReturn.Accssory.MC.PeacockScroll;
-using CalamityLegendsReturn.Weapons.Malachite.RightGeneral.Stealth;
+using CalamityLegendReturn.Accssory.MC.General;
+using CalamityLegendReturn.Accssory.MC.PeacockDart;
+using CalamityLegendReturn.Accssory.MC.PeacockScroll;
+using CalamityLegendReturn.Weapons.Malachite.RightGeneral.Stealth;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
@@ -16,7 +16,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite
+namespace CalamityLegendReturn.Weapons.Malachite
 {
     internal enum MalachiteRightFeatherState
     {
@@ -26,7 +26,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite
 
     public sealed class MalachiteRightFeather : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 

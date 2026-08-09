@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Rapid-fire pierce shot during AbyssalRupture. Pierces all; drops acid dust while travelling.
     internal sealed class SeasSearingTorrentShot : ModProjectile, ILocalizedModType

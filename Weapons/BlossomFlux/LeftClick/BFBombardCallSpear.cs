@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.LeftClick
 {
     // 轰炸战术呼叫的专属落矛：借亵渎矛的收束后加速节奏，但从外形、粒子到爆点都属于叶流。
     internal sealed class BFBombardCallSpear : ModProjectile, ILocalizedModType
@@ -20,7 +20,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick
         private const float MaxFallSpeed = 24f;
 
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/LeftClick/BFLeafProj";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/LeftClick/BFLeafProj";
 
         private ref float Timer => ref Projectile.localAI[0];
         private bool detonated;

@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     internal static class SeasSearingPalette
     {

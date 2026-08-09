@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes
 {
     // A locked enemy receives a short, readable brimstone brand while the relay opens with
     // homing embers. Fists and blades are intentionally reserved for ember impact callbacks.

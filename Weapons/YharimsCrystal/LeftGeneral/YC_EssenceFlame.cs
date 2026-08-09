@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.LeftGeneral
 {
     internal sealed class YC_EssenceFlame : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

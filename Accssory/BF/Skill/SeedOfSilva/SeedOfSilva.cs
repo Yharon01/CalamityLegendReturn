@@ -1,13 +1,13 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     public sealed class SeedOfSilva : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedOfSilva";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedOfSilva";
 
         public override void SetDefaults()
         {

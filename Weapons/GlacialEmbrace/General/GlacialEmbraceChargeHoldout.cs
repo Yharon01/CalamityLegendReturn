@@ -7,9 +7,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.LeftClick;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.General
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.General
 {
     public class GlacialEmbraceChargeHoldout : ModProjectile
     {

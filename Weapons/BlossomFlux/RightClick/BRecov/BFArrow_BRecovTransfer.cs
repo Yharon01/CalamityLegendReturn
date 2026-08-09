@@ -1,8 +1,8 @@
 using System;
 using CalamityMod;
 using CalamityMod.Dusts;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal class BFArrow_BRecovTransfer : ModProjectile
     {
@@ -130,8 +130,8 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         {
             Texture2D bloomTexture = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D lineTexture = ModContent.Request<Texture2D>("CalamityMod/Particles/ThinEndedLine").Value;
-            Texture2D magicTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D circleTexture = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_04").Value;
+            Texture2D magicTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D circleTexture = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_04").Value;
             Color mainColor = new Color(110, 255, 150, 180) * Projectile.Opacity;
             Color accentColor = new Color(220, 255, 235, 205) * Projectile.Opacity;
             Vector2 drawCenter = Projectile.Center - Main.screenPosition;

@@ -2,7 +2,7 @@ using CalamityMod;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal sealed class MK14EBRPlayer : ModPlayer
     {

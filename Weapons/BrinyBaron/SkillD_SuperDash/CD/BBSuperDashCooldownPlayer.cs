@@ -3,9 +3,9 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.BrinyBaron;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal class BBSuperDashCooldownPlayer : ModPlayer
     {

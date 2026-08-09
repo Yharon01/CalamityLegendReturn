@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Enums;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     internal class FragmentEntropy_CosmicFire : ModProjectile, ILocalizedModType
     {

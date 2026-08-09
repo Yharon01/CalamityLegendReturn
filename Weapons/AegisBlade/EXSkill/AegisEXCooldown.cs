@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.EXSkill
+namespace CalamityLegendReturn.Weapons.AegisBlade.EXSkill
 {
     public class AegisEXCooldown : CooldownHandler
     {
@@ -25,11 +25,11 @@ namespace CalamityLegendsReturn.Weapons.AegisBlade.EXSkill
             instance.player.HeldItem.type == ModContent.ItemType<AegisBlade>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.AegisEX");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.AegisEX");
 
-        public override string Texture        => "CalamityLegendsReturn/Weapons/AegisBlade/EXSkill/AegisEXCooldown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/AegisBlade/EXSkill/AegisEXCooldownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/AegisBlade/EXSkill/AegisEXCooldownOverlay";
+        public override string Texture        => "CalamityLegendReturn/Weapons/AegisBlade/EXSkill/AegisEXCooldown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/AegisBlade/EXSkill/AegisEXCooldownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/AegisBlade/EXSkill/AegisEXCooldownOverlay";
 
         public override Color OutlineColor => new Color(180, 150, 30);
 

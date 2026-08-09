@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using CalamityMod.Dusts;
 using CalamityMod.Particles;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral.Drone
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral.Drone
 {
     public class YC_GalacticaComet : ModProjectile, ILocalizedModType
     {

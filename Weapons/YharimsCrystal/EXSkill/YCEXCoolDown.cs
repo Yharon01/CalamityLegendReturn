@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.EXSkill
 {
     internal class YCEXCoolDown : CooldownHandler
     {
@@ -28,11 +28,11 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill
             instance.player.HeldItem.type == ModContent.ItemType<NewLegendYharimsCrystal>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.YC_EX");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.YC_EX");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/YharimsCrystal/EXSkill/YCEXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/YharimsCrystal/EXSkill/YCEXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/YharimsCrystal/EXSkill/YCEXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/YharimsCrystal/EXSkill/YCEXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/YharimsCrystal/EXSkill/YCEXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/YharimsCrystal/EXSkill/YCEXCoolDownOverlay";
 
         public override Color OutlineColor => Color.Black;
 

@@ -1,4 +1,4 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.RightClick;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.RightClick;
 using CalamityMod;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.BaseProjectiles;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.DesertEagle
+namespace CalamityLegendReturn.Weapons.A_Dev.DesertEagle
 {
     internal sealed class DesertEagleHoldout : RightClickHoldoutBase
     {

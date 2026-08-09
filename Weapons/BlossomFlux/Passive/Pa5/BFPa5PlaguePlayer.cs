@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.Pa5
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.Pa5
 {
     internal sealed class BFPa5PlaguePlayer : ModPlayer
     {

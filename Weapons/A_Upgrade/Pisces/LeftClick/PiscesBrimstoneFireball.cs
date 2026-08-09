@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Anchor;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Anchor;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.LeftClick
 {
     /// <summary>
     /// 左键硫火喷吐的小火球——固定骨架取自灾厄 Dragoon Drizzlefish 的 DrizzlefishFireball：

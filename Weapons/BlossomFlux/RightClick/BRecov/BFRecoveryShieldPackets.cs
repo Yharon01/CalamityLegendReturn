@@ -1,13 +1,13 @@
 using System;
 using System.IO;
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // Keeps the recovery shield's game state on the server while clients receive only a display
     // snapshot. Projectile visuals remain client-side, but they no longer decide damage.
@@ -27,7 +27,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
             if (Main.netMode != NetmodeID.MultiplayerClient || player.whoAmI != Main.myPlayer)
                 return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.BFRecoveryShieldStartRequest);
             packet.Send();
         }
@@ -61,7 +61,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
                 return;
 
             BFRecoveryShieldPlayer shield = player.GetModPlayer<BFRecoveryShieldPlayer>();
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.BFRecoveryShieldStateSync);
             packet.Write((byte)player.whoAmI);
             packet.Write(shield.ShieldHitPoints);

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.Core;
+using CalamityLegendReturn.Weapons.Vesuvius.Core;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.Passive
+namespace CalamityLegendReturn.Weapons.Vesuvius.Passive
 {
     public class VesuviusPassivePlayer : ModPlayer
     {

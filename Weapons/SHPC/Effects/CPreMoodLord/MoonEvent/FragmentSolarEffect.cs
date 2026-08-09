@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using System;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     public class FragmentSolarEffect : DefaultEffect
     {

@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.HeatModule
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.HeatModule
 {
     public sealed class HeatModulePlayer : ModPlayer
     {

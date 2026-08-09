@@ -11,7 +11,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
 {
     /// <summary>
     /// Cynosure 的主穿甲弹。飞行特效以 BloomLineSoftEdge 直绘拖尾为主体，

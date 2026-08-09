@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity
 {
     /// <summary>
     /// 灾劫核心的 SHPC 入口。

@@ -1,7 +1,7 @@
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 集中管理青霆剑的进度门槛，避免各个弹幕文件散落 Boss 判定。
     internal static class AzureThunderProgression

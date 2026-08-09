@@ -1,5 +1,5 @@
-﻿using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Weapons.SHPC;
+﻿﻿using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
 {
     internal sealed class ProjectilePossessionHoldout : ModProjectile, ILocalizedModType
     {

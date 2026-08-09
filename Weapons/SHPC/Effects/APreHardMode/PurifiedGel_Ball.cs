@@ -8,9 +8,9 @@ using CalamityMod.Particles;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using System;
-using CalamityLegendsReturn.Weapons.SHPC.RightClick;
+using CalamityLegendReturn.Weapons.SHPC.RightClick;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode
 {
     public class PurifiedGel_Ball : ModProjectile
     {

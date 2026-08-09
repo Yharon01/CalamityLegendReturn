@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.RightClick
 {
     /// <summary>
     /// 右键的冷静光学持械——只管理右键，从不扫描全图。玩家按住时始终朝鼠标旋转、可自由移动，

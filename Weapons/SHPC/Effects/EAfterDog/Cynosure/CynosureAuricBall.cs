@@ -9,11 +9,11 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure
 {
     public class CynosureAuricBall : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/EAfterDog/Cynosure/注能金源珠九帧图";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/EAfterDog/Cynosure/注能金源珠九帧图";
         public new string LocalizationCategory => "Projectiles.SHPC";
 
         private const int Lifetime = 300;

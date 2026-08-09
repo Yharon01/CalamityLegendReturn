@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Accssory;
-using CalamityLegendsReturn.Accssory.MC.General;
-using CalamityLegendsReturn.Weapons.Malachite.EXSkill;
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Accssory;
+using CalamityLegendReturn.Accssory.MC.General;
+using CalamityLegendReturn.Weapons.Malachite.EXSkill;
+using CalamityLegendReturn.Weapons;
 using CalamityMod;
 using CalamityMod.CalPlayer;
 using CalamityMod.Items;
@@ -19,11 +19,11 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite
+namespace CalamityLegendReturn.Weapons.Malachite
 {
     public class Malachite : RogueWeapon, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public new string LocalizationCategory => "Items.Weapons";
         private bool wasFinaleReady;

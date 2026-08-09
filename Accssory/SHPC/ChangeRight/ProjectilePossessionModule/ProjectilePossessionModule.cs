@@ -1,15 +1,15 @@
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight;
 using CalamityMod.Items.Materials;
 using CalamityMod.Items.Weapons.Melee;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
 {
     public sealed class ProjectilePossessionModule : ModItem
     {
-        //public override string Texture => "CalamityLegendsReturn/Accssory/SHPC/Skill/HeatModule/HeatModule";
+        //public override string Texture => "CalamityLegendReturn/Accssory/SHPC/Skill/HeatModule/HeatModule";
 
         public override void SetDefaults()
         {

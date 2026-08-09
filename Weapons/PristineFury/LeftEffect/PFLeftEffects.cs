@@ -1,10 +1,10 @@
-﻿using CalamityLegendsReturn.Weapons.PristineFury;
+﻿﻿using CalamityLegendReturn.Weapons.PristineFury;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal static class PristineFuryLeftEffectRegistry
     {

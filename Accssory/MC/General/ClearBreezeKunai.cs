@@ -2,11 +2,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.General
+namespace CalamityLegendReturn.Accssory.MC.General
 {
     public sealed class ClearBreezeKunai : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
         public override string LocalizationCategory => "Items.Accessories";
 
         public override void SetDefaults()

@@ -1,9 +1,9 @@
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using Microsoft.Xna.Framework;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Effects
 {
     // Local-only, non-damaging five-point polar-star burst.
     public static class LeonidPolarStarBurst

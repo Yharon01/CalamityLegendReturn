@@ -18,7 +18,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     public class NewLegendGaelsGreatsword : ModItem, ILocalizedModType
     {
@@ -174,7 +174,7 @@ namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
         {
             if (!Main.hardMode)
             {
-                CombatText.NewText(player.Hitbox, Color.Gray, Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendGaelsGreatsword.FinisherLocked"));
+                CombatText.NewText(player.Hitbox, Color.Gray, Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendGaelsGreatsword.FinisherLocked"));
                 return;
             }
 
@@ -188,7 +188,7 @@ namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
 
             if (!gaelPlayer.ConsumeDarkEmbers(GaelGreatswordPlayer.DarkEmberMax))
             {
-                CombatText.NewText(player.Hitbox, new Color(120, 56, 170), Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendGaelsGreatsword.FinisherNeedsEmbers"));
+                CombatText.NewText(player.Hitbox, new Color(120, 56, 170), Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendGaelsGreatsword.FinisherNeedsEmbers"));
                 return;
             }
 

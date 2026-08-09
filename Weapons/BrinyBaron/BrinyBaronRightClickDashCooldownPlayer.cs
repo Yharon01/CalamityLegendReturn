@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     internal class BrinyBaronRightClickDashCooldownPlayer : ModPlayer
     {

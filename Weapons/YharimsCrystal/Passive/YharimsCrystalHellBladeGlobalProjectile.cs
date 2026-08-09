@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.Passive
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.Passive
 {
     internal sealed class YharimsCrystalHellBladeGlobalProjectile : GlobalProjectile
     {

@@ -5,13 +5,13 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL
+namespace CalamityLegendReturn.QOL
 {
     internal class SHPC_AdditionGI : ModSystem
     {
         public override void AddRecipes()
         {
-            if (CalamityLegendsReturnConfig.Instance?.AllowMassMaterialRecipes != true)
+            if (CalamityLegendReturnConfig.Instance?.AllowMassMaterialRecipes != true)
                 return;
 
             RegisterEarlyGameRecipes();

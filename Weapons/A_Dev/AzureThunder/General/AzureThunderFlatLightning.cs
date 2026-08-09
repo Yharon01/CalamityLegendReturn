@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -10,7 +10,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 通用平雷/落雷弹幕：通过 ai[0] 的 bit flag 切换充能、静电、巨雷和纯视觉模式。
     internal sealed class AzureThunderFlatLightning : ModProjectile, ILocalizedModType

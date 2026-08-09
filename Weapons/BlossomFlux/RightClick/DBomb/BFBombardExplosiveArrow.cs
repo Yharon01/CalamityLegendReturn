@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // The charged arrow is a controller: it rises, then calls down exactly four large
     // explosive arrows and one mouse-locked extra-large arrow at a fixed sixteen-frame cadence.
@@ -24,7 +24,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         private int elapsedFrames;
         private int arrowsReleased;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
 
         public override void SetDefaults()
         {
@@ -116,7 +116,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
     {
         private bool ExtraLarge => Projectile.ai[0] == 1f;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
 
         public override void SetDefaults()
         {

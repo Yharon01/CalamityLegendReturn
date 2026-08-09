@@ -1,5 +1,5 @@
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Weapons.Visuals;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
+namespace CalamityLegendReturn.Weapons.A_Dev.SHPBow
 {
     internal sealed class SHPBowHoldout : ModProjectile, ILocalizedModType
     {

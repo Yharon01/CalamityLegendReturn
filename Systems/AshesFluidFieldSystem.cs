@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ModLoader;
 using CalamityMod.FluidSimulation;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     public class AshesFluidFieldSystem : ModSystem
     {

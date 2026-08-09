@@ -6,7 +6,7 @@ using Terraria.ID;
 using Terraria.Audio;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // 散播箭的毒气子弹幕，主要承担滞留区域和持续伤害。
     internal class BFArrow_EPlagueGas : ModProjectile

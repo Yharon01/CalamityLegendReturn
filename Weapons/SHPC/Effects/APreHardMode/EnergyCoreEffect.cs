@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode;
 using CalamityMod.Items.Materials;
 using CalamityMod.Projectiles.Typeless;
 using Microsoft.Xna.Framework;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Graphics.Effects;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects
+namespace CalamityLegendReturn.Weapons.SHPC.Effects
 {
     public class EnergyCoreEffect : DefaultEffect
     {
@@ -251,7 +251,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects
             shieldEffect.Parameters["shieldEdgeColor"].SetValue(edgeColor.ToVector3());
 
             // ===== 你的底图 =====
-            //Texture2D tex = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/window_04").Value;
+            //Texture2D tex = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/window_04").Value;
             Texture2D tex = ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/GreyscaleGradients/FrozenCrust").Value;
 
             // ===== 围绕弹幕中心，而不是围绕玩家 =====

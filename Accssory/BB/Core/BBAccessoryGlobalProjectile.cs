@@ -1,12 +1,12 @@
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
-using CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash;
-using CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
+using CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash;
+using CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB
+namespace CalamityLegendReturn.Accssory.BB
 {
     internal sealed class BBAccessoryGlobalProjectile : GlobalProjectile
     {

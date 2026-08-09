@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.General;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using WastelandEnergyCoreItem = CalamityLegendsReturn.Accssory.SHPC.General.WastelandEnergyCore.WastelandEnergyCore;
+using WastelandEnergyCoreItem = CalamityLegendReturn.Accssory.SHPC.General.WastelandEnergyCore.WastelandEnergyCore;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.General.EverfrostEnergyCore
+namespace CalamityLegendReturn.Accssory.SHPC.General.EverfrostEnergyCore
 {
     public class EverfrostEnergyCore : ModItem
     {

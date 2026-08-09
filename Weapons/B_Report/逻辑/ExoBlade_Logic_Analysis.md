@@ -195,7 +195,7 @@ if (State == SwingState.BonkDash)
 
 ## 五、 对新武器开发的启示与建议
 
-在 `CalamityLegendsReturn` 模组开发新武器时，这种“双键合一文件”的设计提供了极佳的参考价值：
+在 `CalamityLegendReturn` 模组开发新武器时，这种“双键合一文件”的设计提供了极佳的参考价值：
 1. **单弹幕多状态机**: 避免为左键和右键注册两个独立的 `ModProjectile` 类。所有的绘制逻辑（Shader、拖尾渲染）以及碰撞逻辑都在同一个 Projectile 类中通过 `switch(State)` 切换，极大减少了资源加载与代码冗余。
 2. **状态共享与弹幕检索**: 通过遍历 `Main.ActiveProjectiles`（或 `Main.projectile`）寻找属于玩家自己的特定状态弹幕，是实现**武器蓄力连招、二段攻击、派生攻击**非常稳定可靠的手段。
 3. **气势与受击反馈**: 右键冲刺附加短时间硬控（Frozen）并给玩家提供反向后退（Rebound），配合 `ExobeamSlashCreator` 切斩特效，具有极强的连招引导性和极高的手感舒适度。

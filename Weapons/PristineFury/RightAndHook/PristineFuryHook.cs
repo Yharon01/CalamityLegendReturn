@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.PristineFury.LeftEffect;
+using CalamityLegendReturn.Weapons.PristineFury.LeftEffect;
 using CalamityMod.Particles;
 using CalamityMod;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     internal sealed class PristineFuryHook : ModProjectile, ILocalizedModType
     {

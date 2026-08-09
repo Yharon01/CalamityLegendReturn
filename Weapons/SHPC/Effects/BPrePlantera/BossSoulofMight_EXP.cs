@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera
 {
     public class BossSoulofMight_EXP : ModProjectile, ILocalizedModType
     {

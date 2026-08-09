@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal sealed class MK14AttachmentDefinition
     {
@@ -88,7 +88,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
         public bool MovementBipod { get; }
         public bool SpiderSlowOnHit { get; }
 
-        public string NameKey => $"Mods.CalamityLegendsReturn.MK14EBR.Attachments.{Key}.Name";
-        public string EffectKey => $"Mods.CalamityLegendsReturn.MK14EBR.Attachments.{Key}.Effect";
+        public string NameKey => $"Mods.CalamityLegendReturn.MK14EBR.Attachments.{Key}.Name";
+        public string EffectKey => $"Mods.CalamityLegendReturn.MK14EBR.Attachments.{Key}.Effect";
     }
 }

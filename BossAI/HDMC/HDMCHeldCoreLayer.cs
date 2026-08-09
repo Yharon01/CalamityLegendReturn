@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     // InvisibleProj prevents Terraria's normal held-item pass from rendering anything.
     // This layer is the explicit held-use counterpart to the inventory/world draw hooks.

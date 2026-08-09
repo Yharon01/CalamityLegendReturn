@@ -9,10 +9,10 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerSaddle
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.PlayerSaddle
 {
     // ── Item ─────────────────────────────────────────────────────────────────
     public class PlayerSaddleItem : ModItem, ILocalizedModType
@@ -79,7 +79,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerSaddle
             int target = FindNearestPlayerToMouse(player.whoAmI);
             if (target < 0)
             {
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerSaddleNoTarget"),
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerSaddleNoTarget"),
                     new Color(220, 180, 255));
                 return true;
             }
@@ -87,7 +87,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerSaddle
             // Check target isn't already occupied
             if (Main.player[target].GetModPlayer<PlayerSaddlePlayer>().RiderWhoAmI >= 0)
             {
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerSaddleOccupied"),
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerSaddleOccupied"),
                     new Color(255, 160, 100));
                 return true;
             }
@@ -179,7 +179,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerSaddle
             {
                 string riderName = Main.player[riderId].name;
                 string targetName = Main.player[targetId].name;
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.PlayerSaddleMounted",
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.PlayerSaddleMounted",
                     riderName, targetName), new Color(220, 180, 255));
             }
         }
@@ -197,7 +197,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.PlayerSaddle
     // ── Packet handlers ───────────────────────────────────────────────────────
     internal static class PlayerSaddlePackets
     {
-        private static CalamityLegendsReturn Mod => ModContent.GetInstance<CalamityLegendsReturn>();
+        private static CalamityLegendReturn Mod => ModContent.GetInstance<CalamityLegendReturn>();
 
         public static void SendMount(int riderId, int targetId)
         {

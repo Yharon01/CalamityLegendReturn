@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -15,7 +15,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick
 {
     /// <summary>
     /// 冥蚀贯穿矛 —— 左键第三段冲刺贯穿在突入瞬间射出的宏伟黑暗贯穿光矛。

@@ -12,10 +12,10 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.SHPC;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     public class LegendaryCodex : ModItem, ILocalizedModType
     {
@@ -37,7 +37,7 @@ namespace CalamityLegendsReturn
         private const float DropStuntLaunchSpeedSquared = 1.4f;
 
         public new string LocalizationCategory => "Items.Weapons";
-        public override string Texture => "CalamityLegendsReturn/LegendaryCodex";
+        public override string Texture => "CalamityLegendReturn/LegendaryCodex";
 
         private DropStuntState dropStuntState;
         private int worldTimer;
@@ -423,7 +423,7 @@ namespace CalamityLegendsReturn
         private int lastHoveredControl = -1;
 
         public new string LocalizationCategory => "Projectiles";
-        public override string Texture => "CalamityLegendsReturn/LegendarySupplyBox";
+        public override string Texture => "CalamityLegendReturn/LegendarySupplyBox";
 
         private bool FadeOut
         {
@@ -850,11 +850,11 @@ namespace CalamityLegendsReturn
 
             public string GetDisplayName(int itemType) => DisplayNameKey is null
                 ? Lang.GetItemNameValue(itemType)
-                : Language.GetTextValue($"Mods.CalamityLegendsReturn.LegendaryCodex.{DisplayNameKey}");
+                : Language.GetTextValue($"Mods.CalamityLegendReturn.LegendaryCodex.{DisplayNameKey}");
 
-            public string GetLocalizedTag() => Language.GetTextValue($"Mods.CalamityLegendsReturn.LegendaryCodex.{Key}.Tag");
+            public string GetLocalizedTag() => Language.GetTextValue($"Mods.CalamityLegendReturn.LegendaryCodex.{Key}.Tag");
 
-            public string GetLocalizedBody() => Language.GetTextValue($"Mods.CalamityLegendsReturn.LegendaryCodex.{Key}.Body");
+            public string GetLocalizedBody() => Language.GetTextValue($"Mods.CalamityLegendReturn.LegendaryCodex.{Key}.Body");
         }
     }
 }

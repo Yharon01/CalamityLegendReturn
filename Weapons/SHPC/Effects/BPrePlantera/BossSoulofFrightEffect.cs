@@ -1,6 +1,6 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera
 {
     internal class BossSoulofFrightEffect : DefaultEffect
     {

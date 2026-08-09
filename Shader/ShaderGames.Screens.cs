@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Shader
+namespace CalamityLegendReturn.Shader
 {
     public sealed partial class ShaderGames
     {

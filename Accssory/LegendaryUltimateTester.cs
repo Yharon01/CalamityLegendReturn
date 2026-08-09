@@ -1,33 +1,33 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade;
-using CalamityLegendsReturn.Weapons.AegisBlade.EXSkill;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill;
-using CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Weapons.AegisBlade;
+using CalamityLegendReturn.Weapons.AegisBlade.EXSkill;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.EXSkill;
+using CalamityLegendReturn.Weapons.BlossomFlux.Passive.PaRevo;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using Terraria.Audio;
-using CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash;
-using CalamityLegendsReturn.Weapons.CosmicDischarge;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.Malachite.EXSkill;
-using CalamityLegendsReturn.Weapons.PristineFury;
-using CalamityLegendsReturn.Weapons.SeasSearing;
-using CalamityLegendsReturn.Weapons.SHPC.EXSkill;
-using CalamityLegendsReturn.Weapons.Vesuvius.EXSkill;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill;
+using CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash;
+using CalamityLegendReturn.Weapons.CosmicDischarge;
+using CalamityLegendReturn.Weapons.LeonidProgenitor;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.Malachite.EXSkill;
+using CalamityLegendReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.SeasSearing;
+using CalamityLegendReturn.Weapons.SHPC.EXSkill;
+using CalamityLegendReturn.Weapons.Vesuvius.EXSkill;
+using CalamityLegendReturn.Weapons.YharimsCrystal.EXSkill;
 using CalamityMod;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory
+namespace CalamityLegendReturn.Accssory
 {
     internal sealed class LegendaryUltimateTester : ModItem
     {
         public new string LocalizationCategory => "Items.Accessories";
-        //public override string Texture => "CalamityLegendsReturn/Accssory/LegendaryEmblem";
+        //public override string Texture => "CalamityLegendReturn/Accssory/LegendaryEmblem";
 
         public override void SetDefaults()
         {

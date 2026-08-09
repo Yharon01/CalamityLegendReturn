@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.SHPC.SHPlatform.Tiles;
+using CalamityLegendReturn.Weapons.SHPC.SHPlatform.Tiles;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.SHPlatform
+namespace CalamityLegendReturn.Weapons.SHPC.SHPlatform
 {
     public class SHPPPlatform : ModItem, ILocalizedModType
     {

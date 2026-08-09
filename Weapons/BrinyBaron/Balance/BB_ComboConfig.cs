@@ -1,6 +1,6 @@
 using System;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     public enum BBLeftClickComboType
     {

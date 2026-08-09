@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.FairyDanceSeries
+namespace CalamityLegendReturn.Accssory.BF.FairyDanceSeries
 {
     public sealed class BadSeed : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/FairyDanceSeries/坏种";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/FairyDanceSeries/坏种";
 
         public override void SetDefaults()
         {

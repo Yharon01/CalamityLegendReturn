@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash
 {
     internal class BBASD_Lighting : ModProjectile, ILocalizedModType
     {

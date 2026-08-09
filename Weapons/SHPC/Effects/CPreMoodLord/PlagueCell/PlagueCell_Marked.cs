@@ -5,7 +5,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell
 {
     public class PlagueCell_Marked : ModProjectile
     {

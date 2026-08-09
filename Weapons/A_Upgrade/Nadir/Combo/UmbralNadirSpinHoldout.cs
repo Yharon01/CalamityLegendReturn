@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -13,7 +13,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Combo
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Combo
 {
     /// <summary>
     /// 回旋斩迹——"按住左键期间再按右键"进入的贴身模式。
@@ -25,7 +25,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Combo
     public class UmbralNadirSpinHoldout : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Nadir";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/Nadir/UmbralNadirSpear";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/Nadir/UmbralNadirSpear";
 
         private float spinAngle;
         private int spinDir;

@@ -10,10 +10,10 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Holdout;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.RightClick
 {
     /// <summary>
     /// 回收晶片（文档第 4.3 / 4.4 节）。主伪激光在终点分解出的一对晶片之一。

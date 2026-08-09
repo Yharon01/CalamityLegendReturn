@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.TideValue
+namespace CalamityLegendReturn.Weapons.BrinyBaron.TideValue
 {
     internal class BBTideAuraPlayer : ModPlayer
     {

@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty.Ultimate
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty.Ultimate
 {
     /// <summary>
     /// The regular Wulfrum Drone fires the vanilla Saucer Laser. This friendly version keeps that

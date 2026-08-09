@@ -10,12 +10,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.CosmicDischarge
+namespace CalamityLegendReturn.Weapons.CosmicDischarge
 {
     public class CosmicDischargeChainKnife : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Melee";
-        public override string Texture => "CalamityLegendsReturn/Weapons/CosmicDischarge/CosmicDischarge";
+        public override string Texture => "CalamityLegendReturn/Weapons/CosmicDischarge/CosmicDischarge";
 
         private Player Player => Main.player[Projectile.owner];
 

@@ -6,7 +6,7 @@ using Terraria.Enums;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.Passive
+namespace CalamityLegendReturn.Weapons.PristineFury.Passive
 {
     internal sealed class PristineFuryCrystalLaser : ModProjectile, ILocalizedModType
     {

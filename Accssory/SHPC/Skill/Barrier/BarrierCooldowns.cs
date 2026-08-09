@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.Barrier
 {
     internal sealed class BarrierDurabilityCooldown : CooldownHandler
     {
@@ -26,11 +26,11 @@ namespace CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier
             BarrierPlayer.ShieldCurrentHitPoints > 0;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.SHPC_BarrierDurability");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.SHPC_BarrierDurability");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => new(112, 244, 244);
         public override Color CooldownStartColor => Color.Lerp(new Color(49, 220, 221), new Color(99, 226, 142), AdjustedCompletion);
@@ -105,11 +105,11 @@ namespace CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier
             BarrierPlayer.RechargeDelayRemainingFrames > 0;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.SHPC_BarrierRecharge");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.SHPC_BarrierRecharge");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => new(194, 255, 67);
         public override Color CooldownStartColor => Color.Lerp(new Color(194, 255, 57), new Color(92, 187, 99), instance.Completion);

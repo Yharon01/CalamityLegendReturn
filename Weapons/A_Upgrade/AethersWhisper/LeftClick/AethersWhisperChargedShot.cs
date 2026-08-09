@@ -9,9 +9,9 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.LeftClick
 {
     /// <summary>
     /// 左键的微光坍缩炮晶核（文档第 3.2 节）。

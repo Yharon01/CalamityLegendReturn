@@ -1,15 +1,15 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.General
+namespace CalamityLegendReturn.Accssory.PF.General
 {
     // 稍微绽放的百合：印记队列 +2（共5）；远程伤害 +12%；纯化等级上限提高至 4 级。
     internal sealed class PFSlightlyBloomLily : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/General/PFSlightlyBloomLily";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/General/PFSlightlyBloomLily";
 
         public override void SetDefaults()
         {

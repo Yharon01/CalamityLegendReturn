@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.RightClick
 {
     /// <summary>
     /// 从旧版 NadirJavVoidEssence 本地移植的上升虚空核。
@@ -17,7 +17,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
     public class UmbralNadirRisingVoidEssence : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Nadir";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/Nadir/RightClick/UmbralNadirRisingVoidEssence";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/Nadir/RightClick/UmbralNadirRisingVoidEssence";
 
         private const int FrameCount = 4;
         private const int FrameTime = 12;

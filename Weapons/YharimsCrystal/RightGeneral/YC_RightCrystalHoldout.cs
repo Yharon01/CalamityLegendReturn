@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.LeftGeneral;
-using CalamityLegendsReturn.Weapons.YharimsCrystal.Passive;
+using CalamityLegendReturn.Weapons.YharimsCrystal.LeftGeneral;
+using CalamityLegendReturn.Weapons.YharimsCrystal.Passive;
 using CalamityMod;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.Magic;
@@ -11,7 +11,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral
 {
     internal sealed class YC_RightCrystalHoldout : YC_BaseHoldout
     {

@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.EXSkill;
-using CalamityLegendsReturn.Weapons.Vesuvius.Passive;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick;
-using CalamityLegendsReturn.Weapons.Vesuvius.RightClick.Javelin;
+using CalamityLegendReturn.Weapons.Vesuvius.EXSkill;
+using CalamityLegendReturn.Weapons.Vesuvius.Passive;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick;
+using CalamityLegendReturn.Weapons.Vesuvius.RightClick.Javelin;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Rarities;
@@ -15,7 +15,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius
+namespace CalamityLegendReturn.Weapons.Vesuvius
 {
     public class NewVesuvius : ModItem, ILocalizedModType
     {
@@ -147,7 +147,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius
             }
 
             if (KeybindSystem.LegendarySkill.JustPressed &&
-                player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped &&
+                player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped &&
                 exPlayer.ConsumeAllEX() &&
                 !HasActiveUltimate(player))
             {
@@ -174,7 +174,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius
         public override void ModifyTooltips(List<TooltipLine> tooltips)
         {
             string keyText = KeybindSystem.LegendarySkill.GetAssignedKeys().FirstOrDefault() ?? "Unbound";
-            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             string exText = legendaryEmblemEquipped
                 ? string.Format(this.GetLocalizedValue("EXHint"), keyText)
                 : this.GetLocalizedValue("EXDisabledHint");

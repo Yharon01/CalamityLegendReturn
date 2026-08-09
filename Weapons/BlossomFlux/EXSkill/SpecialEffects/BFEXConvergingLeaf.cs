@@ -11,7 +11,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill.SpecialEffects
+namespace CalamityLegendReturn.Weapons.BlossomFlux.EXSkill.SpecialEffects
 {
     internal sealed class BFEXConvergingLeaf : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

@@ -3,11 +3,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.General
+namespace CalamityLegendReturn.Accssory.BB.General
 {
     public class BottledRaft : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BB/贴图/BottledRaft";
+        public override string Texture => "CalamityLegendReturn/Accssory/BB/贴图/BottledRaft";
 
         public override void SetDefaults()
         {

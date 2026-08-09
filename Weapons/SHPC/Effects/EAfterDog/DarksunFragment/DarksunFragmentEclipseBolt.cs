@@ -11,7 +11,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment
 {
     internal class DarksunFragmentEclipseBolt : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

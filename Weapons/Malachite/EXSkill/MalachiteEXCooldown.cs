@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Accssory;
-using CalamityLegendsReturn.Weapons.Malachite;
+using CalamityLegendReturn.Accssory;
+using CalamityLegendReturn.Weapons.Malachite;
 using CalamityMod.Cooldowns;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,7 +11,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
+namespace CalamityLegendReturn.Weapons.Malachite.EXSkill
 {
     internal sealed class MalachiteEXCooldown : CooldownHandler
     {
@@ -29,11 +29,11 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
             instance.player.GetModPlayer<LegendaryEmblemPlayer>().EXAccessoryEquipped;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.Malachite_EX");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.Malachite_EX");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => new(12, 54, 28);
         public override Color CooldownStartColor => Color.Lerp(new Color(32, 82, 45), new Color(82, 255, 132), ReadyCompletion);

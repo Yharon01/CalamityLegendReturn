@@ -18,12 +18,12 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     public class GaelGreatswordBlackBlood : ModBuff, ILocalizedModType
     {
         public new string LocalizationCategory => "Buffs";
-        public override string Texture => "CalamityLegendsReturn/Weapons/GaelsGreatsword/LeftClick/GaelGreatswordBlackBlood";
+        public override string Texture => "CalamityLegendReturn/Weapons/GaelsGreatsword/LeftClick/GaelGreatswordBlackBlood";
 
         public override void SetStaticDefaults()
         {

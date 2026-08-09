@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.EXSkill;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using CalamityMod;
 using CalamityMod.Projectiles.BaseProjectiles;
 using Microsoft.Xna.Framework;
@@ -17,7 +17,7 @@ using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     internal sealed partial class NewLegendBlossomFluxHoldOut
     {
@@ -26,8 +26,8 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
 
         // ================= 星芒/核心绘制参数自定义配置 =================
         public static string CoreBloomTexture = "CalamityMod/Particles/BloomCircle";
-        public static string CoreStarTexture = "CalamityLegendsReturn/Texture/KsTexture/star_06";  // 原：CalamityMod/Particles/RoundedStar（128×128）；新贴图 512×512，scale 已 ×0.25
-        public static string CoreFlowerTexture = "CalamityLegendsReturn/Texture/KsTexture/star_08"; // 原：CalamityMod/Particles/MiniFlower（128×128）；新贴图 512×512，scale 已 ×0.25
+        public static string CoreStarTexture = "CalamityLegendReturn/Texture/KsTexture/star_06";  // 原：CalamityMod/Particles/RoundedStar（128×128）；新贴图 512×512，scale 已 ×0.25
+        public static string CoreFlowerTexture = "CalamityLegendReturn/Texture/KsTexture/star_08"; // 原：CalamityMod/Particles/MiniFlower（128×128）；新贴图 512×512，scale 已 ×0.25
 
         // ================= 描边颜色配置 =================
         // 外层/内层描边与白色的混合比（0=纯主题色，1=纯白）；值越小颜色越纯、越跟随战术主题色

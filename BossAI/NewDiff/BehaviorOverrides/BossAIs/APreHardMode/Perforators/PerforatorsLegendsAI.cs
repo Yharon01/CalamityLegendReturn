@@ -39,12 +39,12 @@ using Terraria.GameContent;
 using CalamityMod;
 using CalamityMod.NPCs;
 using CalamityMod.Events;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
 using Terraria.Localization;
 
 using CalamityPerforatorHive = CalamityMod.NPCs.Perforator.PerforatorHive;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage1.Perforators
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage1.Perforators
 {
     /// <summary>
     /// Custom behavior override for The Perforator Hive in Legends Mode.

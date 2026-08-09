@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     /// <summary>
     /// 在本地玩家进入任意世界五秒后显示欢迎消息。
@@ -15,7 +15,7 @@ namespace CalamityLegendsReturn.Systems
         private int welcomeMessageTimer = -1;
 
         private static LocalizedText WelcomeMessage =>
-            Language.GetText("Mods.CalamityLegendsReturn.TheSpecialText.WelcomeMessage");
+            Language.GetText("Mods.CalamityLegendReturn.TheSpecialText.WelcomeMessage");
 
         public override void OnEnterWorld()
         {

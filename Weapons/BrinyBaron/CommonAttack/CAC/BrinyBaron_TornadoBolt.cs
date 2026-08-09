@@ -10,12 +10,12 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     internal class BrinyBaron_TornadoBolt : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.BrinyBaron";
-        public override string Texture => "CalamityLegendsReturn/Texture/KsTexture/light_03";
+        public override string Texture => "CalamityLegendReturn/Texture/KsTexture/light_03";
 
         private bool spawnedTyphoon;
         private int timer;
@@ -77,11 +77,11 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
             Texture2D texture = TextureAssets.Projectile[Type].Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/BloomCirclePinpoint").Value;
             Texture2D star = ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/SimpleStar").Value;
-            Texture2D magic3 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D magic4 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_04").Value;
-            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_03").Value;
-            Texture2D twirl = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/twirl_02").Value;
-            Texture2D runeStar = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_04").Value;
+            Texture2D magic3 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D magic4 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_04").Value;
+            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_03").Value;
+            Texture2D twirl = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/twirl_02").Value;
+            Texture2D runeStar = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_04").Value;
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Color theme = new Color(85, 215, 255, 0);
             Color deepTheme = new Color(25, 95, 205, 0);

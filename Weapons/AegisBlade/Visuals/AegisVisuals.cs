@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Visuals
+namespace CalamityLegendReturn.Weapons.AegisBlade.Visuals
 {
     /// <summary>
     /// 庇护之刃「亵渎圣火」统一视觉体系。
@@ -69,8 +69,8 @@ namespace CalamityLegendsReturn.Weapons.AegisBlade.Visuals
         // 二、贴图清单（本项目 Texture 库 + Calamity 粒子库）
         // ────────────────────────────────────────────────────────────────
 
-        private const string Ks = "CalamityLegendsReturn/Texture/KsTexture/";
-        private const string Stp = "CalamityLegendsReturn/Texture/SuperTexturePack/";
+        private const string Ks = "CalamityLegendReturn/Texture/KsTexture/";
+        private const string Stp = "CalamityLegendReturn/Texture/SuperTexturePack/";
 
         public const string TexFireBody = Ks + "fire_01";          // 噪点火团，火焰实体
         public const string TexFireBodyAlt = Ks + "fire_02";       // 噪点火团（异形）

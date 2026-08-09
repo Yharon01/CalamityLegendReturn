@@ -1,4 +1,4 @@
-﻿using CalamityMod;
+﻿﻿using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
 using CalamityMod.Particles;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord
 {
     internal sealed class DepthCells_Drop : ModProjectile
     {

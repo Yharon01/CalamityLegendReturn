@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.General
+namespace CalamityLegendReturn.Accssory.SHPC.General
 {
     public sealed class SHPCEnergyCorePlayer : ModPlayer
     {
@@ -95,10 +95,10 @@ namespace CalamityLegendsReturn.Accssory.SHPC.General
 
         public static bool IsEnergyCoreItem(int itemType)
         {
-            return itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.General.WastelandEnergyCore.WastelandEnergyCore>() ||
-                   itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.General.EverfrostEnergyCore.EverfrostEnergyCore>() ||
-                   itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.General.EvolutionEnergyCore.EvolutionEnergyCore>() ||
-                   itemType == ModContent.ItemType<global::CalamityLegendsReturn.Accssory.SHPC.General.ExoEnergyCore.ExoEnergyCore>();
+            return itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.General.WastelandEnergyCore.WastelandEnergyCore>() ||
+                   itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.General.EverfrostEnergyCore.EverfrostEnergyCore>() ||
+                   itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.General.EvolutionEnergyCore.EvolutionEnergyCore>() ||
+                   itemType == ModContent.ItemType<global::CalamityLegendReturn.Accssory.SHPC.General.ExoEnergyCore.ExoEnergyCore>();
         }
 
         public static bool CanEquipWith(Item equippedItem, Item incomingItem)

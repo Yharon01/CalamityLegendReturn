@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Armor.Aurora
+namespace CalamityLegendReturn.Armor.Aurora
 {
     /// <summary>
     /// Paints the masked regions of the Aurora helm/plate with a living aurora glow and
@@ -27,7 +27,7 @@ namespace CalamityLegendsReturn.Armor.Aurora
         private const float TrailTailWidth = 0.15f;
         private const byte AlphaThreshold = 10;
 
-        private const string MaskFolder = "CalamityLegendsReturn/Armor/Aurora/";
+        private const string MaskFolder = "CalamityLegendReturn/Armor/Aurora/";
 
         private static readonly Dictionary<Texture2D, Color[]> pixelCache = new();
         private static readonly Dictionary<Texture2D, Dictionary<Rectangle, GlowRegion[]>> regionCache = new();

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 手持青霆剑时显示在玩家左侧的地剑数量矩阵。
     internal sealed class AzureThunderGroundSwordMatrix : ModProjectile, IScreenOverlayProjectile

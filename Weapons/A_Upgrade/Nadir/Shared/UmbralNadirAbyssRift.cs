@@ -13,7 +13,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Shared
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Shared
 {
     /// <summary>
     /// 深渊之口 —— 冥蚀天底左键命中时撕开的一道"天底裂隙"。

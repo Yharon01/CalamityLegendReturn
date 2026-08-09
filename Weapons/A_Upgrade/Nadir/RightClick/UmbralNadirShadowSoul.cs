@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -12,7 +12,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.RightClick
 {
     /// <summary>
     /// 暗影魂针 —— 前两发投矛飞行时从其轨迹旁被"刺破的阴影"里钻出的细长黑色魂针。

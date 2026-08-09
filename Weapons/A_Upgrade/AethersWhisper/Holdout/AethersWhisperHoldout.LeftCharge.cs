@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.LeftClick;
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.LeftClick;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
 {
     internal sealed partial class AethersWhisperHoldout
     {

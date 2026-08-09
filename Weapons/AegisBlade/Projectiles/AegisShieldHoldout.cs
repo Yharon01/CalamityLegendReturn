@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using CalamityMod;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     // The shield sprite itself is deliberately not drawn here. AegisBladePlayer registers the supplied
     // 40-frame sheet as a native raisable shield, which is the same rendering path used by Stygian Shield.
@@ -51,7 +51,7 @@ namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
         /// <summary>完美格挡瞬间的一次性白闪，仅用于绘制。</summary>
         private float parryFlash;
 
-        private const string ShieldTexturePath = "CalamityLegendsReturn/Weapons/AegisBlade/庇护盾牌";
+        private const string ShieldTexturePath = "CalamityLegendReturn/Weapons/AegisBlade/庇护盾牌";
 
         public override void SetStaticDefaults()
         {

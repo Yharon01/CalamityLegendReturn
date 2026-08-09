@@ -1,13 +1,13 @@
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Weapons.PristineFury;
+using CalamityLegendReturn.Weapons.PristineFury;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF
+namespace CalamityLegendReturn.Accssory.PF
 {
     // Per-NPC purification level tracking for Pristine Fury accessories.
     // Level advances by continuously attacking with PF left-click projectiles.

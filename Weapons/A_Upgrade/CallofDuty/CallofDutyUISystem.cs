@@ -8,7 +8,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty
 {
     internal sealed class CallofDutyUISystem : ModSystem
     {
@@ -21,7 +21,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty
                 return;
 
             layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
-                "CalamityLegendsReturn: Responsibility Phone HUD",
+                "CalamityLegendReturn: Responsibility Phone HUD",
                 DrawLCDHUD,
                 InterfaceScaleType.None));
         }

@@ -1,11 +1,11 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.GameContent;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
 {
     internal sealed partial class AethersWhisperHoldout
     {

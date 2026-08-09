@@ -1,5 +1,5 @@
 Mods: {
-	CalamityLegendsReturn: {
+	CalamityLegendReturn: {
 		Items: {
 			Weapons: {
 				NewLegendBrinyBaron: {
@@ -38,8 +38,9 @@ Mods: {
 					BB_Right_DefaultShuriken:
 						'''
 						[c/FFB347:Right Click: perform a tide short dash.]
-						[c/FFB347:You are immune during the dash and return; striking the first enemy rebounds you once.]
-						[c/FFB347:After entering Hardmode, an impact releases a blue Jazz Typhoon beneath the enemy.]
+						[c/FFB347:Right Click takes priority when both buttons are held.]
+						[c/FFB347:Before Hardmode, the first hit only deals damage and halves this dash's cooldown.]
+						[c/FFB347:In Hardmode, the first hit rebounds with immunity and creates one large, enemy-pulling Jazz Typhoon.]
 						'''
 					BB_Right_Spin_Locked: "[c/DDA0FF:Hold Left Click, then hold Right Click: Whirl Cleave is locked until Stage II.]"
 					BB_Right_Spin_Unlocked:
@@ -174,14 +175,14 @@ Mods: {
 					'''
 			}
 
-			BaronHelix: {
+					BaronHelix: {
 				DisplayName: Baron Helix
 				Tooltip:
 					'''
 					+10% melee damage and +10% melee attack speed
-					Briny Baron right-click hits release 3 smaller Jazz Typhoons
-					They orbit the target in three elliptical loops, then home in slowly
-					Each Jazz Typhoon deals 30% of the right-click dash damage
+						Briny Baron right-click hits release 3 smaller Jazz Typhoons (5 after Boomer Duke)
+						They orbit the target in three elliptical loops, then home in slowly
+						Each Jazz Typhoon deals 30% of the right-click dash damage and does not pull enemies
 					'''
 			}
 

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.Passive
+namespace CalamityLegendReturn.Weapons.PristineFury.Passive
 {
     internal sealed class PristineFuryPassiveTentacle : ModProjectile, ILocalizedModType
     {

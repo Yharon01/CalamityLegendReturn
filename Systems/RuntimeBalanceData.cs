@@ -5,11 +5,11 @@ using System.IO;
 using System.Text.RegularExpressions;
 using Terraria;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     internal static class RuntimeBalanceData
     {
-        private const string ModFolderName = "CalamityLegendsReturn";
+        private const string ModFolderName = "CalamityLegendReturn";
         private static readonly Dictionary<string, SourceFileCache> SourceCaches = new();
 
         public static int[] GetSourceIntArray(string sourceRelativePath, string fieldName, int[] defaults)

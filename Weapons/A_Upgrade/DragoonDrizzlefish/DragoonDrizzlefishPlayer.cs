@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.DragoonDrizzlefish
+namespace CalamityLegendReturn.Weapons.A_Upgrade.DragoonDrizzlefish
 {
     public sealed class DragoonDrizzlefishPlayer : ModPlayer
     {

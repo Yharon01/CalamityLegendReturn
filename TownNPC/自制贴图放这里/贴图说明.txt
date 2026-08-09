@@ -36,7 +36,7 @@
 
 改成指向本文件夹（注意路径大小写和中文要一致）：
 
-    public override string Texture => "CalamityLegendsReturn/TownNPC/自制贴图放这里/LegendMerchant";
+    public override string Texture => "CalamityLegendReturn/TownNPC/自制贴图放这里/LegendMerchant";
 
 改完后：
   · 主贴图会自动读取 LegendMerchant.png

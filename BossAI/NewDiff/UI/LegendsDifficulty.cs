@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Systems;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Systems;
 using CalamityMod.Systems;
 using CalamityMod.World;
 using Microsoft.Xna.Framework;
@@ -12,7 +12,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.Systems.DifficultyModeSystem;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.UI
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.UI
 {
     public class LegendsDifficulty : DifficultyMode
     {
@@ -34,11 +34,11 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.UI
             }
         }
 
-        public override Asset<Texture2D> Texture => _texture ??= ModContent.Request<Texture2D>("CalamityLegendsReturn/BossAI/NewDiff/Assets/UI/LegendsIcon");
+        public override Asset<Texture2D> Texture => _texture ??= ModContent.Request<Texture2D>("CalamityLegendReturn/BossAI/NewDiff/Assets/UI/LegendsIcon");
 
-        public override Asset<Texture2D> TextureDisabled => _textureDisabled ??= ModContent.Request<Texture2D>("CalamityLegendsReturn/BossAI/NewDiff/Assets/UI/LegendsIcon_Off");
+        public override Asset<Texture2D> TextureDisabled => _textureDisabled ??= ModContent.Request<Texture2D>("CalamityLegendReturn/BossAI/NewDiff/Assets/UI/LegendsIcon_Off");
 
-        public override Asset<Texture2D> OutlineTexture => _outlineTexture ??= ModContent.Request<Texture2D>("CalamityLegendsReturn/BossAI/NewDiff/Assets/UI/LegendsIcon_Outline");
+        public override Asset<Texture2D> OutlineTexture => _outlineTexture ??= ModContent.Request<Texture2D>("CalamityLegendReturn/BossAI/NewDiff/Assets/UI/LegendsIcon_Outline");
 
         public override SoundStyle ActivationSound => SoundID.Item4 with { Volume = 0.75f, Pitch = -0.18f };
 
@@ -46,13 +46,13 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.UI
 
         public override float DifficultyScale => 0.1f;
 
-        public override LocalizedText Name => Language.GetText("Mods.CalamityLegendsReturn.DifficultyUI.Name");
+        public override LocalizedText Name => Language.GetText("Mods.CalamityLegendReturn.DifficultyUI.Name");
 
         public override Color ChatTextColor => new(88, 255, 211);
 
-        public override LocalizedText ShortDescription => Language.GetText("Mods.CalamityLegendsReturn.DifficultyUI.ShortDescription");
+        public override LocalizedText ShortDescription => Language.GetText("Mods.CalamityLegendReturn.DifficultyUI.ShortDescription");
 
-        public override LocalizedText ExpandedDescription => Language.GetText("Mods.CalamityLegendsReturn.DifficultyUI.ExpandedDescription");
+        public override LocalizedText ExpandedDescription => Language.GetText("Mods.CalamityLegendReturn.DifficultyUI.ExpandedDescription");
 
         public override int[] FavoredDifficultyAtTier(int tier)
         {

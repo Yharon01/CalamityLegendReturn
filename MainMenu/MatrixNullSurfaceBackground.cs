@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.MainMenu
+namespace CalamityLegendReturn.MainMenu
 {
     internal sealed class MatrixNullSurfaceBackground : ModSurfaceBackgroundStyle
     {

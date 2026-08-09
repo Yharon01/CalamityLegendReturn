@@ -3,7 +3,7 @@
 生成时间：2026-06-09 08:39:15
 
 源目录：`D:\Documents\My Games\Terraria\tModLoader\ModSources\CalamityMod\Sounds`
-明细 CSV：`D:\Documents\My Games\Terraria\tModLoader\ModSources\CalamityLegendsReturn\Weapons\B_Report\CalamityMod_Sounds_Inventory.csv`
+明细 CSV：`D:\Documents\My Games\Terraria\tModLoader\ModSources\CalamityLegendReturn\Weapons\B_Report\CalamityMod_Sounds_Inventory.csv`
 
 > 说明：本报告依据目录结构、文件名、Ogg 元数据和源码中的资源路径引用自动归纳；未逐个听辨音频内容。`代码引用` 只统计源码中直接出现的 `CalamityMod/Sounds/...` 或 `Sounds/...` 字符串，动态拼接路径可能未被计入。
 

@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.LeftClick;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.RightClick;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.LeftClick;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.RightClick;
 using CalamityMod;
 using CalamityMod.Items;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces
 {
     /// <summary>
     /// 双鱼座 / Pisces —— Dragoon Drizzlefish × Polaris Parrotfish 的双态联动重铸。

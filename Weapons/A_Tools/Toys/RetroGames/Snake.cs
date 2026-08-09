@@ -10,9 +10,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     public class Snake : ModItem, ILocalizedModType
     {
@@ -402,8 +402,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
             DrawTextWithShadow("SNAKE", new Vector2(panelArea.X + PanelPadding, panelArea.Y + 11), new Color(226, 244, 232) * opacity, 0.9f, opacity);
             string state = gameOver
-                ? Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SnakeGameOver")
-                : Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SnakeSpeed", GetSpeedLevel());
+                ? Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SnakeGameOver")
+                : Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SnakeSpeed", GetSpeedLevel());
 
             Vector2 stateSize = FontAssets.MouseText.Value.MeasureString(state) * 0.62f;
             DrawTextWithShadow(state, new Vector2(panelArea.Right - PanelPadding - stateSize.X, panelArea.Y + 17), new Color(182, 218, 198) * opacity, 0.62f, opacity);
@@ -540,8 +540,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawRectangle(overlay, new Color(5, 8, 7, 226) * opacity);
             DrawBorder(overlay, new Color(220, 76, 88) * opacity, 2);
 
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SnakeGameOver");
-            string restart = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.SnakeRestart");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SnakeGameOver");
+            string restart = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.SnakeRestart");
             DrawCenteredText(title, new Rectangle(overlay.X, overlay.Y + 22, overlay.Width, 28), new Color(255, 212, 212), 0.78f, opacity);
             DrawCenteredText(restart, new Rectangle(overlay.X, overlay.Y + 60, overlay.Width, 26), new Color(202, 232, 210), 0.52f, opacity);
         }

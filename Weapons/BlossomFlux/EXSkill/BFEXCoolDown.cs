@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using CalamityMod.Cooldowns;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
+namespace CalamityLegendReturn.Weapons.BlossomFlux.EXSkill
 {
     internal sealed class BFEXCooldown : CooldownHandler
     {
@@ -21,11 +21,11 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
         public override bool ShouldDisplay => EXPlayer.ShouldShowDisplay;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.BlossomFlux_EX");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.BlossomFlux_EX");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/EXSkill/BFEXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/BlossomFlux/EXSkill/BFEXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/BlossomFlux/EXSkill/BFEXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/EXSkill/BFEXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/BlossomFlux/EXSkill/BFEXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/BlossomFlux/EXSkill/BFEXCoolDownOverlay";
 
         public override Color OutlineColor => new Color(18, 56, 24);
         public override Color CooldownStartColor => new Color(88, 255, 148);

@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
+namespace CalamityLegendReturn.BossAI.ReBack.Prime2041
 {
     public class Destroyer2041Summoner : Mech2041Summoner
     {

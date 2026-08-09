@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -8,11 +8,11 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.OldDuke
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage4.OldDuke
 {
     // Several weapons (SlitheringEels, SkyfinBombers, SpentFuelContainer, SulphurousGrabber) are shared
     // with Aquatic Scourge per the design docs, so their projectiles/held-weapons are reused directly from
-    // CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge rather than duplicated here.
+    // CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage2.AquaticScourge rather than duplicated here.
 
     // MUTATED TRUFFLE — a minion burrows in, surfaces, then charges the player.
     public class BurrowerMinionProj : ModProjectile

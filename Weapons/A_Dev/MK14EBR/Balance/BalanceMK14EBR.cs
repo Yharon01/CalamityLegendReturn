@@ -2,7 +2,7 @@ using CalamityMod;
 using Terraria;
 using Terraria.Localization;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
+namespace CalamityLegendReturn.Weapons.A_Dev.MK14EBR
 {
     internal sealed class BalanceMK14EBR
     {
@@ -89,7 +89,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.MK14EBR
         public static string GetStageNameKey(int stage)
         {
             stage = Utils.Clamp(stage, 0, StageLocalizationKeys.Length - 1);
-            return $"Mods.CalamityLegendsReturn.MK14EBR.UI.Stage.{StageLocalizationKeys[stage]}";
+            return $"Mods.CalamityLegendReturn.MK14EBR.UI.Stage.{StageLocalizationKeys[stage]}";
         }
 
         public static string GetLocalizedStageName(int stage)

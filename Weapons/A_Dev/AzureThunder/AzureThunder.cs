@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.Passive;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.Passive;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 青霆剑物品本体：负责基础属性、左键挥舞入口、右键召剑入口和 tooltip 组装。
     public class AzureThunder : ModItem, ILocalizedModType
@@ -131,7 +131,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
             // 右键是大消耗技能，魔力不足时给出通用缺魔提示。
             if (!thunderPlayer.TrySpendMana(AzureThunderPlayer.RightClickManaCost))
             {
-                CombatText.NewText(player.Hitbox, new Color(255, 80, 80), Language.GetTextValue("Mods.CalamityLegendsReturn.Common.NoMana"));
+                CombatText.NewText(player.Hitbox, new Color(255, 80, 80), Language.GetTextValue("Mods.CalamityLegendReturn.Common.NoMana"));
                 return;
             }
 
@@ -198,7 +198,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
             string keyText = KeybindSystem.LegendarySkill.GetAssignedKeys().Count > 0
                 ? KeybindSystem.LegendarySkill.GetAssignedKeys()[0]
                 : "Unbound";
-            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool legendaryEmblemEquipped = Main.LocalPlayer.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             string ultimateText = legendaryEmblemEquipped
                 ? string.Format(this.GetLocalizedValue("AzureThunderUltimate"), keyText)
                 : this.GetLocalizedValue("AzureThunderUltimateLocked");

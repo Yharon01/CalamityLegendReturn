@@ -1,4 +1,4 @@
-﻿using CalamityMod;
+﻿﻿using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using System;
@@ -11,7 +11,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy
 {
     internal class EndothermicEnergy_Split : ModProjectile, ILocalizedModType
     {

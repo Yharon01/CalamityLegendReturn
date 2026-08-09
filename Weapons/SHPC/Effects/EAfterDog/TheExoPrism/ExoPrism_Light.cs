@@ -14,7 +14,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism
 {
     public class ExoPrism_Light : ModProjectile, ILocalizedModType
     {

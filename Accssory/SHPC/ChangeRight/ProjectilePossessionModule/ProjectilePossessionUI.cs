@@ -1,4 +1,4 @@
-﻿using CalamityLegendsReturn.Weapons.SHPC.RightClick;
+﻿﻿using CalamityLegendReturn.Weapons.SHPC.RightClick;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
 {
     internal sealed class ProjectilePossessionUI : ModProjectile
     {
@@ -65,8 +65,8 @@ namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionMo
                 Projectile.Opacity <= 0.03f)
                 return false;
 
-            Texture2D barBG = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/SHPC/RightClick/SHPCBarBack").Value;
-            Texture2D barFG = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/SHPC/RightClick/SHPCBarFront").Value;
+            Texture2D barBG = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/SHPC/RightClick/SHPCBarBack").Value;
+            Texture2D barFG = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/SHPC/RightClick/SHPCBarFront").Value;
 
             float progress = possessionPlayer.GetPossessionProgress();
             float opacity = Projectile.Opacity;

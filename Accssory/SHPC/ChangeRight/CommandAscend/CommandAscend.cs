@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Accssory.SHPC.ChangeRight;
+using CalamityLegendReturn.Accssory.SHPC.ChangeRight;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.CommandAscend
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.CommandAscend
 {
     public sealed class CommandAscend : ModItem
     {

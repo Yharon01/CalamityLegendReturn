@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     internal abstract class RightClickHoldoutBase : ModProjectile
     {

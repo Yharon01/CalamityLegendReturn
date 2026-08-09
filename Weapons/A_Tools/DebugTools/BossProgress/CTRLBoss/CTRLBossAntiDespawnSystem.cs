@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress
 {
     internal sealed class CTRLBossAntiDespawnNPC : GlobalNPC
     {

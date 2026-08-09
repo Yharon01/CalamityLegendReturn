@@ -15,7 +15,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.KarasawaModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.KarasawaModule
 {
     internal sealed class KarasawaBurst : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

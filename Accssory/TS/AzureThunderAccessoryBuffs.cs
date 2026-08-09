@@ -1,11 +1,11 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class AzureThunderGuZhouDamageBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
 
         public override void SetStaticDefaults()
         {
@@ -15,7 +15,7 @@ namespace CalamityLegendsReturn.Accssory.TS
 
     internal sealed class AzureThunderYiGanDamageBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
 
         public override void SetStaticDefaults()
         {
@@ -25,7 +25,7 @@ namespace CalamityLegendsReturn.Accssory.TS
 
     internal sealed class AzureThunderGuZhouSlowDebuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
 
         public override void SetStaticDefaults()
         {
@@ -36,7 +36,7 @@ namespace CalamityLegendsReturn.Accssory.TS
 
     internal sealed class AzureThunderQingTingDebuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
 
         public override void SetStaticDefaults()
         {

@@ -1,7 +1,7 @@
-﻿using System;
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons.BrinyBaron;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+﻿﻿using System;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod.Particles;
 using CalamityMod.Projectiles.BaseProjectiles;
 using Microsoft.Xna.Framework;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash
 {
     public class BrinyBaron_SkillSlashDash_SlashDash : BaseSwordHoldoutProjectile
     {
@@ -18,7 +18,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
         public override bool useMeleeSize => false;
         public override int swingWidth => 310;
         public override Item BaseItem => ModContent.GetModItem(ModContent.ItemType<NewLegendBrinyBaron>()).Item;
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
         public override SoundStyle? UseSound => SoundID.Item71 with { Volume = 0.85f };
         public override int StartupTime { get; set; }
         public override int CooldownTime { get; set; }

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.General;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.General;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.Passive
 {
     public class GlacialWeaponFamiliar : ModProjectile
     {

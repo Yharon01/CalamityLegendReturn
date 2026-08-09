@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash
 {
     internal sealed class BrinyBaron_DashOceanSwirl : ModProjectile
     {

@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord
 {
     // 萤火魂蝶：生命碎片光球引爆后炸出的追踪弹幕。命中直接给玩家回血一次后消失，不再生成额外的追踪弹幕。
     public class LivingShard_Butterfly : ModProjectile, ILocalizedModType

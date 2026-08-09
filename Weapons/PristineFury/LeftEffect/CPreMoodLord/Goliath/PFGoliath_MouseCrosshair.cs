@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash;
+using CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal sealed class PFGoliath_MouseCrosshair : ModProjectile, ILocalizedModType
     {

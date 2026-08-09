@@ -2,7 +2,7 @@ using CalamityMod.Items.Materials;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class WanJunFengLei : AzureThunderDashAccessory
     {
@@ -10,7 +10,7 @@ namespace CalamityLegendsReturn.Accssory.TS
         protected override int FlightTime => 270;
         protected override float FlightSpeed => 11f;
         protected override float FlightAcceleration => 2.8f;
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/图片放这里/万钧风雷";
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/图片放这里/万钧风雷";
 
         public override void AddRecipes()
         {

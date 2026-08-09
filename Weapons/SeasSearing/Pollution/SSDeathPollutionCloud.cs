@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Spawned on death of a polluted NPC; floats in place and inflicts pollution on contact.
     internal sealed class SSDeathPollutionCloud : ModProjectile, ILocalizedModType

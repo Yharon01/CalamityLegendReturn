@@ -173,7 +173,7 @@ Main.spriteBatch.Draw(
 
 ## 四、 本模组复刻与改进建议
 
-如果在 `CalamityLegendsReturn` 中想重做或者复刻这个螺旋龙卷风特效，建议进行如下优化：
+如果在 `CalamityLegendReturn` 中想重做或者复刻这个螺旋龙卷风特效，建议进行如下优化：
 
 1. **修正反汇编残留（让龙卷风真正地“扭动”起来）**：
    * 在绘制时，**不要**将 `spinArea.X` 设为 `0f`。

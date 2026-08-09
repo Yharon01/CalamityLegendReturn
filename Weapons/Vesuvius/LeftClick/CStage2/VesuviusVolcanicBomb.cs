@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.AStage0;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.AStage0;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.CStage2
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.CStage2
 {
     public class VesuviusVolcanicBomb : ModProjectile, ILocalizedModType
     {

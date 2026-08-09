@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.P90
+namespace CalamityLegendReturn.Weapons.A_Upgrade.P90
 {
     internal sealed class P90ProjectileGlobal : GlobalProjectile
     {

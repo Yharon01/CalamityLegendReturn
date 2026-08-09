@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.DragoonDrizzlefish
+namespace CalamityLegendReturn.Weapons.A_Upgrade.DragoonDrizzlefish
 {
     internal sealed class FoodDrizzlefishStatusBar : ModProjectile, ILocalizedModType
     {

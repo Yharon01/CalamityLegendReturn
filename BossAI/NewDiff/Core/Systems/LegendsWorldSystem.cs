@@ -1,11 +1,11 @@
 using System.IO;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Netcode;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Netcode;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Systems
+namespace CalamityLegendReturn.BossAI.NewDiff.Core.Systems
 {
     public class LegendsWorldSystem : ModSystem
     {

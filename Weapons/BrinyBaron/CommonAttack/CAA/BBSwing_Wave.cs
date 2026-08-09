@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -11,7 +11,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     internal class BBSwing_Wave : ModProjectile, ILocalizedModType
     {
@@ -33,7 +33,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
 
         private int SpawnStage => Utils.Clamp((int)Projectile.ai[1], 0, 3);
         private bool IsEnhancedWave => SpawnStage == 3 && Projectile.ai[0] >= 2.35f;
-        private bool IsAegisBlade => Main.player[Projectile.owner].HeldItem.type == ModContent.ItemType<global::CalamityLegendsReturn.Weapons.AegisBlade.AegisBlade>();
+        private bool IsAegisBlade => Main.player[Projectile.owner].HeldItem.type == ModContent.ItemType<global::CalamityLegendReturn.Weapons.AegisBlade.AegisBlade>();
         private float StageScale => Projectile.ai[0] > 0f ? Projectile.ai[0] : DefaultFinalWaveScale;
         private float StageIntensity => 1f + SpawnStage * 0.26f;
         private bool SlowdownBoostApplied

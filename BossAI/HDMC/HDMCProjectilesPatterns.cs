@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using CalamityMod;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
@@ -11,7 +11,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     // ──────────────────────────────────────────────────────
     // 数据矩阵面板（敌对）：格子点亮 → 齐射数据矛

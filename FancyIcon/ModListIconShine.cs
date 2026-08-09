@@ -11,7 +11,7 @@ using Terraria.GameContent.UI.Elements;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace CalamityLegendsReturn.FancyIcon
+namespace CalamityLegendReturn.FancyIcon
 {
     /// <summary>
     /// STATUS: ENABLED. See FancyIcon/README.md for the visual timing and implementation notes.
@@ -30,7 +30,7 @@ namespace CalamityLegendsReturn.FancyIcon
     {
         private const bool Enabled = true;
 
-        private const string OurModName = "CalamityLegendsReturn";
+        private const string OurModName = "CalamityLegendReturn";
 
         private static readonly FieldInfo UIImageTextureField = typeof(UIImage).GetField("_texture", BindingFlags.NonPublic | BindingFlags.Instance);
         private static readonly FieldInfo UIImageNonReloadingTextureField = typeof(UIImage).GetField("_nonReloadingTexture", BindingFlags.NonPublic | BindingFlags.Instance);

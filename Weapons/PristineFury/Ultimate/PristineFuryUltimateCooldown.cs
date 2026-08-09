@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     // 大招「劫火重燃」的能量条：借用 SHPC 大招同款贴图，重新上色为纯元的亮黄色。
     public class PristineFuryUltimateCooldown : CooldownHandler
@@ -31,11 +31,11 @@ namespace CalamityLegendsReturn.Weapons.PristineFury
             instance.player.HeldItem.type == ModContent.ItemType<NewLegendPristineFury>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.PristineFury_Ultimate");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.PristineFury_Ultimate");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => EmberOutline;
 

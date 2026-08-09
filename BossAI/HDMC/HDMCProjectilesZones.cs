@@ -2,15 +2,15 @@ using System;
 using System.Collections.Generic;
 using CalamityMod;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     // ──────────────────────────────────────────────────────
     // 沃罗诺伊囚笼（敌对）：雷达扫描式点亮的三角网格牢笼

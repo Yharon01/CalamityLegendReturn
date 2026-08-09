@@ -5,7 +5,7 @@
 路径说明：
 
 - `CalamityMod/Sounds/...`：CalamityMod 音效，按 `SoundStyle` 路径写法，不含扩展名。
-- `CalamityLegendsReturn/Sound/...`：本项目音效，按 `SoundStyle` 路径写法，不含扩展名。
+- `CalamityLegendReturn/Sound/...`：本项目音效，按 `SoundStyle` 路径写法，不含扩展名。
 - `SoundID.xxx`：原版 Terraria 音效 ID，可参考官方 Wiki 的声音 ID 页面：<https://terraria.wiki.gg/zh/wiki/%E5%A3%B0%E9%9F%B3_ID>。
 
 ## A. Pre-Hardmode
@@ -32,7 +32,7 @@
 
 1. `CalamityMod/Sounds/Custom/StormlionAltShoot`
 2. `CalamityMod/Sounds/Custom/ChainLightning1`
-3. `CalamityLegendsReturn/Sound/SHPC/雷霆开火与换弹`
+3. `CalamityLegendReturn/Sound/SHPC/雷霆开火与换弹`
 
 ### 4. 硫磺鳞片 / SulphuricScale
 
@@ -40,7 +40,7 @@
 
 1. `CalamityMod/Sounds/Custom/PlagueSounds/PlagueBoom1`
 2. `SoundID.Item107`
-3. `CalamityLegendsReturn/Sound/SHPC/反步兵地雷爆炸`
+3. `CalamityLegendReturn/Sound/SHPC/反步兵地雷爆炸`
 
 ### 5. 珍珠碎片 / PearlShard
 
@@ -98,7 +98,7 @@
 
 1. `CalamityMod/Sounds/Item/ShadowboltReflect`
 2. `SoundID.Item8`
-3. `CalamityLegendsReturn/Sound/Other/Helldiver2/轨道烟雾攻击`
+3. `CalamityLegendReturn/Sound/Other/Helldiver2/轨道烟雾攻击`
 
 ### 12. 飞翔之魂 / SoulofFlight
 
@@ -120,7 +120,7 @@
 
 特性定位：重型能量球、炮击爆发、力量感弹头。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/机炮开火`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/机炮开火`
 2. `CalamityMod/Sounds/Item/LauncherHeavyShot`
 3. `SoundID.Item14`
 
@@ -147,7 +147,7 @@
 特性定位：深海水流、鲨影追踪、水压爆开。
 
 1. `CalamityMod/Sounds/Item/HadalUrnOpen`
-2. `CalamityLegendsReturn/Sound/Other/Helldiver2/Wasp单次开火`
+2. `CalamityLegendReturn/Sound/Other/Helldiver2/Wasp单次开火`
 3. `SoundID.NPCDeath13`
 
 ### 18. 瘟疫罐 / PlagueCellCanister
@@ -156,7 +156,7 @@
 
 1. `CalamityMod/Sounds/Item/TheHiveNuke`
 2. `CalamityMod/Sounds/Custom/PlagueSounds/PBGAttackSwitchShort`
-3. `CalamityLegendsReturn/Sound/Other/Helldiver2/Wasp连续开火`
+3. `CalamityLegendReturn/Sound/Other/Helldiver2/Wasp连续开火`
 
 ### 19. 灾厄尘 / AshesofCalamity
 
@@ -178,7 +178,7 @@
 
 特性定位：日耀长枪、坠落灼光、巨型近战感冲击。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/最后通牒开火`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/最后通牒开火`
 2. `CalamityMod/Sounds/Item/HellkiteFullCharge`
 3. `SoundID.Item68`
 
@@ -187,14 +187,14 @@
 特性定位：星旋导弹、枪械弹幕、快速连射。
 
 1. `CalamityMod/Sounds/Item/PulseRifleFire`
-2. `CalamityLegendsReturn/Sound/SHPC/海盗轻机枪开火`
+2. `CalamityLegendReturn/Sound/SHPC/海盗轻机枪开火`
 3. `SoundID.Item61`
 
 ### 23. 星云碎片 / FragmentNebula
 
 特性定位：星云漂浮珠、魔法追踪、电弧发射。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/电弧发射器-发射`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/电弧发射器-发射`
 2. `SoundID.Item88`
 3. `CalamityMod/Sounds/Item/ArcNovaDiffuserSmallShot`
 
@@ -211,7 +211,7 @@
 特性定位：Meld 宇宙火、黑紫黏液、熔合爆裂。
 
 1. `CalamityMod/Sounds/Item/MeldExplosion`
-2. `CalamityLegendsReturn/Sound/Other/Helldiver2/轨道空爆攻击`
+2. `CalamityLegendReturn/Sound/Other/Helldiver2/轨道空爆攻击`
 3. `SoundID.Item14`
 
 ## D. Pre-Devourer of Gods
@@ -220,7 +220,7 @@
 
 特性定位：浊火羽毛、邪火扇形、灼烧追踪。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/焦土-开枪`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/焦土-开枪`
 2. `SoundID.DD2_FlameburstTowerShot`
 3. `CalamityMod/Sounds/Custom/SCalSounds/BrimstoneHellblastSound`
 
@@ -276,7 +276,7 @@
 
 特性定位：装甲刺弹、重型机炮、电弧破甲。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/机炮开火`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/机炮开火`
 2. `CalamityMod/Sounds/Item/LauncherHeavyShot`
 3. `SoundID.Item122`
 
@@ -296,7 +296,7 @@
 
 1. `CalamityMod/Sounds/Custom/SCalSounds/BrimstoneMonsterDrone`
 2. `SoundID.Item103`
-3. `CalamityLegendsReturn/Sound/Other/Helldiver2/焦土-开枪`
+3. `CalamityLegendReturn/Sound/Other/Helldiver2/焦土-开枪`
 
 ### 36. 日蚀之阴 / DarksunFragment
 
@@ -310,7 +310,7 @@
 
 特性定位：化神灵光、轨道炮感、上位能量发射。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/轨道炮攻击-仅开火`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/轨道炮攻击-仅开火`
 2. `CalamityMod/Sounds/Item/TeslaCannonFire`
 3. `SoundID.Item92`
 
@@ -320,7 +320,7 @@
 
 1. `CalamityMod/Sounds/Custom/Yharon/YharonFireball1`
 2. `CalamityMod/Sounds/Custom/Yharon/YharonFire`
-3. `CalamityLegendsReturn/Sound/Other/Helldiver2/焦土-开枪`
+3. `CalamityLegendReturn/Sound/Other/Helldiver2/焦土-开枪`
 
 ### 39. 星流棱晶 / ExoPrism
 
@@ -328,13 +328,13 @@
 
 1. `CalamityMod/Sounds/Item/ArcNovaDiffuserSmallShot`
 2. `CalamityMod/Sounds/Custom/ExoMechs/ExoLaserShoot`
-3. `CalamityLegendsReturn/Sound/Other/Helldiver2/磁轨炮-开火`
+3. `CalamityLegendReturn/Sound/Other/Helldiver2/磁轨炮-开火`
 
 ### 40. 湮灭余烬 / AshesofAnnihilation
 
 特性定位：红黑湮灭火、爆裂连锁、灾厄终局余烬。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/爆裂铳开火`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/爆裂铳开火`
 2. `SoundID.Item103`
 3. `CalamityMod/Sounds/Custom/SCalSounds/BrimstoneGigablastImpact`
 
@@ -342,8 +342,8 @@
 
 特性定位：重型穿甲弹、全屏追击、终局狙击炮感。
 
-1. `CalamityLegendsReturn/Sound/Other/Helldiver2/反坦克炮-开火与换弹`
-2. `CalamityLegendsReturn/Sound/SHPC/轨道炮攻击-仅开火`
+1. `CalamityLegendReturn/Sound/Other/Helldiver2/反坦克炮-开火与换弹`
+2. `CalamityLegendReturn/Sound/SHPC/轨道炮攻击-仅开火`
 3. `CalamityMod/Sounds/Item/AuricBulletHit`
 
 ## 总体建议

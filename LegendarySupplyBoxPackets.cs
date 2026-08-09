@@ -1,10 +1,10 @@
 using System.IO;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     internal static class LegendarySupplyBoxPackets
     {
@@ -16,7 +16,7 @@ namespace CalamityLegendsReturn
                 return;
             }
 
-            ModPacket packet = ModContent.GetInstance<CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.LegendarySupplyBoxClaimRequest);
             packet.Write((byte)selectionIndex);
             packet.Send();

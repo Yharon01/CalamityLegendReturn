@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.EXSkill;
+using CalamityLegendReturn.Weapons.SHPC.EXSkill;
 using CalamityMod;
 using CalamityMod.Items.Accessories;
 using CalamityMod.Items.Materials;
@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.FastChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.FastChip
 {
     public class FastChip : ModItem
     {

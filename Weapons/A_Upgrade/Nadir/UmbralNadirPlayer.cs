@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir
 {
     /// <summary>
     /// 冥蚀天底的玩家侧状态：

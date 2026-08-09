@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.P90
+namespace CalamityLegendReturn.Weapons.A_Upgrade.P90
 {
     internal sealed class P90CooldownBar : ModProjectile, ILocalizedModType
     {

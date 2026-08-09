@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.TideValue
+namespace CalamityLegendReturn.Weapons.BrinyBaron.TideValue
 {
     internal class BBTideValuePlayer : ModPlayer
     {

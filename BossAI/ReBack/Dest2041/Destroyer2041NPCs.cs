@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
+namespace CalamityLegendReturn.BossAI.ReBack.Prime2041
 {
     internal class Particle
     {

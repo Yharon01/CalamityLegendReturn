@@ -3,7 +3,7 @@ using System.Linq;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
+namespace CalamityLegendReturn.Weapons.A_Dev.ElementalCodex
 {
     internal static class ElementalCodexWeaponDatabase
     {
@@ -60,7 +60,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.ElementalCodex
 
         private static void Local(string chineseName, string internalName, params ElementalCodexElement[] elements)
         {
-            if (ModLoader.TryGetMod("CalamityLegendsReturn", out Mod local) &&
+            if (ModLoader.TryGetMod("CalamityLegendReturn", out Mod local) &&
                 local.TryFind(internalName, out ModItem item))
                 Register(item.Type, chineseName, internalName, false, elements);
         }

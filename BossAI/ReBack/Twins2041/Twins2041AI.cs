@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress;
+using CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress;
 using CalamityMod;
 using CalamityMod.Events;
 using CalamityMod.NPCs;
@@ -10,7 +10,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
+namespace CalamityLegendReturn.BossAI.ReBack.Prime2041
 {
     public static class Twins2041AI
     {

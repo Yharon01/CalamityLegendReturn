@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.Pa5
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.Pa5
 {
     internal sealed class BFPa5RecoveryPlayer : ModPlayer
     {

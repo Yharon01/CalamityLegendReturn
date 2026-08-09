@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Accssory.MC.General;
-using CalamityLegendsReturn.Accssory.MC.PeacockBox;
-using CalamityLegendsReturn.Accssory.MC.PeacockScroll;
-using CalamityLegendsReturn.Weapons.Malachite.EXSkill;
+using CalamityLegendReturn.Accssory.MC.General;
+using CalamityLegendReturn.Accssory.MC.PeacockBox;
+using CalamityLegendReturn.Accssory.MC.PeacockScroll;
+using CalamityLegendReturn.Weapons.Malachite.EXSkill;
 using CalamityMod;
 using CalamityMod.CalPlayer;
 using CalamityMod.Particles;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite
+namespace CalamityLegendReturn.Weapons.Malachite
 {
     internal sealed class MalachitePlayer : ModPlayer
     {

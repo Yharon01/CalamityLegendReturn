@@ -19,7 +19,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 
 
-namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
+namespace CalamityLegendReturn.Weapons.GaelsGreatsword
 {
     internal sealed class GaelGreatswordPlayer : ModPlayer
     {
@@ -414,7 +414,7 @@ namespace CalamityLegendsReturn.Weapons.GaelsGreatsword
             AddDarkEmbers(18 + GaelGreatswordProgression.GetStage() * 2, true);
             FollowupSlashWindow = 45;
 
-            CombatText.NewText(Player.Hitbox, new Color(238, 214, 250), Language.GetTextValue("Mods.CalamityLegendsReturn.Items.Weapons.NewLegendGaelsGreatsword.ParryText"));
+            CombatText.NewText(Player.Hitbox, new Color(238, 214, 250), Language.GetTextValue("Mods.CalamityLegendReturn.Items.Weapons.NewLegendGaelsGreatsword.ParryText"));
             SoundEngine.PlaySound(SoundID.Item37 with { Volume = 0.95f, Pitch = 0.48f }, Player.Center);
             SoundEngine.PlaySound(SoundID.Item29 with { Volume = 0.6f, Pitch = -0.15f }, Player.Center);
 

@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // 疫爆：疫球引爆时叠放的三层巨型腐蚀冲击波。
     // 借用灾厄的柏林噪声 + ForceField 着色器骨架（和狞桀爆裂同一套），配色换成叶流瘟疫的疫绿→腐黑。

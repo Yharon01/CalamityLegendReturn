@@ -2,7 +2,7 @@ using CalamityMod;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal class BBSuperDashLeviathanFilterPlayer : ModPlayer
     {

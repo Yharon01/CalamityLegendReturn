@@ -1,12 +1,12 @@
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash.DashEffects;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash.DashEffects;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using System;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash
 {
     internal class Dash_Trigger : ModPlayer
     {

@@ -2,8 +2,8 @@ using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.HeatModule;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Accssory.SHPC.Skill.HeatModule;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -16,7 +16,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClick
+namespace CalamityLegendReturn.Weapons.SHPC.RightClick
 {
     internal class SHPCRight_Proj : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     public class LeonidGravityDebuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/GlacialEmbrace/Passive/GlacialEmbraceBuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/GlacialEmbrace/Passive/GlacialEmbraceBuff";
 
         public override void SetStaticDefaults()
         {

@@ -7,7 +7,7 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared
 {
     /// <summary>
     /// 以太之低语的统一视觉语言——刻意与「嘉登军械库 / Draedon's Arsenal」同频。
@@ -49,11 +49,11 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.AethersWhisper.Shared
         public const string GlowSquareTex = "CalamityMod/Particles/GlowSquareFading";
         public const string DualTrailTex = "CalamityMod/Particles/DualTrail";
         // 星芒核心贴图（混用：灾厄 SimpleStar/HalfStar 十字长臂 + 本项目 KsTexture 512² 星）。
-        public static Asset<Texture2D> CoreStar => ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_06");
-        public static Asset<Texture2D> CoreFlower => ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_08");
+        public static Asset<Texture2D> CoreStar => ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_06");
+        public static Asset<Texture2D> CoreFlower => ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_08");
         public static Asset<Texture2D> CoreSimpleStar => ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/SimpleStar");
         public static Asset<Texture2D> CoreHalfStar => ModContent.Request<Texture2D>("CalamityMod/Particles/HalfStar");
-        public static Asset<Texture2D> CoreOrbitStar => ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_04");
+        public static Asset<Texture2D> CoreOrbitStar => ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_04");
 
         // ===== 批次管理 =====
         public static void BeginAdditive(SpriteBatch sb)

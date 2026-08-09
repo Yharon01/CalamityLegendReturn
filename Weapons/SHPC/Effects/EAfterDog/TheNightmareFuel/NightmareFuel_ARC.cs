@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel
 {
     internal class NightmareFuel_ARC : ModProjectile
     {

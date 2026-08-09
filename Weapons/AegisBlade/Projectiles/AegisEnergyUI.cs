@@ -1,11 +1,11 @@
 using System;
-using CalamityLegendsReturn.Weapons.AegisBlade.Visuals;
+using CalamityLegendReturn.Weapons.AegisBlade.Visuals;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.AegisBlade.Projectiles
+namespace CalamityLegendReturn.Weapons.AegisBlade.Projectiles
 {
     // 能量条UI，仅在持有 AegisBlade 时存活，显示在玩家头顶。
     // 注：当前版本的终结技能量实际显示在左上角的 Calamity CooldownHandler（见 AegisBlade.HoldItem），

@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+﻿﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using CalamityMod;
 using Terraria;
@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.ProjectileTest
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.ProjectileTest
 {
     internal class TestWeapon : ModItem
     {

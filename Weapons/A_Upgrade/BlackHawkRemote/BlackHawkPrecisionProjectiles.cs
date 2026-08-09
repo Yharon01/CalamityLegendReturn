@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
+namespace CalamityLegendReturn.Weapons.A_Upgrade.BlackHawkRemote
 {
     internal sealed class BlackHawkMachineGunRound : ModProjectile, ILocalizedModType
     {

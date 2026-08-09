@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Z_TeachingProjectile
+namespace CalamityLegendReturn.Z_TeachingProjectile
 {
     public class TeachingProjectileD_PulseRingField : ModProjectile
     {

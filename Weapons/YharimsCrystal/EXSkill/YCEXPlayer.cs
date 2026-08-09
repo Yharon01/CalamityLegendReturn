@@ -1,10 +1,10 @@
 using System;
-using CalamityLegendsReturn.Accssory.YC;
-using CalamityLegendsReturn.Weapons;
+using CalamityLegendReturn.Accssory.YC;
+using CalamityLegendReturn.Weapons;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.EXSkill
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.EXSkill
 {
     internal class YCEXPlayer : ModPlayer
     {

@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General
 {
     // 青霆专用「裂变电弧」。
     // 和常见的单线扭动电弧（一根不停乱扭的电线）刻意区分开，辨识度靠四件事建立：

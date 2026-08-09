@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
-using CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash;
-using CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash;
-using CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash;
+using CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash;
+using CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using System;
@@ -16,7 +16,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     public class NewLegendBrinyBaron : ModItem, ILocalizedModType
     {
@@ -64,9 +64,9 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
                 Projectile activeLeftSwing = FindOwnedProjectile(player, ModContent.ProjectileType<BrinyBaron_LeftClick_Swing>());
                 if (activeLeftSwing != null)
                 {
-                    if (IsLeftHeld(player))
-                        return false;
-
+                    // Right click always wins. This also prevents an already-held
+                    // left swing from turning a simultaneous press into the retired
+                    // Whirl Cleave input.
                     activeLeftSwing.Kill();
                 }
 
@@ -227,7 +227,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
                 player.AddCooldown(BBSuperDashCooldownHandler.ID, superDashCooldown.CooldownDuration).timeLeft = superDashVisualValue;
             }
 
-            bool exUnlocked = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool exUnlocked = player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             if (!superDashCooldown.CanUseSuperDash || !exUnlocked || !tidePlayer.TideFull || !tidePlayer.TideChargeFull)
                 return;
 
@@ -292,11 +292,6 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
 
             int growthStage = BB_Balance.GetGrowthStage();
             string left = this.GetLocalizedValue("BB_Left_" + Math.Min(growthStage, 4));
-            if (growthStage >= 2)
-            {
-                left = left.Trim() + "\n" + this.GetLocalizedValue("BB_Right_Spin_Unlocked").Trim();
-            }
-
             BBRightClickMode rightClickMode = player.GetModPlayer<BBAccessoryPlayer>().RightClickMode;
             string rightDesc = rightClickMode switch
             {
@@ -315,7 +310,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
             string passiveDevice = this.GetLocalizedValue(dashPlayer.EquippedDashDeviceLocalizationKey);
             string passive = string.Format(this.GetLocalizedValue("BB_Passive"), passiveState, passiveDevice);
 
-            bool exUnlocked = player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            bool exUnlocked = player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
             string final = exUnlocked
                 ? this.GetLocalizedValue("BB_Final")
                 : this.GetLocalizedValue("Dash4_Lock");
@@ -359,17 +354,6 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
         public override bool ConsumeItem(Player player)
         {
             return false;
-        }
-
-        private static bool IsLeftHeld(Player player)
-        {
-            // On the owning client, mouse input is stable across auto-use rollovers while
-            // Player.channel can momentarily clear. Keep the remote-player fallback on the
-            // synchronized channel state.
-            bool leftInputHeld = Main.myPlayer == player.whoAmI ? Main.mouseLeft : player.channel;
-            return leftInputHeld &&
-                   !Main.mapFullscreen &&
-                   !Main.blockMouse;
         }
 
         private static Vector2 CardinalizeDirection(Vector2 direction, int fallbackDirection)

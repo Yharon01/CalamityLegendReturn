@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -13,7 +13,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick
 {
     /// <summary>
     /// 冥蚀刃波 —— 左键每段挥砍沿矛尖甩出的黑绿虚空月刃，给近战提供一点中距离压制。

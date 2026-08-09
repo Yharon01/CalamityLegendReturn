@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using CalamityMod.Items.Materials;
 using CalamityMod.Particles;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     public class BloodstoneCoreEffect : DefaultEffect
     {
@@ -128,7 +128,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
                 projectile.GetSource_FromThis(),
                 projectile.Center,
                 Vector2.Zero,
-                ModContent.ProjectileType<global::CalamityLegendsReturn.Weapons.SHPC.NewLegendSHPE>(),
+                ModContent.ProjectileType<global::CalamityLegendReturn.Weapons.SHPC.NewLegendSHPE>(),
                 explosionDamage,
                 projectile.knockBack,
                 projectile.owner

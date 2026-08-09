@@ -1,6 +1,6 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Graphics;
@@ -13,7 +13,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn
+namespace CalamityLegendReturn
 {
     public static class IUMWMatrixInterface
     {
@@ -31,7 +31,7 @@ namespace CalamityLegendsReturn
         private Vector2 panelTopLeft;
         private bool panelPositionInitialized;
 
-        public override string Texture => "CalamityLegendsReturn/Assets/UI/IUMWIcon";
+        public override string Texture => "CalamityLegendReturn/Assets/UI/IUMWIcon";
 
         private bool FadeOut
         {
@@ -229,7 +229,7 @@ namespace CalamityLegendsReturn
             DrawFitText(GetText("UI.CloseHint"), hintArea, new Color(112, 180, 164), 0.5f, 0.4f, opacity);
         }
 
-        private static string GetText(string suffix) => Language.GetTextValue($"Mods.CalamityLegendsReturn.{suffix}");
+        private static string GetText(string suffix) => Language.GetTextValue($"Mods.CalamityLegendReturn.{suffix}");
 
         private static void DrawWrappedText(string text, Rectangle area, Color color, float scale, float opacity)
         {

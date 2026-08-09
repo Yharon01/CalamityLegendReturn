@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.LeftClick
 {
     /// <summary>
     /// 左键硫火喷吐的手持鱼。它只负责把 Dragoon Drizzlefish 作为可见手持弹幕画出来，

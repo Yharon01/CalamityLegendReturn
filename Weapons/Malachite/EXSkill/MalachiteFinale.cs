@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.Malachite;
-using CalamityLegendsReturn.Weapons.Malachite.RightGeneral.Stealth;
+using CalamityLegendReturn.Weapons.Malachite;
+using CalamityLegendReturn.Weapons.Malachite.RightGeneral.Stealth;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
+namespace CalamityLegendReturn.Weapons.Malachite.EXSkill
 {
     public class MalachiteFinaleController : ModProjectile, ILocalizedModType
     {
@@ -24,7 +24,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
         private const float TargetSearchRange = 500f * 16f;
         private const int TargetSpotlightCount = 5;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 
@@ -433,9 +433,9 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
 
         private static void DrawPetals(float charge, bool winded, int direction)
         {
-            Texture2D petal1 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Malachite/EXSkill/MalachiteSPIT").Value;
-            Texture2D petal2 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Malachite/EXSkill/MalachiteSPIT2").Value;
-            Texture2D petal3 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Malachite/EXSkill/MalachiteSPIT3").Value;
+            Texture2D petal1 = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Malachite/EXSkill/MalachiteSPIT").Value;
+            Texture2D petal2 = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Malachite/EXSkill/MalachiteSPIT2").Value;
+            Texture2D petal3 = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Malachite/EXSkill/MalachiteSPIT3").Value;
             int petalCount = 38;
             for (int i = 0; i < petalCount; i++)
             {
@@ -466,7 +466,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
 
     public class MalachiteFinaleSlash : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 
@@ -647,7 +647,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
         private const float NoTargetDamping = 0.992f;
         private const float WanderingTurnStrength = 0.006f;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 
@@ -908,13 +908,13 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
         private Texture2D GetPetalTexture()
         {
             string suffix = Variant == 0 ? string.Empty : (Variant + 1).ToString();
-            return ModContent.Request<Texture2D>($"CalamityLegendsReturn/Weapons/Malachite/EXSkill/MalachiteSPIT{suffix}").Value;
+            return ModContent.Request<Texture2D>($"CalamityLegendReturn/Weapons/Malachite/EXSkill/MalachiteSPIT{suffix}").Value;
         }
     }
 
     public class MalachiteFinaleImpactExplosion : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/Malachite";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/Malachite";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 
@@ -1037,7 +1037,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
 
     public class MalachiteFinalePetal : ModProjectile, ILocalizedModType
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/Malachite/EXSkill/MalachiteSPIT";
+        public override string Texture => "CalamityLegendReturn/Weapons/Malachite/EXSkill/MalachiteSPIT";
 
         public override string LocalizationCategory => "Projectiles.Malachite";
 
@@ -1129,7 +1129,7 @@ namespace CalamityLegendsReturn.Weapons.Malachite.EXSkill
         private Texture2D GetPetalTexture()
         {
             string suffix = Variant == 0 ? string.Empty : (Variant + 1).ToString();
-            return ModContent.Request<Texture2D>($"CalamityLegendsReturn/Weapons/Malachite/EXSkill/MalachiteSPIT{suffix}").Value;
+            return ModContent.Request<Texture2D>($"CalamityLegendReturn/Weapons/Malachite/EXSkill/MalachiteSPIT{suffix}").Value;
         }
     }
 }

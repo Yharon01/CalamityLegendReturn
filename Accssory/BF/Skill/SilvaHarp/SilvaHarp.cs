@@ -1,14 +1,14 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using CalamityMod.Tiles.Furniture.CraftingStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SilvaHarp
+namespace CalamityLegendReturn.Accssory.BF.SilvaHarp
 {
     public sealed class SilvaHarp : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/SilvaHarp/SilvaHarp";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/SilvaHarp/SilvaHarp";
 
         public override void SetDefaults()
         {

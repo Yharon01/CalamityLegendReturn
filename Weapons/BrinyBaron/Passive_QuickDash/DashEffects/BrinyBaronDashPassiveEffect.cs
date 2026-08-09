@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using System;
@@ -6,7 +6,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.Passive_QuickDash.DashEffects
+namespace CalamityLegendReturn.Weapons.BrinyBaron.Passive_QuickDash.DashEffects
 {
     internal static class BrinyBaronDashPassiveEffect
     {

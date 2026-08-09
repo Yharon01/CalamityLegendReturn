@@ -1,17 +1,17 @@
-using CalamityLegendsReturn.Accssory.BF.SeedOfSilva;
-using CalamityLegendsReturn.Accssory.BF.FairyDanceSeries;
-using CalamityLegendsReturn.Accssory.BF.SilvaHarp;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.SeedOfSilva;
+using CalamityLegendReturn.Accssory.BF.FairyDanceSeries;
+using CalamityLegendReturn.Accssory.BF.SilvaHarp;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.Passive.PaRevo;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using CalamityMod.Projectiles.Healing;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.Common
+namespace CalamityLegendReturn.Accssory.BF.Common
 {
     internal sealed class BFAccessoryPlayer : ModPlayer
     {

@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick;
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.AStage0;
-using CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.DStage3;
-using CalamityLegendsReturn.Weapons.Vesuvius.Passive;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.AStage0;
+using CalamityLegendReturn.Weapons.Vesuvius.LeftClick.DStage3;
+using CalamityLegendReturn.Weapons.Vesuvius.Passive;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -15,7 +15,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius
+namespace CalamityLegendReturn.Weapons.Vesuvius
 {
     public class VesuviusLeftHoldout : ModProjectile, ILocalizedModType
     {
@@ -43,7 +43,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius
         private SlotId chargeLoopSlot;
 
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/Vesuvius/Vesuvius2Flame";
+        public override string Texture => "CalamityLegendReturn/Weapons/Vesuvius/Vesuvius2Flame";
 
         private Player Owner => Main.player[Projectile.owner];
         private Vector2 Direction => Projectile.velocity.SafeNormalize(Vector2.UnitX * Owner.direction);
@@ -632,7 +632,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D texture = TextureAssets.Projectile[Type].Value;
-            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
+            Texture2D glow = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/Vesuvius/NewVesuviusGlow").Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
             Texture2D bloomRing = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomRing").Value;
             Texture2D moltenCore = ModContent.Request<Texture2D>("CalamityMod/Projectiles/Magic/AsteroidMolten3").Value;

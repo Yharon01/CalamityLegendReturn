@@ -8,7 +8,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.FStage5
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.FStage5
 {
     public class VesuviusObsidianShard : ModProjectile, ILocalizedModType
     {
@@ -130,7 +130,7 @@ namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.FStage5
     public class VesuviusObsidianSlash : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Vesuvius";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/DPreDog/SZPC/BlackSLASH";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/DPreDog/SZPC/BlackSLASH";
 
         public override void SetDefaults()
         {

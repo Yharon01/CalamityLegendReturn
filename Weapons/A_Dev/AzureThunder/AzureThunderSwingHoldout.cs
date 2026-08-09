@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 青霆剑左键施法器：武器本体不再绘制，双手动作直接驱动四段雷法。
     internal sealed class AzureThunderSwingHoldout : ModProjectile, ILocalizedModType

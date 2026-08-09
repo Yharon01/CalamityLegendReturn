@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 左键持械：M4A1 自动步枪。长按持续射击并暖机（提升战术同步率 -> 阶段），
@@ -19,7 +19,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
     /// </summary>
     public class M4A1LeftHoldout : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/M4A1/M4A1";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/M4A1/M4A1";
 
         private const float DrawScale = 0.6f;      // 贴图整体 ×0.6（原来偏大）
         private const float ForwardOffset = 14f; // 往后挪 ~32px（枪更贴身）

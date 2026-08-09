@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.PeacockScroll
+namespace CalamityLegendReturn.Accssory.MC.PeacockScroll
 {
     public sealed class PeacockScroll : ModItem
     {

@@ -9,7 +9,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.Passive
 {
     public class FrostSealDetonation : ModProjectile
     {
@@ -83,8 +83,8 @@ namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D star = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_01").Value;
-            Texture2D twirl = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/twirl_02").Value;
+            Texture2D star = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_01").Value;
+            Texture2D twirl = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/twirl_02").Value;
             float time = Main.GlobalTimeWrappedHourly;
             float progress = (float)drawTimer / Duration;
             float rampIn = drawTimer < 4 ? drawTimer / 4f : 1f;

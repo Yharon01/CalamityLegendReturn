@@ -3,12 +3,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 天理真和 Buff：终极技期间的防御、免疫、伤害和回复加成。
     internal sealed class AzureThunderHarmonyBuff : ModBuff
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ATallbuff";
 
         public override void SetStaticDefaults()
         {

@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Globalization;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     public class SHPCAmmoTooltipGlobal : GlobalItem
     {
@@ -22,18 +22,18 @@ namespace CalamityLegendsReturn.Weapons.SHPC
             int shotsPerAmmo = SHPCAmmoCapacity.GetCapacity(effectID);
 
             tooltips.Add(new TooltipLine(Mod, "SHPCAmmoPrompt",
-                Language.GetTextValue("Mods.CalamityLegendsReturn.AMMO.SHPCAmmoPrompt"))
+                Language.GetTextValue("Mods.CalamityLegendReturn.AMMO.SHPCAmmoPrompt"))
             {
                 OverrideColor = Color.LightSkyBlue
             });
 
             tooltips.Add(new TooltipLine(Mod, "SHPCAmmoPanel",
-                Language.GetTextValue("Mods.CalamityLegendsReturn.AMMO.SHPCAmmoPanel", panelMultiplierText, shotsPerAmmo))
+                Language.GetTextValue("Mods.CalamityLegendReturn.AMMO.SHPCAmmoPanel", panelMultiplierText, shotsPerAmmo))
             {
                 OverrideColor = Color.Gold
             });
 
-            string extraKey = $"Mods.CalamityLegendsReturn.AMMO.SHPCAmmo{effectID}";
+            string extraKey = $"Mods.CalamityLegendReturn.AMMO.SHPCAmmo{effectID}";
             string extraText = Language.GetTextValue(extraKey);
 
             if (extraText != extraKey)

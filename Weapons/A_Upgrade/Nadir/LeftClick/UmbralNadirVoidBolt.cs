@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -14,7 +14,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick
 {
     /// <summary>
     /// 散射虚空弹 —— 左键上挑 / 劈落时，随挥舞进程一颗颗甩出的黑绿虚空弹。

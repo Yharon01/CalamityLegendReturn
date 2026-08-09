@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy
 {
     internal class EndothermicEnergy_Shadow : ModProjectile, ILocalizedModType
     {
@@ -157,7 +157,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEne
                     Projectile.Center,
                     Vector2.Zero,
                     i == 0 ? FrostWhite * 0.8f : Color.Lerp(FrostBlue, FrostDeep, i * 0.38f) * 0.72f,
-                    "CalamityLegendsReturn/Texture/Myown/christmas512",
+                    "CalamityLegendReturn/Texture/Myown/christmas512",
                     new Vector2(0.85f, 0.85f),
                     Main.rand.NextFloat(-0.35f, 0.35f),
                     0.024f + i * 0.004f,

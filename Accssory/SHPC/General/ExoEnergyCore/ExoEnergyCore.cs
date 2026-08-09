@@ -1,12 +1,12 @@
-using CalamityLegendsReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.General;
 using CalamityMod.Items.Materials;
 using CalamityMod.Tiles.Furniture.CraftingStations;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using EvolutionEnergyCoreItem = CalamityLegendsReturn.Accssory.SHPC.General.EvolutionEnergyCore.EvolutionEnergyCore;
+using EvolutionEnergyCoreItem = CalamityLegendReturn.Accssory.SHPC.General.EvolutionEnergyCore.EvolutionEnergyCore;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.General.ExoEnergyCore
+namespace CalamityLegendReturn.Accssory.SHPC.General.ExoEnergyCore
 {
     public class ExoEnergyCore : ModItem
     {

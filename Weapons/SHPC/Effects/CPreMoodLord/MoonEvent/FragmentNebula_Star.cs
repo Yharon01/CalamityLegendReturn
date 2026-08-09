@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -13,7 +13,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
 {
     internal class FragmentNebula_Star : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {
@@ -274,7 +274,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
                 Projectile.GetSource_FromThis(),
                 Projectile.Center,
                 Vector2.Zero,
-                ModContent.ProjectileType<global::CalamityLegendsReturn.Weapons.SHPC.NewLegendSHPE>(),
+                ModContent.ProjectileType<global::CalamityLegendReturn.Weapons.SHPC.NewLegendSHPE>(),
                 (int)(Projectile.damage * 0.5f),
                 Projectile.knockBack,
                 Projectile.owner);
@@ -715,9 +715,9 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent
             Texture2D star = ModContent.Request<Texture2D>("CalamityMod/ExtraTextures/SimpleStar").Value;
             Texture2D fadeStreak = ModContent.Request<Texture2D>("CalamityMod/Particles/FadeStreak").Value;
             Texture2D magicPoint = TextureAssets.Extra[ExtrasID.ThePerfectGlow].Value;
-            Texture2D runeStar = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/star_05").Value;
-            Texture2D magicRune = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_02").Value;
-            Texture2D twirlRune = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/twirl_02").Value;
+            Texture2D runeStar = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/star_05").Value;
+            Texture2D magicRune = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_02").Value;
+            Texture2D twirlRune = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/twirl_02").Value;
 
             Vector2 drawPosition = Projectile.Center - Main.screenPosition;
             Vector2 forward = Projectile.velocity.SafeNormalize(Vector2.UnitY);

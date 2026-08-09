@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.MalachiteFeather
+namespace CalamityLegendReturn.Accssory.MC.MalachiteFeather
 {
     public sealed class MalachiteFeather : ModItem
     {

@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -7,14 +7,14 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     internal static class ChloroplastCommon
     {
         private const string HelixTexturePath = "CalamityMod/Particles/WaterFlavored";
         private const string SparkTexturePath = "CalamityMod/Particles/ThinEndedLine";
         private const string BloomTexturePath = "CalamityMod/Particles/BloomCircle";
-        private const string MagicTexturePath = "CalamityLegendsReturn/Texture/KsTexture/magic_03";
+        private const string MagicTexturePath = "CalamityLegendReturn/Texture/KsTexture/magic_03";
         private const float ProjectileDrawScale = 1.8f;
         private const float ExtraGlowScaleMultiplier = 0.05f;
 

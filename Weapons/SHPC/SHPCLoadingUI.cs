@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +13,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     /// <summary>
     /// 装填界面：在背包中按鼠标中键（或绑定按键）开启，允许玩家手动将材料放入/取出弹夹槽。
@@ -70,7 +70,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
             if (mouseTextIndex < 0) return;
 
             layers.Insert(mouseTextIndex, new LegacyGameInterfaceLayer(
-                "CalamityLegendsReturn: SHPC Loading UI",
+                "CalamityLegendReturn: SHPC Loading UI",
                 () => { Draw(Main.spriteBatch); return true; },
                 InterfaceScaleType.None));
         }

@@ -1,9 +1,9 @@
-﻿using CalamityMod.Particles;
+﻿﻿using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul
 {
     internal class YharonSoulFragment_Buff : ModBuff
     {

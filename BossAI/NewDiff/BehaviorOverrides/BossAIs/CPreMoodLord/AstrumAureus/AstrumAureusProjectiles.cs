@@ -8,7 +8,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.AstrumAureus
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage3.AstrumAureus
 {
     // Shared gold/violet celestial burst, mirroring the Cryogen/Plague Fx standard (fadeIn bloom + upward-biased scatter).
     internal static class AureusFx

@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     public static class SHPCAmmoCapacity
     {

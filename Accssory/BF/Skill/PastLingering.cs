@@ -1,13 +1,13 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Accssory.BF.Common;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.Skill
+namespace CalamityLegendReturn.Accssory.BF.Skill
 {
     public sealed class PastLingering : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BF/Skill/PastLingering";
+        public override string Texture => "CalamityLegendReturn/Accssory/BF/Skill/PastLingering";
 
         public override void SetDefaults()
         {

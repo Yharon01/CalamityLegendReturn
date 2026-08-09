@@ -12,7 +12,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.SHPBow
+namespace CalamityLegendReturn.Weapons.A_Dev.SHPBow
 {
     internal sealed class SHPBowArrow : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {

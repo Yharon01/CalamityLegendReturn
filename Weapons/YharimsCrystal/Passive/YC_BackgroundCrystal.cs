@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.Passive
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.Passive
 {
     /// <summary>
     /// When the player is in the left-click blade form, this small crystal floats behind
@@ -23,7 +23,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.Passive
         private const float DamageRatio = 0.28f;
 
         public new string LocalizationCategory => "Projectiles.YharimsCrystal";
-        public override string Texture => "CalamityLegendsReturn/Weapons/YharimsCrystal/YharimsCrystalPrism";
+        public override string Texture => "CalamityLegendReturn/Weapons/YharimsCrystal/YharimsCrystalPrism";
 
         private ref float Timer => ref Projectile.localAI[0];
         private float bobPhase;

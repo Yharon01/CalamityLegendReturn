@@ -8,11 +8,11 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     internal class BrinyBaron_SeafoamBlade : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Texture/Calamity/RangePROJ/FlurrystormIceChunk";
+        public override string Texture => "CalamityLegendReturn/Texture/Calamity/RangePROJ/FlurrystormIceChunk";
 
         public override void SetStaticDefaults()
         {

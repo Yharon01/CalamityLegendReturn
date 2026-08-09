@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.Passive
 {
     public class FrostSealAfterglow : ModProjectile
     {
@@ -60,7 +60,7 @@ namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive
         public override bool PreDraw(ref Color lightColor)
         {
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_03").Value;
+            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_03").Value;
             float time = Main.GlobalTimeWrappedHourly;
             float progress = (float)drawTimer / Duration;
             float alpha = (1f - progress) * (1f - progress);

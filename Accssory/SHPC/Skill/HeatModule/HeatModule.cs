@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.HeatModule
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.HeatModule
 {
     public sealed class HeatModule : ModItem
     {

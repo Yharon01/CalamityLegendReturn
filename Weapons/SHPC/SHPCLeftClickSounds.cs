@@ -3,13 +3,13 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.SHPC
+namespace CalamityLegendReturn.Weapons.SHPC
 {
     internal static class SHPCLeftClickSounds
     {
         private static readonly SoundStyle ArtAttackCast = new("CalamityMod/Sounds/Item/ArtAttackCast");
         private static readonly SoundStyle ArcNovaSmallShot = new("CalamityMod/Sounds/Item/ArcNovaDiffuserSmallShot");
-        private static readonly SoundStyle AwmFire = new("CalamityLegendsReturn/Sound/SHPC/AWM开火");
+        private static readonly SoundStyle AwmFire = new("CalamityLegendReturn/Sound/SHPC/AWM开火");
         private static readonly SoundStyle HadalUrnOpen = new("CalamityMod/Sounds/Item/HadalUrnOpen");
         private static readonly SoundStyle IceBarrageCast = new("CalamityMod/Sounds/Item/IceBarrageCast");
         private static readonly SoundStyle MechGaussRifle = new("CalamityMod/Sounds/Item/MechGaussRifle");
@@ -196,7 +196,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC
                     break;
                 // 43: Cynosure唯一材料 (Cynosure)
                 case 43:
-                    Play(new SoundStyle("CalamityLegendsReturn/Sound/Other/Helldiver2/反坦克炮-开火与换弹"), position);
+                    Play(new SoundStyle("CalamityLegendReturn/Sound/Other/Helldiver2/反坦克炮-开火与换弹"), position);
                     Play(SoundID.Item92, position);
                     Play(MechGaussRifle, position);
                     Play(TeslaCannonFire, position);

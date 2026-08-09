@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.PaRevo
 {
     internal sealed class BFPassiveRecoveryField : ModProjectile, ILocalizedModType
     {
@@ -112,10 +112,10 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo
 
             SpriteBatch spriteBatch = Main.spriteBatch;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_03").Value;
-            Texture2D flare = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/flare_01").Value;
-            Texture2D flower = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/flower_014").Value;
-            Texture2D energy = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/SuperTexturePack/fx_EnergyBolt7").Value;
+            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_03").Value;
+            Texture2D flare = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/flare_01").Value;
+            Texture2D flower = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/flower_014").Value;
+            Texture2D energy = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/SuperTexturePack/fx_EnergyBolt7").Value;
 
             float fadeIn = Utils.GetLerpValue(0f, 18f, Projectile.localAI[1], true);
             float fadeOut = Utils.GetLerpValue(0f, 40f, Projectile.timeLeft, true);

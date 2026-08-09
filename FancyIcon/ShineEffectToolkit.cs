@@ -2,7 +2,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace CalamityLegendsReturn.FancyIcon
+namespace CalamityLegendReturn.FancyIcon
 {
     /// <summary>
     /// Builds five diagonal highlight textures from the icon itself. Each texture keeps the

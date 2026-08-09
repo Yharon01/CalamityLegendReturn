@@ -2,7 +2,7 @@ using Terraria.Audio;
 using Microsoft.Xna.Framework;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal static class PFEvilT2Effect
     {

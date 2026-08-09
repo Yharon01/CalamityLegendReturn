@@ -6,7 +6,7 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared
 {
     /// <summary>
     /// 双鱼座的统一视觉语言——一切 bloom / additive 纹理都在这里切换并恢复 SpriteBatch（恢复 AlphaBlend 是硬性要求）。

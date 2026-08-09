@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using CalamityMod.Cooldowns;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
+namespace CalamityLegendReturn.Weapons.SHPC.EXSkill
 {
     public class SHPC_EXCooldown : CooldownHandler
     {
@@ -30,16 +30,16 @@ namespace CalamityLegendsReturn.Weapons.SHPC.EXSkill
         public override bool ShouldDisplay =>
             instance.player.HeldItem.type == ModContent.ItemType<NewLegendSHPC>() &&
             instance.player.GetModPlayer<NewLegend_EXPlayer>().EXUnlocked &&
-            instance.player.GetModPlayer<global::CalamityLegendsReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
+            instance.player.GetModPlayer<global::CalamityLegendReturn.Accssory.LegendaryEmblemPlayer>().EXAccessoryEquipped;
 
         // 名字（可后续本地化）
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.SHPC_EX");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.SHPC_EX");
 
         // 贴图（先用占位，不影响功能）
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/SHPC/EXSkill/EXCoolDownOverlay";
 
         public override Color OutlineColor => Color.DarkSlateGray;
 

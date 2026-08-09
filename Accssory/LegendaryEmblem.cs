@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory
+namespace CalamityLegendReturn.Accssory
 {
     internal class LegendaryEmblem : ModItem
     {
@@ -31,7 +31,7 @@ namespace CalamityLegendsReturn.Accssory
                 return true;
 
             if (player.whoAmI == Main.myPlayer)
-                Main.NewText(Language.GetTextValue("Mods.CalamityLegendsReturn.Items.LegendaryEmblem.AlreadyConsumed"));
+                Main.NewText(Language.GetTextValue("Mods.CalamityLegendReturn.Items.LegendaryEmblem.AlreadyConsumed"));
 
             return false;
         }
@@ -54,7 +54,7 @@ namespace CalamityLegendsReturn.Accssory
             Color statusColor = permanentUnlock ? new Color(255, 80, 80) : new Color(80, 220, 120);
 
             tooltips.Add(new TooltipLine(Mod, "LegendaryEmblemPermanentStatus",
-                Language.GetTextValue("Mods.CalamityLegendsReturn.Items.LegendaryEmblem." + statusKey))
+                Language.GetTextValue("Mods.CalamityLegendReturn.Items.LegendaryEmblem." + statusKey))
             {
                 OverrideColor = statusColor
             });

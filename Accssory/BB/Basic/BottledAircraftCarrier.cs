@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.BrinyBaron;
+using CalamityLegendReturn.Weapons.BrinyBaron;
 using CalamityMod.Items.Materials;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.General
+namespace CalamityLegendReturn.Accssory.BB.General
 {
     public class BottledAircraftCarrier : BBMeleeBonusAccessory
     {

@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.General;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.General;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,7 +11,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 右键和被动生成的地剑：平时插地/环绕，收到命令后可俯冲攻击。
     internal sealed class AzureThunderGroundSword : ModProjectile, ILocalizedModType
@@ -20,7 +20,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
         public const int MaxGroundSwords = 9;
 
         public new string LocalizationCategory => "Projectiles.AzureThunder";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/GroundAzureThunder";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/GroundAzureThunder";
 
         // initialized 控制首帧锻造演出；diveTarget 只在俯冲模式使用。
         private bool initialized;

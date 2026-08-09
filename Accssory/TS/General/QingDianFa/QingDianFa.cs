@@ -1,12 +1,12 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.TS
+namespace CalamityLegendReturn.Accssory.TS
 {
     internal sealed class QingDianFa : AzureThunderDashAccessory
     {
         protected override AzureThunderDashTier DashTier => AzureThunderDashTier.QingDianFa;
-        public override string Texture => "CalamityLegendsReturn/Accssory/TS/图片放这里/青电法";
+        public override string Texture => "CalamityLegendReturn/Accssory/TS/图片放这里/青电法";
 
         public override void AddRecipes()
         {

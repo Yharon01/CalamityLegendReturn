@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
+namespace CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
 {
     internal static class MatrixModuleNumbers
     {
@@ -57,15 +57,15 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore
         public const float SierpinskiDamage  = 1.50f;
 
         // 模组自定义音效路径（使用时不调音量 / 音调）
-        public const string SndGeoBurst     = "CalamityLegendsReturn/Sound/Other/Helldiver2/磁轨炮-开火";
-        public const string SndShaderOrbs   = "CalamityLegendsReturn/Sound/Other/Helldiver2/电弧发射器-发射";
-        public const string SndFusion       = "CalamityLegendsReturn/Sound/SHPC/蜃景普通攻击";
-        public const string SndSpaceWarp    = "CalamityLegendsReturn/Sound/Other/Helldiver2/激光大炮开火";
-        public const string SndInscription  = "CalamityLegendsReturn/Sound/Other/ShellShockLive/拉链闪电";
-        public const string SndCompileStorm = "CalamityLegendsReturn/Sound/Other/Helldiver2/类星体爆炸";
-        public const string SndSingularity  = "CalamityLegendsReturn/Sound/Other/Helldiver2/轨道炮攻击-仅开火";
-        public const string SndFusionBoom   = "CalamityLegendsReturn/Sound/Other/OtherSS/heavy-cineamtic-hit-166888";
-        public const string SndInscFire     = "CalamityLegendsReturn/Sound/Other/OtherSS/retro-explode-1-236678";
+        public const string SndGeoBurst     = "CalamityLegendReturn/Sound/Other/Helldiver2/磁轨炮-开火";
+        public const string SndShaderOrbs   = "CalamityLegendReturn/Sound/Other/Helldiver2/电弧发射器-发射";
+        public const string SndFusion       = "CalamityLegendReturn/Sound/SHPC/蜃景普通攻击";
+        public const string SndSpaceWarp    = "CalamityLegendReturn/Sound/Other/Helldiver2/激光大炮开火";
+        public const string SndInscription  = "CalamityLegendReturn/Sound/Other/ShellShockLive/拉链闪电";
+        public const string SndCompileStorm = "CalamityLegendReturn/Sound/Other/Helldiver2/类星体爆炸";
+        public const string SndSingularity  = "CalamityLegendReturn/Sound/Other/Helldiver2/轨道炮攻击-仅开火";
+        public const string SndFusionBoom   = "CalamityLegendReturn/Sound/Other/OtherSS/heavy-cineamtic-hit-166888";
+        public const string SndInscFire     = "CalamityLegendReturn/Sound/Other/OtherSS/retro-explode-1-236678";
     }
 
     public sealed class HyperdimensionalMatrixCoreProjectile : ModProjectile, ILocalizedModType

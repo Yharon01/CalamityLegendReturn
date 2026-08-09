@@ -9,9 +9,9 @@ using Terraria;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Weapons.Visuals;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.CallofDuty.Ultimate
+namespace CalamityLegendReturn.Weapons.A_Upgrade.CallofDuty.Ultimate
 {
     internal abstract class ResponsibilityArmyUnitBase : ModNPC
     {

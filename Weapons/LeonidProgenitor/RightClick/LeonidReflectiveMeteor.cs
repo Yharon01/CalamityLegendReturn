@@ -5,10 +5,10 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Effects;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor
 {
     public class LeonidReflectiveMeteor : ModProjectile, ILocalizedModType
     {
@@ -281,8 +281,8 @@ namespace CalamityLegendsReturn.Weapons.LeonidProgenitor
 
             // The halo and glow sheet are emission textures, so never alpha-blend their black base.
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D magic1 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_01").Value;
-            Texture2D magic2 = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_02").Value;
+            Texture2D magic1 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_01").Value;
+            Texture2D magic2 = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_02").Value;
 
             // 星空色：随时间在层云蓝/月光紫/月白/星金间流动
             Color starryColor = LeonidVisualUtils.GetMeteorColor(Projectile.whoAmI * 0.19f);

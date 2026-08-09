@@ -1,4 +1,4 @@
-﻿using CalamityMod;
+﻿﻿using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal sealed class PFHardMode_HeavyFireball : ModProjectile, ILocalizedModType
     {
@@ -269,7 +269,7 @@ namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
 
             Texture2D magic =
                 ModContent.Request<Texture2D>(
-                    "CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
+                    "CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
 
             Vector2 center =
                 Projectile.Center -

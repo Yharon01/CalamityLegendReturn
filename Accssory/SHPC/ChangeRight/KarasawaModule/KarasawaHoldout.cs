@@ -1,8 +1,8 @@
-using CalamityLegendsReturn.Accssory.SHPC.General;
-using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Weapons.SHPC;
-using CalamityLegendsReturn.Weapons.SHPC.RightClick;
-using CalamityLegendsReturn.Weapons.Visuals;
+using CalamityLegendReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC.RightClick;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -17,7 +17,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.KarasawaModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.KarasawaModule
 {
     internal sealed class KarasawaHoldout : RightClickHoldoutBase, ILocalizedModType
     {
@@ -390,7 +390,7 @@ namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.KarasawaModule
             Particle coreLine = new CustomSpark(
                 muzzle,
                 direction * 18f,
-                "CalamityLegendsReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade",
+                "CalamityLegendReturn/Weapons/BrinyBaron/SkillA_ShortDash/GlowBlade",
                 false,
                 16,
                 0.08f,

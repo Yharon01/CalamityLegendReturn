@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
-using CalamityLegendsReturn.Shader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Shader;
+using CalamityLegendReturn.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -15,7 +15,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.ShaderLab
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.ShaderLab
 {
     public sealed class ShaderTestItem : ModItem, ILocalizedModType
     {

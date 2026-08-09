@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.Skill
+namespace CalamityLegendReturn.Accssory.PF.Skill
 {
     // 无秽九尾：
     // 手持纯元时，原本的三条火狐尾巴变为九条无秽狐尾。
@@ -12,7 +12,7 @@ namespace CalamityLegendsReturn.Accssory.PF.Skill
     internal sealed class PFNineTails : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/Skill/PFNineTails";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/Skill/PFNineTails";
 
         public override void SetDefaults()
         {

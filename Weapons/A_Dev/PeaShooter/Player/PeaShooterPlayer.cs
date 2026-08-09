@@ -1,7 +1,7 @@
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
+namespace CalamityLegendReturn.Weapons.A_Dev.PeaShooter
 {
     internal sealed class PeaShooterPlayer : ModPlayer
     {

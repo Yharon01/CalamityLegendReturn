@@ -1,8 +1,8 @@
 using System;
 using CalamityMod;
 using CalamityMod.Particles;
-using CalamityLegendsReturn.Systems;
-using CalamityLegendsReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
+using CalamityLegendReturn.Systems;
+using CalamityLegendReturn.Weapons.A_Dev.HyperdimensionalMatrixCore;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -11,7 +11,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.HDMC
+namespace CalamityLegendReturn.BossAI.HDMC
 {
     /// <summary>
     /// HDMC Boss 共享工具：配色、伤害换算、粒子速写。

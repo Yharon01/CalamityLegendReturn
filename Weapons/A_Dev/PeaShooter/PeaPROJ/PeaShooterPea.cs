@@ -12,7 +12,7 @@ using Terraria.GameContent.Drawing;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
+namespace CalamityLegendReturn.Weapons.A_Dev.PeaShooter
 {
     internal enum PeaShooterPeaType
     {
@@ -28,7 +28,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
     internal sealed class PeaShooterPea : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.A_Dev";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/豌豆";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/豌豆";
 
         private PeaShooterPeaType PeaType => (PeaShooterPeaType)(int)Projectile.ai[0];
         private int StageIndex => (int)Projectile.ai[1];
@@ -603,13 +603,13 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.PeaShooter
 
         private static string GetTexturePath(PeaShooterPeaType peaType) => peaType switch
         {
-            PeaShooterPeaType.Electric => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/电光豌豆",
-            PeaShooterPeaType.Fire => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/火焰豌豆",
-            PeaShooterPeaType.Ice => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/寒冰豌豆",
-            PeaShooterPeaType.Starlight => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/星光豌豆",
-            PeaShooterPeaType.Poison => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/毒性豌豆",
-            PeaShooterPeaType.Rock => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/岩石豌豆",
-            _ => "CalamityLegendsReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/豌豆"
+            PeaShooterPeaType.Electric => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/电光豌豆",
+            PeaShooterPeaType.Fire => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/火焰豌豆",
+            PeaShooterPeaType.Ice => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/寒冰豌豆",
+            PeaShooterPeaType.Starlight => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/星光豌豆",
+            PeaShooterPeaType.Poison => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/毒性豌豆",
+            PeaShooterPeaType.Rock => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/岩石豌豆",
+            _ => "CalamityLegendReturn/Weapons/A_Dev/PeaShooter/PeaPROJ/豌豆"
         };
 
         private static void ApplyRandomPoisonDebuffs(NPC target)

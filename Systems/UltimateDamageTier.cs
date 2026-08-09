@@ -1,7 +1,7 @@
 using CalamityMod;
 using Terraria;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     /// <summary>
     /// 传奇武器大招伤害的统一档位判定。所有大招伤害都遵循同一套公式：

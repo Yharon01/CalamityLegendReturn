@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Passive
+namespace CalamityLegendReturn.Weapons.SHPC.Passive
 {
     public class SHPCPassiveOrb : ModProjectile, ILocalizedModType
     {
@@ -186,7 +186,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Passive
                 //Particle orbitSpark = new CustomSpark(
                 //    Projectile.Center + orbitDirectionNow * Main.rand.NextFloat(4f, 10f),
                 //    Projectile.velocity * 0.015f + orbitDirectionNow.RotatedBy(MathHelper.PiOver2 * orbitDirection) * Main.rand.NextFloat(0.8f, 1.4f),
-                //    "CalamityLegendsReturn/Texture/KsTexture/window_04",
+                //    "CalamityLegendReturn/Texture/KsTexture/window_04",
                 //    false,
                 //    9,
                 //    0.08f * Projectile.scale,
@@ -236,7 +236,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Passive
                 Main.EntitySpriteDraw(orb.Value, Projectile.Center - Main.screenPosition, null, orbColor, Projectile.rotation, orb.Size() * 0.5f, scale, SpriteEffects.None);
             }
 
-            //Asset<Texture2D> line = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/window_04");
+            //Asset<Texture2D> line = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/window_04");
             //Color coreColor = Color.Lerp(TechBlueBright, Color.White, 0.25f) * 0.7f * timeleftFade;
             //Vector2 coreScale = new Vector2(0.2f, 0.42f + pulse * 0.08f) * Projectile.scale;
             //Main.EntitySpriteDraw(line.Value, Projectile.Center - Main.screenPosition, null, coreColor, Projectile.rotation, line.Size() * 0.5f, coreScale, SpriteEffects.None);

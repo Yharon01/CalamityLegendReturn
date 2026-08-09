@@ -1,20 +1,20 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     internal static class BlossomFluxTacticalTextures
     {
-        public const string RecoveryWeaponTexture = "CalamityLegendsReturn/Weapons/BlossomFlux/NewLegendBlossomFlux";
+        public const string RecoveryWeaponTexture = "CalamityLegendReturn/Weapons/BlossomFlux/NewLegendBlossomFlux";
 
         public static string GetWeaponTexturePath(BlossomFluxChloroplastPresetType preset) => preset switch
         {
-            BlossomFluxChloroplastPresetType.Chlo_ABreak => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/突破叶流",
-            BlossomFluxChloroplastPresetType.Chlo_CDetec => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/侦察叶流",
-            BlossomFluxChloroplastPresetType.Chlo_DBomb => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/轰炸叶流",
-            BlossomFluxChloroplastPresetType.Chlo_EPlague => "CalamityLegendsReturn/Weapons/BlossomFlux/贴图/瘟疫叶流",
+            BlossomFluxChloroplastPresetType.Chlo_ABreak => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/突破叶流",
+            BlossomFluxChloroplastPresetType.Chlo_CDetec => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/侦察叶流",
+            BlossomFluxChloroplastPresetType.Chlo_DBomb => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/轰炸叶流",
+            BlossomFluxChloroplastPresetType.Chlo_EPlague => "CalamityLegendReturn/Weapons/BlossomFlux/贴图/瘟疫叶流",
             _ => RecoveryWeaponTexture
         };
 

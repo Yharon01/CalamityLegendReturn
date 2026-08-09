@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General
 {
     /// <summary>冥蚀天底统一配色：纯黑吸光 + 冥思荧光绿。所有部件共用，保证家族质感一致。</summary>
     internal static class UmbralNadirPalette

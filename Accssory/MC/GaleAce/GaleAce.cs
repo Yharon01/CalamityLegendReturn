@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.Malachite;
-using CalamityLegendsReturn.Weapons.Malachite.passive;
+using CalamityLegendReturn.Weapons.Malachite;
+using CalamityLegendReturn.Weapons.Malachite.passive;
 using CalamityMod;
 using CalamityMod.CalPlayer;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.MC.GaleAce
+namespace CalamityLegendReturn.Accssory.MC.GaleAce
 {
     public sealed class GaleAce : ModItem
     {

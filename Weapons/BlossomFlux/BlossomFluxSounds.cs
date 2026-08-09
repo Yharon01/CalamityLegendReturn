@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     // 集中存放叶流所有音效，方便在此处统一调整音量、音高和其它属性。
     internal static class BlossomFluxSounds

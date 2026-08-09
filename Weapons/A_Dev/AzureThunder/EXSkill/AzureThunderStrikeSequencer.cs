@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 右键雷击序列器：不造成直接伤害，只按节奏在目标周围生成落雷和终极 AOE。
     internal sealed class AzureThunderStrikeSequencer : ModProjectile, ILocalizedModType
@@ -301,7 +301,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
             if (!HarmonyMode || focusPoint == Vector2.Zero)
                 return false;
 
-            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/circle_04").Value;
+            Texture2D circle = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/circle_04").Value;
             Vector2 drawPosition = focusPoint - Main.screenPosition;
             float opacity = Utils.GetLerpValue(0f, 22f, timer, true) * Utils.GetLerpValue(StrikeCount * 5 + 48f, StrikeCount * 5 + 18f, timer, true);
             float scale = 1.6f + (float)Math.Sin(Main.GlobalTimeWrappedHourly * 5f) * 0.08f;

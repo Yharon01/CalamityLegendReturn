@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // TODO: Replace texture with a custom player radiation buff icon (currently borrowing Irradiated sprite)
     public sealed class SeasSearingPlayerRadiationBuff : ModBuff
@@ -18,7 +18,7 @@ namespace CalamityLegendsReturn.Weapons.SeasSearing
         public override void ModifyBuffText(ref string buffName, ref string tip, ref int rare)
         {
             int level = Math.Clamp(Main.LocalPlayer.GetModPlayer<SeasSearingPlayer>().EffectiveRadiationLevel, 1, 4);
-            string key = "Mods.CalamityLegendsReturn.Buffs.SeasSearingPlayerRadiationBuff";
+            string key = "Mods.CalamityLegendReturn.Buffs.SeasSearingPlayerRadiationBuff";
             buffName = Language.GetTextValue($"{key}.DisplayName_Level{level}");
             tip = Language.GetTextValue($"{key}.Description_Level{level}");
         }

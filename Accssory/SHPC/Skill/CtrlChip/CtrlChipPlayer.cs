@@ -1,9 +1,9 @@
 using Microsoft.Xna.Framework;
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip
 {
     public class CtrlChipPlayer : ModPlayer
     {

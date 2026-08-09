@@ -13,7 +13,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.BossProgress
 {
     internal sealed class BossSummonerPanel : ModProjectile
     {
@@ -384,7 +384,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.BossProgress
         }
 
         private static BossSpawnEntry E(string name, string icon, Action<Player> spawn) =>
-            new(name, "CalamityLegendsReturn/Weapons/A_Tools/DebugTools/BossProgress/Assets/Icons/" + icon, spawn);
+            new(name, "CalamityLegendReturn/Weapons/A_Tools/DebugTools/BossProgress/Assets/Icons/" + icon, spawn);
 
         private static void SpawnVanilla(Player player, int npcType)
         {

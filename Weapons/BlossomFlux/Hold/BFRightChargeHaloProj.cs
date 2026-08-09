@@ -8,7 +8,7 @@ using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux
+namespace CalamityLegendReturn.Weapons.BlossomFlux
 {
     // 五种战术各自的环绕轨迹风格。载体统一是着色拖尾，运动按风格分派，
     // 具体的数量/半径/寿命/速度档/加减速全部由生成器(NewLegendBlossomFluxHoldOut.RightChargeLattice.cs)

@@ -6,7 +6,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClickTurret
+namespace CalamityLegendReturn.Weapons.SHPC.RightClickTurret
 {
     internal sealed class MilitaryTurretDropPod : ModProjectile, ILocalizedModType
     {
@@ -16,7 +16,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClickTurret
         private bool deployed;
 
         public new string LocalizationCategory => "Projectiles.SHPC";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/RightClickTurret/空投仓";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/RightClickTurret/空投仓";
 
         private MilitaryTurretKind Kind => (MilitaryTurretKind)Utils.Clamp((int)Projectile.ai[0], 0, 6);
         private int SourceDamage => (int)Projectile.ai[1];

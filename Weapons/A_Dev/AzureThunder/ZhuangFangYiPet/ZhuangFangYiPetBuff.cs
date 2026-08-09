@@ -1,12 +1,12 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet
 {
     internal sealed class ZhuangFangYiPetBuff : ModBuff
     {
         public new string LocalizationCategory => "Buffs";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/ZhuangFangYiPet/庄方宜宠物BUFF图标";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/ZhuangFangYiPet/庄方宜宠物BUFF图标";
 
         public override void SetStaticDefaults()
         {

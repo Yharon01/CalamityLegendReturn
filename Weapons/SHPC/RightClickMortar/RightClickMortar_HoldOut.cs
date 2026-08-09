@@ -1,7 +1,7 @@
-﻿using CalamityLegendsReturn.Accssory.SHPC.Skill.CtrlChip;
-using CalamityLegendsReturn.Accssory.SHPC.General;
-using CalamityLegendsReturn.Weapons.SHPC.RightClick;
-using CalamityLegendsReturn.Weapons.Visuals;
+﻿﻿using CalamityLegendReturn.Accssory.SHPC.Skill.CtrlChip;
+using CalamityLegendReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Weapons.SHPC.RightClick;
+using CalamityLegendReturn.Weapons.Visuals;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -14,7 +14,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.RightClickMortar
+namespace CalamityLegendReturn.Weapons.SHPC.RightClickMortar
 {
     internal sealed class RightClickMortar_HoldOut : RightClickHoldoutBase, ILocalizedModType
     {
@@ -224,7 +224,7 @@ namespace CalamityLegendsReturn.Weapons.SHPC.RightClickMortar
                 Particle line = new CustomSpark(
                     muzzle + right * Main.rand.NextFloat(-5f, 5f),
                     lane * Main.rand.NextFloat(11f, 18f),
-                    "CalamityLegendsReturn/Texture/Shared/GlowBlade",
+                    "CalamityLegendReturn/Texture/Shared/GlowBlade",
                     false,
                     11,
                     Main.rand.NextFloat(0.042f, 0.065f),

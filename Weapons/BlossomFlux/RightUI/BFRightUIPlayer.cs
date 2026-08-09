@@ -1,11 +1,11 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightUI
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightUI
 {
     internal class BFRightUIPlayer : ModPlayer
     {

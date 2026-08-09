@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.YharimsCrystal;
+using CalamityLegendReturn.Weapons.YharimsCrystal;
 using Microsoft.Xna.Framework;
 using System;
 using System.Linq;
@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn.LegendaryTooltipEffects
+namespace CalamityLegendReturn.LegendaryTooltipEffects
 {
     public sealed class YharimsCrystalGoldenTechLegendaryTooltip : GlobalItem
     {

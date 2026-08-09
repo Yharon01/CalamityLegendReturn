@@ -14,7 +14,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
+namespace CalamityLegendReturn.Weapons.BlossomFlux.EXSkill
 {
     internal sealed class BFEXVernalShot : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {
@@ -26,7 +26,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.EXSkill
 
         public GeneralDrawLayer LayerToRenderTo => GeneralDrawLayer.BeforeProjectiles;
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/EXSkill/BFEXVernalShot";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/EXSkill/BFEXVernalShot";
 
         private ref float StoredSpeed => ref Projectile.localAI[0];
         private ref float SpiralSeed => ref Projectile.ai[0];

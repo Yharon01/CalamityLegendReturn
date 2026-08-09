@@ -1,6 +1,6 @@
 using System;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     internal class BFArrow_BRecov : ModProjectile
     {
@@ -18,7 +18,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         private bool releasedRecoveryOrb;
 
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/BRecov/BFArrow_BRecov";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/BRecov/BFArrow_BRecov";
 
         private ref float FlightTimer => ref Projectile.localAI[0];
 

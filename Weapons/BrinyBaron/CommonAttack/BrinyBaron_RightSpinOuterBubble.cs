@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 {
     // Kept alive by the spinning holdout. This extends the damaging contact zone outward
     // after Duke Fishron without enlarging the blade-disc VFX itself.

@@ -1,5 +1,5 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Combo
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Combo
 {
     /// <summary>
     /// 回旋奇点新星——回旋斩迹把敌人卷成一团并将奇点蓄满后，以玩家为中心释放的黑洞坍缩。

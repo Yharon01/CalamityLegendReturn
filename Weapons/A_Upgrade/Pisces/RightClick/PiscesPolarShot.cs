@@ -1,6 +1,6 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Anchor;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.Shared;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Anchor;
+using CalamityLegendReturn.Weapons.A_Upgrade.Pisces.Shared;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using Microsoft.Xna.Framework;
@@ -9,7 +9,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.RightClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Pisces.RightClick
 {
     /// <summary>
     /// 右键 I/II/III 级光弹——参照旧「北辰」的“等级提升会改变弹体性质”：
@@ -244,7 +244,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Pisces.RightClick
             else
             {
                 PiscesVisuals.DrawBloom(Main.spriteBatch, center, 0.10f * Projectile.scale, PiscesVisuals.AuroraCyan, 0.48f);
-                Texture2D ultimaBolt = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/Calamity/RangePROJ/UltimaBolt").Value;
+                Texture2D ultimaBolt = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/Calamity/RangePROJ/UltimaBolt").Value;
                 Main.EntitySpriteDraw(ultimaBolt, center - Main.screenPosition, null,
                     PiscesVisuals.AuroraCyan with { A = 0 } * 0.55f, Projectile.rotation + MathHelper.PiOver2,
                     ultimaBolt.Size() * 0.5f, Projectile.scale * 0.92f, SpriteEffects.None, 0f);

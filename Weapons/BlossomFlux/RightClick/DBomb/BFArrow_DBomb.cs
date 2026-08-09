@@ -1,9 +1,9 @@
 using System;
 using System.IO;
 using System.Linq;
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -18,7 +18,7 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // D tactical right-click arrow: mortar trajectory with a bombard anchor on impact.
     internal class BFArrow_DBomb : ModProjectile, IPixelatedPrimitiveRenderer
@@ -55,7 +55,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         private bool detonated;
 
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/DBomb/BFArrow_DBomb";
         public GeneralDrawLayer LayerToRenderTo => GeneralDrawLayer.BeforeProjectiles;
 
         private ref float State => ref Projectile.ai[0];

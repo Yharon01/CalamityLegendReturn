@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common
 {
     internal enum LegendsPatternKind
     {

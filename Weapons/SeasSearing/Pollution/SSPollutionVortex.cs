@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Spawned on grade-4+ detonation; pulls enemies, inflicts heavy pollution.
     internal sealed class SSPollutionVortex : ModProjectile, ILocalizedModType

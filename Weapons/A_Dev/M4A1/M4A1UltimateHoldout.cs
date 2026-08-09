@@ -12,7 +12,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 大招·复仇印记重炮展开：完全同步后按大招键触发。武器箱完全展开、玩家悬停，
@@ -20,7 +20,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
     /// </summary>
     public class M4A1UltimateHoldout : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/M4A1/InheritedCase";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/M4A1/InheritedCase";
 
         private const int ArmDelay = 8;
         private const int Timeout = 300;

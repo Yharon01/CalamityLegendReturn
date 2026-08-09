@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.LeonidProgenitor.Core;
+using CalamityLegendReturn.Weapons.LeonidProgenitor.Core;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Effects
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Effects
 {
     // 狮子座星光特效的统一入口。
     //

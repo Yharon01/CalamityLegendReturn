@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.LeonidProgenitor.Core
+namespace CalamityLegendReturn.Weapons.LeonidProgenitor.Core
 {
     public class LeonidProgenitorPlayer : ModPlayer
     {

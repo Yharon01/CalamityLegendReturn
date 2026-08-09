@@ -1,9 +1,9 @@
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.YharimsCrystal;
+using CalamityLegendReturn.Weapons.YharimsCrystal;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.Passive
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.Passive
 {
     internal enum YCWeaponForm
     {

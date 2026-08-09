@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.BlackHawkRemote
+namespace CalamityLegendReturn.Weapons.A_Upgrade.BlackHawkRemote
 {
     internal sealed class BlackHawkPayload : ModProjectile, ILocalizedModType
     {

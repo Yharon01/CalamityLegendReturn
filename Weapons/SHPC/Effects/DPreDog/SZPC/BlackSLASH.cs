@@ -5,12 +5,12 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC
 {
     public class TwistingNether_BlackSLASH : ModProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.SHPC";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/DPreDog/SZPC/BlackSLASH";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/DPreDog/SZPC/BlackSLASH";
 
         public override void SetDefaults()
         {

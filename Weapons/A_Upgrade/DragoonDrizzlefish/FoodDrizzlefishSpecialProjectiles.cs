@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.DragoonDrizzlefish
+namespace CalamityLegendReturn.Weapons.A_Upgrade.DragoonDrizzlefish
 {
     public sealed class FoodDrizzlefishFruitNeedle : ModProjectile, ILocalizedModType
     {
@@ -413,7 +413,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.DragoonDrizzlefish
             if ((int)Timer % 10 == 0)
             {
                 DrizzlefishVFX.SpawnGoldenFlightParticles(Projectile);
-                global::CalamityLegendsReturn.CLCRLightingBoltsSystem.Spawn_DrizzlefishGoldenStarfield(Projectile.Center, Projectile.velocity, 0.55f);
+                global::CalamityLegendReturn.CLCRLightingBoltsSystem.Spawn_DrizzlefishGoldenStarfield(Projectile.Center, Projectile.velocity, 0.55f);
             }
         }
 
@@ -427,7 +427,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.DragoonDrizzlefish
         {
             SoundEngine.PlaySound(SoundID.Item14 with { Pitch = 0.45f, Volume = 0.7f }, Projectile.Center);
             DrizzlefishVFX.SpawnGoldenImpactParticles(Projectile.Center, Projectile.velocity);
-            global::CalamityLegendsReturn.CLCRLightingBoltsSystem.Spawn_DrizzlefishGoldenStarfield(Projectile.Center, Projectile.velocity, 1.25f);
+            global::CalamityLegendReturn.CLCRLightingBoltsSystem.Spawn_DrizzlefishGoldenStarfield(Projectile.Center, Projectile.velocity, 1.25f);
 
             if (Projectile.owner == Main.myPlayer)
             {

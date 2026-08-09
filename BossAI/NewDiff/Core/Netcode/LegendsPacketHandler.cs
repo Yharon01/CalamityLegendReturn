@@ -1,11 +1,11 @@
 using System.IO;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Systems;
-using CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Systems;
+using CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Netcode
+namespace CalamityLegendReturn.BossAI.NewDiff.Core.Netcode
 {
     internal static class LegendsPacketHandler
     {
@@ -14,7 +14,7 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Core.Netcode
             if (Main.netMode == NetmodeID.SinglePlayer)
                 return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.NewDiffSyncMode);
             packet.Write(LegendsWorldSystem.LegendsModeEnabled);
             packet.Send(toClient, ignoreClient);

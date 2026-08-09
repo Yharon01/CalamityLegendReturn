@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC;
+using CalamityLegendReturn.Weapons.SHPC;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod;
 using CalamityMod.Dusts;
@@ -16,11 +16,11 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera
 {
     internal sealed class StarblightSootShard : ModProjectile, ILocalizedModType
     {
-        private const string GlowBladeTexture = "CalamityLegendsReturn/Texture/Shared/GlowBlade";
+        private const string GlowBladeTexture = "CalamityLegendReturn/Texture/Shared/GlowBlade";
 
         public new string LocalizationCategory => "Projectiles.SHPC";
         public override string Texture => "CalamityMod/Projectiles/Ranged/StarmageddonStar2";

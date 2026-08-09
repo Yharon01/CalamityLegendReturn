@@ -4,11 +4,11 @@ using Terraria.ModLoader;
 using System.Collections.Generic;
 using CalamityMod.Items.Materials;
 
-namespace CalamityLegendsReturn.QOL
+namespace CalamityLegendReturn.QOL
 {
     public class OtherRecipes : ModSystem
     {
-        private const string AnyHammerRecipeGroup = "CalamityLegendsReturn:AnyHammer";
+        private const string AnyHammerRecipeGroup = "CalamityLegendReturn:AnyHammer";
 
         public override void AddRecipeGroups()
         {
@@ -34,7 +34,7 @@ namespace CalamityLegendsReturn.QOL
 
         public override void AddRecipes()
         {
-            if (CalamityLegendsReturnConfig.Instance?.AllowOtherRecipes != true)
+            if (CalamityLegendReturnConfig.Instance?.AllowOtherRecipes != true)
                 return;
 
             // 大自然恩赐 (Nature's Gift)

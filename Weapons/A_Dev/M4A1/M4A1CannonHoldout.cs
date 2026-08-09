@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
+namespace CalamityLegendReturn.Weapons.A_Dev.M4A1
 {
     /// <summary>
     /// 右键：从背后武器箱展开的便携式重炮。生成时消耗约 35 点战术同步率，
@@ -18,7 +18,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
     /// </summary>
     public class M4A1CannonHoldout : ModProjectile
     {
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/M4A1/InheritedCase";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/M4A1/InheritedCase";
 
         private const int DeployFrames = 11;
         private const int FireFrame = 12;

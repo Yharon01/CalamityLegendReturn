@@ -16,7 +16,7 @@ using Terraria.Enums;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
 {
     public class AMRBeamRound : BaseLaserbeamProjectile, ILocalizedModType
     {

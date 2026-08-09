@@ -9,9 +9,9 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     public class Minesweeper : ModItem, ILocalizedModType
     {
@@ -450,10 +450,10 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
             DrawTextWithShadow("MINESWEEPER", new Vector2(panelArea.X + PanelPadding, panelArea.Y + 11), new Color(238, 240, 244) * opacity, 0.82f, opacity);
             string state = won
-                ? Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.MinesweeperWin")
+                ? Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.MinesweeperWin")
                 : gameOver
-                    ? Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.MinesweeperGameOver")
-                    : Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.MinesweeperMines", Math.Max(0, MineCount - flaggedCells));
+                    ? Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.MinesweeperGameOver")
+                    : Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.MinesweeperMines", Math.Max(0, MineCount - flaggedCells));
 
             Vector2 stateSize = FontAssets.MouseText.Value.MeasureString(state) * 0.62f;
             DrawTextWithShadow(state, new Vector2(panelArea.Right - PanelPadding - stateSize.X, panelArea.Y + 17), new Color(206, 214, 226) * opacity, 0.62f, opacity);
@@ -563,7 +563,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             {
                 DrawRectangle(footerArea, new Color(16, 32, 24, 210) * opacity);
                 DrawBorder(footerArea, new Color(90, 224, 126) * opacity, 1);
-                DrawCenteredText(Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.MinesweeperWin"), footerArea, new Color(178, 255, 196), 0.62f, opacity);
+                DrawCenteredText(Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.MinesweeperWin"), footerArea, new Color(178, 255, 196), 0.62f, opacity);
             }
             else
             {
@@ -590,8 +590,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawRectangle(overlay, new Color(6, 7, 10, 226) * opacity);
             DrawBorder(overlay, new Color(218, 72, 82) * opacity, 2);
 
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.MinesweeperGameOver");
-            string restart = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.MinesweeperRestart");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.MinesweeperGameOver");
+            string restart = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.MinesweeperRestart");
             DrawCenteredText(title, new Rectangle(overlay.X, overlay.Y + 22, overlay.Width, 28), new Color(255, 210, 210), 0.78f, opacity);
             DrawCenteredText(restart, new Rectangle(overlay.X, overlay.Y + 60, overlay.Width, 26), new Color(210, 218, 232), 0.52f, opacity);
         }

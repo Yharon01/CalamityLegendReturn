@@ -1,7 +1,7 @@
-﻿using Terraria;
+﻿﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
+namespace CalamityLegendReturn.Accssory.SHPC.ChangeRight.ProjectilePossessionModule
 {
     public sealed class ProjectilePossessionModulePlayer : ModPlayer
     {

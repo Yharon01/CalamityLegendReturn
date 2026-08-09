@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Accssory.TS;
-using CalamityLegendsReturn.Weapons;
-using CalamityLegendsReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
+using CalamityLegendReturn.Accssory.TS;
+using CalamityLegendReturn.Weapons;
+using CalamityLegendReturn.Weapons.A_Dev.AzureThunder.ZhuangFangYiPet;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Buffs.StatDebuffs;
@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 青霆剑的玩家态中心：记录充能、终极能量、右键冷却、终极滤镜和被动计时。
     internal sealed class AzureThunderPlayer : ModPlayer
@@ -66,17 +66,17 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
 
             harmonyHeadSlot = EquipLoader.AddEquipTexture(
                 Mod,
-                "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和头部",
+                "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和头部",
                 EquipType.Head,
                 name: "AzureThunderHarmonyHead");
             harmonyBodySlot = EquipLoader.AddEquipTexture(
                 Mod,
-                "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和身体",
+                "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和身体",
                 EquipType.Body,
                 name: "AzureThunderHarmonyBody");
             harmonyLegsSlot = EquipLoader.AddEquipTexture(
                 Mod,
-                "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和腿部",
+                "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和腿部",
                 EquipType.Legs,
                 name: "AzureThunderHarmonyLegs");
 

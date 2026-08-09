@@ -28,8 +28,8 @@
 
 using System;
 using System.IO;
-using CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
-using CalamityLegendsReturn.BossAI.NewDiff.Core.Systems;
+using CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.Common;
+using CalamityLegendReturn.BossAI.NewDiff.Core.Systems;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -41,7 +41,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using CalamityYharon = CalamityMod.NPCs.Yharon.Yharon;
 
-namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage5.Yharon
+namespace CalamityLegendReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs.BStage5.Yharon
 {
     internal sealed class YharonLegendsAI : LegendsBossAI
     {
@@ -54,12 +54,12 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs
         public override int AttackCycleLength => 160;
         public override float MotionIntensity => 1.45f;
         public override Color DebugColor => new(255, 135, 55);
-        public override string PhaseName(int phase) => Language.GetTextValue($"Mods.CalamityLegendsReturn.LegendsPhases.Yharon.{phase}");
+        public override string PhaseName(int phase) => Language.GetTextValue($"Mods.CalamityLegendReturn.LegendsPhases.Yharon.{phase}");
 
         public override string StateName(LegendsGlobalNPC data)
         {
             string state = ((AttackState)(int)data.AttackState).ToString();
-            return Language.GetTextValue($"Mods.CalamityLegendsReturn.LegendsAttacks.Yharon.{state}");
+            return Language.GetTextValue($"Mods.CalamityLegendReturn.LegendsAttacks.Yharon.{state}");
         }
 
         // Sound configuration registers
@@ -854,7 +854,7 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs
             {
                 phase = 2;
                 npc.ai[0] = phase;
-                BroadcastLocalizedMessage("Mods.CalamityLegendsReturn.Status.Yharon.Phase2", DebugColor);
+                BroadcastLocalizedMessage("Mods.CalamityLegendReturn.Status.Yharon.Phase2", DebugColor);
                 TransitionToState(npc, AttackState.BlazingPhoenixBlossom);
                 return;
             }
@@ -863,7 +863,7 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs
             {
                 phase = 3;
                 npc.ai[0] = phase;
-                BroadcastLocalizedMessage("Mods.CalamityLegendsReturn.Status.Yharon.Phase3", DebugColor);
+                BroadcastLocalizedMessage("Mods.CalamityLegendReturn.Status.Yharon.Phase3", DebugColor);
                 TransitionToState(npc, AttackState.SolarGridDash);
                 return;
             }
@@ -874,7 +874,7 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs
                 npc.ai[0] = phase;
                 solarArenaAnchored = false;
                 solarArenaCenter = Vector2.Zero;
-                BroadcastLocalizedMessage("Mods.CalamityLegendsReturn.Status.Yharon.Phase4", DebugColor);
+                BroadcastLocalizedMessage("Mods.CalamityLegendReturn.Status.Yharon.Phase4", DebugColor);
                 TransitionToState(npc, AttackState.RebirthCeremony);
                 return;
             }
@@ -1236,8 +1236,8 @@ namespace CalamityLegendsReturn.BossAI.NewDiff.Content.BehaviorOverrides.BossAIs
         {
             if (Main.netMode == NetmodeID.SinglePlayer) return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
-            packet.Write((byte)global::CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames.GamePacketType.NewDiffYharonState);
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
+            packet.Write((byte)global::CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames.GamePacketType.NewDiffYharonState);
             packet.Write(npc.whoAmI);
             
             BossAttackStateData data;

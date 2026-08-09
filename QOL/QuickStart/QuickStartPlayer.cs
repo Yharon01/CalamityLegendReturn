@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.QOL.QuickStart
+namespace CalamityLegendReturn.QOL.QuickStart
 {
     public class QuickStartPlayer : ModPlayer
     {
@@ -11,7 +11,7 @@ namespace CalamityLegendsReturn.QOL.QuickStart
             if (mediumCoreDeath)
                 yield break;
 
-            if (CalamityLegendsReturnConfig.Instance?.GiveQuickStartBoxOnSpawn == true)
+            if (CalamityLegendReturnConfig.Instance?.GiveQuickStartBoxOnSpawn == true)
                 yield return CreateItem(ModContent.ItemType<QuickStartBox>());
         }
 

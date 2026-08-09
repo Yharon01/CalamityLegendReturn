@@ -14,12 +14,12 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.Audio;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal sealed class PFDog_Flame : ModProjectile, ILocalizedModType, IPixelatedPrimitiveRenderer
     {
         public new string LocalizationCategory => "Projectiles.PristineFury";
-        public override string Texture => "CalamityLegendsReturn/Weapons/SHPC/Effects/EAfterDog/Ascendant/AscendantSpirit_PROJ";
+        public override string Texture => "CalamityLegendReturn/Weapons/SHPC/Effects/EAfterDog/Ascendant/AscendantSpirit_PROJ";
 
         private const float CollisionRadius = 12f;
         private const int Lifetime = 76;

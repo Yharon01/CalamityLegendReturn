@@ -8,7 +8,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
+namespace CalamityLegendReturn.Weapons.A_Upgrade.AntiMaterielRifle.Proj
 {
     internal sealed class AMRBullseye : ModProjectile, ILocalizedModType
     {

@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.UI.Chat;
 
-namespace CalamityLegendsReturn.MainMenu
+namespace CalamityLegendReturn.MainMenu
 {
     public sealed class MatrixMainMenu : ModMenu
     {

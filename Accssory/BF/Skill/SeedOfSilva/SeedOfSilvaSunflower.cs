@@ -1,7 +1,7 @@
-using CalamityLegendsReturn.Accssory.BF.Common;
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.LeftClick;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightClick;
+using CalamityLegendReturn.Accssory.BF.Common;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.LeftClick;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightClick;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
+namespace CalamityLegendReturn.Accssory.BF.SeedOfSilva
 {
     internal sealed class SeedOfSilvaSunflower : SeedOfSilvaFlowerProjectile
     {
@@ -19,7 +19,7 @@ namespace CalamityLegendsReturn.Accssory.BF.SeedOfSilva
         private int flashTimer;
 
         protected override BlossomFluxChloroplastPresetType FlowerPreset => BlossomFluxChloroplastPresetType.Chlo_ABreak;
-        protected override string FlowerTexturePath => "CalamityLegendsReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Sunflower";
+        protected override string FlowerTexturePath => "CalamityLegendReturn/Accssory/BF/Skill/SeedOfSilva/SeedPack/Sunflower";
 
         public void TriggerFlash()
         {

@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.Barrier
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.Barrier
 {
     public class MatrixChargingBarrier : ModItem
     {

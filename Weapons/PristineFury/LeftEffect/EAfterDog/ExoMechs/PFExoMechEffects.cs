@@ -1,4 +1,4 @@
-﻿// using CalamityMod;
+﻿﻿// using CalamityMod;
 // using CalamityMod.Dusts;
 // using CalamityMod.Particles;
 // using Microsoft.Xna.Framework;
@@ -11,7 +11,7 @@
 // using Terraria.ID;
 // using Terraria.ModLoader;
 // 
-// namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+// namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 // {
 // #if false
 //     // Temporarily disabled: Pristine Fury currently retains only Thanatos among the Exo Mechs.

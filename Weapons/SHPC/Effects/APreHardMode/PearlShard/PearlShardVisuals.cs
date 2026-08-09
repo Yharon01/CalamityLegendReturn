@@ -4,12 +4,12 @@ using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
 {
     internal static class PearlShardVisuals
     {
-        private const string PearlTexturePath = "CalamityLegendsReturn/Weapons/SHPC/Effects/APreHardMode/PearlShard/PearlShardParticle";
-        private const string PearlGlowTexturePath = "CalamityLegendsReturn/Weapons/SHPC/Effects/APreHardMode/PearlShard/PearlShardParticleGlow";
+        private const string PearlTexturePath = "CalamityLegendReturn/Weapons/SHPC/Effects/APreHardMode/PearlShard/PearlShardParticle";
+        private const string PearlGlowTexturePath = "CalamityLegendReturn/Weapons/SHPC/Effects/APreHardMode/PearlShard/PearlShardParticleGlow";
 
         public static Color RandomPearlColor()
         {
@@ -26,8 +26,8 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
             Texture2D pearl = ModContent.Request<Texture2D>(PearlTexturePath).Value;
             Texture2D glow = ModContent.Request<Texture2D>(PearlGlowTexturePath).Value;
             Texture2D bloom = ModContent.Request<Texture2D>("CalamityMod/Particles/BloomCircle").Value;
-            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_03").Value;
-            Texture2D reticle = ModContent.Request<Texture2D>("CalamityLegendsReturn/Texture/KsTexture/magic_04").Value;
+            Texture2D ring = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_03").Value;
+            Texture2D reticle = ModContent.Request<Texture2D>("CalamityLegendReturn/Texture/KsTexture/magic_04").Value;
 
             Vector2 drawPosition = projectile.Center - Main.screenPosition;
             Color pearlColor = Color.Lerp(Color.White, new Color(255, 198, 226), 0.22f) * projectile.Opacity;

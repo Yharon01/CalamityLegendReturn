@@ -3,11 +3,11 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.Skill
+namespace CalamityLegendReturn.Accssory.BB.Skill
 {
     public class VortexEye : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BB/贴图/漩涡之眼";
+        public override string Texture => "CalamityLegendReturn/Accssory/BB/贴图/漩涡之眼";
 
         public override void SetDefaults()
         {

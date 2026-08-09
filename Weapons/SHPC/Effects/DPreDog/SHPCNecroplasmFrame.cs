@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog
 {
     // A small spectral frame follows Shadowbolt's rhythm: travel, arrest in open air, lock a
     // target line, and fire. It is a telegraph and never deals contact damage by itself.

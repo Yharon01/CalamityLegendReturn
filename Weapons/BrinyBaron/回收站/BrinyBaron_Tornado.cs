@@ -5,7 +5,7 @@
 //using Terraria.ID;
 //using Terraria.ModLoader;
 //
-//namespace CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack
+//namespace CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack
 //{
 //    internal class BrinyBaron_Tornado : ModProjectile, ILocalizedModType
 //    {

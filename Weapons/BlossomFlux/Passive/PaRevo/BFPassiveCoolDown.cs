@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using CalamityMod.Cooldowns;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo
+namespace CalamityLegendReturn.Weapons.BlossomFlux.Passive.PaRevo
 {
     internal class BFPassiveCoolDown : CooldownHandler
     {
@@ -29,11 +29,11 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.Passive.PaRevo
         public override bool ShouldDisplay => PassivePlayer.ShouldShowCooldownDisplay;
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.BlossomFlux_Passive");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.BlossomFlux_Passive");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/Passive/PaRevo/BFReCoolDown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/BlossomFlux/Passive/PaRevo/BFReCoolDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/BlossomFlux/Passive/PaRevo/BFReCoolDownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/Passive/PaRevo/BFReCoolDown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/BlossomFlux/Passive/PaRevo/BFReCoolDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/BlossomFlux/Passive/PaRevo/BFReCoolDownOverlay";
 
         public override Color OutlineColor => PassivePlayer.FinalStandActive ? new Color(82, 20, 20) : new Color(24, 48, 24);
 

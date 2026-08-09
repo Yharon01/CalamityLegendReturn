@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod.Items.Materials;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel
 {
     internal class NightmareFuelEffect : DefaultEffect
     {

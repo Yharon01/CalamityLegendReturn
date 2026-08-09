@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Systems
+namespace CalamityLegendReturn.Systems
 {
     /// <summary>
     /// 让某个 ModProjectile 显式退出扫掠判定，恢复原版"只看当前帧矩形"的行为。

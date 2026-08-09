@@ -1,28 +1,28 @@
-﻿// SHPCEffectLoader.cs
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.BPrePlantera.Essence;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.AshesofCala;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog.SZPC;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ascendant;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Ashes;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel;
-using CalamityLegendsReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul;
+﻿﻿// SHPCEffectLoader.cs
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode;
+using CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard;
+using CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera;
+using CalamityLegendReturn.Weapons.SHPC.Effects.BPrePlantera.Essence;
+using CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord;
+using CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.AshesofCala;
+using CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.CoreOfCalamity;
+using CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.MoonEvent;
+using CalamityLegendReturn.Weapons.SHPC.Effects.CPreMoodLord.PlagueCell;
+using CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog;
+using CalamityLegendReturn.Weapons.SHPC.Effects.DPreDog.SZPC;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ascendant;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Ashes;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.Cynosure;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.DarksunFragment;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheEndothermicEnergy;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheExoPrism;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.TheNightmareFuel;
+using CalamityLegendReturn.Weapons.SHPC.Effects.EAfterDog.YharonSoul;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects
+namespace CalamityLegendReturn.Weapons.SHPC.Effects
 {
     public class SHPCEffectRegister : ModSystem
     {

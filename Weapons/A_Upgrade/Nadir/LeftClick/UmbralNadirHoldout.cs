@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Combo;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.General;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Combo;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.General;
 using CalamityMod;
 using CalamityMod.Buffs.DamageOverTime;
 using CalamityMod.Dusts;
@@ -15,7 +15,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick
 {
     /// <summary>
     /// 左键近战三段连招：上挑斩(0) → 劈落斩(1) → 冲刺贯穿(2)。
@@ -27,7 +27,7 @@ namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick
     public class UmbralNadirHoldout : BaseSwordHoldoutProjectile, ILocalizedModType
     {
         public new string LocalizationCategory => "Projectiles.Nadir";
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Upgrade/Nadir/UmbralNadirSpear";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Upgrade/Nadir/UmbralNadirSpear";
         public override Item BaseItem => ModContent.GetModItem(ModContent.ItemType<UmbralNadir>()).Item;
 
         // === BaseSwordHoldout 配置 ===

@@ -10,11 +10,11 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.EXSkill;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.LeftClick;
-using CalamityLegendsReturn.Weapons.GlacialEmbrace.Passive;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.EXSkill;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.LeftClick;
+using CalamityLegendReturn.Weapons.GlacialEmbrace.Passive;
 
-namespace CalamityLegendsReturn.Weapons.GlacialEmbrace.General
+namespace CalamityLegendReturn.Weapons.GlacialEmbrace.General
 {
     public class GlacialEmbracePlayer : ModPlayer
     {

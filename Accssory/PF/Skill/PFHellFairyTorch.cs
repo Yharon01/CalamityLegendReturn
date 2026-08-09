@@ -1,9 +1,9 @@
-using CalamityLegendsReturn.Accssory.PF;
+using CalamityLegendReturn.Accssory.PF;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.PF.Skill
+namespace CalamityLegendReturn.Accssory.PF.Skill
 {
     // 地狱妖精的火把：
     // 小怪达到当前最高纯化等级后，会直接造成最大生命值60%的真实伤害，
@@ -13,7 +13,7 @@ namespace CalamityLegendsReturn.Accssory.PF.Skill
     internal sealed class PFHellFairyTorch : ModItem
     {
         public new string LocalizationCategory => "Items";
-        public override string Texture => "CalamityLegendsReturn/Accssory/PF/Skill/PFHellFairyTorch";
+        public override string Texture => "CalamityLegendReturn/Accssory/PF/Skill/PFHellFairyTorch";
 
         public override void SetDefaults()
         {

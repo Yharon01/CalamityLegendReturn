@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.SHPC.Skill.DiffuChip
+namespace CalamityLegendReturn.Accssory.SHPC.Skill.DiffuChip
 {
     public class DiffuChip : ModItem
     {

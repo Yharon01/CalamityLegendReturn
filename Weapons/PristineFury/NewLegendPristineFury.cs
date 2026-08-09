@@ -1,7 +1,7 @@
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Rarities;
-using CalamityLegendsReturn.Weapons.PristineFury.Passive;
+using CalamityLegendReturn.Weapons.PristineFury.Passive;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury
+namespace CalamityLegendReturn.Weapons.PristineFury
 {
     public class NewLegendPristineFury : ModItem, ILocalizedModType
     {

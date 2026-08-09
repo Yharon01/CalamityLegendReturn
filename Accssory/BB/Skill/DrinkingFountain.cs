@@ -3,11 +3,11 @@ using CalamityMod.Items.Weapons.Rogue;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Accssory.BB.Skill
+namespace CalamityLegendReturn.Accssory.BB.Skill
 {
     public class DrinkingFountain : ModItem
     {
-        public override string Texture => "CalamityLegendsReturn/Accssory/BB/贴图/饮水机";
+        public override string Texture => "CalamityLegendReturn/Accssory/BB/贴图/饮水机";
 
         public override void SetDefaults()
         {

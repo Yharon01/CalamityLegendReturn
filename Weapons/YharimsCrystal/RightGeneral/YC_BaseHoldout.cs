@@ -6,7 +6,7 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
+namespace CalamityLegendReturn.Weapons.YharimsCrystal.RightGeneral
 {
     internal abstract class YC_BaseHoldout : ModProjectile, ILocalizedModType
     {
@@ -15,7 +15,7 @@ namespace CalamityLegendsReturn.Weapons.YharimsCrystal.RightGeneral
         protected Player Owner => Main.player[Projectile.owner];
         protected ref float HoldFrameCounter => ref Projectile.localAI[0];
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/YharimsCrystal/YharimsCrystalPrism";
+        public override string Texture => "CalamityLegendReturn/Weapons/YharimsCrystal/YharimsCrystalPrism";
         public new string LocalizationCategory => "Projectiles.YharimsCrystal";
         public Vector2 ForwardDirection => Projectile.velocity.SafeNormalize(Vector2.UnitX * Owner.direction);
 

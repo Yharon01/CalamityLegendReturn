@@ -3,11 +3,11 @@ using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickMortar;
-using CalamityLegendsReturn.Weapons.SHPC.RightClickTurret;
-using CalamityLegendsReturn.Accssory.SHPC.General;
+using CalamityLegendReturn.Weapons.SHPC.RightClickMortar;
+using CalamityLegendReturn.Weapons.SHPC.RightClickTurret;
+using CalamityLegendReturn.Accssory.SHPC.General;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Passive
+namespace CalamityLegendReturn.Weapons.SHPC.Passive
 {
     internal sealed class SHPCPassivePlayer : ModPlayer
     {

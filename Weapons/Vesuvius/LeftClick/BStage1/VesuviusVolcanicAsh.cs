@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.Vesuvius.LeftClick.BStage1
+namespace CalamityLegendReturn.Weapons.Vesuvius.LeftClick.BStage1
 {
     public class VesuviusVolcanicAsh : ModProjectile, ILocalizedModType
     {

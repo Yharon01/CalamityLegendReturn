@@ -1,4 +1,4 @@
-namespace CalamityLegendsReturn.Weapons.BrinyBaron
+namespace CalamityLegendReturn.Weapons.BrinyBaron
 {
     // 爵士台风与终结技裂隙光束的独立调参区。
     internal static partial class BB_Balance
@@ -12,6 +12,9 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron
         public const float BaronHelixJazzTyphoonOrbitRadiusY = 240f;
         public const float BaronHelixJazzTyphoonHomingSpeed = 7.5f;
         public const float BaronHelixJazzTyphoonHomingInertia = 0.045f;
+        public const float JazzTyphoonPullRange = 360f;
+        public const float JazzTyphoonPullStrength = 0.32f;
+        public const float JazzTyphoonMaxPullSpeed = 12f;
 
         public const float UltimateAzureRiftBeamDamageMultiplier = 0.45f;
         public const int UltimateAzureRiftBeamWindupFrames = 8;

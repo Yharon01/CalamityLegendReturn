@@ -12,9 +12,9 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
-using CalamityLegendsReturn.Systems;
+using CalamityLegendReturn.Systems;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
+namespace CalamityLegendReturn.Weapons.A_Tools.Toys.RetroGames
 {
     internal enum GamePacketType : byte
     {
@@ -113,7 +113,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
                 return;
             }
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisInviteRequest);
             packet.Write((byte)target);
             packet.Send();
@@ -124,7 +124,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             if (Main.netMode != NetmodeID.MultiplayerClient || !Main.player.IndexInRange(requester))
                 return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisInviteResponse);
             packet.Write((byte)requester);
             packet.Write(accepted);
@@ -136,7 +136,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             if (Main.netMode != NetmodeID.MultiplayerClient)
                 return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisInput);
             packet.Write((byte)host);
             packet.Write(sessionId);
@@ -146,7 +146,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
         public static ModPacket CreateSnapshotPacket(int peer, ushort sessionId)
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisSnapshot);
             packet.Write((byte)peer);
             packet.Write(sessionId);
@@ -199,7 +199,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
                 if (!Main.player.IndexInRange(host) || host == whoAmI)
                     return;
 
-                ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+                ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
                 packet.Write((byte)GamePacketType.TetrisInput);
                 packet.Write(sessionId);
                 packet.Write((byte)whoAmI);
@@ -225,7 +225,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
                 if (!Main.player.IndexInRange(peer) || peer == whoAmI)
                     return;
 
-                ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+                ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
                 packet.Write((byte)GamePacketType.TetrisSnapshot);
                 packet.Write(sessionId);
                 packet.Write((byte)whoAmI);
@@ -242,7 +242,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
         private static void SendInviteIncoming(int target, int requester)
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisInviteIncoming);
             packet.Write((byte)requester);
             packet.Send(target);
@@ -253,14 +253,14 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             if (!Main.player.IndexInRange(requester))
                 return;
 
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisInviteRejected);
             packet.Send(requester);
         }
 
         private static void SendInviteSent(int requester, int target)
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisInviteSent);
             packet.Write((byte)target);
             packet.Send(requester);
@@ -268,7 +268,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
         private static void SendStartSession(int targetClient, int peer, int host, ushort sessionId, int seed)
         {
-            ModPacket packet = ModContent.GetInstance<global::CalamityLegendsReturn.CalamityLegendsReturn>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<global::CalamityLegendReturn.CalamityLegendReturn>().GetPacket();
             packet.Write((byte)GamePacketType.TetrisStartSession);
             packet.Write((byte)peer);
             packet.Write((byte)host);
@@ -642,7 +642,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
             ShowText(
                 Color.Cyan,
-                "Mods.CalamityLegendsReturn.TheSpecialText.TetrisInviteIncoming",
+                "Mods.CalamityLegendReturn.TheSpecialText.TetrisInviteIncoming",
                 GetPlayerName(requester));
 
             SoundEngine.PlaySound(SoundID.MenuOpen with { Volume = 0.5f, Pitch = 0.18f }, Main.LocalPlayer.Center);
@@ -667,7 +667,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             panel.ResetGame(Main.LocalPlayer);
             panel.FadeOut = false;
 
-            ShowText(Color.Cyan, "Mods.CalamityLegendsReturn.TheSpecialText.TetrisInviteAccepted");
+            ShowText(Color.Cyan, "Mods.CalamityLegendReturn.TheSpecialText.TetrisInviteAccepted");
         }
 
         internal static void ReceiveRemoteInput(ushort sessionId, int sender, TetrisInputCommand command)
@@ -704,13 +704,13 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
         internal static void ShowNoInviteTarget()
         {
-            ShowText(Color.OrangeRed, "Mods.CalamityLegendsReturn.TheSpecialText.TetrisNoInviteTarget");
+            ShowText(Color.OrangeRed, "Mods.CalamityLegendReturn.TheSpecialText.TetrisNoInviteTarget");
             SoundEngine.PlaySound(SoundID.MenuClose with { Volume = 0.46f, Pitch = -0.22f }, Main.LocalPlayer.Center);
         }
 
         internal static void ShowInviteRejected()
         {
-            ShowText(Color.OrangeRed, "Mods.CalamityLegendsReturn.TheSpecialText.TetrisInviteRejected");
+            ShowText(Color.OrangeRed, "Mods.CalamityLegendReturn.TheSpecialText.TetrisInviteRejected");
             SoundEngine.PlaySound(SoundID.MenuClose with { Volume = 0.5f, Pitch = -0.24f }, Main.LocalPlayer.Center);
         }
 
@@ -718,7 +718,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
         {
             ShowText(
                 Color.Cyan,
-                "Mods.CalamityLegendsReturn.TheSpecialText.TetrisInviteSent",
+                "Mods.CalamityLegendReturn.TheSpecialText.TetrisInviteSent",
                 GetPlayerName(target));
         }
 
@@ -1591,11 +1591,11 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
 
             DrawTextWithShadow("TETRIS", new Vector2(panelArea.X + PanelPadding, panelArea.Y + 12), new Color(232, 242, 255) * opacity, 0.92f, opacity);
             string state = gameOver
-                ? Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.TetrisGameOver")
+                ? Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.TetrisGameOver")
                 : Language.GetTextValue(
                     multiplayerSessionActive
-                        ? "Mods.CalamityLegendsReturn.TheSpecialText.TetrisMultiplayerLevel"
-                        : "Mods.CalamityLegendsReturn.TheSpecialText.TetrisLevel",
+                        ? "Mods.CalamityLegendReturn.TheSpecialText.TetrisMultiplayerLevel"
+                        : "Mods.CalamityLegendReturn.TheSpecialText.TetrisLevel",
                     GetLevel());
 
             Vector2 stateSize = FontAssets.MouseText.Value.MeasureString(state) * 0.62f;
@@ -1793,8 +1793,8 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawRectangle(overlay, new Color(6, 8, 12, 224) * opacity);
             DrawBorder(overlay, new Color(220, 88, 92) * opacity, 2);
 
-            string title = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.TetrisGameOver");
-            string restart = Language.GetTextValue("Mods.CalamityLegendsReturn.TheSpecialText.TetrisRestart");
+            string title = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.TetrisGameOver");
+            string restart = Language.GetTextValue("Mods.CalamityLegendReturn.TheSpecialText.TetrisRestart");
             DrawCenteredText(title, new Rectangle(overlay.X, overlay.Y + 22, overlay.Width, 28), new Color(255, 212, 212), 0.78f, opacity);
             DrawCenteredText(restart, new Rectangle(overlay.X, overlay.Y + 60, overlay.Width, 26), new Color(202, 218, 238), 0.52f, opacity);
         }
@@ -1806,7 +1806,7 @@ namespace CalamityLegendsReturn.Weapons.A_Tools.Toys.RetroGames
             DrawBorder(overlay, new Color(82, 208, 240) * opacity, 2);
 
             string message = Language.GetTextValue(
-                "Mods.CalamityLegendsReturn.TheSpecialText.TetrisInviteIncoming",
+                "Mods.CalamityLegendReturn.TheSpecialText.TetrisInviteIncoming",
                 GetPlayerName(pendingInviteFrom));
 
             string[] lines = WrapText(message, overlay.Width - 34, 0.54f);

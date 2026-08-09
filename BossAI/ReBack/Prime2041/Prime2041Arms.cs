@@ -11,7 +11,7 @@ using CalamityMod.NPCs;
 using CalamityMod.Events;
 using CalamityMod.World;
 
-namespace CalamityLegendsReturn.BossAI.ReBack.Prime2041
+namespace CalamityLegendReturn.BossAI.ReBack.Prime2041
 {
     public abstract class Prime2041Arm : ModNPC
     {

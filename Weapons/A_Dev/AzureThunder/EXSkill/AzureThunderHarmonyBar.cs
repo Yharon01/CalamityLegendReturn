@@ -1,10 +1,10 @@
-using CalamityLegendsReturn.Accssory.TS;
+using CalamityLegendReturn.Accssory.TS;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 天理真和持续时间条：不可见弹幕挂在玩家头顶绘制进度条。
     internal sealed class AzureThunderHarmonyBar : ModProjectile
@@ -60,8 +60,8 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
 
             // buffTime/duration 转成剩余比例，进度越低颜色越偏青。
             float progress = MathHelper.Clamp(owner.buffTime[buffIndex] / (float)duration, 0f, 1f);
-            Texture2D barBackground = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和倒计时").Value;
-            Texture2D barForeground = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和倒计时条").Value;
+            Texture2D barBackground = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和倒计时").Value;
+            Texture2D barForeground = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/天理真和倒计时条").Value;
             Vector2 drawPosition = owner.Center - Main.screenPosition + new Vector2(0f, -62f) - barBackground.Size() * 0.5f;
             Rectangle frameCrop = new(0, 0, (int)(barForeground.Width * progress), barForeground.Height);
             Color color = Color.Lerp(new Color(54, 255, 214), AzureThunderColors.PaleYellow, 1f - progress) * Projectile.Opacity;

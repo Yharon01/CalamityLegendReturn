@@ -1,6 +1,6 @@
 # 灾厄（Calamity Mod）召唤物 AI 使用说明书
 
-> 本文档基于对 CalamityMod 全部召唤武器及其弹幕源码的系统性阅读，整理出各类召唤物 AI 的核心机制、代码模式和设计思路，供本项目（CalamityLegendsReturn）开发参考。字数约 14000 字，覆盖早期到末期全段位召唤武器。
+> 本文档基于对 CalamityMod 全部召唤武器及其弹幕源码的系统性阅读，整理出各类召唤物 AI 的核心机制、代码模式和设计思路，供本项目（CalamityLegendReturn）开发参考。字数约 14000 字，覆盖早期到末期全段位召唤武器。
 
 ---
 
@@ -1182,5 +1182,5 @@ AmphibiansGuitar（两栖吉他）使用 `Item.channel = true` 与 `Item.noUseGr
 
 ---
 
-*本文档由 CalamityLegendsReturn 开发组基于 CalamityMod 源码分析整理，仅供内部开发参考。*
+*本文档由 CalamityLegendReturn 开发组基于 CalamityMod 源码分析整理，仅供内部开发参考。*
 *撰写日期：2026-06-20*

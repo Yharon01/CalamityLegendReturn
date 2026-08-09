@@ -5,7 +5,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using CalamityMod.Particles;
 
-namespace CalamityLegendsReturn.Weapons.PristineFury.LeftEffect
+namespace CalamityLegendReturn.Weapons.PristineFury.LeftEffect
 {
     internal static class PFPlanteraEffect
     {

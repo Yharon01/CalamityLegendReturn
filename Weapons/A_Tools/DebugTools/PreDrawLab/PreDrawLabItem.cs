@@ -10,7 +10,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Tools.DebugTools.PreDrawLab
+namespace CalamityLegendReturn.Weapons.A_Tools.DebugTools.PreDrawLab
 {
     public sealed class PreDrawLabItem : ModItem, ILocalizedModType
     {

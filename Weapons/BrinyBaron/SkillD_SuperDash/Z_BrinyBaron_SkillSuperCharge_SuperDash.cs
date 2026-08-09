@@ -1,9 +1,9 @@
 using System;
 using System.IO;
-using CalamityLegendsReturn.Accssory.BB;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack;
-using CalamityLegendsReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
-using CalamityLegendsReturn.Weapons.BrinyBaron.TideValue;
+using CalamityLegendReturn.Accssory.BB;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack;
+using CalamityLegendReturn.Weapons.BrinyBaron.CommonAttack.ForShuriken;
+using CalamityLegendReturn.Weapons.BrinyBaron.TideValue;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     public class Z_BrinyBaron_SkillSuperCharge_SuperDash : ModProjectile
     {
@@ -88,7 +88,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
         private Vector2 collisionEnd;
         private Vector2 impactDriftVelocity;
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaron";
         public new string LocalizationCategory => "Projectiles.BrinyBaron";
 
         public override void SetStaticDefaults()
@@ -1203,7 +1203,7 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
                 Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, Main.Rasterizer, null, Main.GameViewMatrix.TransformationMatrix);
 
                 // Draw ghost outlines for trailing aura effect
-                Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendsReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest").Value;
+                Texture2D ghost = ModContent.Request<Texture2D>("CalamityLegendReturn/Weapons/BrinyBaron/NewLegendBrinyBaronGoest").Value;
                 for (int i = 0; i < 18; i++)
                 {
                     Vector2 offset = (MathHelper.TwoPi * i / 18f).ToRotationVector2() * (4.2f + executionGlow * 2.5f);

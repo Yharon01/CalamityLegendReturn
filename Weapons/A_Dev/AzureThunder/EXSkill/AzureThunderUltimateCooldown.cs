@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
+namespace CalamityLegendReturn.Weapons.A_Dev.AzureThunder
 {
     // 万钧风雷能量条显示器：读 UltimateEnergy，但不让灾厄冷却系统自动递减。
     internal sealed class AzureThunderUltimateCooldown : CooldownHandler
@@ -26,11 +26,11 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.AzureThunder
         public override bool ShouldDisplay => instance.player.HeldItem.type == ModContent.ItemType<AzureThunder>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.AzureThunder_Ultimate");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.AzureThunder_Ultimate");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderCharge";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeDownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderCharge";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeDownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/A_Dev/AzureThunder/EXSkill/ThunderChargeOverlay";
 
         public override Color OutlineColor => new(80, 54, 20);
         public override Color CooldownStartColor => Color.Lerp(new Color(70, 190, 255), AzureThunderColors.Yellow, AdjustedCompletion);

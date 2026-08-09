@@ -9,7 +9,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using static CalamityMod.CalamityUtils;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillD_SuperDash
 {
     internal class BBSuperDashCooldownHandler : CooldownHandler
     {
@@ -27,11 +27,11 @@ namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillD_SuperDash
             instance.player.HeldItem.type == ModContent.ItemType<NewLegendBrinyBaron>();
 
         public override LocalizedText DisplayName =>
-            Language.GetText("Mods.CalamityLegendsReturn.Cooldowns.BrinyBaron_SuperDash");
+            Language.GetText("Mods.CalamityLegendReturn.Cooldowns.BrinyBaron_SuperDash");
 
-        public override string Texture => "CalamityLegendsReturn/Weapons/BrinyBaron/SkillD_SuperDash/CD/BBSuperDashCooldown";
-        public override string OutlineTexture => "CalamityLegendsReturn/Weapons/BrinyBaron/SkillD_SuperDash/CD/BBSuperDashCooldownOutline";
-        public override string OverlayTexture => "CalamityLegendsReturn/Weapons/BrinyBaron/SkillD_SuperDash/CD/BBSuperDashCooldownOverlay";
+        public override string Texture => "CalamityLegendReturn/Weapons/BrinyBaron/SkillD_SuperDash/CD/BBSuperDashCooldown";
+        public override string OutlineTexture => "CalamityLegendReturn/Weapons/BrinyBaron/SkillD_SuperDash/CD/BBSuperDashCooldownOutline";
+        public override string OverlayTexture => "CalamityLegendReturn/Weapons/BrinyBaron/SkillD_SuperDash/CD/BBSuperDashCooldownOverlay";
 
         public override Color OutlineColor => new Color(66, 42, 20);
 

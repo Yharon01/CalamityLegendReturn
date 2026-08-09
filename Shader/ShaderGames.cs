@@ -7,7 +7,7 @@ using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Shader
+namespace CalamityLegendReturn.Shader
 {
     internal enum ShaderCategory
     {
@@ -20,9 +20,9 @@ namespace CalamityLegendsReturn.Shader
     [Autoload(Side = ModSide.Client)]
     public sealed partial class ShaderGames : ModSystem
     {
-        public const string ShaderPrefix = "CalamityLegendsReturn:";
+        public const string ShaderPrefix = "CalamityLegendReturn:";
 
-        private const string LibraryRoot = "CalamityLegendsReturn/Shader/Library/";
+        private const string LibraryRoot = "CalamityLegendReturn/Shader/Library/";
 
         public static readonly Dictionary<string, Asset<Effect>> LoadedShaders = [];
 
@@ -159,7 +159,7 @@ namespace CalamityLegendsReturn.Shader
             }
             catch (Exception ex)
             {
-                ModContent.GetInstance<CalamityLegendsReturn>().Logger.Warn($"Failed to load shader '{name}' at '{path}'.", ex);
+                ModContent.GetInstance<CalamityLegendReturn>().Logger.Warn($"Failed to load shader '{name}' at '{path}'.", ex);
             }
         }
 

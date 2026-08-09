@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 
-namespace CalamityLegendsReturn.Weapons.Visuals
+namespace CalamityLegendReturn.Weapons.Visuals
 {
     internal static class HoldoutOutlineHelper
     {

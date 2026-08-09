@@ -4,7 +4,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BrinyBaron.SkillA_ShortDash
+namespace CalamityLegendReturn.Weapons.BrinyBaron.SkillA_ShortDash
 {
     internal static class BrinyBaron_SkillDashTornado_FlightEffects
     {

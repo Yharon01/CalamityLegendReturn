@@ -1,5 +1,5 @@
-using CalamityLegendsReturn.Weapons.BlossomFlux;
-using CalamityLegendsReturn.Weapons.BlossomFlux.RightUI;
+using CalamityLegendReturn.Weapons.BlossomFlux;
+using CalamityLegendReturn.Weapons.BlossomFlux.RightUI;
 using CalamityMod;
 using CalamityMod.Enums;
 using CalamityMod.Graphics.Primitives;
@@ -15,13 +15,13 @@ using Terraria.Graphics.Shaders;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
+namespace CalamityLegendReturn.Weapons.BlossomFlux.RightClick
 {
     // E 战术右键箭：扎附在目标或地形后，持续朝周围排出毒云。
     internal class BFArrow_EPlague : ModProjectile, IPixelatedPrimitiveRenderer
     {
         public new string LocalizationCategory => "Projectiles.BlossomFlux";
-        public override string Texture => "CalamityLegendsReturn/Weapons/BlossomFlux/RightClick/EPlague/BFArrow_EPlague";
+        public override string Texture => "CalamityLegendReturn/Weapons/BlossomFlux/RightClick/EPlague/BFArrow_EPlague";
         public GeneralDrawLayer LayerToRenderTo => GeneralDrawLayer.BeforeProjectiles;
 
         private const float RightSporeSearchRange = 920f;

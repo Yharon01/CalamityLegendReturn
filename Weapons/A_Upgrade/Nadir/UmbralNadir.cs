@@ -1,7 +1,7 @@
 using System;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.Combo;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.LeftClick;
-using CalamityLegendsReturn.Weapons.A_Upgrade.Nadir.RightClick;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.Combo;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.LeftClick;
+using CalamityLegendReturn.Weapons.A_Upgrade.Nadir.RightClick;
 using CalamityMod;
 using CalamityMod.Items;
 using CalamityMod.Items.Materials;
@@ -13,7 +13,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.A_Upgrade.Nadir
+namespace CalamityLegendReturn.Weapons.A_Upgrade.Nadir
 {
     /// <summary>
     /// 冥蚀天底 / Umbral Nadir —— 由原版天底重铸的黑绿虚空长枪。

@@ -1,4 +1,4 @@
-using CalamityLegendsReturn.Weapons.SHPC.Effects.AAARules;
+using CalamityLegendReturn.Weapons.SHPC.Effects.AAARules;
 using CalamityMod;
 using CalamityMod.Particles;
 using Microsoft.Xna.Framework;
@@ -7,7 +7,7 @@ using Terraria.Audio;
 using Terraria.ModLoader;
 using CalamityPearlShard = CalamityMod.Items.Materials.PearlShard;
 
-namespace CalamityLegendsReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
+namespace CalamityLegendReturn.Weapons.SHPC.Effects.APreHardMode.PearlShard
 {
     public class PearlShardEffect : DefaultEffect
     {

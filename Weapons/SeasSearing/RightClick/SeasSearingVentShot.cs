@@ -7,7 +7,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace CalamityLegendsReturn.Weapons.SeasSearing
+namespace CalamityLegendReturn.Weapons.SeasSearing
 {
     // Enhanced left-click fired during VentCooldown. On hit spawns 2 diverging SeasSearingSatellites.
     internal sealed class SeasSearingVentShot : ModProjectile, ILocalizedModType
