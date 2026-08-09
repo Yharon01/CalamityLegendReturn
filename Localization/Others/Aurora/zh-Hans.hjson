@@ -1,0 +1,29 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Armor: {
+				AuroraHelm: {
+					DisplayName: 极光头冠
+					Tooltip: 由捕获的极北之光织成
+				}
+
+				AuroraPlate: {
+					DisplayName: 极光胸甲
+					Tooltip: 夜空铭记着你走过的每一处
+					SetBonus:
+						'''
+						极光回应着你的心跳
+						流光符文在盔甲上流淌，会随生命降低而愈发炽亮、转为赤红
+						移动时留下鲜活的极光拖尾，身周萦绕着飘散的星光
+						+3% 伤害减免，并提升机动性
+						'''
+				}
+
+				AuroraGreaves: {
+					DisplayName: 极光护胫
+					Tooltip: 每一步都拖曳着黎明的绸带
+				}
+			}
+		}
+	}
+}

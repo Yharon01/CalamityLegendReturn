@@ -102,7 +102,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
 
         private bool HasActiveBombardStrike()
         {
-            int bombardType = ModContent.ProjectileType<BFArrow_DBomb>();
+            int bombardType = ModContent.ProjectileType<BFBombardChargeArrow>();
             foreach (Projectile projectile in Main.ActiveProjectiles)
             {
                 if (projectile.active && projectile.owner == Owner.whoAmI && projectile.type == bombardType)
@@ -220,7 +220,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
                     break;
 
                 case BlossomFluxChloroplastPresetType.Chlo_DBomb:
-                    FireBombardSpecialArrow(chargeCompletion, ModContent.ProjectileType<BFArrow_DBomb>(), 19.2f, 0.88f);
+                    FireBombardSpecialArrow(chargeCompletion);
                     break;
 
                 case BlossomFluxChloroplastPresetType.Chlo_EPlague:
@@ -281,17 +281,31 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
             }
         }
 
-        private static Vector2 GetRecoveryTreeOffset(int index, int count, Vector2 upward, Vector2 side)
+        private Vector2 GetRecoveryTreeOffset(int index, int count, Vector2 upward, Vector2 side)
         {
-            float progress = count <= 1 ? 0f : index / (count - 1f);
-            float smoothed = MathHelper.SmoothStep(0f, 1f, progress);
-            float height = MathHelper.Lerp(36f, 238f, progress);
-            float radius = MathHelper.Lerp(12f, 144f, smoothed);
-            float angle = -MathHelper.PiOver2 + index * 2.399963f;
-            float lateral = MathF.Cos(angle) * radius;
-            float verticalCurl = MathF.Sin(angle) * radius * 0.24f;
+            // Counts are 3 / 6 / 10 / 15, so every release fills an exact triangular
+            // lattice: the apex touches the player and the horizontal upper edge reaches
+            // the screen boundary instead of leaving a large empty region above it.
+            int row = 0;
+            int firstIndexInRow = 0;
+            while (index >= firstIndexInRow + row + 1)
+            {
+                firstIndexInRow += row + 1;
+                row++;
+            }
 
-            return upward * (height + verticalCurl) + side * lateral;
+            int column = index - firstIndexInRow;
+            int lastRow = Math.Max(1, (int)((MathF.Sqrt(8f * count + 1f) - 1f) * 0.5f) - 1);
+            float rowProgress = row / (float)lastRow;
+            float distanceToTop = Owner.gravDir == 1f
+                ? Owner.Center.Y - Main.screenPosition.Y - 16f
+                : Main.screenPosition.Y + Main.screenHeight - Owner.Center.Y - 16f;
+            float triangleHeight = Math.Max(48f, distanceToTop);
+            float halfTopWidth = triangleHeight / MathF.Sqrt(3f);
+            float horizontalProgress = row == 0 ? 0.5f : column / (float)row;
+            float lateral = MathHelper.Lerp(-halfTopWidth * rowProgress, halfTopWidth * rowProgress, horizontalProgress);
+
+            return upward * (triangleHeight * rowProgress) + side * lateral;
         }
 
         private void FireReconSpecialArrow(float chargeCompletion)
@@ -413,19 +427,19 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
             return MathHelper.Lerp(-halfSpread, halfSpread, index / (arrowCount - 1f));
         }
 
-        private void FireBombardSpecialArrow(float chargeCompletion, int projectileType, float baseSpeed, float damageMultiplier)
+        private void FireBombardSpecialArrow(float chargeCompletion)
         {
-            BFBombardRightStats stats = BFBombardRightBalance.GetStats();
-            float speed = MathHelper.Lerp(baseSpeed * 1.52f, baseSpeed * 2.24f, chargeCompletion) * GetAccessoryArrowSpeedMultiplier(BlossomFluxChloroplastPresetType.Chlo_DBomb) * 0.8f;
-            int damage = (int)(GetCurrentRightClickDamage() * RightClickBaseDamageMultiplier * MathHelper.Lerp(0.8f, 1.35f, chargeCompletion) * damageMultiplier);
+            int damage = (int)(GetCurrentRightClickDamage() * RightClickBaseDamageMultiplier * MathHelper.Lerp(0.8f, 1.35f, chargeCompletion) * 0.88f);
             float knockback = Projectile.knockBack * MathHelper.Lerp(0.85f, 1.15f, chargeCompletion);
-            Vector2 bombardTarget = GetBombardReticleCenter();
+            // The final extra-large arrow must lock the actual release-position mouse point,
+            // rather than the deliberately smoothed charge reticle position.
+            Vector2 bombardTarget = GetCurrentMouseWorld();
 
             int projectileIndex = Projectile.NewProjectile(
                 Projectile.GetSource_FromThis(),
                 GunTipPosition,
-                AimDirection * speed,
-                projectileType,
+                -Vector2.UnitY * Owner.gravDir,
+                ModContent.ProjectileType<BFBombardChargeArrow>(),
                 damage,
                 knockback,
                 Projectile.owner);
@@ -433,17 +447,10 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
             if (!BFArrowCommon.InBounds(projectileIndex, Main.maxProjectiles))
                 return;
 
-            if (Main.projectile[projectileIndex].ModProjectile is BFArrow_DBomb bombardArrow)
+            if (Main.projectile[projectileIndex].ModProjectile is BFBombardChargeArrow bombardArrow)
             {
-                BFAccessoryPlayer acc = Owner.GetModPlayer<BFAccessoryPlayer>();
-                float explosionSize = stats.ExplosionSize + (acc.BombardExplosionBonus ? 60f : 0f);
-                float rainMult = acc.BombardRainDamageBonus ? 1.5f : stats.SkyRainMultiplier;
-                bombardArrow.ConfigureBombardTarget(
-                    bombardTarget,
-                    explosionSize,
-                    rainMult,
-                    stats.WaveCount,
-                    stats.RainImpactExplosionCount);
+                float riseSpeed = MathHelper.Lerp(18f, 24f, chargeCompletion) * GetAccessoryArrowSpeedMultiplier(BlossomFluxChloroplastPresetType.Chlo_DBomb);
+                bombardArrow.Configure(bombardTarget, riseSpeed);
             }
 
             Main.projectile[projectileIndex].netUpdate = true;

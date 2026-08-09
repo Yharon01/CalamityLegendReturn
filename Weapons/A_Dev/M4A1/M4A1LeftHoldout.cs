@@ -13,7 +13,8 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
     /// <summary>
     /// 左键持械：M4A1 自动步枪。长按持续射击并暖机（提升战术同步率 -> 阶段），
     /// 发射三种弹幕：特殊子弹（主流）、荧光绿能量弹（穿插）、火箭弹（间歇）。
-    /// 干净绘制（参考 OmniGun / ScorchedEarth），无后坐动画、无发光包边环。
+    /// 普通子弹以短促枪焰、细小定向火星与低密度曳光构成持续压制感；
+    /// 只有能量弹和火箭保留较明显的重音反馈。
     /// 松开左键后短暂放下并自动消失（非常态手持）。
     /// </summary>
     public class M4A1LeftHoldout : ModProjectile
@@ -175,7 +176,8 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
             int damage = InheritedCaseM4A1.ScaledDamage(Owner, Owner.HeldItem, BalanceM4A1.GetBulletBaseDamage());
             SpawnShot(ModContent.ProjectileType<M4A1Bullet>(), GunTip + Main.rand.NextVector2Circular(2f, 2f), velocity, damage, Projectile.knockBack);
 
-            muzzleFlash = 4;
+            // 高射速下枪口闪只保留一两帧，避免连射时糊成一团绿光。
+            muzzleFlash = 2;
             SpawnMuzzleFlash(dir, false);
         }
 
@@ -222,42 +224,30 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
             if (Main.dedServ || Projectile.owner != Main.myPlayer)
                 return;
 
-            // 冲击环（枪口爆发的猛劲）
-            GeneralParticleHandler.SpawnParticle(new DirectionalPulseRing(
-                GunTip, dir * (heavy ? 4f : 2.5f), M4A1Visuals.NeonGreen with { A = 0 },
-                new Vector2(0.35f, 1f), gunRotation, 0.12f, heavy ? 0.55f : 0.4f, heavy ? 16 : 12));
-
-            // 迸射的绿火花
-            int sparks = heavy ? 10 : 6;
-            for (int i = 0; i < sparks; i++)
+            // 普通弹每发不再生成环、光球和烟团。只留少量沿弹道飞出的短火星；
+            // 特殊弹则获得一记非常克制的脉冲，作为射击流中的节拍重音。
+            if (heavy)
             {
-                Vector2 vel = dir.RotatedByRandom(0.28f) * Main.rand.NextFloat(4f, heavy ? 16f : 11f);
-                GeneralParticleHandler.SpawnParticle(new GlowOrbParticle(
-                    GunTip + dir * Main.rand.NextFloat(0f, 6f),
-                    vel,
-                    false,
-                    heavy ? 15 : 10,
-                    Main.rand.NextFloat(0.35f, heavy ? 0.85f : 0.6f),
-                    Color.Lerp(M4A1Visuals.NeonGreen, M4A1Visuals.NeonGreenBright, Main.rand.NextFloat(0.3f, 0.85f)),
-                    true,
-                    true));
+                GeneralParticleHandler.SpawnParticle(new DirectionalPulseRing(
+                    GunTip, dir * 2.5f, M4A1Visuals.NeonGreen with { A = 0 },
+                    new Vector2(0.24f, 0.7f), gunRotation, 0.09f, 0.35f, 11));
             }
 
-            // 尖锐火星（细长）
-            for (int i = 0; i < (heavy ? 5 : 3); i++)
+            int sparkCount = heavy ? 3 : (Main.rand.NextBool(3) ? 1 : 0);
+            for (int i = 0; i < sparkCount; i++)
             {
                 GeneralParticleHandler.SpawnParticle(new SparkParticle(
-                    GunTip, dir.RotatedByRandom(0.22f) * Main.rand.NextFloat(6f, heavy ? 20f : 13f),
-                    false, Main.rand.Next(9, 16), Main.rand.NextFloat(0.4f, 0.75f), M4A1Visuals.NeonGreenBright));
+                    GunTip + dir * 2f, dir.RotatedByRandom(heavy ? 0.16f : 0.1f) * Main.rand.NextFloat(heavy ? 8f : 5f, heavy ? 14f : 8f),
+                    false, Main.rand.Next(6, heavy ? 11 : 9), Main.rand.NextFloat(0.25f, heavy ? 0.48f : 0.34f), M4A1Visuals.NeonGreenBright));
             }
 
-            for (int i = 0; i < (heavy ? 5 : 3); i++)
+            if (heavy)
             {
-                Dust smoke = Dust.NewDustPerfect(GunTip, DustID.Smoke, -dir.RotatedByRandom(0.4f) * Main.rand.NextFloat(0.6f, 2f), 130, Color.Gray, Main.rand.NextFloat(0.7f, 1.2f));
+                Dust smoke = Dust.NewDustPerfect(GunTip, DustID.Smoke, -dir.RotatedByRandom(0.25f) * Main.rand.NextFloat(0.6f, 1.2f), 150, Color.Gray, Main.rand.NextFloat(0.55f, 0.8f));
                 smoke.noGravity = true;
             }
 
-            Lighting.AddLight(GunTip, 0.5f, 1.1f, 0.35f);
+            Lighting.AddLight(GunTip, heavy ? 0.35f : 0.16f, heavy ? 0.75f : 0.36f, heavy ? 0.2f : 0.08f);
         }
 
         // ===================================================================
@@ -276,7 +266,7 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
             if (Owner.gravDir == -1f)
                 flip ^= SpriteEffects.FlipVertically;
 
-            // 枪口爆闪：绿枪口闪光贴图 + 加法光晕（无旋转贴图堆）
+            // 枪口爆闪只做成一笔短促、沿枪管方向的亮焰；高速扫射时不会盖住枪体。
             float flashPulse = MathHelper.Clamp(muzzleFlash / 6f, 0f, 1f);
             if (flashPulse > 0f)
             {
@@ -288,12 +278,11 @@ namespace CalamityLegendsReturn.Weapons.A_Dev.M4A1
 
                 Main.spriteBatch.End();
                 Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive, SamplerState.PointClamp, DepthStencilState.None, Main.Rasterizer, null, Main.GameViewMatrix.TransformationMatrix);
-                // 光晕
-                Main.EntitySpriteDraw(bloom, muzzle, null, (M4A1Visuals.NeonGreen with { A = 0 }) * (flashPulse * 0.95f), gunRotation, bloom.Size() * 0.5f, new Vector2(0.42f, 0.2f) * (0.6f + flashPulse), SpriteEffects.None, 0);
-                Main.EntitySpriteDraw(bloom, muzzle, null, (M4A1Visuals.NeonGreenBright with { A = 0 }) * (flashPulse * 0.85f), 0f, bloom.Size() * 0.5f, 0.16f * (0.6f + flashPulse), SpriteEffects.None, 0);
+                // 仅一层窄光晕，负责把枪焰从背景中抠出来。
+                Main.EntitySpriteDraw(bloom, muzzle, null, (M4A1Visuals.NeonGreen with { A = 0 }) * (flashPulse * 0.38f), gunRotation, bloom.Size() * 0.5f, new Vector2(0.24f, 0.08f) * (0.65f + flashPulse), SpriteEffects.None, 0);
                 // 枪口闪光贴图（染绿）
                 Color flashColor = (Color.Lerp(M4A1Visuals.NeonGreen, Color.White, 0.45f) with { A = 0 }) * flashPulse;
-                Main.EntitySpriteDraw(flashTex, muzzle + aimDir * 4f, flashFrame, flashColor, gunRotation, flashFrame.Size() * 0.5f, (0.42f + flashPulse * 0.4f), flip, 0);
+                Main.EntitySpriteDraw(flashTex, muzzle + aimDir * 3f, flashFrame, flashColor, gunRotation, flashFrame.Size() * 0.5f, (0.3f + flashPulse * 0.22f), flip, 0);
                 Main.spriteBatch.End();
                 Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.None, Main.Rasterizer, null, Main.GameViewMatrix.TransformationMatrix);
             }

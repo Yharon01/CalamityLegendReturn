@@ -38,7 +38,8 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux.RightClick
         private const int HomingDelayFrames = 8;
         private const float HomingRange = 960f;
         private const float HomingResponsiveness = 0.11f;
-        private const int DirectGasCount = 5;
+        // The released large spore immediately vents four times the previous gas volume.
+        private const int DirectGasCount = 20;
 
         // 命中敌人后强制引爆的倒计时，留几帧让收束动画走完。
         private const int HitDetonateDelay = 9;

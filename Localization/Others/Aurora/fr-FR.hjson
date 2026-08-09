@@ -1,0 +1,29 @@
+Mods: {
+	CalamityLegendsReturn: {
+		Items: {
+			Armor: {
+				AuroraHelm: {
+					// DisplayName: Aurora Crown
+					// Tooltip: Woven from captured polar light
+				}
+
+				AuroraPlate: {
+					// DisplayName: Aurora Cuirass
+					// Tooltip: The night sky remembers where you have been
+					/* SetBonus:
+						'''
+						The aurora answers your heartbeat
+						Glowing runes flow across the armor, brightening and turning red as your health falls
+						Moving leaves a living aurora trail, and drifting starlight surrounds you
+						+3% damage reduction and improved mobility
+						''' */
+				}
+
+				AuroraGreaves: {
+					// DisplayName: Aurora Greaves
+					// Tooltip: Every step trails a ribbon of dawn
+				}
+			}
+		}
+	}
+}

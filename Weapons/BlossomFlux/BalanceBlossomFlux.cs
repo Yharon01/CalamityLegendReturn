@@ -53,12 +53,12 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
         internal static readonly object[,] MainParamsTable =
         {
             // Stage                       BrkDelay BrkMax BrkFrame RecFlash RecHeal RecShots RecPause RecPen RecMark BombMin BombMax BombDelay BombWaves BombImpact
-            { "Initial",                       15,     3,      30,       3,      5,       1,      90,     2,     15,      3,      3,       10,        8,          1 },
-            { "Eye of Cthulhu",                10,     3,      30,       3,     15,       1,      85,     2,     15,      3,      3,       10,        8,          1 },
-            { "Hardmode",                       6,     5,      20,       5,     15,       2,      60,     2,     25,      3,      3,       10,        8,          1 },
-            { "Plantera",                       3,     7,      15,       7,     15,       3,      50,     2,     25,      4,      4,       10,        8,          2 },
-            { "Moon Lord",                      2,     7,      15,       9,     15,       3,      36,     2,     25,      5,      5,        8,        8,          2 },
-            { "Devourer of Gods",               2,     7,      15,       9,     20,       3,      24,     2,     25,      5,      5,        7,        8,          2 },
+            { "Initial",                       15,     3,      30,       3,     10,       1,      90,     2,     15,      3,      3,       16,        8,          1 },
+            { "Eye of Cthulhu",                10,     3,      30,       3,     15,       1,      85,     2,     15,      3,      3,       16,        8,          1 },
+            { "Hardmode",                       6,     5,      20,       6,     15,       2,      60,     2,     25,      3,      3,       16,        8,          1 },
+            { "Plantera",                       3,     7,      15,      10,     15,       3,      50,     2,     25,      4,      4,       16,        8,          2 },
+            { "Moon Lord",                      2,     7,      15,      15,     15,       3,      36,     2,     25,      5,      5,       16,        8,          2 },
+            { "Devourer of Gods",               2,     7,      15,      15,     20,       3,      24,     2,     25,      5,      5,       16,        8,          2 },
         };
 
         private const string SourceFile = "Weapons/BlossomFlux/BalanceBlossomFlux.cs";
@@ -462,14 +462,17 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
     {
         public static BFRecoveryLeftStats GetStats()
         {
+            // One recovery round contains four seven-frame volleys. Its first three
+            // progression reductions shorten the between-round pause, then Plantera
+            // removes it completely for uninterrupted volleys.
             int volleyPauseFrames = BlossomFluxGrowthProgression.StageIndex switch
             {
-                (int)BlossomFluxGrowthStage.EyeOfCthulhu => 50,
-                (int)BlossomFluxGrowthStage.Hardmode => 40,
-                (int)BlossomFluxGrowthStage.Plantera => 40,
-                (int)BlossomFluxGrowthStage.MoonLord => 40,
-                (int)BlossomFluxGrowthStage.DevourerOfGods => 40,
-                _ => 60
+                (int)BlossomFluxGrowthStage.EyeOfCthulhu => 21,
+                (int)BlossomFluxGrowthStage.Hardmode => 14,
+                (int)BlossomFluxGrowthStage.Plantera => 0,
+                (int)BlossomFluxGrowthStage.MoonLord => 0,
+                (int)BlossomFluxGrowthStage.DevourerOfGods => 0,
+                _ => 28
             };
 
             int heal = 5;
@@ -573,7 +576,7 @@ namespace CalamityLegendsReturn.Weapons.BlossomFlux
         public static BFRecoveryRightStats GetStats()
         {
             return new BFRecoveryRightStats(
-                chargeFrames: 5 * 60,
+                chargeFrames: 2 * 60,
                 flashCount: MathMax(1, BFBalanceTable.Get(BFStat.Recovery_Right_OrbCount)),
                 healAmount: MathMax(1, BFBalanceTable.Get(BFStat.Recovery_Right_HealAmount)),
                 chargeDamageReduction: 0f);

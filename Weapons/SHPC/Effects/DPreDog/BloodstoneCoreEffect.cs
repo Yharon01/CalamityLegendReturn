@@ -15,7 +15,9 @@ namespace CalamityLegendsReturn.Weapons.SHPC.Effects.DPreDog
     {
         public override int EffectID => 29;
 
-        public override int AmmoType => ModContent.ItemType<BloodstoneCore>();
+        // Calamity renamed BloodstoneCore to Bloodstone. Keep the effect itself intact;
+        // only its external material input follows the current Calamity item type.
+        public override int AmmoType => ModContent.ItemType<Bloodstone>();
 
         public override Color ThemeColor => new Color(220, 40, 40);
         public override Color StartColor => new Color(255, 120, 120);
