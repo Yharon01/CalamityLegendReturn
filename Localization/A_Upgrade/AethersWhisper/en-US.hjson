@@ -4,26 +4,22 @@ Mods: {
 			Weapons: {
 				Magic: {
 					AethersWhisper: {
-						DisplayName: Aether's Whisper
-						Tooltip:
-							'''
-							Hold left click to compress shimmer, then release a devastating collapse cannon
-							Hold right click to fire refracting bursts of four
-							Each beam disassembles at its end point and returns to the barrel as lethal shards
-							'''
+						DisplayName: "Echo: Aether's Whisper"
+						Tooltip: '''
+Left click cycles through up to five unlocked violet attacks
+Right click takes priority and charges the two wingmen's linked energy spheres
+Defeat Desert Scourge, Evil T2, Slime God, and Wall of Flesh to unlock each later left-click attack
+Favoriting it in the inventory or holding it summons the wingmen; they support you when it is not held after Skeletron
+'''
 					}
 				}
 			}
 		}
-
 		Projectiles: {
 			AethersWhisper: {
-				AethersWhisperHoldout.DisplayName: Shimmer Collapse Cannon
-				AethersWhisperSweepHoldout.DisplayName: Shimmer Reassembly Sweep
-				AethersWhisperChargedShot.DisplayName: Collapse Crystal Core
-				AethersWhisperCollapse.DisplayName: Shimmer Collapse
-				AethersWhisperRefractionBeam.DisplayName: Refraction Beam
-				AethersWhisperReturnShard.DisplayName: Return Shard
+				AethersWhisperHoldout.DisplayName: "Aether's Whisper"
+				AethersWhisperAttackProjectile.DisplayName: "Aether Echo"
+				AethersWhisperPassiveCannon.DisplayName: "Aether Wingman"
 			}
 		}
 	}

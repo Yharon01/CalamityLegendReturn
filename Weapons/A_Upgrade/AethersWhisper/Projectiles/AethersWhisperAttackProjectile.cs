@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Shared;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,7 +12,8 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Projectiles
     // 一个受控的统一弹幕载体：避免旧版蓄力弹/折射束继续混入新的五段循环。
     internal sealed class AethersWhisperAttackProjectile : ModProjectile
     {
-        public const int Fireball = 0, LiquidCross = 1, Cyclone = 2, JellyLightning = 3, FinalBeam = 4, EnergyOrb = 5, DelayedMainBeam = 6;
+        public const int Fireball = 0, LiquidCross = 1, Cyclone = 2, JellyLightning = 3, FinalBeam = 4, EnergyOrb = 5, DelayedMainBeam = 6, ScaleShard = 7;
+        private Vector2 convergencePoint;
         private int Mode => (int)Projectile.ai[0];
         private int Variant => (int)Projectile.ai[1];
         private int Age => Projectile.localAI[0] is var age ? (int)age : 0;
@@ -34,6 +36,11 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Projectiles
             Projectile.timeLeft = 90;
         }
 
+        public override void OnSpawn(Terraria.DataStructures.IEntitySource source)
+        {
+            convergencePoint = Main.MouseWorld;
+        }
+
         public override void AI()
         {
             Projectile.localAI[0]++;
@@ -46,6 +53,7 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Projectiles
             else if (Mode == LiquidCross)
             {
                 Projectile.velocity *= 1.035f;
+                Projectile.velocity = Vector2.Lerp(Projectile.velocity, Projectile.DirectionTo(convergencePoint) * Projectile.velocity.Length(), 0.07f);
                 if (age > 45) Projectile.Kill();
             }
             else if (Mode == Cyclone)
@@ -63,7 +71,18 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Projectiles
             {
                 if (Mode == DelayedMainBeam && age <= Variant) { Projectile.velocity = Vector2.Zero; return; }
                 Projectile.velocity = Projectile.velocity.SafeNormalize(Vector2.UnitX) * 28f;
+                if (Mode == FinalBeam && AethersWhisperProgression.ScaleSprayOnFinal && age < 25 && age % 2 == 0 && Main.myPlayer == Projectile.owner)
+                {
+                    Vector2 scaleVelocity = Projectile.velocity.SafeNormalize(Vector2.UnitX).RotatedByRandom(0.45f) * Main.rand.NextFloat(9f, 16f);
+                    Projectile.NewProjectile(Projectile.GetSource_FromThis(), Projectile.Center, scaleVelocity, Type, Math.Max(1, (int)(Projectile.damage * 0.3f)), Projectile.knockBack, Projectile.owner, ScaleShard);
+                }
                 if (age > (Mode == FinalBeam ? 25 : Variant + 25)) Projectile.Kill();
+            }
+            else if (Mode == ScaleShard)
+            {
+                Projectile.velocity *= 0.98f;
+                Projectile.rotation = Projectile.velocity.ToRotation();
+                if (age > 32) Projectile.Kill();
             }
             else if (Mode == EnergyOrb)
                 UpdateEnergyOrb();
@@ -120,15 +139,18 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Projectiles
             SpriteBatch sb = Main.spriteBatch;
             AethersWhisperVisuals.BeginAdditive(sb);
             Color color = AethersWhisperVisuals.Lerp((Age % 40) / 40f) with { A = 0 };
-            float radius = Mode == FinalBeam || Mode == DelayedMainBeam ? 48f : Mode == Cyclone ? 30f : 20f;
+            float radius = Mode == FinalBeam || Mode == DelayedMainBeam ? 48f : Mode == Cyclone ? 30f : Mode == ScaleShard ? 13f : 20f;
             if (Mode == FinalBeam || Mode == DelayedMainBeam)
             {
                 Vector2 back = Projectile.Center - Projectile.velocity.SafeNormalize(Vector2.UnitX) * 110f;
                 AethersWhisperVisuals.DrawBeamSegment(sb, back, Projectile.Center + Projectile.velocity.SafeNormalize(Vector2.UnitX) * 130f, color, AethersWhisperProgression.FinalityRift ? 30f : 18f);
             }
-            else AethersWhisperVisuals.DrawEnergyOrb(sb, Projectile.Center, radius, color, 0.85f, new Vector2(1f, Mode == JellyLightning ? 1.45f : 1f));
+            else AethersWhisperVisuals.DrawEnergyOrb(sb, Projectile.Center, radius, color, 0.85f, new Vector2(Mode == ScaleShard ? 1.8f : 1f, Mode == JellyLightning ? 1.45f : 1f));
             AethersWhisperVisuals.EndAdditive(sb);
             return false;
         }
+
+        public override void SendExtraAI(BinaryWriter writer) => writer.WriteVector2(convergencePoint);
+        public override void ReceiveExtraAI(BinaryReader reader) => convergencePoint = reader.ReadVector2();
     }
 }

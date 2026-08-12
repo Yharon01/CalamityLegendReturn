@@ -35,7 +35,7 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
                         SpawnAttack(Owner.MountedCenter + side * cannon * 74f, aim.RotatedBy(cannon * (0.62f + shot * 0.12f)) * 10f + new Vector2(0f, -6f), mode, (int)(damage * 0.55f));
                     break;
                 default:
-                    SpawnAttack(tip, aim * AethersWhisperBalance.LeftAttackSpeed, mode, damage);
+                    SpawnAttack(tip, aim * AethersWhisperBalance.LeftAttackSpeed, mode, mode == AethersWhisperAttackProjectile.FinalBeam && AethersWhisperProgression.FinalityRift ? (int)(damage * 1.15f) : damage);
                     break;
             }
             recoilOffset = mode == 4 ? 20f : 7f;
@@ -63,7 +63,7 @@ namespace CalamityLegendReturn.Weapons.A_Upgrade.AethersWhisper.Holdout
             recoilOffset = 11f;
             SoundEngine.PlaySound(SoundID.Item122 with { Volume = 0.55f, Pitch = 0.25f }, Owner.Center);
             if (AethersWhisperProgression.RightMainHandShot)
-                SpawnAttack(GetSafeMuzzle(aim), aim * 22f, AethersWhisperAttackProjectile.DelayedMainBeam, (int)(damage * 1.35f), 30);
+                SpawnAttack(GetSafeMuzzle(aim), aim * 22f, AethersWhisperAttackProjectile.DelayedMainBeam, (int)(damage * (AethersWhisperProgression.FinalityRift ? 1.55f : 1.35f)), 30);
         }
 
         private void SpawnAttack(Vector2 tip, Vector2 velocity, int mode, int damage, int variant = 0)

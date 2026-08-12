@@ -4,26 +4,22 @@ Mods: {
 			Weapons: {
 				Magic: {
 					AethersWhisper: {
-						DisplayName: 以太之低语
-						Tooltip:
-							'''
-							长按左键压缩微光，松开以发射毁灭性的坍缩炮
-							按住右键进行四连折射扫射
-							折射束会在终点分解为晶片，并沿原路回收至枪口
-							'''
+						DisplayName: "回响：以太之低语"
+						Tooltip: '''
+左键按已解锁的顺序循环施放五种粉紫色攻击
+右键优先于左键：两侧浮游炮蓄力后发射相互干涉的能量弹
+击败荒漠灾虫、邪恶 T2、史莱姆神和肉山，依次解锁后续左键攻击
+收藏在背包或手持时召唤浮游炮；骷髅王后，未手持时会自动支援
+'''
 					}
 				}
 			}
 		}
-
 		Projectiles: {
 			AethersWhisper: {
-				AethersWhisperHoldout.DisplayName: 微光坍缩炮
-				AethersWhisperSweepHoldout.DisplayName: 微光折返扫射
-				AethersWhisperChargedShot.DisplayName: 微光坍缩晶核
-				AethersWhisperCollapse.DisplayName: 微光坍缩
-				AethersWhisperRefractionBeam.DisplayName: 微光折射束
-				AethersWhisperReturnShard.DisplayName: 回收晶片
+				AethersWhisperHoldout.DisplayName: "以太之低语"
+				AethersWhisperAttackProjectile.DisplayName: "以太回响"
+				AethersWhisperPassiveCannon.DisplayName: "以太浮游炮"
 			}
 		}
 	}
